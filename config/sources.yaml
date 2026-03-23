@@ -1,0 +1,254 @@
+sources:
+
+  # ─── LIBRARIES ───────────────────────────────────────────────────────────────
+  # CPL uses the Bibliocommons JSON API — much more reliable than HTML scraping.
+
+  - name: "Chicago Public Library"
+    org_type: "library"
+    url: "https://gateway.bibliocommons.com/v2/libraries/chipublib/events"
+    scraper: "bibliocommons"
+    library_id: "chipublib"
+    audiences: "babies_and_toddlers"
+    max_pages: 50
+    tags: ["storytime", "library", "baby", "toddler", "reading"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  # ─── MUSEUMS ─────────────────────────────────────────────────────────────────
+
+  - name: "Field Museum - Free Wednesdays"
+    org_type: "museum"
+    url: "https://www.fieldmuseum.org/our-events/free-wednesdays"
+    scraper: "html"
+    selectors:
+      event_card: "a.card-event-link"
+      title: "span.block"
+      date: "h6.h6"
+      location: ""
+      link: "self"        # the card itself is the <a> tag
+    tags: ["museum", "free-day", "science", "family"]
+    cost: "free (IL residents)"
+    notes: "Illinois residents free every Wednesday"
+
+  - name: "Field Museum - Events"
+    org_type: "museum"
+    url: "https://www.fieldmuseum.org/our-events"
+    scraper: "html"
+    selectors:
+      event_card: "li.event-card"
+      title: "a.h4"
+      date: "h6.h6"
+      location: ""
+      link: "a.h4"
+    tags: ["museum", "science", "family"]
+    cost: ""
+
+  - name: "Art Institute of Chicago - Events"
+    org_type: "museum"
+    url: "https://www.artic.edu/events"
+    scraper: "browser"
+    selectors:
+      event_card: "article, .m-listing, .f-listing, [class*='ListingCard'], [class*='EventCard']"
+      title: "h2, h3, [class*='title'], [class*='Title']"
+      date: "time, [class*='date'], [class*='Date']"
+      location: "[class*='location'], [class*='Location'], .gallery"
+      link: "a"
+    tags: ["museum", "art", "family"]
+    cost: "free (IL residents under 14)"
+    notes: "Illinois residents under 14 always free; Chicago teens free"
+
+  - name: "Chicago History Museum - Events"
+    org_type: "museum"
+    url: "https://calendar.chicagohistory.org/events/list/"
+    scraper: "browser"
+    selectors:
+      event_card: ".tribe-event, article.type-tribe_events, .tribe-events-list-event-description"
+      title: "h2.tribe-event-url, .tribe-event-url, h2 a, h3 a"
+      date: ".tribe-event-schedule-details, .tribe-events-schedule, abbr.tribe-events-abbr"
+      location: ".tribe-venue, .tribe-venue-location"
+      link: "a.tribe-event-url, h2 a"
+    tags: ["museum", "history", "family"]
+    cost: "free (IL residents)"
+
+  - name: "National Museum of Mexican Art - Events"
+    org_type: "museum"
+    url: "https://nationalmuseumofmexicanart.org/events"
+    scraper: "browser"
+    selectors:
+      event_card: "article.post, article.tribe_events_cat, .tribe-event, .tribe-events-calendar-list__event-article"
+      title: "h2.tribe-event-url a, h2 a, .tribe-event-title a, h3.tribe-block__events-pro__event-title a"
+      date: ".tribe-event-schedule-details, .tribe-events-schedule, time"
+      location: ".tribe-venue, .tribe-venue-name"
+      link: "h2 a, .tribe-event-title a"
+    tags: ["museum", "free", "culture", "family"]
+    cost: "always free"
+
+  - name: "Peggy Notebaert Nature Museum - Events"
+    org_type: "museum"
+    url: "https://naturemuseum.org/events"
+    scraper: "browser"
+    selectors:
+      event_card: "article, .event-card, .tribe-event, .views-row"
+      title: "h2, h3, .event-title, .entry-title"
+      date: "time, .event-date, .tribe-event-schedule-details"
+      location: ".location, .tribe-venue"
+      link: "a"
+    tags: ["museum", "nature", "family"]
+    cost: "varies (free days available)"
+
+  - name: "Chicago Children's Museum - Program Calendar"
+    org_type: "museum"
+    url: "https://www.chicagochildrensmuseum.org/program-calendar"
+    scraper: "browser"
+    selectors:
+      event_card: "article, .program-card, .sqs-block, [class*='EventCard'], [class*='summary']"
+      title: "h2, h3, [class*='title'], [class*='Title']"
+      date: "time, [class*='date'], [class*='Date'], .event-date"
+      location: "[class*='location'], .venue"
+      link: "a"
+    tags: ["museum", "children", "play", "toddler", "family"]
+    cost: "free first Sunday (Chicago residents)"
+
+  # ─── PARKS & RECREATION ──────────────────────────────────────────────────────
+
+  - name: "Chicago Park District - Toddler Programs"
+    org_type: "parks"
+    url: "https://anc.apm.activecommunities.com/chicagoparkdistrict/activity/search?activity_select_param=2&viewMode=list&activity_keyword=toddler"
+    scraper: "browser"
+    wait_selector: ".activity-card"
+    selectors:
+      event_card: ".activity-card"
+      title: ".activity-card-info__name-link a"
+      date: ".activity-card-info__dateRange"
+      time: ".activity-card-info__timeRange"
+      location: ".activity-card-info__location"
+      link: ".activity-card-info__name-link a"
+      description: ".activity-card-info__ages"
+    tags: ["parks", "toddler", "recreation", "classes"]
+    age_hint: "0-36 months"
+
+  - name: "Chicago Park District - Baby Programs"
+    org_type: "parks"
+    url: "https://anc.apm.activecommunities.com/chicagoparkdistrict/activity/search?activity_select_param=2&viewMode=list&activity_keyword=infant"
+    scraper: "browser"
+    wait_selector: ".activity-card"
+    selectors:
+      event_card: ".activity-card"
+      title: ".activity-card-info__name-link a"
+      date: ".activity-card-info__dateRange"
+      time: ".activity-card-info__timeRange"
+      location: ".activity-card-info__location"
+      link: ".activity-card-info__name-link a"
+      description: ".activity-card-info__ages"
+    tags: ["parks", "baby", "infant", "recreation", "classes"]
+    age_hint: "0-18 months"
+
+  - name: "Maggie Daley Park - Events"
+    org_type: "parks"
+    url: "https://maggiedaleypark.com/"
+    scraper: "browser"
+    selectors:
+      event_card: "article, .event-card, .tribe-event, section[class*='event']"
+      title: "h2, h3, .event-title, .tribe-event-url"
+      date: "time, .event-date, .tribe-event-schedule-details"
+      location: ".location, .tribe-venue"
+      link: "a"
+    tags: ["park", "family", "outdoor", "play"]
+
+  - name: "Millennium Park - Events"
+    org_type: "parks"
+    url: "https://www.chicago.gov/city/en/depts/dca/supp_info/mp_calendar.html"
+    scraper: "browser"
+    selectors:
+      event_card: ".fc-event, .fc-list-event, .card, [class*='event']"
+      title: ".fc-event-title, .fc-list-event-title, h3, h4, .card-title, strong"
+      date: ".fc-list-event-time, time, .card-subtitle"
+      location: ".fc-list-event-dot, .location"
+      link: "a"
+    tags: ["park", "family", "outdoor", "free", "music"]
+    cost: "free"
+
+  # ─── ZOOS & NATURE ───────────────────────────────────────────────────────────
+
+  - name: "Lincoln Park Zoo - Events"
+    org_type: "zoo"
+    url: "https://www.lpzoo.org/calendar-events/"
+    scraper: "browser"
+    selectors:
+      event_card: ".card__content"
+      title: "p.h4 a"
+      date: "p.calendar-icon"
+      location: "p.person-icon"
+      link: "p.h4 a"
+    tags: ["zoo", "animals", "family", "free", "outdoor"]
+    cost: "always free"
+    notes: "LPZ is always free. Dates on their calendar page use recurring descriptions (e.g. 'Mondays in March') not specific dates — events with unparseable dates are skipped."
+
+  # ─── AQUARIUMS & SCIENCE ─────────────────────────────────────────────────────
+
+  - name: "Shedd Aquarium - Programs and Events"
+    org_type: "aquarium"
+    url: "https://www.sheddaquarium.org/programs-and-events"
+    scraper: "browser"
+    selectors:
+      event_card: "article, [class*='Card'], [class*='card'], .event-item"
+      title: "h2, h3, [class*='title'], [class*='Title']"
+      date: "time, [class*='date'], [class*='Date']"
+      location: "[class*='location']"
+      link: "a"
+    tags: ["aquarium", "animals", "family", "science"]
+    cost: "free (IL residents certain hours)"
+
+  - name: "Griffin MSI - Illinois Free Days"
+    org_type: "museum"
+    url: "https://www.msichicago.org/visit/ticket-prices/offers-and-discounts/illinois-free-days"
+    scraper: "browser"
+    selectors:
+      event_card: "article, .views-row, [class*='card'], [class*='Card'], li.free-day"
+      title: "h2, h3, strong, [class*='title']"
+      date: "time, .date, [class*='date'], td"
+      location: ".location"
+      link: "a"
+    tags: ["museum", "free-day", "science", "family"]
+    cost: "free (IL residents)"
+
+  # ─── CULTURAL CENTERS ────────────────────────────────────────────────────────
+
+  - name: "Chicago Cultural Center - Events"
+    org_type: "cultural_center"
+    url: "https://www.chicago.gov/city/en/depts/dca/supp_info/ccc_calendar.html"
+    scraper: "browser"
+    selectors:
+      event_card: ".fc-event, .fc-list-event, .card, [class*='event-card']"
+      title: ".fc-event-title, .fc-list-event-title, h3, h4, .card-title, strong"
+      date: ".fc-list-event-time, time, .card-subtitle"
+      location: ".fc-list-event-dot, .location"
+      link: "a"
+    tags: ["culture", "family", "free", "arts"]
+    cost: "always free"
+
+  - name: "Navy Pier - Events"
+    org_type: "entertainment"
+    url: "https://navypier.org/pier-events/"
+    scraper: "browser"
+    selectors:
+      event_card: "article, [class*='EventCard'], [class*='event-card'], [class*='card']"
+      title: "h2, h3, [class*='title'], [class*='Title']"
+      date: "time, [class*='date'], [class*='Date']"
+      location: "[class*='location'], .venue"
+      link: "a"
+    tags: ["family", "entertainment", "waterfront"]
+
+  # ─── BOOKSTORES ──────────────────────────────────────────────────────────────
+
+  - name: "The Book Cellar - Events"
+    org_type: "bookstore"
+    url: "https://www.bookcellarinc.com/calendar"
+    scraper: "browser"
+    selectors:
+      event_card: "article.post, article, .tribe-event, .tribe-events-calendar-list__event-article, li.tribe-event"
+      title: "h2.tribe-event-url a, h2 a, .tribe-event-title a, h1.entry-title a"
+      date: ".tribe-event-schedule-details, time, .tribe-events-schedule"
+      location: ".tribe-venue, .tribe-venue-name"
+      link: "h2 a, .tribe-event-title a, a[rel='bookmark']"
+    tags: ["bookstore", "storytime", "reading", "kids"]

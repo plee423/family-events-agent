@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Cache and output (don't commit these)
+cache/*.json
+output/*.ics
+logs/*.log
+
+# Keep directory structure
+!cache/.gitkeep
+!output/.gitkeep
+!logs/.gitkeep

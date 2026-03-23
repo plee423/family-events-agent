@@ -1,0 +1,92 @@
+# Irvine, CA sources — stub for future location move
+# Run with: python agent.py run --location irvine
+# Update settings.yaml: city=Irvine, state=CA, zip=92602, timezone=America/Los_Angeles
+
+sources:
+
+  - name: "Irvine Public Library - Events"
+    org_type: "library"
+    url: "https://irvine.bibliocommons.com/v2/events?audiences[]=babies_and_toddlers"
+    scraper: "html"
+    selectors:
+      event_card: "li.cp-event-list-item"
+      title: ".cp-title a"
+      date: ".cp-event-date, time"
+      time: ".cp-event-time"
+      location: ".cp-library-name"
+      link: ".cp-title a"
+    tags: ["storytime", "library", "baby", "toddler"]
+    cost: "free"
+
+  - name: "Orange County Public Libraries - Events"
+    org_type: "library"
+    url: "https://ocpl.org/events"
+    scraper: "html"
+    selectors:
+      event_card: ".event-item, article"
+      title: "h2, h3, .event-title"
+      date: ".event-date, time"
+      location: ".location"
+      link: "a"
+    tags: ["storytime", "library", "baby", "family"]
+    cost: "free"
+
+  - name: "Bowers Museum - Family Programs"
+    org_type: "museum"
+    url: "https://www.bowers.org/index.php/programs/family-programs"
+    scraper: "html"
+    selectors:
+      event_card: "article, .event-card, .program-item"
+      title: "h2, h3, .event-title"
+      date: ".date, time"
+      location: ".location"
+      link: "a"
+    tags: ["museum", "family", "culture", "art"]
+
+  - name: "Discovery Cube OC - Events"
+    org_type: "museum"
+    url: "https://www.discoverycube.org/orange-county/explore/events/"
+    scraper: "browser"
+    selectors:
+      event_card: ".event-card, article"
+      title: "h2, h3, .event-title"
+      date: ".event-date, time"
+      location: ".location"
+      link: "a"
+    tags: ["science", "kids", "family", "stem"]
+
+  - name: "Pretend City Children's Museum"
+    org_type: "museum"
+    url: "https://www.pretendcity.org/events/"
+    scraper: "html"
+    selectors:
+      event_card: "article.tribe-event, .event-card"
+      title: "h2, h3, .tribe-event-url"
+      date: ".tribe-event-schedule-details, time"
+      location: ".tribe-venue"
+      link: "a"
+    tags: ["children", "play", "toddler", "museum"]
+
+  - name: "Irvine Regional Park - Family Events"
+    org_type: "parks"
+    url: "https://www.ocparks.com/parks/irvi/programs"
+    scraper: "html"
+    selectors:
+      event_card: ".event-item, article"
+      title: "h2, h3, .event-title"
+      date: ".date, time"
+      location: ".location"
+      link: "a"
+    tags: ["park", "family", "outdoor", "nature"]
+
+  - name: "UCI Arts - Family Programs"
+    org_type: "cultural_center"
+    url: "https://www.arts.uci.edu/events"
+    scraper: "html"
+    selectors:
+      event_card: "article, .event-card, .tribe-event"
+      title: "h2, h3, .event-title"
+      date: ".event-date, time"
+      location: ".location"
+      link: "a"
+    tags: ["arts", "family", "culture", "university"]

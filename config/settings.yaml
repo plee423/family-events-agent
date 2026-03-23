@@ -1,0 +1,51 @@
+child:
+  name: "Baby"
+  birth_date: "2025-03-01"     # Used to calculate age dynamically
+  age_range_months: [0, 36]    # Show events for 0-36 month olds
+
+location:
+  city: "Chicago"
+  state: "IL"
+  zip: "60601"
+  home_lat: 41.8827
+  home_lng: -87.6233
+  max_radius_miles: 10
+  timezone: "America/Chicago"
+
+preferences:
+  include_free_only: false      # false = include paid events too, but flag free ones
+  highlight_free: true
+  days_ahead: 30                # Look 30 days into the future
+  exclude_keywords:
+    - "adults-only"
+    - "21+"
+    - "wine"
+    - "beer"
+    - "cocktail"
+  include_keywords:
+    - "baby"
+    - "toddler"
+    - "storytime"
+    - "story time"
+    - "family"
+    - "kids"
+    - "children"
+    - "infant"
+    - "preschool"
+    - "free day"
+    - "free admission"
+    - "lapsit"
+    - "0-2"
+    - "0-3"
+
+output:
+  filename_template: "family_events_{start}_{end}.ics"
+  calendar_name: "Family Events"
+  calendar_color: "#FF6B9D"
+
+scraping:
+  cache_ttl_hours: 6
+  request_delay_seconds: 1.0
+  max_workers: 5
+  user_agent: "FamilyEventsAgent/1.0 (personal family calendar tool)"
+  browser_timeout_seconds: 30
