@@ -184,7 +184,7 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-23 (session 3)
+- **Last updated:** 2026-03-23 (session 4)
 - **Git:** Single commit — "Initial commit: family events agent project"
 - **Status:** Pipeline fully working. Web app + GitHub Actions workflow added. Ready for Vercel deploy and first full --no-cache run.
 
@@ -205,12 +205,12 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 | National Museum of Mexican Art | 4 raw | Playwright, partial fix |
 | Navy Pier | 2 raw | Playwright |
 
-### Sources returning 0 (known issues)
-| Source | Reason | Path to fix |
-|--------|--------|-------------|
-| Peggy Notebaert Nature Museum | Events in HTML but class names opaque/minified | Inspect via browser DevTools |
-| Shedd Aquarium | WAF returns 403 to all non-browser UAs | Investigate Tessitura/ticketing API via DevTools Network tab |
-| The Book Cellar | Drupal `<td>` selectors not matching rendered output | Further investigation needed |
+### Previously zero-result sources — fixed or disabled (session 3)
+| Source | Status | Fix |
+|--------|--------|-----|
+| Peggy Notebaert Nature Museum | **Fixed** — `nature_museum` scraper | Two-pass: index → `/events/slug` URLs → individual pages for dates. Server-rendered headless CMS, bare `<a>` tags, no CSS classes. |
+| The Book Cellar | **Fixed** — `book_cellar` scraper | Server-rendered Drupal `<h3>` date headers + sibling `<ul><li>` events. No iCal feed exists. Sequential parser, no browser needed. |
+| Shedd Aquarium | **Disabled** in sources.yaml | WAF blocks all HTTP clients at CDN edge including headless Playwright. Even `robots.txt` returns 403. Re-enable only if Tessitura TNEW API endpoint is found via DevTools. |
 
 ### Removed sources
 - **Griffin MSI** — domain changed `msichicago.org` → `griffinmsi.org`, fully React/JS-rendered, no calendar page
@@ -220,6 +220,8 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `scrapers/tribe_events_scraper.py` — Tribe Events WP REST API with pagination
 - `scrapers/chicago_aem_scraper.py` — Chicago.gov AEM double-JSON endpoint with tag filter
 - `scrapers/tockify_scraper.py` — Tockify REST API with Unix timestamp pagination
+- `scrapers/book_cellar_scraper.py` — Sequential Drupal `<h3>`+`<ul>` calendar parser
+- `scrapers/nature_museum_scraper.py` — Two-pass: index collects URLs, individual pages parsed for dates
 
 ### Output files
 - `calendar_gen/ics_builder.py` — RFC-5545 .ics file with VTIMEZONE, stable UIDs, 2 VALARMs
@@ -258,13 +260,16 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `calendar_gen/html_builder.py` — now uses `settings['output']['html_filename']` instead of hardcoded `events.html`
 - `config/settings.yaml` — added `json_filename: events_chicago.json`, `html_filename: events_chicago.html`
 
+### CI performance fixes (session 4)
+- `.github/workflows/scrape.yml`: Playwright browser cache via `actions/cache@v4` — key on `requirements.txt` hash. Cache hit skips `--with-deps` (saves ~1-2 min per city job).
+- `cache/geocode_cache.json`: Pre-populated with all known Chicago + Irvine fixed venues (28 entries). Committed to repo — `.gitignore` updated with `!cache/geocode_cache.json` exception. Workflow now merges geocache from both city jobs and commits back → accumulated geocodes persist across nightly runs.
+- Workflow `commit-outputs` job: uploads `chicago-geocache` + `irvine-geocache` artifacts, downloads + Python-merges in commit job, `git add cache/geocode_cache.json` added to commit.
+
 ### Known issues / next steps
 - **Deploy to Vercel:** Push repo to GitHub, connect to Vercel (import project → auto-detects `public/` → deploy)
 - **Trigger first Actions run:** Go to GitHub → Actions → Scrape Events → Run workflow (manual trigger)
 - **Verify Irvine scrapers:** `python agent.py test-source "Irvine Public Library" --location irvine --no-cache` etc.
-- Nominatim geocode cache still empty — run `python agent.py run --no-cache` when rate limit resets
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
-- The Book Cellar still returns 0 — Drupal `<td>` structure needs DevTools verification
 - Tests not yet reviewed or run
 
 ---

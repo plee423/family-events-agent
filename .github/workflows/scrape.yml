@@ -26,8 +26,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
       - name: Install Playwright Chromium
-        run: playwright install chromium --with-deps
+        run: |
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            playwright install chromium
+          else
+            playwright install chromium --with-deps
+          fi
 
       - name: Scrape Chicago events
         run: python agent.py run --no-cache
@@ -37,6 +51,14 @@ jobs:
         with:
           name: chicago-output
           path: output/
+          retention-days: 1
+
+      - name: Upload Chicago geocode cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: chicago-geocache
+          path: cache/geocode_cache.json
+          if-no-files-found: ignore
           retention-days: 1
 
   scrape-irvine:
@@ -53,8 +75,22 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            playwright-${{ runner.os }}-
+
       - name: Install Playwright Chromium
-        run: playwright install chromium --with-deps
+        run: |
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            playwright install chromium
+          else
+            playwright install chromium --with-deps
+          fi
 
       - name: Scrape Irvine events
         run: python agent.py run --location irvine --no-cache
@@ -64,6 +100,14 @@ jobs:
         with:
           name: irvine-output
           path: output/
+          retention-days: 1
+
+      - name: Upload Irvine geocode cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: irvine-geocache
+          path: cache/geocode_cache.json
+          if-no-files-found: ignore
           retention-days: 1
 
   # ── Commit both cities' outputs once both scrapes finish ─────────────────────
@@ -88,6 +132,38 @@ jobs:
           name: irvine-output
           path: output/
 
+      - name: Download Chicago geocode cache
+        uses: actions/download-artifact@v4
+        with:
+          name: chicago-geocache
+          path: cache-chicago/
+        continue-on-error: true
+
+      - name: Download Irvine geocode cache
+        uses: actions/download-artifact@v4
+        with:
+          name: irvine-geocache
+          path: cache-irvine/
+        continue-on-error: true
+
+      - name: Merge geocode caches
+        run: |
+          python - <<'EOF'
+          import json, os
+          merged = {}
+          for f in ["cache-chicago/geocode_cache.json", "cache-irvine/geocode_cache.json"]:
+              if os.path.exists(f):
+                  with open(f) as fh:
+                      merged.update(json.load(fh))
+          if merged:
+              os.makedirs("cache", exist_ok=True)
+              with open("cache/geocode_cache.json", "w") as fh:
+                  json.dump(merged, fh, indent=2)
+              print(f"Merged geocode cache: {len(merged)} entries")
+          else:
+              print("No geocode cache files found — keeping committed copy")
+          EOF
+
       - name: Copy outputs to public/
         run: |
           mkdir -p public
@@ -103,6 +179,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/ output/
+          git add public/ output/ cache/geocode_cache.json
           git diff --staged --quiet || git commit -m "chore: update events $(date -u +%Y-%m-%d)"
           git push

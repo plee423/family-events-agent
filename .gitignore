@@ -14,3 +14,6 @@ logs/*.log
 !cache/.gitkeep
 !output/.gitkeep
 !logs/.gitkeep
+
+# Geocode cache is committed to warm CI runs — persists across Actions runs
+!cache/geocode_cache.json

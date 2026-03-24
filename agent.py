@@ -183,6 +183,12 @@ def get_scraper(scraper_type: str, settings: dict):
     elif scraper_type == "tockify":
         from scrapers.tockify_scraper import TockifyScraper
         return TockifyScraper(settings)
+    elif scraper_type == "book_cellar":
+        from scrapers.book_cellar_scraper import BookCellarScraper
+        return BookCellarScraper(settings)
+    elif scraper_type == "nature_museum":
+        from scrapers.nature_museum_scraper import NatureMuseumScraper
+        return NatureMuseumScraper(settings)
     else:
         raise ValueError(f"Unknown scraper type: {scraper_type!r}")
 
