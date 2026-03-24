@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FF6B9D">
+  <title>Irvine Family Events</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      padding-bottom: 2rem;
+    }
+
+    header {
+      background: linear-gradient(135deg, #FF6B9D 0%, #C44D8B 100%);
+      color: white;
+      padding: 1.5rem 1rem 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header .subtitle {
+      font-size: 0.8rem;
+      opacity: 0.88;
+      margin-top: 0.25rem;
+    }
+
+    header .stats {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.6rem;
+      font-size: 0.78rem;
+      opacity: 0.9;
+    }
+
+    .stat-pill {
+      background: rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 0.2rem 0.6rem;
+    }
+
+    .day-section {
+      max-width: 680px;
+      margin: 1.2rem auto 0;
+      padding: 0 0.75rem;
+    }
+
+    .day-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6e6e73;
+      margin-bottom: 0.5rem;
+      padding-left: 0.1rem;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 0.9rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.2rem 0.5rem;
+      align-items: start;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s;
+    }
+
+    .card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.13); }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.3;
+      grid-column: 1;
+    }
+
+    .badge-area {
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.25rem;
+    }
+
+    .badge {
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .badge-free {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .badge-paid {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .card-meta {
+      font-size: 0.78rem;
+      color: #6e6e73;
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.8rem;
+      margin-top: 0.2rem;
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .meta-item svg {
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+
+    .card-desc {
+      font-size: 0.78rem;
+      color: #8e8e93;
+      grid-column: 1 / -1;
+      margin-top: 0.3rem;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .no-events {
+      text-align: center;
+      color: #8e8e93;
+      padding: 3rem 1rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.72rem;
+      color: #aeaeb2;
+      margin-top: 2rem;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Irvine Family Events</h1>
+    <div class="subtitle">Next 30 days · Chicago area</div>
+    <div class="stats">
+      <span class="stat-pill">156 events</span>
+      <span class="stat-pill">136 free</span>
+    </div>
+  </header>
+
+  
+    <section class="day-section">
+      <h2 class="day-header">Tuesday, March 24</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/698cbf17b48451fc3c021923" target="_blank" rel="noopener">
+      <span class="card-title">Pop-Up Studio: Perler Beads</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Kelly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Pop into the Kids&#x27; Room during spring break and use Perler beads to create fun art projects with patterns we provide or your imagination. Refreshments will be provided. For kids 6 to 13. Younger child</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983b7b7377f55c8ec17d51a" target="_blank" rel="noopener">
+      <span class="card-title">Spring Break Kids Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Vodak-East Side</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Home from school and a little bored? Come to Spring Break Kids Club for art and games. For families with kids 3 to 13. Accessibility Need sign language interpretation or other accessibility assistance</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/692f7abcd8681b2900420919" target="_blank" rel="noopener">
+      <span class="card-title">Walk-in Hours with Healthcare Alternative Systems (HAS)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Humboldt Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">This winter, Healthcare Alternative Systems’ (HAS) Harm Reduction team will be at the Humboldt Park Branch every Tuesday from 1:30pm to 3:30pm. The team focuses on community outreach, connecting vulne</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698a60a1cbf6405d3566e8c8" target="_blank" rel="noopener">
+      <span class="card-title">Photography Scavenger Hunt</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Merlo</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Learn basic photography techniques and practice them with your phone camera. Bring any “subjects” you’d like to photograph - stuffed animals, favorite things, friends etc.! Learn a bit about our DSLR</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69371b927ed7c62f00a96866" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Manning</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">This drop-in program is for LEGO aficionados who enjoy building and developing STEAM (science, technology, engineering, arts and math) skills. For kids 4 to 12. Accessibility Need sign language interp</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69861759377f55c8ec183936" target="_blank" rel="noopener">
+      <span class="card-title">Club de lectura para lectores principiantes</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Little Village</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Únete al club para aprender a leer. Jugaremos a juegos de alfabetización y practicaremos la lectura. Este club está dirigido a niños cuya lengua materna es el español y están aprendiendo a leer. Abier</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b2d23467801235ed7180be" target="_blank" rel="noopener">
+      <span class="card-title">Colorectal Cancer Awareness and Blood Pressure Screeings</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Kelly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">For this month’s Family Game Night, representatives from the Chicago Department of Public Health will be on-site to raise awareness about colorectal cancer. Guests are invited to play games, attend a</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/prenatal-breastfeeding-workshop-2026-03-31/" target="_blank" rel="noopener">
+      <span class="card-title">Prenatal Breastfeeding Workshop</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Expecting a little one soon?
+This class will teach you everything you need to know before, during, and after breastfeeding. Led by an International Board-Certified Lactation Consultant (IBCLC) from Me</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Wednesday, March 25</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/695eb1746f926136000edd99" target="_blank" rel="noopener">
+      <span class="card-title">Peace by Piece: A Fiber Art &quot;Commuknity&quot;</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Beverly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Interested in joining Fiber Art &quot;Commuknity&quot; to meet like mind individuals and share your work come to the Beverly branch each Wednesday? This group is open to anyone in needle arts such as crochet, n</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695fce8748a98474cec3d399" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Marian Anderson: The Whole World in Her Hands (2021)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Walker</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a showing of Marian Anderson: the Whole World in her Hands . Explore the life, career, art and legacy of the African American contralto and civil rights pioneer in her own words using arch</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698a31fb834cbb3dea2c9018" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Matilda (1996)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a screening of Matilda (1996). An intelligent little girl who is neglected by her parents discovers that she has telekinetic powers. Not until a teacher shows her kindness for the first ti</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6fb464dacf581ff7f4170" target="_blank" rel="noopener">
+      <span class="card-title">Spring Break Garden Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Legler Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Kick off the growing season with us! Throughout Spring Break, we will have different activities and projects revolving around our garden. For kids 6 and up. Accessibility Need sign language interpreta</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b2ce23ad384e40edb3ccc8" target="_blank" rel="noopener">
+      <span class="card-title">Move Smart, Feel Strong</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Hegewisch</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Learn the “why” behind every move! Each week we’ll focus on a different body part, exploring simple, effective exercises to build strength, mobility, and confidence. In March, we&#x27;ll focus on safe, sma</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a9f25e6583d22e3c0e1237" target="_blank" rel="noopener">
+      <span class="card-title">Gamer&#x27;s Choice</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL McKinley Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all tweens and teens who like to play video games! Come and play the Nintendo Switch. We have games such as Princess Peach: Showtime!, Minecraft, Mario Wonder and more. For ages 12 to 16. Acce</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a9f147ec71a31f5b4218bc" target="_blank" rel="noopener">
+      <span class="card-title">Science Connections / Conexiones Científicas</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Back of the Yards</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Corina and Ms. Maria for Science Connections , where we conduct fun STEM (science, technology, engineering or math) activities. For ages 6 to 13. ScienceConnections programs are made possible</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6936ee1904caba2f00d3c9f3" target="_blank" rel="noopener">
+      <span class="card-title">Wednesday in Stitches</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you knit, crochet, embroider or do another needlecraft? Come to Wednesday in Stitches ! Show us your work and learn from others in the group. No experience required. Please bring your own needles a</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b2d306b6c4ac1fedc53e1f" target="_blank" rel="noopener">
+      <span class="card-title">LJD Sports Corner</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Coleman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">LJD Sports Corner Join Lewis, Jonathan and David in a monthly roundtable discussion for an in-depth analysis of all things sports. LJD dives deeper than the box score, providing a guide to sports stra</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6994e4494a9fd98b7f7ea937" target="_blank" rel="noopener">
+      <span class="card-title">Women in Architecture</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Portage-Cragin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join for a presentation by two architects as they spill the details, challenges, and opportunities available in the profession. Katherine Pohl, Associate, Gwen Stricker, Junior Associate, both from Nu</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Thursday, March 26</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/695c329b1f01fb76cec4def1" target="_blank" rel="noopener">
+      <span class="card-title">AI for Visual Disabilities</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Curious about Artificial Intelligence (AI) and what it means for everyday life? AI can help those experiencing loss of vision to experience enhanced independence with everyday life and tasks such as r</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a1e4ad1e64afd01e5e8940" target="_blank" rel="noopener">
+      <span class="card-title">Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin-Irving</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Reed&#x27;s story time for preschoolers and their family! We’ll share songs, rhymes and books. For kids 3 to 5 and their caregivers. Accessibility Need sign language interpretation or other access</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a070a2491b809c6f1ca48c" target="_blank" rel="noopener">
+      <span class="card-title">Spring Break Open Play</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Oriole Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">No school? Drop in during open play time at the library. Enjoy toys, coloring and music in our community room. For children 0 to 9. Accessibility Need sign language interpretation or other accessibili</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983bc8d377f55c8ec17d683" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Kelly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all LEGO enthusiasts and engineers! Join us for LEGO free play and display your work in our Kids Area. Make new friends while building STEAM (science, technology, engineering, art and math) sk</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aee5bd2866a5b48840d8e2" target="_blank" rel="noopener">
+      <span class="card-title">Pop-Up: DIY Crafts and Art</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Walker</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Let&#x27;s get creative! Materials for bracelets, artwork and even clay sculptures are available, while supplies last. Come have some fun while showcasing your creative side! For teens and tweens 10 and up</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69823916d2bbe265eb2bf0a8" target="_blank" rel="noopener">
+      <span class="card-title">Board Game Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for an epic night of board games and friendly competition. Whether you&#x27;re a strategy pro or just looking for some laughs, come show off your skills and see who takes home the bragging rights.</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6980d1d31e64afd01e588d74" target="_blank" rel="noopener">
+      <span class="card-title">After School Activities / Actividades después de la escuela</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sherman Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for games, crafts or other activities. For ages 6 to 13. Kids under age 11 must be accompanied by an adult caregiver. Únase a nosotros para juegos, manualidades u otras actividades. Para edade</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a724dab0595799c0a0a1b4" target="_blank" rel="noopener">
+      <span class="card-title">Real Ones Read: The Coldest Winter Ever</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Bezazian</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Warm up at the library over snacks while we read and talk about The Coldest Winter Ever by Sister Souljah. No need to bring your own copy, we have a stash to use during the program! Supplies are limit</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/neurodivergent-family-night-3-2026-02-26-2026-03-26/" target="_blank" rel="noopener">
+      <span class="card-title">Neurodivergent Family Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Join us for a free evening where children and caretakers are invited to play in a sensory-friendly, neuro-affirming environment! We encourage the whole family to attend, and therapists can join as wel</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6f7524dacf581ff7f4115" target="_blank" rel="noopener">
+      <span class="card-title">Little Readers Book Club!</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Back of the Yards</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a weekly book club where we practice reading with a buddy, play phonics and word games, and have lots of fun! For children 4 and up. Accessibility Need sign language interpretation or othe</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Friday, March 27</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/acting-on-hunger-with-second-harvest/" target="_blank" rel="noopener">
+      <span class="card-title">Little Hands Big Impact with Second Harvest</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Join us and Second Harvest Food Bank as we encourage little ones to be active members of society. This volunteer opportunity will encourage and open the platform for children to be able to package fru</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/697a6279a5d80ac4926f7e33" target="_blank" rel="noopener">
+      <span class="card-title">Homeschool Family Fun Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Toman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a relaxed morning designed for homeschool families to connect and socialize. It&#x27;s a great opportunity for both kids and adults to meet new friends and enjoy some quality time together in a</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a1e41b491b809c6f1cf538" target="_blank" rel="noopener">
+      <span class="card-title">Open Play Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a drop-in open play time! We have fun, educational toys and books available for self-directed play. For kids 0 to 5 with their caregivers. Accessibility Need sign language interpretation o</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a1e43b8089f23c675ea701" target="_blank" rel="noopener">
+      <span class="card-title">Friday Games and Crafts</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Drop in to play games and do various simple crafts. For ages 3 to 13. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or em</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Saturday, March 28</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/69330b6904caba2f00d3694f" target="_blank" rel="noopener">
+      <span class="card-title">Saturday Game Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us every Saturday for Saturday Game Day. This is a drop-in program. Bring a game or play one of ours: UNO, Skip-bo, Mexican Train, Scrabble, Outburst, Upwards, Rummy 500, Canasta, Chess, Checkers</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695fce9139996c13d3cf852e" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Brave (2012)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Walker</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a showing of Brave . Merida, an impulsive young lady and daughter to King Fergus and Queen Elinor, is determined to carve her own path in life. Defying the age-old and sacred customs, Meri</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/meet-the-instrument-2/" target="_blank" rel="noopener">
+      <span class="card-title">Meet the Instrument with Philharmonic Society</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Representatives from the Philharmonic Society will be visiting to give a performance and share some information on how strings, woodwinds, brass, and percussion create beautiful music. It’s a fun, inf</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6977b1c0b0595799c0989fe8" target="_blank" rel="noopener">
+      <span class="card-title">Dungeons &amp; Dragons for Teens</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL West Lawn</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Choose your own adventure and explore new lands in our Dungeons &amp; Dragons weekly sessions! Dungeons &amp; Dragons is a fantasy tabletop role-playing game where players create unique characters and work to</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d5" target="_blank" rel="noopener">
+      <span class="card-title">Children&#x27;s Coding and STEM Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Coleman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you love technology? Are you curious about STEM, coding and robotics? Come and join us with fun, hands-on activities to learn how to design your own computer games, animation and robots. For kids 6</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698616b3d2bbe265eb2ca476" target="_blank" rel="noopener">
+      <span class="card-title">Cursive Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Thurgood Marshall</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Lina for Cursive Club! Kids will have fun learning how to write in cursive while practicing cool letters, writing their names and creating fun projects. For kids 8 to 13. Accessibility Need s</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a1e4544dacf581ff7e6022" target="_blank" rel="noopener">
+      <span class="card-title">Family Arts and Crafts</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Drop in to do various simple arts and crafts. For children 3 to 13 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a703784dacf581ff7f4294" target="_blank" rel="noopener">
+      <span class="card-title">Bring Your Own Book Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Lincoln Belmont</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Have you been reading something you love? Do you want to tell everyone how amazing it is? Bring it along and share with other readers why you loved it so much and get recommendations for new books you</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f" target="_blank" rel="noopener">
+      <span class="card-title">Destination Discovery Story Time at C2E2</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:15 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Branch None</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so yo</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Sunday, March 29</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/no-members-entry/2026-03-29/" target="_blank" rel="noopener">
+      <span class="card-title">No Member&amp;#8217;s Early Entry</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">No Member&amp;#8217;s Early Entry on Sundays</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/teensteach-2/2026-03-29/" target="_blank" rel="noopener">
+      <span class="card-title">TeensTeach</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Learn, explore, and connect during this engaging program designed and led by local teens!  Through creative activities and hands-on opportunities, Teens Teach empowers young leaders to share their ski</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Monday, March 30</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/museum-closed-4-2026-03-30/" target="_blank" rel="noopener">
+      <span class="card-title">Museum CLOSED</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> All day</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      
+    </a><a class="card" href="https://www.pretendcity.org/events/toddler-town-3/2026-03-30/" target="_blank" rel="noopener">
+      <span class="card-title">Toddler Town</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">We’re opening the city just for toddlers! 
+Climb, dance, problem-solve, and pretend your way through our miniature world, designed to support movement, connection, and big developmental leaps. 
+Design</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/697a881f377f55c8ec1635f1" target="_blank" rel="noopener">
+      <span class="card-title">Coffee and Connections</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for coffee and connection to library resources and social work support. This program is in partnership with the Chicago Department of Public Health, Blocks 2 Cities, and the Way Back Inn. Acce</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6989fc924dacf581ff7a15d4" target="_blank" rel="noopener">
+      <span class="card-title">Mother Goose on the Loose</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Edgewater</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Anne for an interactive program featuring read-aloud books, songs and movement activities. Tips for children&#x27;s early literacy skill development are included for parents and caregivers. For ch</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a26" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Pulaski</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Please join us for a 30-minute family story time. We will enjoy stories, rhymes and music. For kids 0 to 5 and their caregivers. Older children also welcome. How to Attend Registration is appreciated</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/68f699f4d272945e00688a6d" target="_blank" rel="noopener">
+      <span class="card-title">Novel Needles: Knit, Crochet, and Stitchery Group</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Roden</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Come to Roden Library and meet like-minded friends, gaining inspiration and support and sharing your projects with others. Whether you are just starting to learn your creative craft or have valuable t</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aee5bd2866a5b48840d8e3" target="_blank" rel="noopener">
+      <span class="card-title">Pop-Up: DIY Crafts and Art</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Walker</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Let&#x27;s get creative! Materials for bracelets, artwork and even clay sculptures are available, while supplies last. Come have some fun while showcasing your creative side! For teens and tweens 10 and up</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698cc08b81b67dfe32a5c193" target="_blank" rel="noopener">
+      <span class="card-title">March into Science</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Thurgood Marshall</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for the March into Science series! Try out a different cool science project each week. For ages 6 and up. This ScienceConnections program is made possible with generous funding through the Chi</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69653d42491b809c6f126cce" target="_blank" rel="noopener">
+      <span class="card-title">Messy Art: Papier Mâché Masks</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Archer Heights</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Come join us at the library to create a mask using papier mâché. Get hands on experience with the medium along with an introduction to artists who use it in their own work, like the Linares Family. Af</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Tuesday, March 31</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/kidstock/" target="_blank" rel="noopener">
+      <span class="card-title">Kidstock</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> All day</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Get ready to rock, roll, sway, sing, and bop! Because we’re bringing back Kidstock Music &amp;amp; Arts Festival! Enjoy live musical performances throughout the week and explore a mix of musical styles! B</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699cabb5491b809c6f1bd988" target="_blank" rel="noopener">
+      <span class="card-title">Preschool Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Tara for a story time especially for preschoolers! We’ll share songs, rhymes, books and early literacy tips. For kids 2 to 5 and their caregivers. Accessibility Need sign language interpretat</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983b595834cbb3dea2b9ef9" target="_blank" rel="noopener">
+      <span class="card-title">Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Beverly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Izabel for a fun-filled story time especially for our littlest patrons! We’ll share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their caregivers. How</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/692f7abcd8681b290042091a" target="_blank" rel="noopener">
+      <span class="card-title">Walk-in Hours with Healthcare Alternative Systems (HAS)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Humboldt Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">This winter, Healthcare Alternative Systems’ (HAS) Harm Reduction team will be at the Humboldt Park Branch every Tuesday from 1:30pm to 3:30pm. The team focuses on community outreach, connecting vulne</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6894b8c9639e1e9694a546a2" target="_blank" rel="noopener">
+      <span class="card-title">Tween Tuesday</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Coleman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">You&#x27;re invited to drop in on Tween Tuesday for crafting, gaming and hanging out in the YOUmedia Design Den. For ages 10 to 13. Accessibility Need sign language interpretation or other accessibility as</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/692de4dbe3b80d360059cecc" target="_blank" rel="noopener">
+      <span class="card-title">W.E. Are Curious</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL West Englewood</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Learn and create in hands-on science activities including bouncy balls, scratch paper, snow in a jar and more! For ages 8 to 13. Science Connections programs are made possible in part by S&amp;C Electric</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c1829" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® at the Library</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Edgewater</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you like building different objects and making your imagination come to life? If so, drop in for some design challenges and open play time with our collection of LEGO® bricks! Afterwards, we will d</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69371cc28b29ea2800c32b05" target="_blank" rel="noopener">
+      <span class="card-title">Pajama Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Daley Richard J.-Bridgeport</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Wear something comfortable, grab a stuffed animal to cuddle and join us for Pajama Story Time! We’ll share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their c</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Wednesday, April 1</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/695eb1746f926136000edd9a" target="_blank" rel="noopener">
+      <span class="card-title">Peace by Piece: A Fiber Art &quot;Commuknity&quot;</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Beverly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Interested in joining Fiber Art &quot;Commuknity&quot; to meet like mind individuals and share your work come to the Beverly branch each Wednesday? This group is open to anyone in needle arts such as crochet, n</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69c16e7a81b67dfe32ae6e15" target="_blank" rel="noopener">
+      <span class="card-title">Tween Hangout</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Dunning</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">We have various video games and activities including Smash Bros, Minecraft, Mario Kart, air hockey, foosball and so much more! For kids in grades 3 to 5. Accessibility Need sign language interpretatio</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2dd" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Daley Richard J.-Bridgeport</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">What can you make with a pile of LEGO® bricks? Complete LEGO® challenges with free build time to follow. Bring your imagination and use our LEGO® collection to create something awesome! For kids 5 to</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983a58f94297d3600a9f991" target="_blank" rel="noopener">
+      <span class="card-title">Classic Film Screening: The Princess Bride (1987)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for the highly acclaimed romantic comedy/fantasy The Princess Bride to celebrate the late, great Rob Reiner. In the delightfully fractured tale, a grandfather reads a story about a beautiful y</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Thursday, April 2</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c53" target="_blank" rel="noopener">
+      <span class="card-title">Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join this story time especially for our littlest patrons! We’ll share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their caregivers. Space may be limited. Acce</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983b565834cbb3dea2b9eea" target="_blank" rel="noopener">
+      <span class="card-title">Baby Bookworms</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join our children&#x27;s librarians for this special 25-minute story time for babies and their caregivers. We’ll share songs, rhymes and books while helping to build baby’s early literacy and social-emotio</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6994a0dc1e64afd01e5bfdea" target="_blank" rel="noopener">
+      <span class="card-title">Baby Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Merlo</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for story times emphasizing adult-child interaction and bonding. Includes an optional 10-minute play time. For kids 6 to 23 months with a participating adult. How to Attend In order to provide</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b2ec57c94c122f19bdc9b6" target="_blank" rel="noopener">
+      <span class="card-title">Game Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Douglass</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Hang out at the library playing video games or table-top games. Use our video game systems and STEAM Machine to play a variety of fun games. You can challenge the Librarians to show off their moves in</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b314c323b45fff20f1c460" target="_blank" rel="noopener">
+      <span class="card-title">Teen Block Printing</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Clearing</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Drop in at Clearing Branch to experience the craft of Block Printing. Carve a unique image or design into a piece of rubber and create a stamp showing your creativity. Apply ink to your carving and st</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6f7524dacf581ff7f4116" target="_blank" rel="noopener">
+      <span class="card-title">Little Readers Book Club!</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Back of the Yards</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a weekly book club where we practice reading with a buddy, play phonics and word games, and have lots of fun! For children 4 and up. Accessibility Need sign language interpretation or othe</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/696924772c65973d0017fd96" target="_blank" rel="noopener">
+      <span class="card-title">Teen Hideaway</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Brighton Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Drop in and explore art media, technology, crafts and games. For teens 13 to 19. Ven y explora diferentes medios de arte, tecnología, manualidades y juegos. Para jóvenes de 13 a 19 años. Accessibility</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Friday, April 3</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/698cbe6ab48451fc3c021913" target="_blank" rel="noopener">
+      <span class="card-title">Little Learners Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL McKinley Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us Friday mornings for 30 minutes of songs and stories! Play time immediately follows. For children 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibi</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b0259c4a9fd98b7f834832" target="_blank" rel="noopener">
+      <span class="card-title">Magnetic Poetry</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Whitney M. Young Jr.</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Celebrate National Poetry Month by participating in magnetic poetry! Join us in YOUMedia for a fun afternoon filled with creativity. Magnetic poetry is a creative writing tool consisting of magnetic w</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Saturday, April 4</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/69330b6904caba2f00d36950" target="_blank" rel="noopener">
+      <span class="card-title">Saturday Game Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us every Saturday for Saturday Game Day. This is a drop-in program. Bring a game or play one of ours: UNO, Skip-bo, Mexican Train, Scrabble, Outburst, Upwards, Rummy 500, Canasta, Chess, Checkers</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6fd188089f23c675f7c3a" target="_blank" rel="noopener">
+      <span class="card-title">The Art of Paper Magic: Origami for Everyone</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Near North</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Get ready to unleash your creativity with the magical art of origami! If you’ve ever wanted to fold up a cute animal, a mighty dinosaur, beautiful blooms or decorative boxes, this is your chance to di</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d6" target="_blank" rel="noopener">
+      <span class="card-title">Children&#x27;s Coding and STEM Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Coleman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you love technology? Are you curious about STEM, coding and robotics? Come and join us with fun, hands-on activities to learn how to design your own computer games, animation and robots. For kids 6</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Sunday, April 5</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/closed-for-easter/" target="_blank" rel="noopener">
+      <span class="card-title">CLOSED for Easter</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> All day</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      
+    </a><a class="card" href="https://www.pretendcity.org/events/no-members-entry/2026-04-05/" target="_blank" rel="noopener">
+      <span class="card-title">No Member&amp;#8217;s Early Entry</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">No Member&amp;#8217;s Early Entry on Sundays</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Monday, April 6</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/toddler-town-3/2026-04-06/" target="_blank" rel="noopener">
+      <span class="card-title">Toddler Town</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">We’re opening the city just for toddlers! 
+Climb, dance, problem-solve, and pretend your way through our miniature world, designed to support movement, connection, and big developmental leaps. 
+Design</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a27" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Pulaski</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Please join us for a 30-minute family story time. We will enjoy stories, rhymes and music. For kids 0 to 5 and their caregivers. Older children also welcome. How to Attend Registration is appreciated</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a763bc491b809c6f1de5fd" target="_blank" rel="noopener">
+      <span class="card-title">Adult Coloring Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join the Austin Branch for an adult coloring club. Coloring is a great way to relax and de-stress. We will provide coloring sheets, crayons and coloring pencils. Come be a part of our creative colorin</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699caebb4dacf581ff7d5537" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Blackstone</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all LEGO® enthusiasts and engineers! We show you how to build with mini-bricks as we take on building challenges and do some open-ended free play. Join us to make new friends while building ST</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69af3efe81b67dfe32ab7a4f" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Freakier Friday (2025)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Toman</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">22 years after Tess and Anna endured an identity crisis, Anna now has a daughter and a soon-to-be stepdaughter. As they navigate the challenges that come when two families merge, Tess and Anna discove</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b16c0cb48451fc3c081e96" target="_blank" rel="noopener">
+      <span class="card-title">Start Growing 2026 with Urban Habitat Chicago</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Budlong Woods</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Mike from Urban Habitat Chicago for an urban gardening workshop. Learn about low-cost ways to get started and receive expert tips for growing seeds and transplanting your starter plants. Whether</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Tuesday, April 7</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/kidstock-2/" target="_blank" rel="noopener">
+      <span class="card-title">Kidstock</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> All day</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Get ready to rock, roll, sway, sing, and bop! Because we’re bringing back Kidstock Music &amp;amp; Arts Festival! Enjoy live musical performances throughout the week and explore a mix of musical styles! B</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/baby-steps-3/2026-04-07/" target="_blank" rel="noopener">
+      <span class="card-title">Baby Steps</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 8:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Dedicated to children 18 months and younger, Pretend City hosts TWO Baby Steps programs a month on the first Tuesday and second Sunday. This program is a great way to socialize your little one and off</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695d45618b29ea2800c7d726" target="_blank" rel="noopener">
+      <span class="card-title">Baby Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Blackstone</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Enjoy songs, rhymes and books with your baby to develop language skills and a love of reading. For infants and toddlers 0 to 18 months with a caregiver. Accessibility Need sign language interpretation</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aaee064a9fd98b7f8280ce" target="_blank" rel="noopener">
+      <span class="card-title">Tween Tuesday: Pom Pom Pen Toppers</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Archer Heights</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a bi-monthly craft just for tweens! This time, we’re making pom pom pen toppers. Materials and snacks are provided. For tweens 10 to 14. Accessibility Need sign language interpretation or</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a9f3b5db89981d9df8b707" target="_blank" rel="noopener">
+      <span class="card-title">Mad Science: Salt Painting</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Avalon</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a colorful science program using salt to create unique, tie-dye style paintings! For ages 5 to 13. Accessibility Need sign language interpretation or other accessibility assistance for thi</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c182a" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® at the Library</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Edgewater</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you like building different objects and making your imagination come to life? If so, drop in for some design challenges and open play time with our collection of LEGO® bricks! Afterwards, we will d</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a7057c491b809c6f1dc8f2" target="_blank" rel="noopener">
+      <span class="card-title">Crystal Growing Craft</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Clearing</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us and watch borax crystals grow in a jar. In this hands-on craft, you will shape a pipe cleaner to your liking and put it in a jar with borax, what happens next is crystal science. So, join us a</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6977e3c06724c63d00ee8419" target="_blank" rel="noopener">
+      <span class="card-title">YOUmedia Open Shop</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Whitney M. Young Jr.</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Curious to learn a new skill? Need homework help? Or do you just want to take the time to geek out with friends? At YOUmedia Open Shop, you can do all of the above! Step right up and into things you h</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/696924772c65973d0017fd97" target="_blank" rel="noopener">
+      <span class="card-title">Teen Hideaway</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Brighton Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Drop in and explore art media, technology, crafts and games. For teens 13 to 19. Ven y explora diferentes medios de arte, tecnología, manualidades y juegos. Para jóvenes de 13 a 19 años. Accessibility</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Wednesday, April 8</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/69b982e7b48451fc3c09823c" target="_blank" rel="noopener">
+      <span class="card-title">Mather&#x27;s Grow-It-Together Garden Club In-Person Viewing</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Manning</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">This event is an in-person screening of the Grow-It-Together Garden Program. This online garden club is for adults 50 years and older who are interested in hydroponic gardening. Join others to learn t</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69c16e7a81b67dfe32ae6e16" target="_blank" rel="noopener">
+      <span class="card-title">Tween Hangout</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Dunning</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">We have various video games and activities including Smash Bros, Minecraft, Mario Kart, air hockey, foosball and so much more! For kids in grades 3 to 5. Accessibility Need sign language interpretatio</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69af3f6c2866a5b48840fdad" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: When Harry Met Sally (1989)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a screening of When Harry Met Sally, directed by the late Rob Reiner . Meg Ryan and Billy Crystal star as two best friends of the opposite sex in the blockbuster, heartwarming romantic com</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b19aee403a4e5652ded6d8" target="_blank" rel="noopener">
+      <span class="card-title">Bloom and Grow: Seed Flower Craft</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Thurgood Marshall</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Spring is here! Join us at the branch for a fun hands-on craft where kids can decorate a mini starter pot and plant their own seeds to take home and grow. Watch your flower bloom while celebrating the</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Thursday, April 9</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/6983b565834cbb3dea2b9eec" target="_blank" rel="noopener">
+      <span class="card-title">Baby Bookworms</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join our children&#x27;s librarians for this special 25-minute story time for babies and their caregivers. We’ll share songs, rhymes and books while helping to build baby’s early literacy and social-emotio</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6914fc37c313c23700e1d749" target="_blank" rel="noopener">
+      <span class="card-title">Games People Play</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for our weekly adult game sessions. New this year : once a month we will play only Scrabble, Yahtzee or Trivia games for the two-hour session. Light refreshments will be available. Feel free t</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69306a5c4be11d3d00d63863" target="_blank" rel="noopener">
+      <span class="card-title">Teen Zone</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Near North</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Come to Near North every Tuesday and Thursday from 3:30-5pm for games, crafts, and good old fashioned hanging out! ACCESSIBILITY Need sign language interpretation or other accessibility assistance for</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69af3faf2866a5b48840fe16" target="_blank" rel="noopener">
+      <span class="card-title">Teen Film Screening: Wicked: For Good (2025)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL West Belmont</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Come watch your favorite movies at the library with friends! This month, we&#x27;ll be watching Wicked: For Good For teens 13 to 19. In the epic conclusion to the story of the witches of Oz, Elphaba and Gl</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6f7524dacf581ff7f4117" target="_blank" rel="noopener">
+      <span class="card-title">Little Readers Book Club!</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Back of the Yards</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a weekly book club where we practice reading with a buddy, play phonics and word games, and have lots of fun! For children 4 and up. Accessibility Need sign language interpretation or othe</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Friday, April 10</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/way-to-play-day/2026-04-10/" target="_blank" rel="noopener">
+      <span class="card-title">Way to Play Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Way to Play Days are held on the 2nd Friday of every month. This event allows parents and caregivers to complete free health screenings including developmental, dental, vision, and/or speech. Local ch</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69babf97ad384e40edb52b79" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Little Italy</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join Ms. Hailey for story time especially for our littlest patrons! We’ll share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their caregivers. Accessibility Ne</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b986208d5e2d093365d921" target="_blank" rel="noopener">
+      <span class="card-title">Computer Literacy Class</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Thurgood Marshall</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Want to learn how to use the computer? Thurgood Marshall Branch is offering basic computer classes to teach you how to use the mouse, keyboard, and learn how to create and edit documents. You can also</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Saturday, April 11</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/69330b6904caba2f00d36951" target="_blank" rel="noopener">
+      <span class="card-title">Saturday Game Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us every Saturday for Saturday Game Day. This is a drop-in program. Bring a game or play one of ours: UNO, Skip-bo, Mexican Train, Scrabble, Outburst, Upwards, Rummy 500, Canasta, Chess, Checkers</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Sunday, April 12</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/baby-steps-2/2026-04-12/" target="_blank" rel="noopener">
+      <span class="card-title">Baby Steps</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 8:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Dedicated to children 18 months and younger, Pretend City hosts TWO Baby Steps programs a month on the first Tuesday and second Sunday. This program is a great way to socialize your little one and off</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/no-members-entry/2026-04-12/" target="_blank" rel="noopener">
+      <span class="card-title">No Member&amp;#8217;s Early Entry</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">No Member&amp;#8217;s Early Entry on Sundays</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a73d308089f23c675f8f8c" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Noah (2014)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Chicago Lawn</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us at the Chicago Lawn branch for Sunday Cinema. This week&#x27;s selection will be &quot;Noah receives a warning from God about a great flood, and constructs an ark to save creation as the planet is clean</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Monday, April 13</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/toddler-town-3/2026-04-13/" target="_blank" rel="noopener">
+      <span class="card-title">Toddler Town</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">We’re opening the city just for toddlers! 
+Climb, dance, problem-solve, and pretend your way through our miniature world, designed to support movement, connection, and big developmental leaps. 
+Design</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/697a881f377f55c8ec1635f2" target="_blank" rel="noopener">
+      <span class="card-title">Coffee and Connections</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for coffee and connection to library resources and social work support. This program is in partnership with the Chicago Department of Public Health, Blocks 2 Cities, and the Way Back Inn. Acce</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a28" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Pulaski</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Please join us for a 30-minute family story time. We will enjoy stories, rhymes and music. For kids 0 to 5 and their caregivers. Older children also welcome. How to Attend Registration is appreciated</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69c19adc8089f23c676422d4" target="_blank" rel="noopener">
+      <span class="card-title">Tactile Art Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Merlo</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">On select Mondays, de-stress and exercise your creative side by experimenting with tactile art supplies. We’ll provide materials such as finger paint, polymer clay and scratch art. We’ll also play soo</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698cee9b4dacf581ff7aa247" target="_blank" rel="noopener">
+      <span class="card-title">Rough Drafts: Teen Craft Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Beverly</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Check out the new DIY group led by Beverly teens for teens! Hang out, explore maker tech, and work on a different arts and crafts project each month. All materials and snacks will be provided. For tee</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b984f08d5e2d093365d8ce" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Anaconda (2025)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Bucktown-Wicker Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Please join us for a screening of Anaconda (2025). A group of childhood friends are going through a mid-life crisis. They decide to remake a favorite movie from their youth but encounter unexpected ev</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695ed1cd992fc18a86dc2b66" target="_blank" rel="noopener">
+      <span class="card-title">ESL Practice: English Conversation Group</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you want to learn English? Do you want to practice speaking and understanding English and improve your communications skills? Join our conversation group with Literacy Chicago and improve your abil</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Tuesday, April 14</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/69af3edf81b67dfe32ab7a21" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Unsung Hero (2024)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a screening of Unsung Hero. In Nashville in the 1990s, Helen Smallbone is an average suburban mother who once nurtured significant aspirations close to her heart. Her indomitable spirit in</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/neurodivergent-family-night-4-2026-04-14/" target="_blank" rel="noopener">
+      <span class="card-title">Neurodivergent Family Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Join us for a free evening where children and caretakers are invited to play in a sensory-friendly, neuro-affirming environment! We encourage the whole family to attend, and therapists can join as wel</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6984ff73cbf1533ca536307a" target="_blank" rel="noopener">
+      <span class="card-title">High School Maker Drop In</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us in our YOUmedia space for some hands on assistance using our maker equipment. Choose from our 3D printer, Cricut vinyl cutter, sewing machine, and more. We also have craft and art supplies ava</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6977e3c06724c63d00ee841a" target="_blank" rel="noopener">
+      <span class="card-title">YOUmedia Open Shop</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Whitney M. Young Jr.</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Curious to learn a new skill? Need homework help? Or do you just want to take the time to geek out with friends? At YOUmedia Open Shop, you can do all of the above! Step right up and into things you h</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Wednesday, April 15</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/we-read-wednesdays-with-empowering-readers-oc/" target="_blank" rel="noopener">
+      <span class="card-title">We Read Wednesdays with Empowering Readers OC</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Pretend City Children’s Museum and Parentis Foundation are partnering for something truly magical at We Read Wednesdays, where Littles and Grans read together! Our wonderful Empowering Readers OC read</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a86c5f2866a5b4883fd8a9" target="_blank" rel="noopener">
+      <span class="card-title">Tummy Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for an introduction to story time for babies. This 20-minute interactive story time includes stories, songs, fingerplays and bounces specifically designed for babies who have not yet started w</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698cc06b8d5e2d09335e870c" target="_blank" rel="noopener">
+      <span class="card-title">Big Kid Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Merlo</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Need a break after a long day of school? Librarians Andy and Alex help you unwind by sharing some great stories! We also have paper and drawing tools, in case you want to doodle or draw while you list</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2df" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Daley Richard J.-Bridgeport</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">What can you make with a pile of LEGO® bricks? Complete LEGO® challenges with free build time to follow. Bring your imagination and use our LEGO® collection to create something awesome! For kids 5 to</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aed6ef45f57dfccb19601c" target="_blank" rel="noopener">
+      <span class="card-title">Teen Zone</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin-Irving</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Stop by Teen Zone with a friend or by yourself to hangout and see what we&#x27;re up to. This is a teen program for ages 13-19. Accessibility Need sign language interpretation or other accessibility assist</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aee01d81b67dfe32ab5724" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Thurgood Marshall</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all LEGO enthusiasts and engineers! We show you how to build with mini bricks as we take on building challenges and do some open-ended free play. Join us to make new friends while building STE</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Thursday, April 16</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/695c329b1f01fb76cec4def2" target="_blank" rel="noopener">
+      <span class="card-title">AI for Visual Disabilities</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Curious about Artificial Intelligence (AI) and what it means for everyday life? AI can help those experiencing loss of vision to experience enhanced independence with everyday life and tasks such as r</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/cooking-in-the-city-4/" target="_blank" rel="noopener">
+      <span class="card-title">Cooking in the City</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Join us in imaginative cooking with REAL tasty food from Lebanon.
+
+Cooking Activities: 11 am &amp;amp; 2:30 pm
+
+*This is not a cooking class; we will engage in imaginative play and have an opportunity to</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6983b6ac3cc3e0c9ecb72498" target="_blank" rel="noopener">
+      <span class="card-title">Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Clearing</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for story time especially for our littlest patrons! We share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their caregivers. How to Attend Register by t</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69330d2a4be11d3d00d6988b" target="_blank" rel="noopener">
+      <span class="card-title">Jewelry Making</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Wrightwood-Ashburn</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for jewelry making every Thursday! Please bring your own supplies. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b82546e2a2952aed08706f" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Club</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL McKinley Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all LEGO enthusiasts! Complete one of our design challenges or let your imagination run wild. LEGO bricks and materials are provided. For kids 6 to 13. Accessibility Need sign language interpr</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a6f7524dacf581ff7f4118" target="_blank" rel="noopener">
+      <span class="card-title">Little Readers Book Club!</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Back of the Yards</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for a weekly book club where we practice reading with a buddy, play phonics and word games, and have lots of fun! For children 4 and up. Accessibility Need sign language interpretation or othe</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Saturday, April 18</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/good-to-go-fair-2/" target="_blank" rel="noopener">
+      <span class="card-title">Good to Go Fair</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Pretend City Children’s Museum Good To Go Fair: A FREE Family-Friendly Event! This FREE event is perfect for families with children ages 0-5. Enjoy a variety of activities, resources, and services des</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69330b6904caba2f00d36952" target="_blank" rel="noopener">
+      <span class="card-title">Saturday Game Day</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us every Saturday for Saturday Game Day. This is a drop-in program. Bring a game or play one of ours: UNO, Skip-bo, Mexican Train, Scrabble, Outburst, Upwards, Rummy 500, Canasta, Chess, Checkers</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a725972866a5b4883f9b18" target="_blank" rel="noopener">
+      <span class="card-title">Día de los niños y libros: A Celebration of Children and Books</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for an open house celebration with play and art activities, music, storytelling, book giveaways and special guests. For kids of all ages and their families. Acompáñanos para una celebración de</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/6984ff8ba5d80ac492707044" target="_blank" rel="noopener">
+      <span class="card-title">Tabletop Gaming Open Shop</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 1:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Interested in other roleplaying and wargaming tabletop games? Join us for open shop where we play Warhammer 40k, Age of Sigmar, Necromundo, Kill Team and alternative RPGs like Mork Borg, Black Crusade</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b1a5086583d22e3c0ea6fb" target="_blank" rel="noopener">
+      <span class="card-title">Masters Putt Putt Course</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 2:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Near North</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">In honor of last week&#x27;s Masters Tournament, come learn about the history of golf, get a few pointers and test your ability on the branch&#x27;s very own Chi-gusta National golf course. Putters and golf bal</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b025e2b0595799c0a21339" target="_blank" rel="noopener">
+      <span class="card-title">Teen Crafternoon</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Whitney M. Young Jr.</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us at Whitney Young&#x27;s YOUMedia for a fun afternoon full of creativity! Come by to make a keychain, bracelet, bookmark and more. All materials provided. For teens 13 to 19. Accessibility Need sign</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Sunday, April 19</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/no-members-entry/2026-04-19/" target="_blank" rel="noopener">
+      <span class="card-title">No Member&amp;#8217;s Early Entry</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">No Member&amp;#8217;s Early Entry on Sundays</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Monday, April 20</h2>
+      <div class="cards"><a class="card" href="https://www.pretendcity.org/events/toddler-town-3/2026-04-20/" target="_blank" rel="noopener">
+      <span class="card-title">Toddler Town</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">We’re opening the city just for toddlers! 
+Climb, dance, problem-solve, and pretend your way through our miniature world, designed to support movement, connection, and big developmental leaps. 
+Design</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a29" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL North Pulaski</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Please join us for a 30-minute family story time. We will enjoy stories, rhymes and music. For kids 0 to 5 and their caregivers. Older children also welcome. How to Attend Registration is appreciated</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69c1746f67801235ed73f9c6" target="_blank" rel="noopener">
+      <span class="card-title">Grab and Go: Spice Club Kits (Paprika)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Archer Heights</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Visit Archer Heights&#x27; Adult Reference Desk for a spice kit to take home. Each kit will include a sample of the highlighted spice, as well as recipes and information on the spice&#x27;s cultural and histori</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/699caebb4dacf581ff7d5538" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® Night</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Blackstone</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Calling all LEGO® enthusiasts and engineers! We show you how to build with mini-bricks as we take on building challenges and do some open-ended free play. Join us to make new friends while building ST</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69b1982cdb89981d9df94c7d" target="_blank" rel="noopener">
+      <span class="card-title">Bilingual Story Time / Hora de cuentos bilingües</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for bilingual songs, stories and rhymes. For ages 0 to 5 and their caregivers. Únase a nosotros para disfrutar de canciones, cuentos y rimas bilingües. Para niños de 0 a 5 años y sus cuidadore</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a9a92b2866a5b4884011c4" target="_blank" rel="noopener">
+      <span class="card-title">Literary Lounge Book Club: Thriller</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Chinatown</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Getting back into reading? Want to try new genres? Join the Chinatown Branch for our Literary Lounge Book Club! Each month we will explore a new genre and discuss not only the book, but also elements</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695ed1cd992fc18a86dc2b67" target="_blank" rel="noopener">
+      <span class="card-title">ESL Practice: English Conversation Group</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 6:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Rogers Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you want to learn English? Do you want to practice speaking and understanding English and improve your communications skills? Join our conversation group with Literacy Chicago and improve your abil</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Tuesday, April 21</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c5c" target="_blank" rel="noopener">
+      <span class="card-title">Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 9:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Sulzer Regional</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join this story time especially for our littlest patrons! We’ll share songs, rhymes and books, plus suggestions for at-home activities. For kids 0 to 5 and their caregivers. Space may be limited. Acce</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a763cc8089f23c675fa1fd" target="_blank" rel="noopener">
+      <span class="card-title">Film Screening: Companion (2025)</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join the Austin staff for a screening of Companion . A couple&#x27;s weekend getaway with friends at a remote cabin unravels into chaos after a revelation that one of the guests is a companion robot. ©Warn</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c182b" target="_blank" rel="noopener">
+      <span class="card-title">LEGO® at the Library</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Edgewater</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you like building different objects and making your imagination come to life? If so, drop in for some design challenges and open play time with our collection of LEGO® bricks! Afterwards, we will d</p>
+    </a></div>
+    </section>
+
+    <section class="day-section">
+      <h2 class="day-header">Wednesday, April 22</h2>
+      <div class="cards"><a class="card" href="https://chipublib.bibliocommons.com/events/6915f9c62ea1b1300084a809" target="_blank" rel="noopener">
+      <span class="card-title">Family Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 10:30 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Independence</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join our story time, especially for our littlest patrons. We share songs, rhymes and books, then stay to play afterward. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpre</p>
+    </a><a class="card" href="https://www.pretendcity.org/events/earth-day-in-the-city/" target="_blank" rel="noopener">
+      <span class="card-title">Earth Day in the City</span>
+      <span class="badge-area"></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:00 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Pretend City Children&#x27;s Museum - Events</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg> 5.8 mi</span></div>
+      <p class="card-desc">Celebrate Earth Day at Pretend City with activities that help children learn how to care for our planet. Families are invited to explore simple, hands-on experiences that highlight nature, conservatio</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69a877af8d5e2d093363193b" target="_blank" rel="noopener">
+      <span class="card-title">Baby and Toddler Story Time</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 11:15 AM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Jefferson Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join us for this story time tailored for you and your baby or toddler. We share songs, rhymes and books. For children birth to 3 years and their caregivers. Accessibility Need sign language interpreta</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69bc5f4b4dacf581ff832f26" target="_blank" rel="noopener">
+      <span class="card-title">Teen Volunteer Hours</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3:45 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Garfield Ridge</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Do you need volunteer hours for school? Join us for different volunteer activities like making handmade cards, helping prepare crafts for the library, and more. Please bring any forms you need signed.</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69c19a764dacf581ff83e829" target="_blank" rel="noopener">
+      <span class="card-title">Band Patch Making</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Harold Washington Library Center</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Swing by YOUmedia for our band patch making drop in. Artistry supplies will be available for those who want to create their own nu-metal punk and emo adjacent designs. We hope to see you there! Access</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/69aed6ef45f57dfccb19601d" target="_blank" rel="noopener">
+      <span class="card-title">Teen Zone</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 4:00 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL Austin-Irving</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Stop by Teen Zone with a friend or by yourself to hangout and see what we&#x27;re up to. This is a teen program for ages 13-19. Accessibility Need sign language interpretation or other accessibility assist</p>
+    </a><a class="card" href="https://chipublib.bibliocommons.com/events/695c31b96faf374bd592a31d" target="_blank" rel="noopener">
+      <span class="card-title">Adult Book Club: Malibu Rising</span>
+      <span class="badge-area"><span class="badge badge-free">Free</span></span>
+      <div class="card-meta"><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5:30 PM</span><span class="meta-item"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> CPL McKinley Park</span><span class="meta-item">· Irvine Public Library - Events</span></div>
+      <p class="card-desc">Join McKinley Park for a discussion of a different book each month. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or emai</p>
+    </a></div>
+    </section>
+
+  <footer>Generated March 23, 2026 at 05:56 PM PDT</footer>
+</body>
+</html>
