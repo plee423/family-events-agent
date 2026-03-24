@@ -1,8 +1,7 @@
 {
-  "version": 2,
-  "public": true,
+  "framework": null,
   "outputDirectory": "public",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/$1" }
-  ]
+  "buildCommand": null,
+  "installCommand": null,
+  "devCommand": null
 }
