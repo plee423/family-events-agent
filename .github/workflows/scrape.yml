@@ -128,6 +128,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history — shallow clones can break rebase in edge cases
 
       - name: Download Chicago outputs
         uses: actions/download-artifact@v4
@@ -189,18 +191,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage and commit first — this cleans the working tree so that
-          # git pull --rebase can run without "unstaged changes" errors
           git add public/ output/ cache/geocode_cache.json
           git diff --staged --quiet && echo "Nothing to commit" && exit 0
           git commit -m "chore: update events $(date -u +%Y-%m-%d)"
 
-          # Push with retry. If remote advanced, rebase our commit on top.
-          # -X theirs: on content conflict, take our version (fresh scrape outputs always win).
+          # fetch-rebase-push: always fetch latest before pushing.
+          # Failure window is milliseconds (between rebase and push), not minutes.
+          # -X theirs: on conflict, take our version (fresh scrape always wins).
           for attempt in 1 2 3; do
+            git fetch origin master
+            git rebase -X theirs origin/master || { git rebase --abort; echo "Rebase failed"; exit 1; }
             git push origin master && exit 0
-            echo "Push attempt $attempt failed — rebasing on remote..."
-            git pull --rebase -X theirs origin master || { echo "Rebase failed"; exit 1; }
+            echo "Push attempt $attempt failed (remote advanced between rebase and push)"
           done
-          # Final push after the last rebase
-          git push origin master || { echo "Push failed after all retries"; exit 1; }
+          echo "Push failed after 3 attempts"; exit 1
