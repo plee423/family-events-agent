@@ -6,6 +6,11 @@ on:
     - cron: "0 8 * * *"
   workflow_dispatch: # Allow manual trigger from GitHub UI
 
+# Only one run at a time — cancel any in-progress run when a new one starts
+concurrency:
+  group: scrape-events
+  cancel-in-progress: true
+
 permissions:
   contents: write # Needed to commit outputs back to the repo
 
@@ -190,12 +195,12 @@ jobs:
           git diff --staged --quiet && echo "Nothing to commit" && exit 0
           git commit -m "chore: update events $(date -u +%Y-%m-%d)"
 
-          # Push with retry: if remote advanced since checkout, pull --rebase
-          # replays our commit on top, then retry push. 3 rebases + final push = 4 attempts.
+          # Push with retry. If remote advanced, rebase our commit on top.
+          # -X theirs: on content conflict, take our version (fresh scrape outputs always win).
           for attempt in 1 2 3; do
             git push origin master && exit 0
             echo "Push attempt $attempt failed — rebasing on remote..."
-            git pull --rebase origin master || { echo "Rebase conflict — aborting"; exit 1; }
+            git pull --rebase -X theirs origin master || { echo "Rebase failed"; exit 1; }
           done
           # Final push after the last rebase
           git push origin master || { echo "Push failed after all retries"; exit 1; }
