@@ -1,29 +1,326 @@
 {
-  "700 E Grand Ave, Chicago, IL 60611": [41.8918, -87.6082],
-  "2430 N Cannon Dr, Chicago, IL 60614": [41.9317, -87.6367],
-  "4736 N Lincoln Ave, Chicago, IL 60625": [41.9669, -87.6836],
-  "1601 N Clark St, Chicago, IL 60614": [41.9212, -87.6320],
-  "Field Museum - Events, Chicago, IL": [41.8661, -87.6169],
-  "Field Museum - Free Wednesdays, Chicago, IL": [41.8661, -87.6169],
-  "Art Institute of Chicago - Events, Chicago, IL": [41.8796, -87.6237],
-  "Lincoln Park Zoo - Events, Chicago, IL": [41.9213, -87.6346],
-  "Navy Pier - Events, Chicago, IL": [41.8918, -87.6052],
-  "National Museum of Mexican Art - Events, Chicago, IL": [41.8566, -87.6722],
-  "Millennium Park, Chicago, IL": [41.8827, -87.6233],
-  "Chicago Cultural Center, Chicago, IL": [41.8836, -87.6248],
-  "Chicago Park District - Toddler Programs, Chicago, IL": [41.8827, -87.6233],
-  "Chicago Park District - Baby Programs, Chicago, IL": [41.8827, -87.6233],
-  "Chicago Public Library, Chicago, IL": [41.8560, -87.6242],
-  "Chicago History Museum - Events, Chicago, IL": [41.9212, -87.6320],
-  "Chicago Children's Museum - Program Calendar, Chicago, IL": [41.8918, -87.6082],
-  "Peggy Notebaert Nature Museum - Events, Chicago, IL": [41.9317, -87.6367],
-  "The Book Cellar - Events, Chicago, IL": [41.9669, -87.6836],
-  "29 Hubble, Irvine, CA, 92618": [33.6614, -117.7550],
-  "29 Hubble, Irvine, CA 92618": [33.6614, -117.7550],
-  "2002 N Main St, Santa Ana, CA 92706": [33.7566, -117.8743],
-  "2500 N Main St, Santa Ana, CA 92705": [33.7600, -117.8755],
-  "Pretend City Children's Museum - Events, Irvine, CA": [33.6614, -117.7550],
-  "Bowers Museum - Events, Irvine, CA": [33.7566, -117.8743],
-  "Discovery Cube OC - Events, Irvine, CA": [33.7600, -117.8755],
-  "City of Irvine - Events, Irvine, CA": [33.6846, -117.8265]
+  "700 E Grand Ave, Chicago, IL 60611": [
+    41.8918,
+    -87.6082
+  ],
+  "2430 N Cannon Dr, Chicago, IL 60614": [
+    41.9317,
+    -87.6367
+  ],
+  "4736 N Lincoln Ave, Chicago, IL 60625": [
+    41.9669,
+    -87.6836
+  ],
+  "1601 N Clark St, Chicago, IL 60614": [
+    41.9212,
+    -87.632
+  ],
+  "Field Museum - Events, Chicago, IL": [
+    41.8661,
+    -87.6169
+  ],
+  "Field Museum - Free Wednesdays, Chicago, IL": [
+    41.8661,
+    -87.6169
+  ],
+  "Art Institute of Chicago - Events, Chicago, IL": [
+    41.8796,
+    -87.6237
+  ],
+  "Lincoln Park Zoo - Events, Chicago, IL": [
+    41.9213,
+    -87.6346
+  ],
+  "Navy Pier - Events, Chicago, IL": [
+    41.8918,
+    -87.6052
+  ],
+  "National Museum of Mexican Art - Events, Chicago, IL": [
+    41.8566,
+    -87.6722
+  ],
+  "Millennium Park, Chicago, IL": [
+    41.8827,
+    -87.6233
+  ],
+  "Chicago Cultural Center, Chicago, IL": [
+    41.8836,
+    -87.6248
+  ],
+  "Chicago Park District - Toddler Programs, Chicago, IL": [
+    41.8827,
+    -87.6233
+  ],
+  "Chicago Park District - Baby Programs, Chicago, IL": [
+    41.8827,
+    -87.6233
+  ],
+  "Chicago Public Library, Chicago, IL": [
+    41.856,
+    -87.6242
+  ],
+  "Chicago History Museum - Events, Chicago, IL": [
+    41.9212,
+    -87.632
+  ],
+  "Chicago Children's Museum - Program Calendar, Chicago, IL": [
+    41.8918,
+    -87.6082
+  ],
+  "Peggy Notebaert Nature Museum - Events, Chicago, IL": [
+    41.9317,
+    -87.6367
+  ],
+  "The Book Cellar - Events, Chicago, IL": [
+    41.9669,
+    -87.6836
+  ],
+  "29 Hubble, Irvine, CA, 92618": [
+    33.6614,
+    -117.755
+  ],
+  "29 Hubble, Irvine, CA 92618": [
+    33.6614,
+    -117.755
+  ],
+  "2002 N Main St, Santa Ana, CA 92706": [
+    33.7566,
+    -117.8743
+  ],
+  "2500 N Main St, Santa Ana, CA 92705": [
+    33.76,
+    -117.8755
+  ],
+  "Pretend City Children's Museum - Events, Irvine, CA": [
+    33.6614,
+    -117.755
+  ],
+  "Bowers Museum - Events, Irvine, CA": [
+    33.7566,
+    -117.8743
+  ],
+  "Discovery Cube OC - Events, Irvine, CA": [
+    33.76,
+    -117.8755
+  ],
+  "City of Irvine - Events, Irvine, CA": [
+    33.6846,
+    -117.8265
+  ],
+  "Chicago Cultural Center, 78 E. Washington St., Chicago, IL, 60602": [
+    41.8838628,
+    -87.6248023
+  ],
+  "Clearing, Chicago, IL": [
+    41.780588,
+    -87.7733881
+  ],
+  "West Belmont, Chicago, IL": [
+    41.9390937,
+    -87.727381
+  ],
+  "Sulzer Regional, Chicago, IL": [
+    41.9627403,
+    -87.684373
+  ],
+  "Toman, Chicago, IL": [
+    41.8420872,
+    -87.7248532
+  ],
+  "Hegewisch, Chicago, IL": [
+    41.6536462,
+    -87.5469885
+  ],
+  "Harold Washington Library Center, Chicago, IL": [
+    41.8762833,
+    -87.6282117
+  ],
+  "Rogers Park, Chicago, IL": [
+    42.0090367,
+    -87.6768492
+  ],
+  "Archer Heights, Chicago, IL": [
+    41.811404,
+    -87.7261852
+  ],
+  "Coleman, Chicago, IL": [
+    41.7964389,
+    -87.6035145
+  ],
+  "Walker, Chicago, IL": [
+    41.6921811,
+    -87.6737412
+  ],
+  "Budlong Woods, Chicago, IL": [
+    41.9794969,
+    -87.6965959
+  ],
+  "Austin, Chicago, IL": [
+    41.8880316,
+    -87.7648642
+  ],
+  "West Englewood, Chicago, IL": [
+    41.7780891,
+    -87.6667177
+  ],
+  "Douglass, Chicago, IL": [
+    41.8600662,
+    -87.6993547
+  ],
+  "McKinley Park, Chicago, IL": [
+    41.8316997,
+    -87.6736638
+  ],
+  "Back of the Yards, Chicago, IL": [
+    41.8047789,
+    -87.6648733
+  ],
+  "Manning, Chicago, IL": [
+    41.8810057,
+    -87.6795649
+  ],
+  "Beverly, Chicago, IL": [
+    41.7181532,
+    -87.6717674
+  ],
+  "Merlo, Chicago, IL": [
+    41.9403417,
+    -87.6462117
+  ],
+  "Kelly, Chicago, IL": [
+    41.8186288,
+    -87.695149
+  ],
+  "Bezazian, Chicago, IL": [
+    41.971654,
+    -87.6607453
+  ],
+  "Blackstone, Chicago, IL": [
+    41.8733563,
+    -87.6247907
+  ],
+  "Chinatown, Chicago, IL": [
+    41.8516579,
+    -87.6331383
+  ],
+  "Thurgood Marshall, Chicago, IL": [
+    41.7572624,
+    -87.6543908
+  ],
+  "Dunning, Chicago, IL": [
+    41.9528569,
+    -87.7965217
+  ],
+  "Bucktown-Wicker Park, Chicago, IL": [
+    41.9177654,
+    -87.6776158
+  ],
+  "Roden, Chicago, IL": [
+    41.9921287,
+    -87.7980273
+  ],
+  "Jefferson Park, Chicago, IL": [
+    41.9706399,
+    -87.760826
+  ],
+  "Chicago Lawn, Chicago, IL": [
+    41.7750332,
+    -87.6964408
+  ],
+  "Little Italy, Chicago, IL": [
+    41.8694309,
+    -87.656756
+  ],
+  "Garfield Ridge, Chicago, IL": [
+    41.792571,
+    -87.7821294
+  ],
+  "Austin-Irving, Chicago, IL": [
+    41.953181,
+    -87.776538
+  ],
+  "Whitney M. Young Jr., Chicago, IL": [
+    41.7509255,
+    -87.614542
+  ],
+  "Little Village, Chicago, IL": [
+    41.8443903,
+    -87.7147969
+  ],
+  "Portage-Cragin, Chicago, IL": [
+    41.9390072,
+    -87.7468819
+  ],
+  "Near North, Chicago, IL": [
+    41.8999648,
+    -87.6345914
+  ],
+  "Brighton Park, Chicago, IL": [
+    41.8189217,
+    -87.6989421
+  ],
+  "Avalon, Chicago, IL": [
+    41.7450346,
+    -87.5886584
+  ],
+  "Edgewater, Chicago, IL": [
+    41.9833576,
+    -87.6639578
+  ],
+  "West Lawn, Chicago, IL": [
+    41.7728107,
+    -87.722275
+  ],
+  "North Pulaski, Chicago, IL": [
+    41.9094572,
+    -87.7264878
+  ],
+  "Vodak-East Side, Chicago, IL": [
+    41.7029554,
+    -87.5336173
+  ],
+  "Wrightwood-Ashburn, Chicago, IL": [
+    41.7489324,
+    -87.7035753
+  ],
+  "Sherman Park, Chicago, IL": [
+    41.7968635,
+    -87.6573785
+  ],
+  "Independence, Chicago, IL": [
+    41.9525774,
+    -87.7238809
+  ],
+  "Humboldt Park, Chicago, IL": [
+    41.9027884,
+    -87.7209107
+  ],
+  "Legler Regional, Chicago, IL": [
+    41.879318,
+    -87.7252852
+  ],
+  "North Austin, Chicago, IL": [
+    41.9466838,
+    -87.7765326
+  ],
+  "Lincoln Belmont, Chicago, IL": [
+    41.9396415,
+    -87.6681306
+  ],
+  "Oriole Park, Chicago, IL": [
+    41.9789802,
+    -87.8153295
+  ],
+  "Quail Hill Trailhead, Irvine, CA": [
+    33.6539592,
+    -117.7831885
+  ],
+  "Quail Hill Community Center, Irvine, CA": [
+    33.6503871,
+    -117.7836141
+  ],
+  "Great Park Live, Irvine, CA": [
+    33.674071,
+    -117.7452016
+  ]
 }
