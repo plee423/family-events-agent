@@ -180,18 +180,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Pull latest before staging so our commit is based on current remote HEAD
-          git pull --rebase origin master
-
+          # Stage and commit first — this cleans the working tree so that
+          # git pull --rebase can run without "unstaged changes" errors
           git add public/ output/ cache/geocode_cache.json
           git diff --staged --quiet && echo "Nothing to commit" && exit 0
           git commit -m "chore: update events $(date -u +%Y-%m-%d)"
 
-          # Retry push up to 3 times — handles race where remote advances between
-          # our pull and our push (e.g. another workflow run or a user push)
+          # Push with retry: if remote advanced since checkout, pull --rebase
+          # replays our commit on top, then retry push. 3 rebases + final push = 4 attempts.
           for attempt in 1 2 3; do
             git push origin master && exit 0
-            echo "Push attempt $attempt failed — pulling and retrying..."
-            git pull --rebase origin master
+            echo "Push attempt $attempt failed — rebasing on remote..."
+            git pull --rebase origin master || { echo "Rebase conflict — aborting"; exit 1; }
           done
-          echo "Push failed after 3 attempts" && exit 1
+          # Final push after the last rebase
+          git push origin master || { echo "Push failed after all retries"; exit 1; }
