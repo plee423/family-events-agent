@@ -63,6 +63,7 @@ class TockifyScraper(BaseScraper):
         max_per_page = int(source_config.get("max_per_page", 50))
         location_name = source_config.get("location_name", org_name)
         location_address = source_config.get("location_address", "")
+        website_fallback = source_config.get("website", "")
 
         if not cal_name:
             self.logger.error("tockify_calendar not configured for %s", org_name)
@@ -125,7 +126,7 @@ class TockifyScraper(BaseScraper):
                     location_name=location_name,
                     location_address=location_address,
                     description=description,
-                    url="",  # Tockify API doesn't return per-event URLs
+                    url=website_fallback,  # Tockify API doesn't return per-event URLs; fall back to org programs page
                     cost=cost_hint,
                     is_free=is_free,
                     age_range=age_hint,

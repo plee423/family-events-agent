@@ -78,6 +78,17 @@ sources:
       link: "h2 a, h3 a"
     tags: ["science", "kids", "family", "stem", "museum"]
 
+  # ── Eventbrite ────────────────────────────────────────────────────────────────
+
+  - name: "Eventbrite - Irvine Family Events"
+    org_type: "eventbrite"
+    url: "https://www.eventbriteapi.com/v3/events/search/"
+    scraper: "eventbrite"
+    keywords: "baby toddler storytime family kids infant preschool children"
+    max_pages: 5
+    tags: ["family", "community", "kids"]
+    age_hint: "0-60 months"
+
   # ── Parks & City Events ───────────────────────────────────────────────────────
 
   - name: "City of Irvine - Events"

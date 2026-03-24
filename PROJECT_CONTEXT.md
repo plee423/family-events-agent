@@ -184,7 +184,7 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-23 (session 4)
+- **Last updated:** 2026-03-24 (session 4)
 - **Git:** Single commit — "Initial commit: family events agent project"
 - **Status:** Pipeline fully working. Web app + GitHub Actions workflow added. Ready for Vercel deploy and first full --no-cache run.
 
@@ -264,6 +264,14 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `.github/workflows/scrape.yml`: Playwright browser cache via `actions/cache@v4` — key on `requirements.txt` hash. Cache hit skips `--with-deps` (saves ~1-2 min per city job).
 - `cache/geocode_cache.json`: Pre-populated with all known Chicago + Irvine fixed venues (28 entries). Committed to repo — `.gitignore` updated with `!cache/geocode_cache.json` exception. Workflow now merges geocache from both city jobs and commits back → accumulated geocodes persist across nightly runs.
 - Workflow `commit-outputs` job: uploads `chicago-geocache` + `irvine-geocache` artifacts, downloads + Python-merges in commit job, `git add cache/geocode_cache.json` added to commit.
+
+### New scrapers / fixes (session 4 continued)
+- `scrapers/tockify_scraper.py`: reads `website` field from source config as fallback URL when Tockify API returns no per-event URLs. Chicago Children's Museum events now link to programs page.
+- `config/sources.yaml`: added `website: "https://chicagochildrensmuseum.org/visit/programs/"` to CCM source.
+- `config/sources.yaml`: added dedicated `Chicago Public Library - Harold Washington` and `Chicago Public Library - Near North` sources with `branch_filter` — ensures downtown branches appear regardless of main CPL pagination order.
+- `scrapers/eventbrite_scraper.py`: new scraper for Eventbrite public search API. Searches by lat/lng + radius + keywords. Requires `EVENTBRITE_TOKEN` env var (free developer account). Gracefully skips (logs warning, returns []) if token absent — pipeline continues.
+- `config/sources.yaml` + `config/sources_irvine.yaml`: added Eventbrite source entries for Chicago and Irvine.
+- `.github/workflows/scrape.yml`: passes `EVENTBRITE_TOKEN` secret as env var to both scrape jobs.
 
 ### Known issues / next steps
 - **Deploy to Vercel:** Push repo to GitHub, connect to Vercel (import project → auto-detects `public/` → deploy)

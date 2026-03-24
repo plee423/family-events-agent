@@ -14,6 +14,30 @@ sources:
     age_hint: "0-60 months"
     cost: "free"
 
+  - name: "Chicago Public Library - Harold Washington"
+    org_type: "library"
+    url: "https://gateway.bibliocommons.com/v2/libraries/chipublib/events"
+    scraper: "bibliocommons"
+    library_id: "chipublib"
+    audiences: "babies_and_toddlers"
+    branch_filter: ["Harold Washington"]
+    max_pages: 50
+    tags: ["storytime", "library", "baby", "toddler", "reading"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "Chicago Public Library - Near North"
+    org_type: "library"
+    url: "https://gateway.bibliocommons.com/v2/libraries/chipublib/events"
+    scraper: "bibliocommons"
+    library_id: "chipublib"
+    audiences: "babies_and_toddlers"
+    branch_filter: ["Near North"]
+    max_pages: 50
+    tags: ["storytime", "library", "baby", "toddler", "reading"]
+    age_hint: "0-60 months"
+    cost: "free"
+
   # ─── MUSEUMS ─────────────────────────────────────────────────────────────────
 
   - name: "Field Museum - Free Wednesdays"
@@ -99,9 +123,11 @@ sources:
     # Switched from browser scraper to Tockify REST API.
     # The site delegates 100% to a Tockify JS widget — no HTML events exist.
     # Tockify API confirmed working, no auth required.
+    # Tockify API does not return per-event URLs — website field used as fallback.
     url: "https://api.tockify.com/api/ngevent"
     scraper: "tockify"
     tockify_calendar: "chicagochildrensmuseum"
+    website: "https://chicagochildrensmuseum.org/visit/programs/"
     location_name: "Chicago Children's Museum"
     location_address: "700 E Grand Ave, Chicago, IL 60611"
     max_per_page: 50
@@ -219,6 +245,20 @@ sources:
     tags: ["bookstore", "storytime", "reading", "kids", "family"]
     age_hint: "0-60 months"
     cost: "free"
+
+  # ─── EVENTBRITE ──────────────────────────────────────────────────────────────
+  # Catches one-off family events from small neighborhood orgs not otherwise scraped.
+  # Requires EVENTBRITE_TOKEN env var (free developer account at eventbrite.com/platform).
+  # If token is missing the scraper logs a warning and returns 0 events — pipeline continues.
+
+  - name: "Eventbrite - Chicago Family Events"
+    org_type: "eventbrite"
+    url: "https://www.eventbriteapi.com/v3/events/search/"
+    scraper: "eventbrite"
+    keywords: "baby toddler storytime family kids infant preschool children lapsit"
+    max_pages: 5
+    tags: ["family", "community", "kids"]
+    age_hint: "0-60 months"
 
   # ─── REMOVED SOURCES ─────────────────────────────────────────────────────────
   # Griffin MSI — Illinois Free Days:

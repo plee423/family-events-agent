@@ -45,6 +45,8 @@ jobs:
 
       - name: Scrape Chicago events
         run: python agent.py run --no-cache
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
       - name: Upload Chicago outputs
         uses: actions/upload-artifact@v4
@@ -94,6 +96,8 @@ jobs:
 
       - name: Scrape Irvine events
         run: python agent.py run --location irvine --no-cache
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
       - name: Upload Irvine outputs
         uses: actions/upload-artifact@v4

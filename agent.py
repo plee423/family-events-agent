@@ -189,6 +189,9 @@ def get_scraper(scraper_type: str, settings: dict):
     elif scraper_type == "nature_museum":
         from scrapers.nature_museum_scraper import NatureMuseumScraper
         return NatureMuseumScraper(settings)
+    elif scraper_type == "eventbrite":
+        from scrapers.eventbrite_scraper import EventbriteScraper
+        return EventbriteScraper(settings)
     else:
         raise ValueError(f"Unknown scraper type: {scraper_type!r}")
 
