@@ -1,0 +1,22 @@
+# Irvine, CA overrides — merged on top of settings.yaml at runtime.
+# Only fields that differ from the Chicago defaults are listed here.
+
+child:
+  birth_date: "2025-03-01"
+  age_range_months: [0, 36]
+
+location:
+  city: "Irvine"
+  state: "CA"
+  zip: "92602"
+  home_lat: 33.6846
+  home_lng: -117.8265
+  max_radius_miles: 15
+  timezone: "America/Los_Angeles"
+
+output:
+  filename_template: "events_irvine_{start}_{end}.ics"
+  json_filename: "events_irvine.json"
+  html_filename: "events_irvine.html"
+  calendar_name: "Irvine Family Events"
+  calendar_color: "#FF6B9D"

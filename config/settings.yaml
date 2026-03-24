@@ -40,6 +40,8 @@ preferences:
 
 output:
   filename_template: "family_events_{start}_{end}.ics"
+  json_filename: "events_chicago.json"
+  html_filename: "events_chicago.html"
   calendar_name: "Family Events"
   calendar_color: "#FF6B9D"
 

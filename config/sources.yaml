@@ -59,14 +59,10 @@ sources:
 
   - name: "Chicago History Museum - Events"
     org_type: "museum"
-    url: "https://calendar.chicagohistory.org/events/list/"
-    scraper: "browser"
-    selectors:
-      event_card: ".tribe-event, article.type-tribe_events, .tribe-events-list-event-description"
-      title: "h2.tribe-event-url, .tribe-event-url, h2 a, h3 a"
-      date: ".tribe-event-schedule-details, .tribe-events-schedule, abbr.tribe-events-abbr"
-      location: ".tribe-venue, .tribe-venue-location"
-      link: "a.tribe-event-url, h2 a"
+    # Switched from browser scraper to Tribe Events REST API (site is JS-rendered).
+    # API returns 230+ events with full pagination via next_rest_url.
+    url: "https://calendar.chicagohistory.org/wp-json/tribe/events/v1/events?per_page=50"
+    scraper: "tribe_events"
     tags: ["museum", "history", "family"]
     cost: "free (IL residents)"
 
@@ -74,12 +70,15 @@ sources:
     org_type: "museum"
     url: "https://nationalmuseumofmexicanart.org/events"
     scraper: "browser"
+    # NOTE: Site is a custom AREA 17 build (NOT WordPress). All Tribe/WP selectors are wrong.
+    # Page may be partially JS-rendered. Selectors below need validation via browser DevTools.
+    # No public API or iCal feed found. Try /events.ics manually if this still returns 0.
     selectors:
-      event_card: "article.post, article.tribe_events_cat, .tribe-event, .tribe-events-calendar-list__event-article"
-      title: "h2.tribe-event-url a, h2 a, .tribe-event-title a, h3.tribe-block__events-pro__event-title a"
-      date: ".tribe-event-schedule-details, .tribe-events-schedule, time"
-      location: ".tribe-venue, .tribe-venue-name"
-      link: "h2 a, .tribe-event-title a"
+      event_card: ".Events--listing li, ul li, li"
+      title: "a"
+      date: "p, span, div"
+      location: "p, span, div"
+      link: "a"
     tags: ["museum", "free", "culture", "family"]
     cost: "always free"
 
@@ -87,6 +86,9 @@ sources:
     org_type: "museum"
     url: "https://naturemuseum.org/events"
     scraper: "browser"
+    # NOTE: Event data IS present in server HTML but CSS class names are opaque/minified
+    # (headless CMS, not WordPress). Selectors below need validation via browser DevTools
+    # on the live rendered page. No public API or iCal feed found.
     selectors:
       event_card: "article, .event-card, .tribe-event, .views-row"
       title: "h2, h3, .event-title, .entry-title"
@@ -98,15 +100,17 @@ sources:
 
   - name: "Chicago Children's Museum - Program Calendar"
     org_type: "museum"
-    url: "https://www.chicagochildrensmuseum.org/program-calendar"
-    scraper: "browser"
-    selectors:
-      event_card: "article, .program-card, .sqs-block, [class*='EventCard'], [class*='summary']"
-      title: "h2, h3, [class*='title'], [class*='Title']"
-      date: "time, [class*='date'], [class*='Date'], .event-date"
-      location: "[class*='location'], .venue"
-      link: "a"
+    # Switched from browser scraper to Tockify REST API.
+    # The site delegates 100% to a Tockify JS widget — no HTML events exist.
+    # Tockify API confirmed working, no auth required.
+    url: "https://api.tockify.com/api/ngevent"
+    scraper: "tockify"
+    tockify_calendar: "chicagochildrensmuseum"
+    location_name: "Chicago Children's Museum"
+    location_address: "700 E Grand Ave, Chicago, IL 60611"
+    max_per_page: 50
     tags: ["museum", "children", "play", "toddler", "family"]
+    age_hint: "0-60 months"
     cost: "free first Sunday (Chicago residents)"
 
   # ─── PARKS & RECREATION ──────────────────────────────────────────────────────
@@ -129,7 +133,9 @@ sources:
 
   - name: "Chicago Park District - Baby Programs"
     org_type: "parks"
-    url: "https://anc.apm.activecommunities.com/chicagoparkdistrict/activity/search?activity_select_param=2&viewMode=list&activity_keyword=infant"
+    # Changed keyword from "infant" to "baby" — "infant" returns 0 results and causes
+    # a 15s wait_selector timeout. "baby" returns results with identical selectors.
+    url: "https://anc.apm.activecommunities.com/chicagoparkdistrict/activity/search?activity_select_param=2&viewMode=list&activity_keyword=baby"
     scraper: "browser"
     wait_selector: ".activity-card"
     selectors:
@@ -142,31 +148,6 @@ sources:
       description: ".activity-card-info__ages"
     tags: ["parks", "baby", "infant", "recreation", "classes"]
     age_hint: "0-18 months"
-
-  - name: "Maggie Daley Park - Events"
-    org_type: "parks"
-    url: "https://maggiedaleypark.com/"
-    scraper: "browser"
-    selectors:
-      event_card: "article, .event-card, .tribe-event, section[class*='event']"
-      title: "h2, h3, .event-title, .tribe-event-url"
-      date: "time, .event-date, .tribe-event-schedule-details"
-      location: ".location, .tribe-venue"
-      link: "a"
-    tags: ["park", "family", "outdoor", "play"]
-
-  - name: "Millennium Park - Events"
-    org_type: "parks"
-    url: "https://www.chicago.gov/city/en/depts/dca/supp_info/mp_calendar.html"
-    scraper: "browser"
-    selectors:
-      event_card: ".fc-event, .fc-list-event, .card, [class*='event']"
-      title: ".fc-event-title, .fc-list-event-title, h3, h4, .card-title, strong"
-      date: ".fc-list-event-time, time, .card-subtitle"
-      location: ".fc-list-event-dot, .location"
-      link: "a"
-    tags: ["park", "family", "outdoor", "free", "music"]
-    cost: "free"
 
   # ─── ZOOS & NATURE ───────────────────────────────────────────────────────────
 
@@ -190,6 +171,9 @@ sources:
     org_type: "aquarium"
     url: "https://www.sheddaquarium.org/programs-and-events"
     scraper: "browser"
+    # NOTE: Site returns HTTP 403 to all non-browser user agents (WAF/CDN block).
+    # Playwright with a real browser UA may bypass this. Investigate XHR calls in
+    # DevTools Network tab when page loads — likely uses Tessitura or similar ticketing API.
     selectors:
       event_card: "article, [class*='Card'], [class*='card'], .event-item"
       title: "h2, h3, [class*='title'], [class*='Title']"
@@ -199,31 +183,24 @@ sources:
     tags: ["aquarium", "animals", "family", "science"]
     cost: "free (IL residents certain hours)"
 
-  - name: "Griffin MSI - Illinois Free Days"
-    org_type: "museum"
-    url: "https://www.msichicago.org/visit/ticket-prices/offers-and-discounts/illinois-free-days"
-    scraper: "browser"
-    selectors:
-      event_card: "article, .views-row, [class*='card'], [class*='Card'], li.free-day"
-      title: "h2, h3, strong, [class*='title']"
-      date: "time, .date, [class*='date'], td"
-      location: ".location"
-      link: "a"
-    tags: ["museum", "free-day", "science", "family"]
-    cost: "free (IL residents)"
+  # ─── CULTURAL CENTERS & PARKS ────────────────────────────────────────────────
+  # Both Millennium Park and Chicago Cultural Center share the same AEM JSON endpoint.
+  # Events are filtered client-side by the 'tags' field.
+  # Endpoint confirmed live with ~125 events. Double-JSON-parse handled by chicago_aem scraper.
 
-  # ─── CULTURAL CENTERS ────────────────────────────────────────────────────────
+  - name: "Millennium Park - Events"
+    org_type: "parks"
+    url: "https://www.chicago.gov/content/city/en/depts/dca/supp_info/events2/jcr:content/parsys/fullcalendar/calendarData"
+    scraper: "chicago_aem"
+    tag_filter: "Millennium Park"
+    tags: ["park", "family", "outdoor", "free", "music"]
+    cost: "free"
 
   - name: "Chicago Cultural Center - Events"
     org_type: "cultural_center"
-    url: "https://www.chicago.gov/city/en/depts/dca/supp_info/ccc_calendar.html"
-    scraper: "browser"
-    selectors:
-      event_card: ".fc-event, .fc-list-event, .card, [class*='event-card']"
-      title: ".fc-event-title, .fc-list-event-title, h3, h4, .card-title, strong"
-      date: ".fc-list-event-time, time, .card-subtitle"
-      location: ".fc-list-event-dot, .location"
-      link: "a"
+    url: "https://www.chicago.gov/content/city/en/depts/dca/supp_info/events2/jcr:content/parsys/fullcalendar/calendarData"
+    scraper: "chicago_aem"
+    tag_filter: "Chicago Cultural Center"
     tags: ["culture", "family", "free", "arts"]
     cost: "always free"
 
@@ -245,10 +222,23 @@ sources:
     org_type: "bookstore"
     url: "https://www.bookcellarinc.com/calendar"
     scraper: "browser"
+    # Site runs Drupal (NOT WordPress). Events are in a plain HTML table.
+    # Structure confirmed: <td><a href="/event-slug">Title</a><div>Date text</div></td>
     selectors:
-      event_card: "article.post, article, .tribe-event, .tribe-events-calendar-list__event-article, li.tribe-event"
-      title: "h2.tribe-event-url a, h2 a, .tribe-event-title a, h1.entry-title a"
-      date: ".tribe-event-schedule-details, time, .tribe-events-schedule"
-      location: ".tribe-venue, .tribe-venue-name"
-      link: "h2 a, .tribe-event-title a, a[rel='bookmark']"
+      event_card: "td"
+      title: "a"
+      date: "div"
+      location: ""
+      link: "a"
     tags: ["bookstore", "storytime", "reading", "kids"]
+
+  # ─── REMOVED SOURCES ─────────────────────────────────────────────────────────
+  # Griffin MSI — Illinois Free Days:
+  #   Domain changed msichicago.org → griffinmsi.org. Site is fully React/JS-rendered.
+  #   The free-days page is a static policy page (not a calendar). Remove until a
+  #   Playwright scraper or public API is identified on griffinmsi.org.
+  #
+  # Maggie Daley Park:
+  #   maggiedaleypark.com has NO event calendar — it is a purely informational site.
+  #   The /events/ page shows seasonal activity status (open/closed), not dated events.
+  #   For Maggie Daley programming, use Chicago Park District sources above.

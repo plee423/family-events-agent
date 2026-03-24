@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FF6B9D">
+  <title>Family Events</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      padding-bottom: 3rem;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #FF6B9D 0%, #C44D8B 100%);
+      color: white;
+      padding: 1.2rem 1rem 0.8rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; }
+
+    .city-select {
+      background: rgba(255,255,255,0.25);
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 8px;
+      color: white;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='white'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      padding-right: 1.5rem;
+    }
+
+    .city-select option { color: #1d1d1f; background: white; }
+
+    .header-stats {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      opacity: 0.9;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .stat-pill {
+      background: rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+    }
+
+    .dl-buttons {
+      display: flex;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .dl-btn {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 8px;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background 0.15s;
+    }
+
+    .dl-btn:hover { background: rgba(255,255,255,0.3); }
+
+    /* ── Filters ── */
+    .filters {
+      background: white;
+      border-bottom: 1px solid #e5e5ea;
+      padding: 0.6rem 0.75rem;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 112px;
+      z-index: 90;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: #f2f2f7;
+      border: none;
+      border-radius: 999px;
+      color: #3a3a3c;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.25rem 0.65rem;
+      cursor: pointer;
+      transition: background 0.12s, color 0.12s;
+      white-space: nowrap;
+    }
+
+    .filter-btn.active {
+      background: #FF6B9D;
+      color: white;
+    }
+
+    .filter-divider {
+      width: 1px;
+      background: #e5e5ea;
+      margin: 0 0.1rem;
+      align-self: stretch;
+    }
+
+    /* ── Event cards ── */
+    .day-section {
+      max-width: 680px;
+      margin: 1rem auto 0;
+      padding: 0 0.75rem;
+    }
+
+    .day-header {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6e6e73;
+      margin-bottom: 0.5rem;
+      padding-left: 0.1rem;
+    }
+
+    .cards { display: flex; flex-direction: column; gap: 0.55rem; }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 0.85rem 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.2rem 0.5rem;
+      align-items: start;
+      text-decoration: none;
+      color: inherit;
+      transition: box-shadow 0.15s;
+    }
+
+    .card:hover { box-shadow: 0 3px 12px rgba(0,0,0,0.13); }
+
+    .card-title {
+      font-size: 0.93rem;
+      font-weight: 600;
+      line-height: 1.3;
+      grid-column: 1;
+    }
+
+    .badge-area {
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.25rem;
+    }
+
+    .badge {
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
+
+    .badge-free { background: #d1fae5; color: #065f46; }
+    .badge-paid { background: #fee2e2; color: #991b1b; }
+
+    .card-meta {
+      font-size: 0.75rem;
+      color: #6e6e73;
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.7rem;
+      margin-top: 0.2rem;
+      align-items: center;
+    }
+
+    .meta-item { display: flex; align-items: center; gap: 0.2rem; }
+    .meta-item svg { flex-shrink: 0; opacity: 0.6; }
+
+    .card-desc {
+      font-size: 0.75rem;
+      color: #8e8e93;
+      grid-column: 1 / -1;
+      margin-top: 0.25rem;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-actions {
+      grid-column: 1 / -1;
+      margin-top: 0.45rem;
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .add-cal-btn {
+      background: #f2f2f7;
+      border: none;
+      border-radius: 8px;
+      color: #3a3a3c;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background 0.12s;
+    }
+
+    .add-cal-btn:hover { background: #e5e5ea; }
+
+    /* ── Empty / loading states ── */
+    .no-events, .loading {
+      text-align: center;
+      color: #8e8e93;
+      padding: 3rem 1rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .loading::after {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 28px;
+      border: 3px solid #e5e5ea;
+      border-top-color: #FF6B9D;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 1rem auto 0;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #aeaeb2;
+      margin-top: 2rem;
+      padding: 0 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <h1>Family Events</h1>
+    <select class="city-select" id="citySelect" onchange="switchCity(this.value)">
+      <option value="chicago">Chicago</option>
+      <option value="irvine">Irvine</option>
+    </select>
+  </div>
+  <div class="header-stats">
+    <span class="stat-pill" id="statTotal">Loading…</span>
+    <span class="stat-pill" id="statFree"></span>
+    <span class="stat-pill" id="statUpdated" style="opacity:0.7"></span>
+  </div>
+  <div class="dl-buttons">
+    <button class="dl-btn" onclick="downloadAllICS()">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download .ics
+    </button>
+    <a class="dl-btn" id="dlHtmlBtn" href="#" download>
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Download HTML
+    </a>
+  </div>
+</header>
+
+<nav class="filters" id="filterBar">
+  <!-- Age -->
+  <div class="filter-group" id="ageFilters">
+    <button class="filter-btn active" onclick="setFilter('age','all',this)">All ages</button>
+    <button class="filter-btn" onclick="setFilter('age','infant',this)">Infant (0-6m)</button>
+    <button class="filter-btn" onclick="setFilter('age','baby',this)">Baby (6-18m)</button>
+    <button class="filter-btn" onclick="setFilter('age','toddler',this)">Toddler (18-36m)</button>
+    <button class="filter-btn" onclick="setFilter('age','preschool',this)">Preschool (3-5yr)</button>
+  </div>
+  <div class="filter-divider"></div>
+  <!-- Cost -->
+  <div class="filter-group">
+    <button class="filter-btn active" onclick="setFilter('cost','all',this)">All</button>
+    <button class="filter-btn" onclick="setFilter('cost','free',this)">Free only</button>
+  </div>
+  <div class="filter-divider"></div>
+  <!-- When -->
+  <div class="filter-group">
+    <button class="filter-btn active" onclick="setFilter('when','all',this)">All dates</button>
+    <button class="filter-btn" onclick="setFilter('when','weekend',this)">This weekend</button>
+    <button class="filter-btn" onclick="setFilter('when','week',this)">This week</button>
+  </div>
+  <div class="filter-divider"></div>
+  <!-- Venue -->
+  <div class="filter-group">
+    <button class="filter-btn active" onclick="setFilter('venue','all',this)">All venues</button>
+    <button class="filter-btn" onclick="setFilter('venue','library',this)">Library</button>
+    <button class="filter-btn" onclick="setFilter('venue','museum',this)">Museum</button>
+    <button class="filter-btn" onclick="setFilter('venue','park',this)">Park</button>
+    <button class="filter-btn" onclick="setFilter('venue','zoo',this)">Zoo</button>
+  </div>
+</nav>
+
+<main id="main"></main>
+<footer id="footer"></footer>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────────
+let allEvents = [];
+let generatedAt = '';
+let currentCity = 'chicago';
+const filters = { age: 'all', cost: 'all', when: 'all', venue: 'all' };
+
+// ── City switching ─────────────────────────────────────────────────────────────
+async function switchCity(city) {
+  currentCity = city;
+  document.getElementById('statTotal').textContent = 'Loading…';
+  document.getElementById('statFree').textContent = '';
+  document.getElementById('main').innerHTML = '<div class="loading">Loading events</div>';
+  await loadCity(city);
+}
+
+async function loadCity(city) {
+  try {
+    const res = await fetch(`events_${city}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    allEvents = data.events || [];
+    generatedAt = data.generated_at || '';
+
+    // Update download links
+    document.getElementById('dlHtmlBtn').href = `events_${city}.html`;
+    document.getElementById('dlHtmlBtn').download = `events_${city}.html`;
+
+    renderFiltered();
+  } catch (err) {
+    document.getElementById('main').innerHTML =
+      `<div class="no-events">Could not load events for ${city}.<br><small>${err.message}</small></div>`;
+  }
+}
+
+// ── Filters ────────────────────────────────────────────────────────────────────
+function setFilter(type, value, btn) {
+  filters[type] = value;
+  // Deactivate siblings, activate clicked
+  btn.closest('.filter-group').querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderFiltered();
+}
+
+const AGE_TAGS = {
+  infant:    ['infant', 'newborn', '0-6', '0-12'],
+  baby:      ['baby', 'babies', '6-18', 'lapsit'],
+  toddler:   ['toddler', 'toddlers', '18-36', '1-3', '2-3'],
+  preschool: ['preschool', '3-5', '4-5', 'pre-k', 'kindergarten'],
+};
+
+const VENUE_TAGS = {
+  library: ['library', 'storytime', 'story time', 'lapsit', 'bibliocommons'],
+  museum:  ['museum'],
+  park:    ['park', 'nature', 'outdoor', 'outdoors', 'forest'],
+  zoo:     ['zoo'],
+};
+
+function matchesTags(event, tagMap) {
+  const haystack = [
+    ...(event.tags || []),
+    event.source_name || '',
+    event.org_name || '',
+    event.title || '',
+  ].join(' ').toLowerCase();
+  return tagMap.some(t => haystack.includes(t));
+}
+
+function applyFilters(events) {
+  const now = new Date();
+
+  return events.filter(e => {
+    const ds = new Date(e.date_start);
+
+    // Age
+    if (filters.age !== 'all') {
+      const tags = AGE_TAGS[filters.age] || [];
+      const ageRange = (e.age_range || '').toLowerCase();
+      const tagMatch = matchesTags(e, tags) || tags.some(t => ageRange.includes(t));
+      if (!tagMatch) return false;
+    }
+
+    // Cost
+    if (filters.cost === 'free' && !e.is_free) return false;
+
+    // When
+    if (filters.when === 'weekend') {
+      const day = ds.getDay();
+      if (day !== 0 && day !== 6) return false;
+      // Only upcoming weekend (within next 7 days)
+      const diff = (ds - now) / 86400000;
+      if (diff < 0 || diff > 7) return false;
+    }
+    if (filters.when === 'week') {
+      const diff = (ds - now) / 86400000;
+      if (diff < 0 || diff > 7) return false;
+    }
+
+    // Venue
+    if (filters.venue !== 'all') {
+      const tags = VENUE_TAGS[filters.venue] || [];
+      if (!matchesTags(e, tags)) return false;
+    }
+
+    return true;
+  });
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────────
+function renderFiltered() {
+  const visible = applyFilters(allEvents);
+  const freeCount = allEvents.filter(e => e.is_free).length;
+  const visibleFree = visible.filter(e => e.is_free).length;
+
+  document.getElementById('statTotal').textContent =
+    `${visible.length}${visible.length !== allEvents.length ? ' / ' + allEvents.length : ''} events`;
+  document.getElementById('statFree').textContent = `${freeCount} free`;
+  if (generatedAt) {
+    const d = new Date(generatedAt);
+    document.getElementById('statUpdated').textContent =
+      'Updated ' + d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  const main = document.getElementById('main');
+  if (!visible.length) {
+    main.innerHTML = '<div class="no-events">No events match your filters.</div>';
+    return;
+  }
+
+  // Group by local date string
+  const byDate = {};
+  for (const e of visible) {
+    const ds = new Date(e.date_start);
+    // Use local date key (YYYY-MM-DD)
+    const key = ds.toLocaleDateString('en-CA'); // YYYY-MM-DD format
+    (byDate[key] = byDate[key] || []).push(e);
+  }
+
+  const sections = Object.keys(byDate).sort().map(dateKey => {
+    const d = new Date(dateKey + 'T12:00:00'); // noon to avoid DST edge
+    const label = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    const cards = byDate[dateKey].map(renderCard).join('');
+    return `<section class="day-section">
+      <h2 class="day-header">${label}</h2>
+      <div class="cards">${cards}</div>
+    </section>`;
+  });
+
+  main.innerHTML = sections.join('');
+  document.getElementById('footer').textContent =
+    generatedAt ? `Generated ${new Date(generatedAt).toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' })}` : '';
+}
+
+function renderCard(e) {
+  const ds = new Date(e.date_start);
+  const isAllDay = ds.getHours() === 0 && ds.getMinutes() === 0;
+  const timeStr = isAllDay ? 'All day' :
+    ds.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', hour12: true });
+
+  const badge = e.is_free
+    ? '<span class="badge badge-free">Free</span>'
+    : e.cost ? `<span class="badge badge-paid">${esc(e.cost.slice(0,20))}</span>` : '';
+
+  const clockSVG = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`;
+  const pinSVG   = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+  const walkSVG  = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="5" r="2"/><path d="M15 9l-3 3-3-3M9 21l3-9 3 9"/></svg>`;
+  const calSVG   = `<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>`;
+
+  const metaItems = [`<span class="meta-item">${clockSVG} ${esc(timeStr)}</span>`];
+  if (e.location_name) metaItems.push(`<span class="meta-item">${pinSVG} ${esc(e.location_name)}</span>`);
+  if (e.distance_miles != null) metaItems.push(`<span class="meta-item">${walkSVG} ${e.distance_miles} mi</span>`);
+  if (e.org_name && e.org_name !== e.location_name) metaItems.push(`<span class="meta-item">· ${esc(e.org_name)}</span>`);
+
+  const descHtml = e.description
+    ? `<p class="card-desc">${esc(e.description.slice(0,200).trim())}</p>` : '';
+
+  const uid = e.uid || crypto.randomUUID();
+  const cardOpen = e.url
+    ? `<a class="card" href="${esc(e.url)}" target="_blank" rel="noopener">`
+    : `<div class="card">`;
+  const cardClose = e.url ? `</a>` : `</div>`;
+
+  return `${cardOpen}
+    <span class="card-title">${esc(e.title)}</span>
+    <span class="badge-area">${badge}</span>
+    <div class="card-meta">${metaItems.join('')}</div>
+    ${descHtml}
+    <div class="card-actions">
+      <button class="add-cal-btn" onclick="event.preventDefault();event.stopPropagation();downloadEventICS(${JSON.stringify(uid)})">${calSVG} Add to Calendar</button>
+    </div>
+  ${cardClose}`;
+}
+
+// ── ICS generation ─────────────────────────────────────────────────────────────
+function fmtICSDate(isoStr) {
+  // Strip timezone, format as floating local time: YYYYMMDDTHHMMSS
+  const d = new Date(isoStr);
+  const pad = n => String(n).padStart(2, '0');
+  return `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+}
+
+function buildVEVENT(e) {
+  const dtstart = fmtICSDate(e.date_start);
+  const dtend = e.date_end ? fmtICSDate(e.date_end) : (() => {
+    const d = new Date(e.date_start);
+    d.setHours(d.getHours() + 1);
+    return fmtICSDate(d.toISOString());
+  })();
+
+  const fold = (key, val) => {
+    // RFC-5545 line folding at 75 chars
+    const line = `${key}:${(val||'').replace(/\n/g,' ').replace(/\r/g,'')}`;
+    const chunks = [];
+    let i = 0;
+    while (i < line.length) { chunks.push(line.slice(i, i+75)); i += 75; }
+    return chunks.join('\r\n ');
+  };
+
+  const parts = [
+    'BEGIN:VEVENT',
+    fold('UID', e.uid || `${dtstart}-${Math.random().toString(36).slice(2)}`),
+    fold('SUMMARY', e.title),
+    `DTSTART:${dtstart}`,
+    `DTEND:${dtend}`,
+  ];
+  if (e.location_address) parts.push(fold('LOCATION', e.location_address));
+  else if (e.location_name) parts.push(fold('LOCATION', e.location_name));
+
+  const desc = [
+    e.org_name ? `Organizer: ${e.org_name}` : '',
+    e.cost ? `Cost: ${e.cost}` : '',
+    e.age_range ? `Age: ${e.age_range}` : '',
+    e.distance_miles != null ? `Distance: ${e.distance_miles} mi` : '',
+    '',
+    e.description || '',
+    e.url ? `\nURL: ${e.url}` : '',
+  ].filter(Boolean).join('\n');
+  if (desc.trim()) parts.push(fold('DESCRIPTION', desc.trim()));
+  if (e.url) parts.push(fold('URL', e.url));
+
+  parts.push('BEGIN:VALARM', 'TRIGGER:-PT24H', 'ACTION:DISPLAY', 'DESCRIPTION:Tomorrow', 'END:VALARM');
+  parts.push('BEGIN:VALARM', 'TRIGGER:-PT2H',  'ACTION:DISPLAY', 'DESCRIPTION:2 hours',  'END:VALARM');
+  parts.push('END:VEVENT');
+  return parts.join('\r\n');
+}
+
+function buildICSContent(events) {
+  const vevents = events.map(buildVEVENT).join('\r\n');
+  return [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Family Events Agent//Web//EN',
+    'CALSCALE:GREGORIAN',
+    'X-WR-CALNAME:Family Events',
+    vevents,
+    'END:VCALENDAR',
+  ].join('\r\n');
+}
+
+function triggerDownload(content, filename, mimeType) {
+  const blob = new Blob([content], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function downloadEventICS(uid) {
+  const e = allEvents.find(ev => ev.uid === uid);
+  if (!e) return;
+  const content = buildICSContent([e]);
+  const safeName = (e.title || 'event').replace(/[^\w\s-]/g,'').trim().replace(/\s+/g,'_').slice(0,40);
+  triggerDownload(content, `${safeName}.ics`, 'text/calendar');
+}
+
+function downloadAllICS() {
+  const visible = applyFilters(allEvents);
+  if (!visible.length) return;
+  const content = buildICSContent(visible);
+  triggerDownload(content, `events_${currentCity}.ics`, 'text/calendar');
+}
+
+// ── Helpers ────────────────────────────────────────────────────────────────────
+function esc(str) {
+  return String(str || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#x27;');
+}
+
+// ── Boot ───────────────────────────────────────────────────────────────────────
+loadCity('chicago');
+</script>
+</body>
+</html>

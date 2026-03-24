@@ -62,8 +62,23 @@ def load_yaml(path: Path) -> dict:
         return yaml.safe_load(f) or {}
 
 
-def load_settings() -> dict:
-    return load_yaml(CONFIG_DIR / "settings.yaml")
+def load_settings(location: str = "") -> dict:
+    base = load_yaml(CONFIG_DIR / "settings.yaml")
+    if location:
+        override_path = CONFIG_DIR / f"settings_{location}.yaml"
+        if override_path.exists():
+            override = load_yaml(override_path)
+            _deep_merge(base, override)
+    return base
+
+
+def _deep_merge(base: dict, override: dict) -> None:
+    """Merge override into base in-place (one level deep for nested dicts)."""
+    for key, val in override.items():
+        if key in base and isinstance(base[key], dict) and isinstance(val, dict):
+            base[key].update(val)
+        else:
+            base[key] = val
 
 
 def load_sources(location: str = "") -> list[dict]:
@@ -159,6 +174,15 @@ def get_scraper(scraper_type: str, settings: dict):
     elif scraper_type == "bibliocommons":
         from scrapers.bibliocommons_scraper import BibliocommunesScraper
         return BibliocommunesScraper(settings)
+    elif scraper_type == "tribe_events":
+        from scrapers.tribe_events_scraper import TribeEventsScraper
+        return TribeEventsScraper(settings)
+    elif scraper_type == "chicago_aem":
+        from scrapers.chicago_aem_scraper import ChicagoAemScraper
+        return ChicagoAemScraper(settings)
+    elif scraper_type == "tockify":
+        from scrapers.tockify_scraper import TockifyScraper
+        return TockifyScraper(settings)
     else:
         raise ValueError(f"Unknown scraper type: {scraper_type!r}")
 
@@ -207,7 +231,9 @@ def run_filters(events: list, settings: dict) -> list:
     now = datetime.now()
     cutoff = now + timedelta(days=days_ahead)
     before = len(events)
-    events = [e for e in events if now <= e.date_start <= cutoff]
+    # Strip timezone info before comparison — some scrapers return tz-aware datetimes
+    # (Tockify, Chicago AEM) while others return naive datetimes.
+    events = [e for e in events if now <= e.date_start.replace(tzinfo=None) <= cutoff]
     logger.info("Date window filter: %d → %d events (next %d days)", before, len(events), days_ahead)
 
     # Keyword exclusion
@@ -225,8 +251,8 @@ def run_filters(events: list, settings: dict) -> list:
     events = filter_by_location(events, settings)
     events = deduplicate(events)
 
-    # Sort by date
-    events.sort(key=lambda e: e.date_start)
+    # Sort by date — strip timezone to allow comparison of naive and aware datetimes
+    events.sort(key=lambda e: e.date_start.replace(tzinfo=None))
     return events
 
 
@@ -250,7 +276,7 @@ def cli(ctx, verbose):
 @click.pass_context
 def run(ctx, sources, location, dry_run, no_cache):
     """Scrape all sources, filter events, generate .ics calendar."""
-    settings = load_settings()
+    settings = load_settings(location)
     all_sources = load_sources(location)
 
     # Filter to specified sources if provided
@@ -301,17 +327,23 @@ def run(ctx, sources, location, dry_run, no_cache):
         click.echo("No events found after filtering. Check your settings or try --no-cache.")
         return
 
-    # Generate .ics
+    # Generate .ics, HTML, and JSON
     from calendar_gen.ics_builder import build_ics
+    from calendar_gen.html_builder import build_html
+    from calendar_gen.json_builder import build_json
     output_path = build_ics(filtered, settings)
+    html_path = build_html(filtered, settings)
+    json_path = build_json(filtered, settings)
 
     # Summary
     free_count = sum(1 for e in filtered if e.is_free)
     click.echo(
         f"\nFound {len(filtered)} events from {sum(1 for v in source_counts.values() if v > 0)} sources "
-        f"({free_count} free).\nCalendar saved to: {output_path}"
+        f"({free_count} free).\nCalendar saved to: {output_path}\nHTML saved to:     {html_path}\n"
+        f"JSON saved to:     {json_path}"
     )
     click.echo("\nTo import on iPhone: AirDrop the .ics file, or email it to yourself and tap the attachment.")
+    click.echo(f"To view events:    open {html_path}")
 
 
 @cli.command(name="sources")

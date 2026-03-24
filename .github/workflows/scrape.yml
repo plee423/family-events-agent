@@ -1,0 +1,108 @@
+name: Scrape Events
+
+on:
+  schedule:
+    # 2 AM Chicago time (UTC-6 winter / UTC-5 summer) → 8 AM UTC
+    - cron: "0 8 * * *"
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write # Needed to commit outputs back to the repo
+
+jobs:
+  # ── Chicago and Irvine scrape in parallel ─────────────────────────────────────
+
+  scrape-chicago:
+    name: Scrape Chicago
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Scrape Chicago events
+        run: python agent.py run --no-cache
+
+      - name: Upload Chicago outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: chicago-output
+          path: output/
+          retention-days: 1
+
+  scrape-irvine:
+    name: Scrape Irvine
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Scrape Irvine events
+        run: python agent.py run --location irvine --no-cache
+
+      - name: Upload Irvine outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: irvine-output
+          path: output/
+          retention-days: 1
+
+  # ── Commit both cities' outputs once both scrapes finish ─────────────────────
+
+  commit-outputs:
+    name: Commit outputs to repo
+    runs-on: ubuntu-latest
+    needs: [scrape-chicago, scrape-irvine]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download Chicago outputs
+        uses: actions/download-artifact@v4
+        with:
+          name: chicago-output
+          path: output/
+
+      - name: Download Irvine outputs
+        uses: actions/download-artifact@v4
+        with:
+          name: irvine-output
+          path: output/
+
+      - name: Copy outputs to public/
+        run: |
+          mkdir -p public
+          cp output/events_chicago.json public/ 2>/dev/null || true
+          cp output/events_irvine.json  public/ 2>/dev/null || true
+          cp output/events_chicago.html public/ 2>/dev/null || true
+          cp output/events_irvine.html  public/ 2>/dev/null || true
+          # ICS files use date-stamped names — copy the most recent one
+          ls -t output/*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_chicago.ics 2>/dev/null || true
+          ls -t output/events_irvine*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_irvine.ics 2>/dev/null || true
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/ output/
+          git diff --staged --quiet || git commit -m "chore: update events $(date -u +%Y-%m-%d)"
+          git push
