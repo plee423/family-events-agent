@@ -231,6 +231,22 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `filters/location_filter.py`: persistent geocoding cache at `cache/geocode_cache.json`; `max_retries=0`, `swallow_exceptions=False` so `GeocoderRateLimited` propagates to our handler; session-level `_geocoding_rate_limited` flag — first 429 disables all further Nominatim calls instantly, pipeline completes in seconds instead of minutes
 - `calendar_gen/html_builder.py`: Windows-compatible date/time formatting — `%-d` and `%-I` are Linux-only; replaced with try/except falling back to `%d`/`%I` + `lstrip("0")`
 
+### Bug fixes (session 3 — post-Actions run)
+- `bibliocommons_scraper.py`: `_fetch_branches()` now extracts `address` from API alongside name → `location_address` set on all CPL/IPL/OCPL events → location filter can now geocode and distance-filter library events correctly
+- `bibliocommons_scraper.py`: hardcoded `chipublib.bibliocommons.com` event URL replaced with `f"https://{library_id}.bibliocommons.com/events/{id}"` — Irvine and OCPL now get correct URLs
+- `sources_irvine.yaml`: added missing `library_id: "irvine"` to Irvine Public Library — was defaulting to `"chipublib"` causing all 156 Irvine events to come from Chicago CPL
+- `sources_irvine.yaml`: replaced stub sources with verified scrapers (see below)
+
+### Irvine sources (verified 2026-03-24)
+| Source | Scraper | Notes |
+|--------|---------|-------|
+| Irvine Public Library | bibliocommons (`library_id: "irvine"`) | Fixed — was scraping CPL |
+| Orange County Public Library | bibliocommons (`library_id: "ocpl"`) | New — confirmed same Bibliocommons platform |
+| Pretend City Children's Museum | tribe_events | Confirmed 149 events via REST API |
+| Bowers Museum | html (`h3.sppb-addon-title`) | Confirmed server-rendered Joomla; selectors need test-source verification |
+| City of Irvine | html (`table tr td`) | Confirmed server-rendered Drupal table |
+| Discovery Cube OC | browser | JS/AJAX-rendered; AJAX endpoint unknown — low confidence, needs DevTools investigation |
+
 ### Web app / deployment (added session 3)
 - `public/index.html` — self-contained SPA: city switcher (Chicago/Irvine), age/cost/when/venue filters, per-event .ics download (JS-generated), bulk .ics download of filtered events, HTML page download link
 - `vercel.json` — serves `public/` as static site root

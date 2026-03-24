@@ -70,17 +70,31 @@ class BibliocommunesScraper(BaseScraper):
         resp.raise_for_status()
         return resp.json()
 
-    def _fetch_branches(self, library_id: str) -> dict[str, str]:
-        """Return {branch_id: branch_name} mapping."""
+    def _fetch_branches(self, library_id: str) -> dict[str, dict]:
+        """Return {branch_id: {name, address}} mapping."""
         if self._branch_cache:
             return self._branch_cache
         url = self.BASE.format(library_id=library_id) + "/branches"
         try:
             data = self._get(url)
             branches = data.get("entities", {}).get("branches", {})
-            self._branch_cache = {k: v.get("name", k) for k, v in branches.items()}
+            for k, v in branches.items():
+                name = v.get("name", k)
+                # Build address string from structured fields if available
+                addr = v.get("physicalAddress") or v.get("address") or {}
+                if isinstance(addr, dict):
+                    parts = [
+                        addr.get("street1", ""),
+                        addr.get("city", ""),
+                        addr.get("region", ""),
+                        addr.get("postalCode", ""),
+                    ]
+                    address_str = ", ".join(p for p in parts if p)
+                else:
+                    address_str = str(addr) if addr else ""
+                self._branch_cache[k] = {"name": name, "address": address_str}
         except Exception as exc:
-            logger.warning("Could not fetch branch names: %s", exc)
+            logger.warning("Could not fetch branch data: %s", exc)
         return self._branch_cache
 
     def fetch(self, url: str) -> str:
@@ -137,7 +151,7 @@ class BibliocommunesScraper(BaseScraper):
                 event_data = events_map.get(event_id)
                 if not event_data:
                     continue
-                event = self._parse_event(event_data, org_name, tags, age_hint, branches)
+                event = self._parse_event(event_data, org_name, tags, age_hint, branches, library_id)
                 if event:
                     all_events.append(event)
 
@@ -150,12 +164,14 @@ class BibliocommunesScraper(BaseScraper):
                 e for e in all_events
                 if any(b in e.location_name.lower() for b in bf_lower)
             ]
+            logger.info("  Branch filter applied: %d events kept", len(all_events))
 
         self.logger.info("  %s: found %d events", org_name, len(all_events))
         return all_events
 
     def _parse_event(
-        self, data: dict, org_name: str, tags: list, age_hint: str, branches: dict
+        self, data: dict, org_name: str, tags: list, age_hint: str,
+        branches: dict, library_id: str = "chipublib"
     ) -> Event | None:
         defn = data.get("definition", {})
 
@@ -166,11 +182,9 @@ class BibliocommunesScraper(BaseScraper):
         # Audience filtering: skip events that are only for adults
         audience_ids = set(defn.get("audienceIds", []))
         if audience_ids:
-            has_family = bool(audience_ids & _BABY_AUDIENCE_IDS)
             only_adult = audience_ids == {_ADULT_AUDIENCE_ID}
             if only_adult:
                 return None  # skip pure adult events
-            # Determine age_range from audiences
             age_range = _audiences_to_age_range(audience_ids) or age_hint
         else:
             age_range = age_hint  # no audience info → use source-level hint
@@ -186,18 +200,19 @@ class BibliocommunesScraper(BaseScraper):
         except ValueError:
             return None
 
-        # Branch / location
+        # Branch / location — branches dict is now {id: {name, address}}
         branch_id = defn.get("branchLocationId", "")
-        location_name = branches.get(branch_id, f"CPL Branch {branch_id}")
-        if branch_id:
-            location_name = f"CPL {location_name}"
+        branch_info = branches.get(branch_id, {})
+        branch_name = branch_info.get("name", branch_id) if isinstance(branch_info, dict) else str(branch_info)
+        location_name = f"{branch_name}" if branch_name else org_name
+        location_address = branch_info.get("address", "") if isinstance(branch_info, dict) else ""
 
         # Description — strip HTML tags
         raw_desc = defn.get("description", "")
         description = _strip_html(raw_desc)
 
-        # URL
-        url = f"https://chipublib.bibliocommons.com/events/{data['id']}"
+        # URL — built from library_id so Irvine/OCPL/etc. get correct links
+        url = f"https://{library_id}.bibliocommons.com/events/{data['id']}"
 
         return Event(
             title=title,
@@ -205,6 +220,7 @@ class BibliocommunesScraper(BaseScraper):
             date_end=date_end,
             org_name=org_name,
             location_name=location_name,
+            location_address=location_address,
             description=description[:500],
             url=url,
             cost="free",

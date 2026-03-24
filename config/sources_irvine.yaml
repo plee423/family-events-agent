@@ -3,9 +3,10 @@
 # Scrapes in parallel (ThreadPoolExecutor, max_workers=5) — same as Chicago.
 #
 # Scraper confidence:
-#   ✓ bibliocommons  — identical platform to Chicago CPL, confirmed working
-#   ✓ tribe_events   — same WP REST API pattern as Chicago History Museum
-#   ~ html/browser   — selectors are best-guess; verify with: python agent.py test-source "Name" --location irvine --no-cache
+#   ✓ bibliocommons  — verified working (same gateway API as Chicago CPL)
+#   ✓ tribe_events   — Pretend City API confirmed 149 events, same pattern as Chicago History Museum
+#   ✓ html           — City of Irvine confirmed server-rendered HTML table; Bowers confirmed server-rendered
+#   ~ browser        — Discovery Cube is JS/AJAX-rendered; AJAX endpoint unconfirmed — needs DevTools
 
 sources:
 
@@ -13,92 +14,84 @@ sources:
 
   - name: "Irvine Public Library - Events"
     org_type: "library"
-    url: "https://irvine.bibliocommons.com/v2/events"
+    url: "https://gateway.bibliocommons.com/v2/libraries/irvine/events"
     scraper: "bibliocommons"
+    library_id: "irvine"
+    audiences: "babies_and_toddlers"
+    max_pages: 50
     tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
     cost: "free"
-    # Uses same Bibliocommons API as Chicago Public Library — high confidence
 
   - name: "Orange County Public Library - Events"
     org_type: "library"
-    url: "https://ocpl.org/events"
-    scraper: "html"
-    selectors:
-      event_card: "article.views-row, .views-row, .event-item"
-      title: "h2 a, h3 a, .event-title a"
-      date: "time, .date-display-single, .field-name-field-date"
-      location: ".field-name-field-location, .location"
-      link: "h2 a, h3 a"
-    tags: ["storytime", "library", "baby", "family"]
+    # OCPL also uses the Bibliocommons gateway API — same platform as CPL and Irvine PL.
+    url: "https://gateway.bibliocommons.com/v2/libraries/ocpl/events"
+    scraper: "bibliocommons"
+    library_id: "ocpl"
+    audiences: "babies_and_toddlers"
+    max_pages: 50
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
     cost: "free"
 
-  # ── Museums ───────────────────────────────────────────────────────────────────
+  # ── Museums & Children's Venues ───────────────────────────────────────────────
 
   - name: "Pretend City Children's Museum - Events"
     org_type: "museum"
-    url: "https://www.pretendcity.org/wp-json/tribe/events/v1/events"
+    # Confirmed working: 149 events across 15 pages (verified 2026-03-24)
+    # Same Tribe Events REST API pattern as Chicago History Museum.
+    url: "https://www.pretendcity.org/wp-json/tribe/events/v1/events?per_page=50"
     scraper: "tribe_events"
-    field_map:
-      events_path: "events"
-      title: "title"
-      start: "start_date"
-      end: "end_date"
-      description: "description"
-      url: "url"
-      venue_name: "venue.venue"
-      venue_address: "venue.address"
-      cost: "cost"
     tags: ["children", "play", "toddler", "museum", "family"]
-    # Tribe Events REST API — same pattern as Chicago History Museum
-
-  - name: "Discovery Cube OC - Events"
-    org_type: "museum"
-    url: "https://www.discoverycube.org/orange-county/explore/events/"
-    scraper: "browser"
-    selectors:
-      event_card: ".tribe-events-calendar-list__event, article.tribe-event, .event-card"
-      title: ".tribe-event-url, h2 a, h3 a"
-      date: ".tribe-event-date-start, time"
-      location: ".tribe-venue, .location"
-      link: ".tribe-event-url, h2 a"
-    tags: ["science", "kids", "family", "stem", "museum"]
+    age_hint: "0-60 months"
 
   - name: "Bowers Museum - Family Programs"
     org_type: "museum"
+    # Server-rendered Joomla/EventBooking site — confirmed HTML in response (verified 2026-03-24)
+    # Structure: sppb-addon grid columns, each has h3.sppb-addon-title + sibling <p> for date/venue
+    # Date format: MM-DD-YYYY HH:MM am — handled by dateutil fuzzy parse
     url: "https://www.bowers.org/index.php/programs/family-programs"
     scraper: "html"
     selectors:
-      event_card: "article, .program-item, .views-row"
-      title: "h2 a, h3 a, .field-name-title a"
-      date: "time, .date-display-single, .field-name-field-date"
-      location: ".field-name-field-location, .location"
-      link: "h2 a, h3 a"
+      event_card: ".sppb-col-sm-4, .sppb-col-md-4, .sppb-col-lg-4, .sppb-addon-content"
+      title: "h3.sppb-addon-title a, h3 a"
+      date: "p"
+      location: "p + p"
+      link: "h3.sppb-addon-title a, h3 a"
     tags: ["museum", "family", "culture", "art"]
+    notes: "Joomla EventBooking CMS. Selectors need verification — run test-source if 0 events."
 
-  # ── Parks ─────────────────────────────────────────────────────────────────────
-
-  - name: "Irvine Regional Park - Family Programs"
-    org_type: "parks"
-    url: "https://www.ocparks.com/parks/irvi/programs"
-    scraper: "html"
+  - name: "Discovery Cube OC - Events"
+    org_type: "museum"
+    # JS-rendered WordPress site. Event cards load via AJAX after page load (verified 2026-03-24).
+    # AJAX endpoint at /wp-admin/admin-ajax.php — exact action param unknown.
+    # Playwright will render the page but may time out waiting for cards.
+    # NOTE: Low confidence — investigate AJAX calls in DevTools Network tab if 0 events.
+    url: "https://www.discoverycube.org/orange-county/events"
+    scraper: "browser"
     selectors:
-      event_card: ".program-item, article, .views-row, tr"
-      title: "h2 a, h3 a, td a, .field-name-title a"
-      date: "time, .date-display-single, td:nth-child(2)"
-      location: ".field-name-field-location, .location"
-      link: "h2 a, h3 a, td a"
-    tags: ["park", "family", "outdoor", "nature"]
-
-  # ── Cultural / Arts ───────────────────────────────────────────────────────────
-
-  - name: "UCI Arts - Family Programs"
-    org_type: "cultural_center"
-    url: "https://www.arts.uci.edu/events"
-    scraper: "html"
-    selectors:
-      event_card: "article.views-row, .tribe-event, .event-item"
+      event_card: ".tribe-events-calendar-list__event, .block-event-calendar article, article"
       title: "h2 a, h3 a, .tribe-event-url"
-      date: ".tribe-event-schedule-details, time, .date-display-single"
+      date: "time, .tribe-event-date-start, .event-date"
       location: ".tribe-venue, .location"
-      link: "h2 a, h3 a, .tribe-event-url"
-    tags: ["arts", "family", "culture", "university"]
+      link: "h2 a, h3 a"
+    tags: ["science", "kids", "family", "stem", "museum"]
+
+  # ── Parks & City Events ───────────────────────────────────────────────────────
+
+  - name: "City of Irvine - Events"
+    org_type: "parks"
+    # Confirmed server-rendered Drupal site with plain HTML table (verified 2026-03-24).
+    # Structure: <table><tr><td>Date range</td><td><a>Title</a></td><td>Location</td></tr>
+    # Dates are often ranges (e.g. "January 25–April 12") — dateutil fuzzy parse takes the start date.
+    url: "https://www.cityofirvine.org/events"
+    scraper: "html"
+    selectors:
+      event_card: "table tr"
+      title: "td:nth-child(2) a"
+      date: "td:nth-child(1)"
+      location: "td:nth-child(3)"
+      link: "td:nth-child(2) a"
+    tags: ["park", "family", "outdoor", "city", "recreation"]
+    cost: "free"
