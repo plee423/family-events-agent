@@ -48,6 +48,12 @@ jobs:
             playwright install chromium --with-deps
           fi
 
+      - name: Debug Eventbrite raw events (before filters)
+        run: python agent.py test-source "Eventbrite - Chicago Family Events" --no-cache
+        env:
+          EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
+        continue-on-error: true
+
       - name: Scrape Chicago events
         run: python agent.py run --no-cache
         env:

@@ -205,7 +205,10 @@ def _infer_free(cost_hint: str, title: str, description: str) -> bool:
     """Return True if we can determine this event is free."""
     text = f"{cost_hint} {title} {description}".lower()
     free_indicators = ["free", "no cost", "no charge", "complimentary"]
-    paid_overrides = ["$", "fee", "admission required", "tickets required"]
+    paid_overrides = [
+        "$", "fee", "admission required", "tickets required",
+        "paid admission", "members only", "membership required",
+    ]
     if any(p in text for p in paid_overrides):
         return False
     return any(f in text for f in free_indicators)

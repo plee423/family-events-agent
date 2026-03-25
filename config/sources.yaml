@@ -130,13 +130,13 @@ sources:
     url: "https://api.tockify.com/api/ngevent"
     scraper: "tockify"
     tockify_calendar: "chicagochildrensmuseum"
-    website: "https://chicagochildrensmuseum.org/visit/programs/"
+    website: "https://www.chicagochildrensmuseum.org/program-calendar"
     location_name: "Chicago Children's Museum"
     location_address: "700 E Grand Ave, Chicago, IL 60611"
     max_per_page: 50
     tags: ["museum", "children", "play", "toddler", "family"]
     age_hint: "0-60 months"
-    cost: "free first Sunday (Chicago residents)"
+    cost: "paid admission (free first Sunday for Chicago residents)"
 
   # ─── PARKS & RECREATION ──────────────────────────────────────────────────────
 

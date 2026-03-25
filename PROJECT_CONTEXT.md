@@ -184,7 +184,7 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-24 (session 7)
+- **Last updated:** 2026-03-24 (session 8)
 - **Status:** Pipeline fully working. CI push reliability fixed. Age filter tightened. Eventbrite rewritten to org-based API (`/v3/organizers/{id}/events/`) — 116 raw events from 10 Chicago family orgs. ~225+ events / 15 sources after filters.
 
 ### Working sources (as of 2026-03-25)
@@ -283,8 +283,24 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `calendar_gen/json_builder.py` — `neighborhood` included in serialized JSON.
 - `calendar_gen/html_builder.py` — neighborhood shown as purple `.badge-neighborhood` pill in event card meta row.
 
+### Web UI + filter fixes (session 8)
+
+- **Neighborhood filter** added to `public/index.html` — dynamically populated from `event.neighborhood` values after load; hidden when no neighborhoods present; filters `applyFilters` by exact match.
+- **Add to Calendar button fixed** — `triggerDownload` now appends anchor to DOM before `.click()` (required by Firefox/Safari) and revokes the blob URL after 2000ms delay (was revoking synchronously before download could start).
+- **CCM free tagging fixed** — `_infer_free` in `scrapers/base.py` now includes `"paid admission"`, `"members only"`, `"membership required"` in `paid_overrides`. CCM cost changed to `"paid admission (free first Sunday for Chicago residents)"` — `_infer_free` hits paid_override and returns False for all CCM events by default.
+- **CCM link fixed** — `website` changed from 404 URL to `https://www.chicagochildrensmuseum.org/program-calendar`.
+- **Empty-result caching fix** — `agent.py` no longer caches 0-event results (`if use_cache and events`). Prevents stale local cache from a run without EVENTBRITE_TOKEN poisoning subsequent cached runs.
+
+### Eventbrite — 0 events (under investigation)
+
+Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 keeps all events; not the issue. Added CI debug step: `python agent.py test-source "Eventbrite - Chicago Family Events" --no-cache` runs before the main scrape and prints raw event counts per org. Check next CI run's "Debug Eventbrite raw events" step output to diagnose:
+- If API errors per org → token invalid or org IDs stale
+- If events fetched but 0 in final output → location filter dropping them (check venue addresses)
+- If 0 fetched per org → orgs have no upcoming events right now
+
 ### Known issues / next steps
 - **CI debug:** `events_chicago.json` not-updating issue under investigation. Debug `ls output/` step added to workflow — check next nightly run logs to confirm. Code path verified correct: `settings.yaml` `json_filename: "events_chicago.json"` → `output/events_chicago.json`.
+- **Eventbrite:** Check next CI run's "Debug Eventbrite raw events" step to see raw counts.
 - **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
 

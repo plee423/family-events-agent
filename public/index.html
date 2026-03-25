@@ -343,6 +343,9 @@
     <button class="filter-btn" onclick="setFilter('venue','park',this)">Park</button>
     <button class="filter-btn" onclick="setFilter('venue','zoo',this)">Zoo</button>
   </div>
+  <!-- Neighborhood — populated dynamically after events load -->
+  <div class="filter-divider" id="neighborhoodDivider" style="display:none"></div>
+  <div class="filter-group" id="neighborhoodFilters" style="display:none"></div>
 </nav>
 
 <main id="main"></main>
@@ -353,7 +356,7 @@
 let allEvents = [];
 let generatedAt = '';
 let currentCity = 'chicago';
-const filters = { age: 'all', cost: 'all', when: 'all', venue: 'all' };
+const filters = { age: 'all', cost: 'all', when: 'all', venue: 'all', neighborhood: 'all' };
 
 // ── City switching ─────────────────────────────────────────────────────────────
 async function switchCity(city) {
@@ -376,11 +379,34 @@ async function loadCity(city) {
     document.getElementById('dlHtmlBtn').href = `events_${city}.html`;
     document.getElementById('dlHtmlBtn').download = `events_${city}.html`;
 
+    // Reset neighborhood filter state and rebuild buttons
+    filters.neighborhood = 'all';
+    buildNeighborhoodFilters();
+
     renderFiltered();
   } catch (err) {
     document.getElementById('main').innerHTML =
       `<div class="no-events">Could not load events for ${city}.<br><small>${err.message}</small></div>`;
   }
+}
+
+// ── Neighborhood filter builder ────────────────────────────────────────────────
+function buildNeighborhoodFilters() {
+  const hoods = [...new Set(allEvents.map(e => e.neighborhood).filter(Boolean))].sort();
+  const divider = document.getElementById('neighborhoodDivider');
+  const group = document.getElementById('neighborhoodFilters');
+  if (!hoods.length) {
+    divider.style.display = 'none';
+    group.style.display = 'none';
+    return;
+  }
+  divider.style.display = '';
+  group.style.display = '';
+  const allBtn = `<button class="filter-btn active" onclick="setFilter('neighborhood','all',this)">All areas</button>`;
+  const hoodBtns = hoods.map(h =>
+    `<button class="filter-btn" onclick="setFilter('neighborhood',${JSON.stringify(h)},this)">${esc(h)}</button>`
+  ).join('');
+  group.innerHTML = allBtn + hoodBtns;
 }
 
 // ── Filters ────────────────────────────────────────────────────────────────────
@@ -451,6 +477,9 @@ function applyFilters(events) {
       const tags = VENUE_TAGS[filters.venue] || [];
       if (!matchesTags(e, tags)) return false;
     }
+
+    // Neighborhood
+    if (filters.neighborhood !== 'all' && e.neighborhood !== filters.neighborhood) return false;
 
     return true;
   });
@@ -613,8 +642,11 @@ function triggerDownload(content, filename, mimeType) {
   const a = document.createElement('a');
   a.href = url;
   a.download = filename;
+  document.body.appendChild(a);
   a.click();
-  URL.revokeObjectURL(url);
+  document.body.removeChild(a);
+  // Delay revoke so browser has time to start the download
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 
 function downloadEventICS(uid) {

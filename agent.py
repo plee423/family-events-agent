@@ -215,7 +215,7 @@ def scrape_source(source: dict, settings: dict, use_cache: bool = True) -> list:
     try:
         scraper = get_scraper(scraper_type, settings)
         events = scraper.scrape(source)
-        if use_cache:
+        if use_cache and events:  # Don't cache empty results — could be missing token or transient error
             cache_set(source_name, events)
         return events
     except Exception as exc:
