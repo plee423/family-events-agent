@@ -300,21 +300,19 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 
 ### Fixes (session 9)
 
-**Neighborhood filter removed from UI (`public/index.html`)**
-- Removed `<div id="neighborhoodDivider">` + `<div id="neighborhoodFilters">` HTML
-- Removed `filters.neighborhood` state key
-- Removed `buildNeighborhoodFilters()` function and its two call sites
-- Removed neighborhood check from `applyFilters`
-- `neighborhood` field still emitted in JSON (from `location_filter.py`) — just not exposed in UI
+**Neighborhood filter confirmed working**
+- `public/index.html`: neighborhood filter bar populates dynamically from `event.neighborhood` values after data loads; hidden when no neighborhoods present; buttons filter by exact match
+- `calendar_gen/html_builder.py`: purple `.badge-neighborhood` pill shown in event card meta row
+- `scrapers/neighborhood_classifier.py`: 30 bounding boxes covering Loop, West Loop, South Loop, River North, Lincoln Park, Hyde Park, Oak Park, Evanston, etc.
 
 **CCM free-tag fix (`filters/cost_filter.py` `_re_evaluate_free`)**
 - Added step 0: if `event.cost` contains `"paid admission"`, short-circuit using only event *title* (not description) for strong-free phrases. Prevents CCM event descriptions like "free for all families" from overriding the source-level paid admission cost.
 - CCM's `cost: "paid admission (free first Sunday for Chicago residents)"` now correctly blocks all CCM events from being tagged `[FREE]` unless the event TITLE contains a genuine free-admission phrase (e.g., "Free First Sunday").
 
-**Eventbrite logging improved (`scrapers/eventbrite_scraper.py`)**
-- Per-org API response count now logged at INFO: `Org {id}: API returned {n} total events (page 1)`
-- Past-dropped count logged at INFO: `Org {id}: dropped {n} past events, {n} upcoming remain`
-- Per-org upcoming count elevated from DEBUG to INFO — now visible in CI logs without changing log level config
+**Eventbrite pagination fixed (`scrapers/eventbrite_scraper.py`)**
+- Root cause: API returns events in ascending date order (oldest first). Orgs with many past events filled all 50 slots on page 1 with past events; `start_after` dropped all of them → 0 results.
+- Fix: `_fetch_org_events` now paginates using `pagination.continuation` token, up to `max_pages` (default 5, configured in sources.yaml).  Stops as soon as `has_more_items=False` or continuation is absent.
+- Per-org summary logged at INFO: total fetched, past dropped, upcoming kept — visible in CI debug step.
 
 **Vercel cache headers (`vercel.json`)**
 - Added `Cache-Control: no-cache, must-revalidate` for all `*.json` and `events_*.html` routes

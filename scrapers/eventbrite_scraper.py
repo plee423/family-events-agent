@@ -88,6 +88,7 @@ class EventbriteScraper(BaseScraper):
         source_name = source_config.get("name", "Eventbrite")
         tags = source_config.get("tags", [])
         age_hint = source_config.get("age_hint", "")
+        max_pages = int(source_config.get("max_pages", 5))
 
         now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -100,6 +101,7 @@ class EventbriteScraper(BaseScraper):
                 tags=tags,
                 age_hint=age_hint,
                 start_after=now_utc,
+                max_pages=max_pages,
             )
             all_events.extend(org_events)
             self.logger.info("  Org %s: %d upcoming events", org_id, len(org_events))
@@ -114,45 +116,59 @@ class EventbriteScraper(BaseScraper):
         tags: list,
         age_hint: str,
         start_after: str,
+        max_pages: int = 5,
     ) -> list[Event]:
         """Fetch upcoming events for a single Eventbrite organizer.
 
-        The /v3/organizers/{id}/events/ endpoint only supports the 'expand' param.
-        It does not accept status, page_size, or date-range filters (all return 400).
-        Default page size is 50. We filter past events in Python via start_after.
+        The /v3/organizers/{id}/events/ endpoint returns events in ascending date order
+        (oldest first), including past events.  An org with many past events will fill
+        the entire first page with past events, so we must paginate using the
+        continuation token until we hit future events or exhaust max_pages.
         """
         params = {"expand": "venue,ticket_classes"}
 
         events: list[Event] = []
+        total_raw = 0
 
-        try:
-            data = self._get(
-                f"{self.API_BASE}/organizers/{org_id}/events/",
-                params,
-            )
-        except Exception as exc:
-            self.logger.error("Eventbrite org %s fetch failed: %s", org_id, exc)
-            return events
+        for page_num in range(1, max_pages + 1):
+            try:
+                data = self._get(
+                    f"{self.API_BASE}/organizers/{org_id}/events/",
+                    params,
+                )
+            except Exception as exc:
+                self.logger.error("Eventbrite org %s page %d fetch failed: %s", org_id, page_num, exc)
+                break
 
-        raw_items = data.get("events", [])
-        self.logger.info("  Org %s: API returned %d total events (page 1)", org_id, len(raw_items))
-        for item in raw_items:
-            event = self._parse_event(item, source_name, tags, age_hint, start_after)
-            if event:
-                events.append(event)
-
-        past_dropped = len(raw_items) - len(events)
-        if past_dropped:
+            raw_items = data.get("events", [])
+            total_raw += len(raw_items)
             self.logger.info(
-                "  Org %s: dropped %d past events, %d upcoming remain",
-                org_id, past_dropped, len(events),
+                "  Org %s page %d: %d events from API", org_id, page_num, len(raw_items)
             )
 
-        if data.get("pagination", {}).get("has_more_items"):
-            self.logger.warning(
-                "Eventbrite org %s has >50 events — only first 50 fetched", org_id
-            )
+            if not raw_items:
+                break
 
+            for item in raw_items:
+                event = self._parse_event(item, source_name, tags, age_hint, start_after)
+                if event:
+                    events.append(event)
+
+            pagination = data.get("pagination", {})
+            if not pagination.get("has_more_items"):
+                break
+
+            continuation = pagination.get("continuation")
+            if not continuation:
+                break
+            # Pass continuation token on next request
+            params = {"expand": "venue,ticket_classes", "continuation": continuation}
+
+        past_dropped = total_raw - len(events)
+        self.logger.info(
+            "  Org %s: %d total fetched, %d past dropped, %d upcoming",
+            org_id, total_raw, past_dropped, len(events),
+        )
         return events
 
     def _parse_event(
