@@ -12,10 +12,10 @@ from __future__ import annotations
 _NEIGHBORHOODS: list[tuple[str, float, float, float, float]] = [
     # ── Downtown / Near North ───────────────────────────────────────────────
     ("The Loop",            41.873, 41.888, -87.638, -87.624),
-    ("South Loop",          41.854, 41.873, -87.638, -87.617),
+    ("South Loop",          41.854, 41.873, -87.638, -87.600),  # extended east to cover Museum Campus / lakefront
     ("West Loop",           41.877, 41.894, -87.654, -87.638),
     ("River North",         41.888, 41.904, -87.638, -87.620),
-    ("Streeterville",       41.888, 41.900, -87.624, -87.610),
+    ("Streeterville",       41.888, 41.900, -87.624, -87.600),  # extended east to cover Navy Pier / CCM
     ("Gold Coast",          41.895, 41.910, -87.632, -87.621),
     # ── North Side ──────────────────────────────────────────────────────────
     ("Old Town",            41.904, 41.918, -87.641, -87.627),
