@@ -66,7 +66,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: chicago-output
-          path: output/
+          path: |
+            output/events_chicago.json
+            output/events_chicago.html
+            output/family_events_*.ics
+          if-no-files-found: warn
           retention-days: 1
 
       - name: Upload Chicago geocode cache
@@ -117,7 +121,11 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: irvine-output
-          path: output/
+          path: |
+            output/events_irvine.json
+            output/events_irvine.html
+            output/events_irvine_*.ics
+          if-no-files-found: warn
           retention-days: 1
 
       - name: Upload Irvine geocode cache
@@ -144,13 +152,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: chicago-output
-          path: output/
+          path: .
 
       - name: Download Irvine outputs
         uses: actions/download-artifact@v4
         with:
           name: irvine-output
-          path: output/
+          path: .
 
       - name: Download Chicago geocode cache
         uses: actions/download-artifact@v4
