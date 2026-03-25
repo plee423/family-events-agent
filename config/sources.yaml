@@ -56,6 +56,7 @@ sources:
 
   - name: "Field Museum - Events"
     org_type: "museum"
+    children_only: false  # General museum events; adult programs common — require explicit children keywords
     url: "https://www.fieldmuseum.org/our-events"
     scraper: "html"
     selectors:
@@ -65,10 +66,11 @@ sources:
       location: ""
       link: "a.h4"
     tags: ["museum", "science", "family"]
-    cost: ""
+    cost: "paid admission"
 
   - name: "Art Institute of Chicago - Events"
     org_type: "museum"
+    children_only: false  # General museum events; adult lectures common — require explicit children keywords
     url: "https://www.artic.edu/events"
     scraper: "browser"
     selectors:
@@ -83,6 +85,7 @@ sources:
 
   - name: "Chicago History Museum - Events"
     org_type: "museum"
+    children_only: false  # General museum; adult history programs common — require explicit children keywords
     # Switched from browser scraper to Tribe Events REST API (site is JS-rendered).
     # API returns 230+ events with full pagination via next_rest_url.
     url: "https://calendar.chicagohistory.org/wp-json/tribe/events/v1/events?per_page=50"
@@ -214,6 +217,7 @@ sources:
 
   - name: "Chicago Cultural Center - Events"
     org_type: "cultural_center"
+    children_only: false  # Mixed adult/family events — require explicit children keywords
     url: "https://www.chicago.gov/content/city/en/depts/dca/supp_info/events2/jcr:content/parsys/fullcalendar/calendarData"
     scraper: "chicago_aem"
     tag_filter: "Chicago Cultural Center"
@@ -222,6 +226,7 @@ sources:
 
   - name: "Navy Pier - Events"
     org_type: "entertainment"
+    children_only: false  # General entertainment venue — require explicit children keywords to include
     url: "https://navypier.org/pier-events/"
     scraper: "browser"
     selectors:
@@ -253,9 +258,21 @@ sources:
 
   - name: "Eventbrite - Chicago Family Events"
     org_type: "eventbrite"
-    url: "https://www.eventbriteapi.com/v3/events/search/"
+    url: ""  # unused — org-based API; no location search endpoint
     scraper: "eventbrite"
-    keywords: "baby toddler storytime family kids infant preschool children lapsit"
+    # Verified Chicago family/baby/toddler Eventbrite organizers (as of 2026-03-25).
+    # Uses /v3/organizers/{id}/events/ — the deprecated /v3/events/search/ is gone (Feb 2020).
+    org_ids:
+      - "14498519145"   # Weissbluth Pediatrics — infant CPR, sleep, breastfeeding
+      - "31435451531"   # FAME Center — FreePlay baby/caregiver art & sensory play
+      - "120884312028"  # Snuggly Start (Heloise Stauff) — infant massage (Oak Park)
+      - "27055420443"   # Collaboration for Early Childhood — baby expos (Oak Park)
+      - "4423387473"    # Babies & Bumps — baby expos for new/expecting parents
+      - "25223856619"   # Songs 'n Swings — baby/toddler music & movement
+      - "108784994551"  # Music Moves Chicago — Old Town School FireFlies toddler music
+      - "79847647193"   # St. James Lutheran Mini Mavericks — free weekly drop-in play
+      - "12301919835"   # Arts + Public Life — U of C South Side FireFlies toddler music
+      - "60909139173"   # Prairie District Neighborhood Alliance — South Loop family events
     max_pages: 5
     tags: ["family", "community", "kids"]
     age_hint: "0-60 months"

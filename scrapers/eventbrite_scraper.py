@@ -1,9 +1,9 @@
-"""Scraper for Eventbrite public events API.
+"""Scraper for Eventbrite organization-based events API.
 
-Searches for family/baby/toddler events near a configured location.
+Fetches events from a configured list of Chicago family/baby/toddler organizers.
 Requires EVENTBRITE_TOKEN environment variable (free Eventbrite developer account).
 
-API docs: https://www.eventbrite.com/platform/api#/reference/event/search/
+API docs: https://www.eventbrite.com/platform/api#/reference/organization/list-events-by-organization/
 """
 from __future__ import annotations
 
@@ -20,29 +20,27 @@ from .base import BaseScraper, Event, _infer_free
 
 logger = logging.getLogger(__name__)
 
-# Eventbrite category IDs relevant to family events
-# 1=Business, 10=Music, 11=Film, 12=Arts, 13=Fashion, 14=Health,
-# 15=Sports, 16=Travel, 17=Food, 18=Charity, 19=Politics,
-# 99=Other, 100=Science, 110=Holiday, 111=Family, 112=Education, 113=Seasonal
-_FAMILY_CATEGORY_IDS = "111,112"  # Family & Education
-
-_SEARCH_KEYWORDS = (
-    "baby toddler storytime family kids infant preschool children lapsit"
-)
-
 
 class EventbriteScraper(BaseScraper):
     """
-    Fetches family events from the Eventbrite public search API.
+    Fetches family events from Eventbrite using the organization-based API.
+
+    Calls GET /v3/organizers/{id}/events/ for each org_id in the source config.
+    The deprecated /v3/events/search/ endpoint (shut down Feb 2020) is no longer used.
+    Note: /v3/organizations/ is an account-management path (requires elevated auth);
+          /v3/organizers/ is the public-facing path for event creators — use that.
 
     Required env var: EVENTBRITE_TOKEN
 
     Configure in sources.yaml:
         scraper: eventbrite
-        # all other fields are optional overrides
-        keywords: "baby toddler storytime"     # default: see _SEARCH_KEYWORDS
-        radius: "10mi"                          # default from settings max_radius_miles
-        max_pages: 5                            # default 5 (50 events/page = 250 max)
+        org_ids:                          # list of Eventbrite organization IDs
+          - "14498519145"                 # Weissbluth Pediatrics
+          - "31435451531"                 # FAME Center
+          ...
+        max_pages: 5                      # per org (default 5, 50 events/page = 250 max)
+        tags: [...]
+        age_hint: "0-60 months"
     """
 
     API_BASE = "https://www.eventbriteapi.com/v3"
@@ -82,62 +80,75 @@ class EventbriteScraper(BaseScraper):
             )
             return []
 
-        loc_cfg = self.settings.get("location", {})
-        home_lat = loc_cfg.get("home_lat")
-        home_lng = loc_cfg.get("home_lng")
-        max_radius = loc_cfg.get("max_radius_miles", 10)
-
-        if home_lat is None or home_lng is None:
-            self.logger.warning("No home coordinates in settings — skipping Eventbrite")
+        org_ids: list[str] = source_config.get("org_ids", [])
+        if not org_ids:
+            self.logger.warning("No org_ids configured for Eventbrite source — skipping")
             return []
 
-        org_name = source_config.get("name", "Eventbrite")
+        source_name = source_config.get("name", "Eventbrite")
         tags = source_config.get("tags", [])
         age_hint = source_config.get("age_hint", "")
-        keywords = source_config.get("keywords", _SEARCH_KEYWORDS)
-        radius = source_config.get("radius", f"{max_radius}mi")
-        max_pages = int(source_config.get("max_pages", 5))
 
         now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-        params = {
-            "q": keywords,
-            "location.latitude": home_lat,
-            "location.longitude": home_lng,
-            "location.within": radius,
-            "categories": _FAMILY_CATEGORY_IDS,
-            "start_date.range_start": now_utc,
-            "expand": "venue,ticket_classes",
-            "page_size": 50,
-            "page": 1,
-        }
-
         all_events: list[Event] = []
-        page = 1
 
-        while page <= max_pages:
-            params["page"] = page
-            try:
-                data = self._get(f"{self.API_BASE}/events/search/", params)
-            except Exception as exc:
-                self.logger.error("Eventbrite API fetch failed page %d: %s", page, exc)
-                break
+        for org_id in org_ids:
+            org_events = self._fetch_org_events(
+                org_id=str(org_id),
+                source_name=source_name,
+                tags=tags,
+                age_hint=age_hint,
+                start_after=now_utc,
+            )
+            all_events.extend(org_events)
+            self.logger.debug("  Org %s: %d events", org_id, len(org_events))
 
-            for item in data.get("events", []):
-                event = self._parse_event(item, org_name, tags, age_hint)
-                if event:
-                    all_events.append(event)
-
-            pagination = data.get("pagination", {})
-            if not pagination.get("has_more_items", False):
-                break
-            page += 1
-
-        self.logger.info("  %s: found %d events", org_name, len(all_events))
+        self.logger.info("  %s: found %d events across %d orgs", source_name, len(all_events), len(org_ids))
         return all_events
 
+    def _fetch_org_events(
+        self,
+        org_id: str,
+        source_name: str,
+        tags: list,
+        age_hint: str,
+        start_after: str,
+    ) -> list[Event]:
+        """Fetch upcoming events for a single Eventbrite organizer.
+
+        The /v3/organizers/{id}/events/ endpoint only supports the 'expand' param.
+        It does not accept status, page_size, or date-range filters (all return 400).
+        Default page size is 50. We filter past events in Python via start_after.
+        """
+        params = {"expand": "venue,ticket_classes"}
+
+        events: list[Event] = []
+
+        try:
+            data = self._get(
+                f"{self.API_BASE}/organizers/{org_id}/events/",
+                params,
+            )
+        except Exception as exc:
+            self.logger.error("Eventbrite org %s fetch failed: %s", org_id, exc)
+            return events
+
+        for item in data.get("events", []):
+            event = self._parse_event(item, source_name, tags, age_hint, start_after)
+            if event:
+                events.append(event)
+
+        if data.get("pagination", {}).get("has_more_items"):
+            self.logger.warning(
+                "Eventbrite org %s has >50 events — only first 50 fetched", org_id
+            )
+
+        return events
+
     def _parse_event(
-        self, item: dict, org_name: str, tags: list, age_hint: str
+        self, item: dict, org_name: str, tags: list, age_hint: str,
+        start_after: str | None = None,
     ) -> Event | None:
         title = (item.get("name") or {}).get("text", "").strip()
         if not title:
@@ -156,6 +167,15 @@ class EventbriteScraper(BaseScraper):
             date_end = dateutil_parser.parse(end_utc) if end_utc else None
         except Exception:
             return None
+
+        # Client-side future filter (endpoint doesn't support date range params)
+        if start_after:
+            try:
+                cutoff = dateutil_parser.parse(start_after)
+                if date_start < cutoff:
+                    return None
+            except Exception:
+                pass
 
         # Venue
         venue = item.get("venue") or {}
@@ -182,8 +202,8 @@ class EventbriteScraper(BaseScraper):
         # Description
         description = (item.get("description") or {}).get("text", "")[:500]
 
-        # Cost — check ticket classes
-        is_free = item.get("is_free", False)
+        # Cost — check ticket classes then fall back to is_free flag
+        is_free_flag = item.get("is_free", False)
         ticket_classes = item.get("ticket_classes") or []
         min_cost = None
         for tc in ticket_classes:
@@ -197,7 +217,7 @@ class EventbriteScraper(BaseScraper):
                 except (TypeError, ValueError):
                     pass
 
-        if is_free or min_cost == 0:
+        if is_free_flag or min_cost == 0:
             cost_str = "free"
             is_free = True
         elif min_cost is not None:

@@ -226,7 +226,7 @@ def scrape_source(source: dict, settings: dict, use_cache: bool = True) -> list:
 
 # ── Filter pipeline ────────────────────────────────────────────────────────────
 
-def run_filters(events: list, settings: dict) -> list:
+def run_filters(events: list, settings: dict, sources: list[dict] | None = None) -> list:
     """Run the full filter pipeline: age → cost → location → dedup."""
     from filters.age_filter import filter_by_age
     from filters.cost_filter import filter_by_cost
@@ -255,7 +255,7 @@ def run_filters(events: list, settings: dict) -> list:
         ]
         logger.info("Keyword exclusion: %d → %d events", before, len(events))
 
-    events = filter_by_age(events, settings)
+    events = filter_by_age(events, settings, sources)
     events = filter_by_cost(events, settings)
     events = filter_by_location(events, settings)
     events = deduplicate(events)
@@ -325,7 +325,7 @@ def run(ctx, sources, location, dry_run, no_cache):
 
     # Filter pipeline
     click.echo("Running filters...")
-    filtered = run_filters(all_events, settings)
+    filtered = run_filters(all_events, settings, all_sources)
 
     if dry_run:
         _print_events(filtered)

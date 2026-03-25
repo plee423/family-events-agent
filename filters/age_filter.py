@@ -10,16 +10,22 @@ from scrapers.base import Event
 
 logger = logging.getLogger(__name__)
 
-# Keywords that strongly suggest this event is for babies/toddlers
+# Keywords unambiguously indicating this event is for babies/toddlers.
+# "family" intentionally excluded — it appears in venue branding tags (e.g. Navy Pier)
+# and causes false positives for unrelated events. Use WEAK_BABY_KEYWORDS for broader terms.
 BABY_KEYWORDS = {
     "baby", "infant", "toddler", "lapsit", "lap sit",
     "0-2", "0-3", "0-18", "0-24", "0-36",
     "storytime", "story time", "rhyme time",
     "baby gym", "baby yoga", "mommy and me", "daddy and me",
     "parent and me", "caregiver and me",
-    "family", "kids", "children", "little ones",
+    "kids", "children", "little ones",
     "preschool", "pre-k",
 }
+
+# Keywords that suggest children but are weaker signals on their own.
+# Used for non-children-focused sources only to avoid false positives from venue tags.
+WEAK_BABY_KEYWORDS = {"family"}
 
 # Keywords that strongly suggest the event is NOT for babies/toddlers
 ADULT_KEYWORDS = {
@@ -28,15 +34,29 @@ ADULT_KEYWORDS = {
 }
 
 
-def filter_by_age(events: list[Event], settings: dict) -> list[Event]:
+def _kw_match(text: str, keywords: set[str]) -> bool:
+    """Word-boundary keyword match — avoids substring false positives like '0-2' in '10-20'."""
+    for kw in keywords:
+        if re.search(r"\b" + re.escape(kw) + r"\b", text):
+            return True
+    return False
+
+
+def filter_by_age(
+    events: list[Event],
+    settings: dict,
+    sources: list[dict] | None = None,
+) -> list[Event]:
     """
     Keep events that are appropriate for the child's current age.
 
     Rules (applied in order):
-    1. If the event has adult-only keywords → reject
-    2. If the event title/tags contain baby/toddler keywords → keep
-    3. If the event has an explicit age_range → check for overlap with child's age
-    4. If there is no age info → keep (assume family-friendly unless excluded by keyword)
+    1. Adult-only keywords → reject
+    2. Baby/toddler keywords in title/description/tags → keep
+    3. Explicit age_range that overlaps with child's age range → keep
+    4a. No age info, source is children-focused (children_only=True, default) → keep
+    4b. No age info, source is NOT children-focused (children_only=False) → reject
+        (non-children sources like Navy Pier need an explicit positive signal)
     """
     child_cfg = settings.get("child", {})
     birth_date_str = child_cfg.get("birth_date", "")
@@ -53,32 +73,49 @@ def filter_by_age(events: list[Event], settings: dict) -> list[Event]:
         child_age_months, min_age, max_age,
     )
 
+    # Build lookup: source name → children_only flag (default True)
+    source_map = {s["name"]: s for s in (sources or [])}
+
     kept: list[Event] = []
     for event in events:
-        if _has_adult_keywords(event):
+        text = f"{event.title} {event.description} {' '.join(event.tags)}".lower()
+
+        # Rule 1: adult keywords → always reject
+        if _kw_match(text, ADULT_KEYWORDS):
             logger.debug("  REJECT (adult keywords): %s", event.title)
             continue
 
-        if _has_baby_keywords(event):
+        # Rule 2: baby/toddler keywords → always keep
+        if _kw_match(text, BABY_KEYWORDS):
             kept.append(event)
             continue
 
+        # Rule 3: explicit age range → keep if it overlaps, reject if it doesn't
         event_range = _parse_age_range(event.age_range)
-        if event_range is None:
-            # No age info — keep it
-            kept.append(event)
+        if event_range is not None:
+            event_min, event_max = event_range
+            if event_min <= max_age and event_max >= min_age:
+                kept.append(event)
+            else:
+                logger.debug(
+                    "  REJECT (age mismatch, event=%d–%d, child=%d months): %s",
+                    event_min, event_max, child_age_months, event.title,
+                )
             continue
 
-        event_min, event_max = event_range
-        # Keep if ranges overlap: [child_age_months] falls within [event_min, event_max]
-        # OR the configured range overlaps with the event's range
-        if event_min <= max_age and event_max >= min_age:
-            kept.append(event)
+        # Rule 4: no age info and no baby keywords
+        source_cfg = source_map.get(event.source_name, {})
+        children_only = source_cfg.get("children_only", True)
+
+        if children_only:
+            # Trusted children-focused source: "family" alone can count as a signal
+            if _kw_match(text, WEAK_BABY_KEYWORDS):
+                kept.append(event)
+            else:
+                kept.append(event)  # No info → keep (benefit of the doubt)
         else:
-            logger.debug(
-                "  REJECT (age mismatch, event=%d–%d, child=%d months): %s",
-                event_min, event_max, child_age_months, event.title,
-            )
+            # Non-children source (e.g. Navy Pier): require an explicit positive signal
+            logger.debug("  REJECT (no children signal, non-children source): %s", event.title)
 
     logger.info("Age filter: %d → %d events", len(events), len(kept))
     return kept
@@ -98,14 +135,6 @@ def _compute_age_months(birth_date_str: str) -> Optional[int]:
         return None
 
 
-def _has_adult_keywords(event: Event) -> bool:
-    text = f"{event.title} {event.description} {' '.join(event.tags)}".lower()
-    return any(kw in text for kw in ADULT_KEYWORDS)
-
-
-def _has_baby_keywords(event: Event) -> bool:
-    text = f"{event.title} {event.description} {' '.join(event.tags)}".lower()
-    return any(kw in text for kw in BABY_KEYWORDS)
 
 
 def _parse_age_range(age_range_str: str) -> Optional[tuple[int, int]]:

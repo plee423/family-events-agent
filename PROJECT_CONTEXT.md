@@ -184,101 +184,96 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-24 (session 4)
-- **Git:** Single commit — "Initial commit: family events agent project"
-- **Status:** Pipeline fully working. Web app + GitHub Actions workflow added. Ready for Vercel deploy and first full --no-cache run.
+- **Last updated:** 2026-03-25 (session 6)
+- **Status:** Pipeline fully working. CI push reliability fixed. Age filter tightened. Eventbrite rewritten to org-based API (`/v3/organizers/{id}/events/`) — 116 raw events from 10 Chicago family orgs. ~225+ events / 15 sources after filters.
 
-### Working sources (as of 2026-03-23)
-| Source | Events | Notes |
-|--------|--------|-------|
+### Working sources (as of 2026-03-25)
+| Source | Raw Events | Notes |
+|--------|-----------|-------|
 | Chicago Public Library | 249 raw | Bibliocommons API |
-| Chicago History Museum | 230 raw (5 pages) | Tribe Events REST API |
-| Chicago Cultural Center | 182 raw | Chicago AEM JSON API |
-| Chicago Children's Museum | 115 raw (3 pages) | Tockify REST API |
+| Chicago History Museum | 230 raw | Tribe Events REST API; `children_only: false` |
+| Chicago Cultural Center | 182 raw | Chicago AEM JSON API; `children_only: false` |
+| Chicago Children's Museum | 110 raw | Tockify REST API; links to programs page |
 | Millennium Park | 83 raw | Chicago AEM JSON API |
 | Chicago Park District Toddler | 16 raw | Playwright, keyword=toddler |
 | Chicago Park District Baby | 20 raw | Playwright, keyword=baby |
-| Art Institute | 9 raw | Playwright |
+| Art Institute | 10 raw | Playwright; `children_only: false` |
 | Lincoln Park Zoo | 8 raw | Playwright |
-| Field Museum Events | 8 raw | HTML scraper |
-| Field Museum Free Wednesdays | 3 raw | HTML scraper |
-| National Museum of Mexican Art | 4 raw | Playwright, partial fix |
-| Navy Pier | 2 raw | Playwright |
+| Field Museum Events | 8 raw | HTML scraper; `children_only: false`; cost: "paid admission" |
+| Field Museum Free Wednesdays | 3 raw | HTML scraper; `children_only: true` |
+| National Museum of Mexican Art | 4 raw | Playwright |
+| Navy Pier | 2 raw | Playwright; `children_only: false` |
+| The Book Cellar | varies | book_cellar scraper |
+| Peggy Notebaert Nature Museum | varies | nature_museum scraper |
 
-### Previously zero-result sources — fixed or disabled (session 3)
-| Source | Status | Fix |
-|--------|--------|-----|
-| Peggy Notebaert Nature Museum | **Fixed** — `nature_museum` scraper | Two-pass: index → `/events/slug` URLs → individual pages for dates. Server-rendered headless CMS, bare `<a>` tags, no CSS classes. |
-| The Book Cellar | **Fixed** — `book_cellar` scraper | Server-rendered Drupal `<h3>` date headers + sibling `<ul><li>` events. No iCal feed exists. Sequential parser, no browser needed. |
-| Shedd Aquarium | **Disabled** in sources.yaml | WAF blocks all HTTP clients at CDN edge including headless Playwright. Even `robots.txt` returns 403. Re-enable only if Tessitura TNEW API endpoint is found via DevTools. |
+**Final output (2026-03-25):** 225 events / 14 sources after all filters
 
-### Removed sources
-- **Griffin MSI** — domain changed `msichicago.org` → `griffinmsi.org`, fully React/JS-rendered, no calendar page
-- **Maggie Daley Park** — no event calendar exists; site is informational only
+### CI / workflow fixes (session 5)
 
-### Scraper files
-- `scrapers/tribe_events_scraper.py` — Tribe Events WP REST API with pagination
-- `scrapers/chicago_aem_scraper.py` — Chicago.gov AEM double-JSON endpoint with tag filter
-- `scrapers/tockify_scraper.py` — Tockify REST API with Unix timestamp pagination
-- `scrapers/book_cellar_scraper.py` — Sequential Drupal `<h3>`+`<ul>` calendar parser
-- `scrapers/nature_museum_scraper.py` — Two-pass: index collects URLs, individual pages parsed for dates
+**Git push reliability — fetch-rebase-push pattern**
+- Old pattern (push-fail-pull-rebase) caused two failure modes:
+  1. "Unstaged changes" during rebase — fixed by committing before pull
+  2. Rebase conflicts on output files from concurrent runs — fixed by `git pull --rebase -X theirs` + concurrency group
+- New pattern in `commit-outputs` job: always `git fetch` → `git rebase -X theirs origin/master` → `git push`, retry loop up to 3×
+- `actions/checkout@v4` uses `fetch-depth: 0` (full history for rebase)
+- `concurrency: group: scrape-events, cancel-in-progress: true` — prevents two runs racing
+- Confirmed working by Opus 4.6 model review
 
-### Output files
-- `calendar_gen/ics_builder.py` — RFC-5545 .ics file with VTIMEZONE, stable UIDs, 2 VALARMs
-- `calendar_gen/html_builder.py` — mobile-first HTML page (`output/events.html`): card layout grouped by date, free/paid badges, SVG icons, clickable event links, timezone-corrected display times
+**Debug step added** to Chicago scrape job: `ls -la output/` printed after scrape to diagnose why `events_chicago.json` wasn't updating in CI (under investigation — stale file from `548951a` being carried forward).
 
-### Bug fixes applied
-- `agent.py` `run_filters`: date window filter + sort use `.replace(tzinfo=None)` for naive/aware datetime mix
-- `chicago_aem_scraper.py`: handles both `{ "calendarData": "..." }` wrapper and raw JSON array
-- `filters/location_filter.py`: persistent geocoding cache at `cache/geocode_cache.json`; `max_retries=0`, `swallow_exceptions=False` so `GeocoderRateLimited` propagates to our handler; session-level `_geocoding_rate_limited` flag — first 429 disables all further Nominatim calls instantly, pipeline completes in seconds instead of minutes
-- `calendar_gen/html_builder.py`: Windows-compatible date/time formatting — `%-d` and `%-I` are Linux-only; replaced with try/except falling back to `%d`/`%I` + `lstrip("0")`
+### Filter fixes (session 5)
 
-### Bug fixes (session 3 — post-Actions run)
-- `bibliocommons_scraper.py`: `_fetch_branches()` now extracts `address` from API alongside name → `location_address` set on all CPL/IPL/OCPL events → location filter can now geocode and distance-filter library events correctly
-- `bibliocommons_scraper.py`: hardcoded `chipublib.bibliocommons.com` event URL replaced with `f"https://{library_id}.bibliocommons.com/events/{id}"` — Irvine and OCPL now get correct URLs
-- `sources_irvine.yaml`: added missing `library_id: "irvine"` to Irvine Public Library — was defaulting to `"chipublib"` causing all 156 Irvine events to come from Chicago CPL
-- `sources_irvine.yaml`: replaced stub sources with verified scrapers (see below)
+**Age filter (`filters/age_filter.py`) — tightened**
+- Removed `"family"` from `BABY_KEYWORDS` — was causing all Navy Pier events to pass (source tags include `"family"`)
+- Added `WEAK_BABY_KEYWORDS = {"family"}` — used only for `children_only=True` sources
+- Added word-boundary matching via `re.search(r"\b" + re.escape(kw) + r"\b", text)` — fixes substring false positives (`"0-2"` matching `"10-20"`, `"kids"` matching `"sidekicks"`)
+- Added `children_only` source-level flag: sources marked `children_only: false` in sources.yaml must have an explicit baby/toddler keyword to pass the filter; no-age-info events from those sources are **rejected** (not kept by default)
+- `filter_by_age` now accepts `sources: list[dict] | None` and looks up `children_only` by `event.source_name` — no new field on Event dataclass
+- `run_filters` and `agent.py run` updated to pass `all_sources` through
 
-### Irvine sources (verified 2026-03-24)
-| Source | Scraper | Notes |
-|--------|---------|-------|
-| Irvine Public Library | bibliocommons (`library_id: "irvine"`) | Fixed — was scraping CPL |
-| Orange County Public Library | bibliocommons (`library_id: "ocpl"`) | New — confirmed same Bibliocommons platform |
-| Pretend City Children's Museum | tribe_events | Confirmed 149 events via REST API |
-| Bowers Museum | html (`h3.sppb-addon-title`) | Confirmed server-rendered Joomla; selectors need test-source verification |
-| City of Irvine | html (`table tr td`) | Confirmed server-rendered Drupal table |
-| Discovery Cube OC | browser | JS/AJAX-rendered; AJAX endpoint unknown — low confidence, needs DevTools investigation |
+**Sources marked `children_only: false` in sources.yaml:**
+- Navy Pier - Events (general entertainment)
+- Art Institute of Chicago - Events (adult lectures common)
+- Chicago History Museum - Events (adult history programs common)
+- Field Museum - Events (general museum; note: Free Wednesdays stays `true`)
+- Chicago Cultural Center - Events (mixed adult/family events)
 
-### Web app / deployment (added session 3)
-- `public/index.html` — self-contained SPA: city switcher (Chicago/Irvine), age/cost/when/venue filters, per-event .ics download (JS-generated), bulk .ics download of filtered events, HTML page download link
-- `vercel.json` — serves `public/` as static site root
-- `.github/workflows/scrape.yml` — runs Chicago + Irvine scrapers as parallel jobs; commit job waits for both, copies JSON/ICS/HTML to `public/`, pushes to main
-- `calendar_gen/json_builder.py` — new output: `output/events_{city}.json` consumed by web app
-- `config/settings_irvine.yaml` — Irvine location overrides (merged on top of `settings.yaml`)
-- `config/sources_irvine.yaml` — Irvine sources: IPL uses `bibliocommons` scraper (confirmed same platform), Pretend City uses `tribe_events` scraper, others are html/browser stubs needing verification
-- `agent.py` — now loads `settings_{location}.yaml` override when `--location` is passed; outputs JSON alongside .ics and .html
-- `calendar_gen/html_builder.py` — now uses `settings['output']['html_filename']` instead of hardcoded `events.html`
-- `config/settings.yaml` — added `json_filename: events_chicago.json`, `html_filename: events_chicago.html`
+**Cost fix:** `Field Museum - Events` cost changed from `""` to `"paid admission"` — prevents `_infer_free` from incorrectly tagging events as free.
 
-### CI performance fixes (session 4)
-- `.github/workflows/scrape.yml`: Playwright browser cache via `actions/cache@v4` — key on `requirements.txt` hash. Cache hit skips `--with-deps` (saves ~1-2 min per city job).
-- `cache/geocode_cache.json`: Pre-populated with all known Chicago + Irvine fixed venues (28 entries). Committed to repo — `.gitignore` updated with `!cache/geocode_cache.json` exception. Workflow now merges geocache from both city jobs and commits back → accumulated geocodes persist across nightly runs.
-- Workflow `commit-outputs` job: uploads `chicago-geocache` + `irvine-geocache` artifacts, downloads + Python-merges in commit job, `git add cache/geocode_cache.json` added to commit.
+### Eventbrite — rewritten to org-based API (session 6)
 
-### New scrapers / fixes (session 4 continued)
-- `scrapers/tockify_scraper.py`: reads `website` field from source config as fallback URL when Tockify API returns no per-event URLs. Chicago Children's Museum events now link to programs page.
-- `config/sources.yaml`: added `website: "https://chicagochildrensmuseum.org/visit/programs/"` to CCM source.
-- `config/sources.yaml`: added dedicated `Chicago Public Library - Harold Washington` and `Chicago Public Library - Near North` sources with `branch_filter` — ensures downtown branches appear regardless of main CPL pagination order.
-- `scrapers/eventbrite_scraper.py`: new scraper for Eventbrite public search API. Searches by lat/lng + radius + keywords. Requires `EVENTBRITE_TOKEN` env var (free developer account). Gracefully skips (logs warning, returns []) if token absent — pipeline continues.
-- `config/sources.yaml` + `config/sources_irvine.yaml`: added Eventbrite source entries for Chicago and Irvine.
-- `.github/workflows/scrape.yml`: passes `EVENTBRITE_TOKEN` secret as env var to both scrape jobs.
+- `/v3/events/search/` shut down Feb 2020 — 404 for all tokens.
+- `/v3/organizations/{id}/events/` also returns 404 (account-management path, requires elevated auth).
+- **Correct endpoint:** `/v3/organizers/{id}/events/?expand=venue,ticket_classes` — public, works with free dev token.
+- **API constraint:** Only `expand` param is accepted. `status`, `page_size`, `start_date.range_start` all return 400. Default page is 50 events. Past events filtered in Python.
+- **Result:** 116 raw events across 10 orgs confirmed working locally.
+
+**10 verified Chicago family/baby Eventbrite organizers (configured in sources.yaml):**
+
+| # | Name | Org ID | Description |
+|---|------|--------|-------------|
+| 1 | Weissbluth Pediatrics | 14498519145 | Free infant CPR, sleep, breastfeeding classes |
+| 2 | FAME Center | 31435451531 | FreePlay baby/caregiver art & sensory play |
+| 3 | Heloise Stauff (Snuggly Start) | 120884312028 | Infant massage workshops (Oak Park) |
+| 4 | Collaboration for Early Childhood | 27055420443 | Baby expos, parent workshops (Oak Park) |
+| 5 | Babies & Bumps | 4423387473 | Baby expos for new/expecting parents |
+| 6 | Songs 'n Swings | 25223856619 | Free baby/toddler music & movement classes |
+| 7 | Music Moves Chicago | 108784994551 | Old Town School FireFlies toddler music |
+| 8 | St. James Lutheran (Mini Mavericks) | 79847647193 | Free weekly drop-in play (birth–4, Lincoln Park) |
+| 9 | Arts + Public Life | 12301919835 | U of C South Side FireFlies toddler music |
+| 10 | Prairie District Neighborhood Alliance | 60909139173 | South Loop seasonal family events |
+
+### New scrapers / fixes (session 4 — carried forward)
+- `scrapers/tockify_scraper.py`: `website` fallback URL for CCM per-event links
+- `config/sources.yaml`: CCM `website` field, Harold Washington + Near North branch-filtered CPL sources
+- `.github/workflows/scrape.yml`: `EVENTBRITE_TOKEN` secret wired to both scrape jobs
 
 ### Known issues / next steps
-- **Deploy to Vercel:** Push repo to GitHub, connect to Vercel (import project → auto-detects `public/` → deploy)
-- **Trigger first Actions run:** Go to GitHub → Actions → Scrape Events → Run workflow (manual trigger)
-- **Verify Irvine scrapers:** `python agent.py test-source "Irvine Public Library" --location irvine --no-cache` etc.
+- **Fix 4 (free tags):** Add `"paid admission"` to `paid_overrides` in `_infer_free`; update cost fields for Art Institute, History Museum in sources.yaml
+- **Fix 5 (neighborhoods):** Add `neighborhood_classifier.py` with Chicago bounding boxes; add `neighborhood: str` to Event dataclass; include in JSON/HTML output
+- **CI debug:** Investigate why `events_chicago.json` not updating in CI — debug `ls output/` step added; check next run logs
+- **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
-- Tests not yet reviewed or run
 
 ---
 
