@@ -53,6 +53,9 @@ jobs:
         env:
           EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
+      - name: Debug Chicago output files
+        run: ls -la output/ && echo "---" && head -3 output/events_chicago.json 2>/dev/null || echo "events_chicago.json NOT FOUND"
+
       - name: Upload Chicago outputs
         uses: actions/upload-artifact@v4
         with:
