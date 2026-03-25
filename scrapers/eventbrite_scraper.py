@@ -214,15 +214,35 @@ class EventbriteScraper(BaseScraper):
         ]
         location_address = ", ".join(p for p in addr_parts if p)
 
-        # Lat/lng from venue if available
-        location_lat = None
-        location_lng = None
+        # Virtual / online event detection.
+        # Eventbrite sets is_online_event=True for events with no physical venue.
+        # Also catch the "0.0"/"0" lat/lng that Eventbrite uses for online events.
+        is_online = bool(item.get("is_online_event") or item.get("online_event"))
         try:
-            if venue.get("latitude"):
-                location_lat = float(venue["latitude"])
-                location_lng = float(venue["longitude"])
+            lat_raw = venue.get("latitude")
+            lng_raw = venue.get("longitude")
+            if lat_raw and lng_raw and float(lat_raw) == 0.0 and float(lng_raw) == 0.0:
+                is_online = True
         except (TypeError, ValueError):
             pass
+
+        neighborhood = "Virtual" if is_online else ""
+
+        # Lat/lng — leave None for virtual events so location_filter skips them.
+        location_lat = None
+        location_lng = None
+        if not is_online:
+            try:
+                lat_raw = venue.get("latitude")
+                lng_raw = venue.get("longitude")
+                if lat_raw and lng_raw:
+                    lat_f = float(lat_raw)
+                    lng_f = float(lng_raw)
+                    if lat_f != 0.0 and lng_f != 0.0:
+                        location_lat = lat_f
+                        location_lng = lng_f
+            except (TypeError, ValueError):
+                pass
 
         # Description
         description = (item.get("description") or {}).get("text", "")[:500]
@@ -270,4 +290,5 @@ class EventbriteScraper(BaseScraper):
             age_range=age_hint,
             tags=list(tags),
             source_name=org_name,
+            neighborhood=neighborhood,
         )

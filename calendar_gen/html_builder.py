@@ -230,6 +230,15 @@ def _render_html(
       padding: 0.15rem 0.55rem;
     }}
 
+    .badge-virtual {{
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.68rem;
+      font-weight: 600;
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+    }}
+
     .card-meta {{
       font-size: 0.78rem;
       color: #6e6e73;
@@ -343,7 +352,9 @@ def _render_card(e: Event, dt: datetime) -> str:
     meta_items = [f'<span class="meta-item">{clock_icon} {_esc(time_str)}</span>']
     if location_str:
         meta_items.append(f'<span class="meta-item">{pin_icon} {_esc(location_str)}</span>')
-    if e.neighborhood:
+    if e.neighborhood == "Virtual":
+        meta_items.append('<span class="meta-item badge badge-virtual">Virtual</span>')
+    elif e.neighborhood:
         meta_items.append(f'<span class="meta-item badge badge-neighborhood">{_esc(e.neighborhood)}</span>')
     if dist_str:
         meta_items.append(f'<span class="meta-item">{walk_icon} {_esc(dist_str)}</span>')

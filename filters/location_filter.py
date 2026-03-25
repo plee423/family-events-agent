@@ -36,11 +36,26 @@ def _save_geocode_cache(cache: dict[str, list[float]]) -> None:
         logger.debug("Could not save geocode cache: %s", exc)
 
 
+_VIRTUAL_KEYWORDS = frozenset(["online", "virtual", "zoom", "webinar", "livestream", "live stream"])
+
+
+def _is_virtual(event: Event) -> bool:
+    """Return True if the event is online/virtual with no physical location."""
+    if event.neighborhood == "Virtual":
+        return True
+    combined = " ".join([
+        event.location_name or "",
+        event.location_address or "",
+    ]).lower()
+    return any(kw in combined for kw in _VIRTUAL_KEYWORDS)
+
+
 def filter_by_location(events: list[Event], settings: dict) -> list[Event]:
     """
-    1. Geocode events that have an address but no lat/lng.
-    2. Compute distance from home.
-    3. Filter out events beyond max_radius_miles.
+    1. Mark virtual/online events and keep them without a distance check.
+    2. Geocode events that have an address but no lat/lng.
+    3. Compute distance from home.
+    4. Filter out events beyond max_radius_miles.
     Events with no location info at all are kept (we can't exclude them fairly).
     """
     loc_cfg = settings.get("location", {})
@@ -60,6 +75,12 @@ def filter_by_location(events: list[Event], settings: dict) -> list[Event]:
 
     kept: list[Event] = []
     for event in events:
+        # Virtual/online events have no physical location — keep immediately.
+        if _is_virtual(event):
+            event.neighborhood = "Virtual"
+            kept.append(event)
+            continue
+
         # If no address info at all, keep the event (benefit of the doubt)
         if not event.location_name and not event.location_address:
             kept.append(event)

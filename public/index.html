@@ -207,6 +207,11 @@
       font-size: 0.68rem; font-weight: 600;
       border-radius: 999px; padding: 0.15rem 0.5rem;
     }
+    .badge-virtual-inline {
+      background: #e0f2fe; color: #0369a1;
+      font-size: 0.68rem; font-weight: 600;
+      border-radius: 999px; padding: 0.15rem 0.5rem;
+    }
 
     .card-meta {
       font-size: 0.75rem;
@@ -399,7 +404,11 @@ async function loadCity(city) {
 function buildNeighborhoodFilters() {
   // Exclude the broad "Chicago" fallback — it's a catch-all, not a named neighborhood.
   // Events with neighborhood="" or "Chicago" are still shown under "All areas".
-  const hoods = [...new Set(allEvents.map(e => e.neighborhood).filter(n => n && n !== 'Chicago'))].sort();
+  // "Virtual" is pinned to the end so geographic neighborhoods sort first.
+  const allNames = [...new Set(allEvents.map(e => e.neighborhood).filter(n => n && n !== 'Chicago'))];
+  const geoHoods = allNames.filter(n => n !== 'Virtual').sort();
+  const hasVirtual = allNames.includes('Virtual');
+  const hoods = hasVirtual ? [...geoHoods, 'Virtual'] : geoHoods;
   const divider = document.getElementById('neighborhoodDivider');
   const group = document.getElementById('neighborhoodFilters');
   if (!hoods.length) {
@@ -554,7 +563,8 @@ function renderCard(e) {
 
   const metaItems = [`<span class="meta-item">${clockSVG} ${esc(timeStr)}</span>`];
   if (e.location_name) metaItems.push(`<span class="meta-item">${pinSVG} ${esc(e.location_name)}</span>`);
-  if (e.neighborhood && e.neighborhood !== 'Chicago') metaItems.push(`<span class="meta-item badge-neighborhood-inline">${esc(e.neighborhood)}</span>`);
+  if (e.neighborhood === 'Virtual') metaItems.push(`<span class="meta-item badge-virtual-inline">Virtual</span>`);
+  else if (e.neighborhood && e.neighborhood !== 'Chicago') metaItems.push(`<span class="meta-item badge-neighborhood-inline">${esc(e.neighborhood)}</span>`);
   if (e.distance_miles != null) metaItems.push(`<span class="meta-item">${walkSVG} ${e.distance_miles} mi</span>`);
   if (e.org_name && e.org_name !== e.location_name) metaItems.push(`<span class="meta-item">· ${esc(e.org_name)}</span>`);
 
