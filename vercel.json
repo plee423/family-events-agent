@@ -3,5 +3,19 @@
   "outputDirectory": "public",
   "buildCommand": null,
   "installCommand": null,
-  "devCommand": null
+  "devCommand": null,
+  "headers": [
+    {
+      "source": "/(.*\\.json)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/(events_.*\\.html)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, must-revalidate" }
+      ]
+    }
+  ]
 }

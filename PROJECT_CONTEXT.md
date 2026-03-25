@@ -184,7 +184,7 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-24 (session 8)
+- **Last updated:** 2026-03-25 (session 9)
 - **Status:** Pipeline fully working. CI push reliability fixed. Age filter tightened. Eventbrite rewritten to org-based API (`/v3/organizers/{id}/events/`) — 116 raw events from 10 Chicago family orgs. ~225+ events / 15 sources after filters.
 
 ### Working sources (as of 2026-03-25)
@@ -298,9 +298,30 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 - If events fetched but 0 in final output → location filter dropping them (check venue addresses)
 - If 0 fetched per org → orgs have no upcoming events right now
 
+### Fixes (session 9)
+
+**Neighborhood filter removed from UI (`public/index.html`)**
+- Removed `<div id="neighborhoodDivider">` + `<div id="neighborhoodFilters">` HTML
+- Removed `filters.neighborhood` state key
+- Removed `buildNeighborhoodFilters()` function and its two call sites
+- Removed neighborhood check from `applyFilters`
+- `neighborhood` field still emitted in JSON (from `location_filter.py`) — just not exposed in UI
+
+**CCM free-tag fix (`filters/cost_filter.py` `_re_evaluate_free`)**
+- Added step 0: if `event.cost` contains `"paid admission"`, short-circuit using only event *title* (not description) for strong-free phrases. Prevents CCM event descriptions like "free for all families" from overriding the source-level paid admission cost.
+- CCM's `cost: "paid admission (free first Sunday for Chicago residents)"` now correctly blocks all CCM events from being tagged `[FREE]` unless the event TITLE contains a genuine free-admission phrase (e.g., "Free First Sunday").
+
+**Eventbrite logging improved (`scrapers/eventbrite_scraper.py`)**
+- Per-org API response count now logged at INFO: `Org {id}: API returned {n} total events (page 1)`
+- Past-dropped count logged at INFO: `Org {id}: dropped {n} past events, {n} upcoming remain`
+- Per-org upcoming count elevated from DEBUG to INFO — now visible in CI logs without changing log level config
+
+**Vercel cache headers (`vercel.json`)**
+- Added `Cache-Control: no-cache, must-revalidate` for all `*.json` and `events_*.html` routes
+- Prevents browser/CDN from serving stale event data after nightly scrape pushes
+
 ### Known issues / next steps
-- **CI debug:** `events_chicago.json` not-updating issue under investigation. Debug `ls output/` step added to workflow — check next nightly run logs to confirm. Code path verified correct: `settings.yaml` `json_filename: "events_chicago.json"` → `output/events_chicago.json`.
-- **Eventbrite:** Check next CI run's "Debug Eventbrite raw events" step to see raw counts.
+- **Eventbrite:** If CI debug step shows `API returned 0 total events` per org → orgs are seasonally inactive (expected). If shows `N total, N dropped as past` → pagination needed (all 50 events are past). Check next CI run's "Debug Eventbrite raw events" logs.
 - **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
 

@@ -43,14 +43,27 @@ def _re_evaluate_free(event: Event) -> bool:
     3. "free" in the cost field → True (handles sources like Art Institute /
        History Museum whose cost strings are "free (IL residents ...)").
     """
-    title_desc = f"{event.title} {event.description}".lower()
+    title_lower = event.title.lower()
+    desc_lower = event.description.lower()
     cost_lower = event.cost.lower()
 
-    # 1. Explicit free event in the event's own title / description
+    # 0. Source cost is explicitly paid → cannot be overridden by description boilerplate.
+    #    e.g. CCM cost="paid admission (free first Sunday)" — the description may say
+    #    "free for all families" but the source is a paid-admission venue.
+    #    Only a genuine "Free Admission Day" in the event TITLE (not description) wins.
+    if "paid admission" in cost_lower:
+        strong_free_title = [
+            "free admission", "free entry", "free day", "free museum",
+            "no admission", "no cost", "no charge", "complimentary",
+        ]
+        return any(p in title_lower for p in strong_free_title)
+
+    # 1. Strong free phrases in title or description → True
     strong_free = [
         "free admission", "free entry", "free for", "free day", "free museum",
         "no admission", "no cost", "no charge", "complimentary",
     ]
+    title_desc = f"{title_lower} {desc_lower}"
     if any(p in title_desc for p in strong_free):
         return True
 

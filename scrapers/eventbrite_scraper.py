@@ -102,7 +102,7 @@ class EventbriteScraper(BaseScraper):
                 start_after=now_utc,
             )
             all_events.extend(org_events)
-            self.logger.debug("  Org %s: %d events", org_id, len(org_events))
+            self.logger.info("  Org %s: %d upcoming events", org_id, len(org_events))
 
         self.logger.info("  %s: found %d events across %d orgs", source_name, len(all_events), len(org_ids))
         return all_events
@@ -134,10 +134,19 @@ class EventbriteScraper(BaseScraper):
             self.logger.error("Eventbrite org %s fetch failed: %s", org_id, exc)
             return events
 
-        for item in data.get("events", []):
+        raw_items = data.get("events", [])
+        self.logger.info("  Org %s: API returned %d total events (page 1)", org_id, len(raw_items))
+        for item in raw_items:
             event = self._parse_event(item, source_name, tags, age_hint, start_after)
             if event:
                 events.append(event)
+
+        past_dropped = len(raw_items) - len(events)
+        if past_dropped:
+            self.logger.info(
+                "  Org %s: dropped %d past events, %d upcoming remain",
+                org_id, past_dropped, len(events),
+            )
 
         if data.get("pagination", {}).get("has_more_items"):
             self.logger.warning(

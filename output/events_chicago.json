@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-24T20:17:08.048409",
+  "generated_at": "2026-03-24T22:47:16.652456",
   "city": "chicago",
   "city_label": "Chicago",
   "timezone": "America/Chicago",
-  "total": 225,
-  "free_count": 217,
+  "total": 182,
+  "free_count": 109,
   "events": [
     {
       "uid": "20fcdbaadbc97c7550723f8f2a5b589c",
@@ -29,132 +29,13 @@
         "family"
       ],
       "distance_miles": 1.2,
-      "source_name": "Field Museum - Free Wednesdays"
-    },
-    {
-      "uid": "fe480af331333fc8b7f6315d66fa6c24",
-      "title": "Illinois Free Wednesday",
-      "display_title": "[FREE] Illinois Free Wednesday",
-      "date_start": "2026-03-25T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:Illinois Free Wednesdays",
-      "url": "https://www.fieldmuseum.org/our-events/free-wednesdays/free-wednesday-03-25-2026",
-      "cost": "",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "fa3d4a321842d7c1718d6c497f2a19cd",
-      "title": "PlayLab PlayDate: Sara Ruane- The Woman Who Loved Reptiles",
-      "display_title": "PlayLab PlayDate: Sara Ruane- The Woman Who Loved Reptiles",
-      "date_start": "2026-03-25T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:PlayLab PlayDates",
-      "url": "https://www.fieldmuseum.org/our-events/playlab-playdates/playlab-playdate-sara-ruane-the-woman-who-loved-reptiles",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "46cad733b648cc81bd410015b80444e1",
-      "title": "Antennae and Aromas: A Beetle’s Guide to Love, Lunch, and Survival",
-      "display_title": "Antennae and Aromas: A Beetle’s Guide to Love, Lunch, and Survival",
-      "date_start": "2026-03-25T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:Meet a Scientist",
-      "url": "https://www.fieldmuseum.org/our-events/meet-a-scientist/antennae-and-aromas-a-beetle-s-guide-to-love-lunch-and-survival",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "fbcbfca67221022838355afa55adb6c1",
-      "title": "Celebrating Women’s History Month with Elizabeth Babcock, PhD",
-      "display_title": "Celebrating Women’s History Month with Elizabeth Babcock, PhD",
-      "date_start": "2026-03-25T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Scientists present on topics from space exploration to psychology, all through the lens supporting women in science.",
-      "url": "https://www.fieldmuseum.org/our-events/women-in-science-lectures/celebrating-womens-history-month-with-elizabeth-babcock-phd",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "a933a5ecbeadedffd815473e76456ee6",
-      "title": "28th Annual Toast to Harry Caray",
-      "display_title": "28th Annual Toast to Harry Caray",
-      "date_start": "2026-03-25T00:00:00",
-      "date_end": null,
-      "org_name": "Navy Pier - Events",
-      "location_name": "Navy Pier - Events",
-      "location_address": "",
-      "location_lat": 41.8918,
-      "location_lng": -87.6052,
-      "description": "Events & Public Programs",
-      "url": "https://navypier.org/pier-events/28th-annual-toast-to-harry-caray/",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "family",
-        "entertainment",
-        "waterfront"
-      ],
-      "distance_miles": 1.1,
-      "source_name": "Navy Pier - Events"
+      "source_name": "Field Museum - Free Wednesdays",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "1073fefaec17c22451f069a761c793be",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-25T05:00:00+00:00",
       "date_end": "2026-03-26T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -163,9 +44,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -176,12 +57,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "8dd2d1ae9d96b06a89d9834d894b4040",
       "title": "Decades Day",
-      "display_title": "[FREE] Decades Day",
+      "display_title": "Decades Day",
       "date_start": "2026-03-25T05:00:00+00:00",
       "date_end": "2026-03-26T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -190,9 +72,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Dress up in the style of your favorite decade and join our joyful dance party at 11 am in the Great Hall!",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -203,12 +85,13 @@
         "Great-Hall"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "749131025418922135532daeacb1890c",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-25T05:00:00+00:00",
       "date_end": "2026-03-26T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -217,9 +100,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -231,12 +114,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "46870955a4bec8259280929c88c00ed6",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-25T05:00:00+00:00",
       "date_end": "2026-03-26T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -245,9 +129,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -258,55 +142,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "39ec08799564a6b4c648c1d36a685d94",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-25T09:30:00",
-      "date_end": "2026-03-25T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-85/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "70eac28ac7158e3d84165d88a542a8a7",
-      "title": "General Admission IL Resident Days",
-      "display_title": "[FREE] General Admission IL Resident Days",
-      "date_start": "2026-03-25T09:30:00",
-      "date_end": "2026-03-25T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-5/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "019e4e3bf9cb1d2c7123b4cf19625c05",
@@ -332,7 +169,8 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
       "uid": "ab365a2c76629bdd679c532df249104b",
@@ -358,7 +196,8 @@
         "reading"
       ],
       "distance_miles": 5.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "fb3bc545c2c4ebf5a9970886f83afc71",
@@ -384,7 +223,8 @@
         "reading"
       ],
       "distance_miles": 4.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3f4f176ce7644603b7f36b5986e8ed18",
@@ -410,7 +250,8 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "43d3045aeb710a5e37b210a0030cbefb",
@@ -436,7 +277,8 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
       "uid": "8f87ba55a59a21263efd700de22e83d0",
@@ -462,7 +304,8 @@
         "reading"
       ],
       "distance_miles": 6.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Hyde Park"
     },
     {
       "uid": "52bbfa16f3201e1ded52baa2a3c33820",
@@ -488,60 +331,13 @@
         "reading"
       ],
       "distance_miles": 7.5,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "23dea61cf0762b0d58be2baa4407872a",
-      "title": "Poetry Pop-up: Insects and Poems",
-      "display_title": "Poetry Pop-up: Insects and Poems",
-      "date_start": "2026-03-26T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:Poetry Pop-up",
-      "url": "https://www.fieldmuseum.org/our-events/poetry-pop-up/poetry-pop-up-insects-and-poems",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "e33e371c29662588d321ff03ab9daa39",
-      "title": "Toast to the Pier",
-      "display_title": "Toast to the Pier",
-      "date_start": "2026-03-26T00:00:00",
-      "date_end": null,
-      "org_name": "Navy Pier - Events",
-      "location_name": "Navy Pier - Events",
-      "location_address": "",
-      "location_lat": 41.8918,
-      "location_lng": -87.6052,
-      "description": "Events & Public Programs",
-      "url": "https://navypier.org/pier-events/toast-to-the-pier/",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "family",
-        "entertainment",
-        "waterfront"
-      ],
-      "distance_miles": 1.1,
-      "source_name": "Navy Pier - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "08411c1f654daea127266769a371ce59",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-26T05:00:00+00:00",
       "date_end": "2026-03-27T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -550,9 +346,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -563,12 +359,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "5dc93ee05f80a92a86a045bdc932cc98",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-26T05:00:00+00:00",
       "date_end": "2026-03-27T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -577,9 +374,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -591,12 +388,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "ad3e85762798b7dbdc9efecb2d309faa",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-26T05:00:00+00:00",
       "date_end": "2026-03-27T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -605,9 +403,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -618,12 +416,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f5e6f5eb2ae2149fb8ee76fc51b1f137",
       "title": "Sports Team Day",
-      "display_title": "[FREE] Sports Team Day",
+      "display_title": "Sports Team Day",
       "date_start": "2026-03-26T05:00:00+00:00",
       "date_end": "2026-03-30T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -632,9 +431,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Which team do you cheer for? Show your team spirit by wearing a jersey or other sports apparel. Join us in the Great Hall for games and sports from 10 am-11:30 am and 12:30 pm-2 pm!",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -645,31 +444,8 @@
         "Great-Hall"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "13e9123c91d7368e4d1ae8941c6be640",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-26T09:30:00",
-      "date_end": "2026-03-26T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-86/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "5ca789d87d2cc1d5944e7a68e707edf3",
@@ -694,15 +470,16 @@
         "family"
       ],
       "distance_miles": null,
-      "source_name": "National Museum of Mexican Art - Events"
+      "source_name": "National Museum of Mexican Art - Events",
+      "neighborhood": ""
     },
     {
-      "uid": "7a3a1672d1f0958916e4e20e82d9f4d3",
+      "uid": "c7daba648a5792d29e709946fd7975b6",
       "title": "AI for Visual Disabilities",
       "display_title": "[FREE] AI for Visual Disabilities",
       "date_start": "2026-03-26T10:30:00",
       "date_end": "2026-03-26T12:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -720,7 +497,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "62b2e09af2bf576cb13a31e991e32dc3",
@@ -746,7 +524,35 @@
         "reading"
       ],
       "distance_miles": 9.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
+    },
+    {
+      "uid": "1786ddf2d7976eeff43f8333d7f6a064",
+      "title": "Let's Play Board Games",
+      "display_title": "[FREE] Let's Play Board Games",
+      "date_start": "2026-03-26T15:00:00",
+      "date_end": "2026-03-26T16:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "North Austin",
+      "location_address": "",
+      "location_lat": 41.9466838,
+      "location_lng": -87.7765326,
+      "description": "Join us for a fun-filled, exciting game day for Adults & Seniors. We're playing Scrabble, UNO, Yahtzee, Monopoly, Chess, trivia and more. If you have a game you love, bring it! Bring a friend. Meet someone new. Light refreshments served. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made at least 14 business days before the event.",
+      "url": "https://chipublib.bibliocommons.com/events/69b2d5c3ad384e40edb3cdd7",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "distance_miles": 9.0,
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "39682c91618a0389cb4c974d90f980c4",
@@ -772,36 +578,8 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "aa0b8c5421850da3cf3c4b53e214e138",
-      "title": "Rising Arts Leaders | In-Person Session",
-      "display_title": "[FREE] Rising Arts Leaders | In-Person Session",
-      "date_start": "2026-03-26T15:00:00-05:00",
-      "date_end": "2026-03-26T16:30:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Learning Lab, 1st Floor South, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "Thursday, March 26, 2026\n3-4:30 p.m.",
-      "url": "https://www.eventbrite.com/e/sustaining-the-labor-behind-the-art-tickets-1983095860101?aff=oddtdtcreator",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Lectures & Workshops",
-        "Chicago Made: Artistic & Professional Development"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e4aef3ec4718b48c6f01a250f0f5621a",
@@ -827,7 +605,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "5fb1ed42a0b421e55a20741e5575d436",
@@ -853,7 +632,8 @@
         "reading"
       ],
       "distance_miles": 6.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "165cfb590604a0fc59572deee4033035",
@@ -879,7 +659,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Ravenswood"
     },
     {
       "uid": "dd8e8c1ea1a0cbc41c4c9553ec65f378",
@@ -905,12 +686,13 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "a993ae3cb2623cd6cec616d0087c3c2f",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-27T05:00:00+00:00",
       "date_end": "2026-03-28T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -919,9 +701,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -932,12 +714,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "eba08d2a3ec0091c6be6336ee9514eb0",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-27T05:00:00+00:00",
       "date_end": "2026-03-28T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -946,9 +729,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -960,12 +743,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "aed6584dca240388340904703fa5b337",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-27T05:00:00+00:00",
       "date_end": "2026-03-28T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -974,9 +758,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -987,31 +771,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "7626946c7abb06edae188b48630025dc",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-27T09:30:00",
-      "date_end": "2026-03-27T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-87/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e7b825750025d4d2d28e708b26876800",
@@ -1037,7 +798,8 @@
         "reading"
       ],
       "distance_miles": 5.9,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f5471ba36f5b1e95ec02e32f470b5d70",
@@ -1063,7 +825,8 @@
         "reading"
       ],
       "distance_miles": 9.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e252d51206ae4e9168b2a675c6e4e02e",
@@ -1089,60 +852,13 @@
         "reading"
       ],
       "distance_miles": 9.0,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "be53ee7559471edc6d71b7b7f84f912d",
-      "title": "PlayLab PlayDate: Reptiles Open Studio",
-      "display_title": "PlayLab PlayDate: Reptiles Open Studio",
-      "date_start": "2026-03-28T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:PlayLab PlayDates",
-      "url": "https://www.fieldmuseum.org/our-events/playlab-playdates/playlab-playdate-reptiles-open-studio",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
-    },
-    {
-      "uid": "d564d5d17bdfbd3b51ebc913d4e3c229",
-      "title": "Field Favorites in ASL",
-      "display_title": "Field Favorites in ASL",
-      "date_start": "2026-03-28T00:00:00",
-      "date_end": null,
-      "org_name": "Field Museum - Events",
-      "location_name": "Field Museum - Events",
-      "location_address": "",
-      "location_lat": 41.8661,
-      "location_lng": -87.6169,
-      "description": "Part of the series:Field Favorites in ASL",
-      "url": "https://www.fieldmuseum.org/our-events/field-favorites-in-asl/field-favorites-in-asl-03-28-2026",
-      "cost": "",
-      "is_free": false,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "science",
-        "family"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Field Museum - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "1ed9ac32e428ebd910d6ece09089e230",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-28T05:00:00+00:00",
       "date_end": "2026-03-29T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1151,9 +867,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1164,12 +880,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f3f9718fbe0f49c122e034962adf4baf",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-28T05:00:00+00:00",
       "date_end": "2026-03-29T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1178,9 +895,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1192,12 +909,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "0bf0b01c510ad57ff739da2963b3a8e0",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-28T05:00:00+00:00",
       "date_end": "2026-03-29T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1206,9 +924,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up 10:30, 11:30, 12:30, 1:30, 2:30, 3:30 ",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1219,59 +937,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "0b37aca4f3883f8515a547704504e216",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-28T09:30:00",
-      "date_end": "2026-03-28T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-88/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "c51a37f8044270006878a1930805303a",
-      "title": "Alberto Aguilar: I just really want to tell you this one thing",
-      "display_title": "[FREE] Alberto Aguilar: I just really want to tell you this one thing",
-      "date_start": "2026-03-28T10:00:00-05:00",
-      "date_end": "2026-08-23T16:45:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Exhibit Hall, 4th Floor North, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "March 28 - August 23, 2026",
-      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/aguilar.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Exhibitions"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "49527827109401f1143d0bce6a0e0970",
@@ -1297,7 +964,8 @@
         "reading"
       ],
       "distance_miles": 9.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9f379aef477ab9b7bb43df6e200fe64b",
@@ -1323,7 +991,8 @@
         "reading"
       ],
       "distance_miles": 6.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Hyde Park"
     },
     {
       "uid": "857559bbc2337454c67120ac8ecc55b0",
@@ -1349,7 +1018,8 @@
         "reading"
       ],
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f9b65f31d0aea5cae844ecf995908beb",
@@ -1375,7 +1045,8 @@
         "reading"
       ],
       "distance_miles": 9.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c9a16de1a10e9a2c0602c9e29b25e166",
@@ -1401,33 +1072,8 @@
         "reading"
       ],
       "distance_miles": 4.6,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "8525f8b5389e201d4cb8055e43833b6e",
-      "title": "Destination Discovery Story Time at C2E2",
-      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
-      "date_start": "2026-03-28T16:15:00",
-      "date_end": "2026-03-28T17:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
-      "location_name": "Chicago Public Library - Harold Washington",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
-      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "0b53fd5209f142ba909b6d0a0030afc2",
@@ -1453,7 +1099,8 @@
         "reading"
       ],
       "distance_miles": 1.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "South Loop"
     },
     {
       "uid": "84269fb5ea974357377b59364d34b974",
@@ -1479,12 +1126,40 @@
         "reading"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Public Library - Near North"
+      "source_name": "Chicago Public Library - Near North",
+      "neighborhood": "River North"
+    },
+    {
+      "uid": "8525f8b5389e201d4cb8055e43833b6e",
+      "title": "Destination Discovery Story Time at C2E2",
+      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
+      "date_start": "2026-03-28T16:15:00",
+      "date_end": "2026-03-28T17:00:00",
+      "org_name": "Chicago Public Library - Harold Washington",
+      "location_name": "Chicago Public Library - Harold Washington",
+      "location_address": "",
+      "location_lat": null,
+      "location_lng": null,
+      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
+      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "distance_miles": null,
+      "source_name": "Chicago Public Library - Harold Washington",
+      "neighborhood": ""
     },
     {
       "uid": "99e5cddf48f34413bfb37e1e9b41fbd6",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-29T05:00:00+00:00",
       "date_end": "2026-03-30T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1493,9 +1168,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1506,12 +1181,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c6ffc35b78e3c6a86a77b6c0fc8262fc",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-29T05:00:00+00:00",
       "date_end": "2026-03-30T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1520,9 +1196,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1534,12 +1210,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "29903492660dafda96c50c047c29a9b2",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-29T05:00:00+00:00",
       "date_end": "2026-03-30T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1548,9 +1225,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1561,36 +1238,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "23436b5d4355d179ebd4905022a903d2",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-29T12:00:00",
-      "date_end": "2026-03-29T17:00:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-89/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "dbba97a500f34bc22ab0296d1eb80a7f",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-30T05:00:00+00:00",
       "date_end": "2026-03-31T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1599,9 +1253,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1612,12 +1266,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c414b659f22e9e85f3b314b661a1e967",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-30T05:00:00+00:00",
       "date_end": "2026-03-31T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1626,9 +1281,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1640,12 +1295,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f0018b752ddd4014149b6f631c2c8687",
       "title": "Super Hero Day",
-      "display_title": "[FREE] Super Hero Day",
+      "display_title": "Super Hero Day",
       "date_start": "2026-03-30T05:00:00+00:00",
       "date_end": "2026-03-31T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1654,9 +1310,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Dress in your favorite jewelry, hat, headband, sunglasses, belt, and scarf... all at once! How many accessories can you wear at a time? Join us for a stylish dance party in the Great Hall at 11 am.",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1667,12 +1323,13 @@
         "Great-Hall"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f67e7574a4468b53ded378cd36b7d96a",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-30T05:00:00+00:00",
       "date_end": "2026-03-31T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1681,9 +1338,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1694,15 +1351,16 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
-      "uid": "7b201af88dd8cd79ea5d92309f931cfb",
+      "uid": "ea940da451b164b9a6ac4b0235589912",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-03-30T09:30:00",
       "date_end": "2026-03-30T12:30:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -1720,7 +1378,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "548d2eebb7d69e83b27c088a9d325d2f",
@@ -1746,7 +1405,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Andersonville"
     },
     {
       "uid": "33b811b56fe5228fb21563731c7e0f5f",
@@ -1772,7 +1432,8 @@
         "reading"
       ],
       "distance_miles": 5.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c00652bfa29ecec5fe7e9608cad13d11",
@@ -1798,7 +1459,8 @@
         "reading"
       ],
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e7658c7471c72061e4a59bd2c9aca05f",
@@ -1824,12 +1486,13 @@
         "reading"
       ],
       "distance_miles": 7.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "6cc565812a18a80aaecc4ab7e2738d9c",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-03-31T05:00:00+00:00",
       "date_end": "2026-04-01T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1838,9 +1501,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times 10:30, 11:30, 12:3",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1851,12 +1514,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "fcc439d88344ed7e458baaa0809aa0e7",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-03-31T05:00:00+00:00",
       "date_end": "2026-04-01T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1865,9 +1529,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1879,12 +1543,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3d87f23559b4cd1d652467f8671b0882",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-03-31T05:00:00+00:00",
       "date_end": "2026-04-01T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -1893,9 +1558,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -1906,31 +1571,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "e11dee2742086d6bacce298a0a8c2e41",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-03-31T09:30:00",
-      "date_end": "2026-03-31T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-90/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "af4e6343ef2f3b9ef42e8b4a78d2f0e0",
@@ -1956,7 +1598,8 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
       "uid": "53a6f18b1e086a7b04ef179bc9544ff9",
@@ -1982,7 +1625,8 @@
         "reading"
       ],
       "distance_miles": 5.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Humboldt Park"
     },
     {
       "uid": "09e8d73ea25d41c4fc34eee6d19934bc",
@@ -2008,7 +1652,8 @@
         "reading"
       ],
       "distance_miles": 6.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Hyde Park"
     },
     {
       "uid": "2a77f03465440ba9b5a799955f25713f",
@@ -2034,7 +1679,8 @@
         "reading"
       ],
       "distance_miles": 7.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "a6f72fb821577ae5d32ab7fc57cb3e92",
@@ -2060,7 +1706,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Andersonville"
     },
     {
       "uid": "e0250aaab5dbc94031eb375c1e55756e",
@@ -2086,7 +1733,8 @@
         "reading"
       ],
       "distance_miles": null,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": ""
     },
     {
       "uid": "c087ee6e6696589f33fcf346576f638a",
@@ -2111,12 +1759,13 @@
         "family"
       ],
       "distance_miles": 1.2,
-      "source_name": "Field Museum - Free Wednesdays"
+      "source_name": "Field Museum - Free Wednesdays",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "00d25aa44e308a256020b118862f773f",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-01T05:00:00+00:00",
       "date_end": "2026-04-02T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2125,9 +1774,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2138,12 +1787,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "681dc10e0cf781967d82dbd6562ba54f",
       "title": "Favorite Animal Day",
-      "display_title": "[FREE] Favorite Animal Day",
+      "display_title": "Favorite Animal Day",
       "date_start": "2026-04-01T05:00:00+00:00",
       "date_end": "2026-04-02T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2152,9 +1802,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Roar! Hiss! Woof! What sound does your favorite animal make? Dress as your favorite animal and get ready to make animal sounds at our 11 am dance party in the Great Hall!",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2165,12 +1815,13 @@
         "Great-Hall"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "5c7031a29b862eb05a4e38d477f65bde",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-01T05:00:00+00:00",
       "date_end": "2026-04-02T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2179,9 +1830,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2193,12 +1844,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "d6b33b7069c0144f8c96fffc3ea87768",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-01T05:00:00+00:00",
       "date_end": "2026-04-02T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2207,9 +1859,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2220,31 +1872,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "9b15dc1cf2688e8ab6787ded0eb6cfd6",
-      "title": "General Admission IL Resident Days",
-      "display_title": "[FREE] General Admission IL Resident Days",
-      "date_start": "2026-04-01T09:30:00",
-      "date_end": "2026-04-01T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-il-resident-days/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "8d246052aac140e041fe3b0077f792d7",
@@ -2270,7 +1899,8 @@
         "reading"
       ],
       "distance_miles": null,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": ""
     },
     {
       "uid": "932a33dfcf1e904e103050de4fd22cfc",
@@ -2296,12 +1926,13 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
       "uid": "c4fc3381e57919a6dca0193fc155b213",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-02T05:00:00+00:00",
       "date_end": "2026-04-03T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2310,9 +1941,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2323,12 +1954,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "eba7a4d4dc841e60d24bbbe53af14a10",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-02T05:00:00+00:00",
       "date_end": "2026-04-03T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2337,9 +1969,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2351,12 +1983,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "4ac4f73faf51dd179b77f56bb1284bdd",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-02T05:00:00+00:00",
       "date_end": "2026-04-03T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2365,9 +1998,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times 10:30, 11:30, 12:30, 1:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2378,12 +2011,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "77dae47a7483edd765816093b5334e40",
       "title": "Pajama Day",
-      "display_title": "[FREE] Pajama Day",
+      "display_title": "Pajama Day",
       "date_start": "2026-04-02T05:00:00+00:00",
       "date_end": "2026-04-06T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2392,9 +2026,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "You’re invited to a slumber party! Wear your favorite pajamas, cuddle up with a book in our cozy lounge, and make your own stuffed toy to take home. Join us from 10 am-12 pm and 1 pm-3 pm in the Great",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2405,31 +2039,8 @@
         "Great-Hall"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "364b1c2ee35c22d20389f156891ea2d8",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-02T09:30:00",
-      "date_end": "2026-04-02T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-92/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "4ea8ec9e715bd0c6d30ec5850c3663e8",
@@ -2455,7 +2066,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "eba8a3aa07adc776d0be2695b355b335",
@@ -2481,7 +2093,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "152034aecb3c07d1614aad79fe5b5295",
@@ -2507,7 +2120,8 @@
         "reading"
       ],
       "distance_miles": 4.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Park"
     },
     {
       "uid": "557985d6b64eb8cd26a22c9696276e79",
@@ -2533,67 +2147,8 @@
         "reading"
       ],
       "distance_miles": 4.2,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "3d6814246c1622a63f0bea23fcc25fe2",
-      "title": "Dance Studio Residency: Anniela Huidobro Castro",
-      "display_title": "[FREE] Dance Studio Residency: Anniela Huidobro Castro",
-      "date_start": "2026-04-02T16:00:00-05:00",
-      "date_end": "2026-04-02T20:00:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Dance Studio, 1st Floor North, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "Thursday, April 2, 2026\n4-8 p.m.",
-      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/dance_residency_2026.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Dance & Theatre"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
-    },
-    {
-      "uid": "7e8b4764c59a3b0b94bce9128ed765a8",
-      "title": "Chicago Cultural Center Open House",
-      "display_title": "[FREE] Chicago Cultural Center Open House",
-      "date_start": "2026-04-02T16:00:00-05:00",
-      "date_end": "2026-04-02T20:00:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8838628,
-      "location_lng": -87.6248023,
-      "description": "Thursday, April 2, 2026\n4-8 p.m.\nChicago Artists Professional Development",
-      "url": "https://www.chicago.gov/content/city/en/depts/dca/supp_info/open_house.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Exhibitions",
-        "Shopping",
-        "Lectures & Workshops",
-        "Music",
-        "Chicago Made: Artistic & Professional Development"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "35224f59c9bfcc417180032e18586707",
@@ -2619,7 +2174,8 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "cb74c68c47b835f72a5f8979035c43dc",
@@ -2645,12 +2201,13 @@
         "reading"
       ],
       "distance_miles": 5.9,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9c02912101e921078982d9534543bf97",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-03T05:00:00+00:00",
       "date_end": "2026-04-04T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2659,9 +2216,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2672,12 +2229,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "a617f703a3ca718307f7b8cd404d93c1",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-03T05:00:00+00:00",
       "date_end": "2026-04-04T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2686,9 +2244,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2700,12 +2258,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "95fed5cd71ee004ed4dc575905b452e3",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-03T05:00:00+00:00",
       "date_end": "2026-04-04T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2714,9 +2273,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times Monday, Wednesday, Thur",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2727,31 +2286,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "0430a2ec8ccef94ea4577c5de05c1a22",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-03T09:30:00",
-      "date_end": "2026-04-03T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-93/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "8af51a1ce35cd412641c2b164dba8b4b",
@@ -2777,37 +2313,8 @@
         "reading"
       ],
       "distance_miles": 4.4,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "c2ba2e8318770f03a37a24232702b8a2",
-      "title": "Neighborhood Cultural Spotlight: Global Gardens Chicago",
-      "display_title": "[FREE] Neighborhood Cultural Spotlight: Global Gardens Chicago",
-      "date_start": "2026-04-03T14:00:00-05:00",
-      "date_end": "2026-04-18T15:00:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Welcome Center, 1st Floor North, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "April 3 & 4, 17 & 18, 2026\n2-3 p.m.",
-      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/welcome_center.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Lectures & Workshops",
-        "Family Activities",
-        "Exhibitions"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f36c8fa4dfa880b2ba5a7b2b726844ce",
@@ -2833,12 +2340,13 @@
         "reading"
       ],
       "distance_miles": 9.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "05f7766e553ad8b2b95b3b2d99f32ffb",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-04T05:00:00+00:00",
       "date_end": "2026-04-05T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2847,9 +2355,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2860,12 +2368,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "65c27cdfcb879e83472b42b7dfd7e0de",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-04T05:00:00+00:00",
       "date_end": "2026-04-05T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2874,9 +2383,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2888,12 +2397,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "98d1b590472efd7d9f19dbe8d36013c5",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-04T05:00:00+00:00",
       "date_end": "2026-04-05T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -2902,9 +2412,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times Monday, Wednesday, Thur",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -2915,31 +2425,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "c066e29c685fabb348b15a227c82ef5d",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-04T09:30:00",
-      "date_end": "2026-04-04T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-94/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "fac52ceada2437b8eafa679cde8041cd",
@@ -2965,7 +2452,8 @@
         "reading"
       ],
       "distance_miles": 1.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "River North"
     },
     {
       "uid": "f1d4f90f404da85cf6fe59ce7108c97c",
@@ -2991,12 +2479,13 @@
         "reading"
       ],
       "distance_miles": 6.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Hyde Park"
     },
     {
       "uid": "a05cddfb2004da5b6efe5060121d288d",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-05T05:00:00+00:00",
       "date_end": "2026-04-06T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3005,9 +2494,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3018,12 +2507,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9d486564ed563f86f515e9d545576a79",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-05T05:00:00+00:00",
       "date_end": "2026-04-06T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3032,9 +2522,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3046,12 +2536,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "cf17f308361b880efa75bac73bdf6322",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-05T05:00:00+00:00",
       "date_end": "2026-04-06T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3060,9 +2551,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times Monday, Wednesday, Thur",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3073,36 +2564,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "ea909aa4f851c3cf0c91a08411d0e744",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-05T12:00:00",
-      "date_end": "2026-04-05T17:00:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-95/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "54021d2ab069c0e29e41cbab9f04e49b",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-06T05:00:00+00:00",
       "date_end": "2026-04-07T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3111,9 +2579,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3124,12 +2592,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "d0e466e6195985a859df1878a27dbbd4",
       "title": "Wild Collage - Hourly Programming",
-      "display_title": "[FREE] Wild Collage - Hourly Programming",
+      "display_title": "Wild Collage - Hourly Programming",
       "date_start": "2026-04-06T05:00:00+00:00",
       "date_end": "2026-04-07T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3138,9 +2607,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up Workshop Times Monday, Wednesday, Thur",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3151,7 +2620,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "97c30105b781fb0161b8dc5016a4d8af",
@@ -3177,7 +2647,8 @@
         "reading"
       ],
       "distance_miles": 5.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "feea4bf3613962b3c275cce4ad4ab174",
@@ -3203,7 +2674,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f5784eb7c2233d084059909891cc8cfe",
@@ -3229,7 +2701,8 @@
         "reading"
       ],
       "distance_miles": 0.7,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "1eb066f8935ba62edba7edcaa6ebf692",
@@ -3255,7 +2728,8 @@
         "reading"
       ],
       "distance_miles": 5.9,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "2ce4d8b312c5dff2c157fd4a585060a0",
@@ -3281,31 +2755,8 @@
         "reading"
       ],
       "distance_miles": 7.7,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "ee79fce0aa133f222995350c82a6b7da",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-07T09:30:00",
-      "date_end": "2026-04-07T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-96/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "1a7437864b93e627dd58251e51d3e297",
@@ -3331,7 +2782,8 @@
         "reading"
       ],
       "distance_miles": 0.7,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "e6ac0db6df14c268f0403e70ababa10a",
@@ -3357,7 +2809,8 @@
         "reading"
       ],
       "distance_miles": 7.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f59d46e534adcda6bb8363c360c76017",
@@ -3383,7 +2836,8 @@
         "reading"
       ],
       "distance_miles": 9.7,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "13ca6d2777431c1497375b2e41d05f5f",
@@ -3409,7 +2863,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Andersonville"
     },
     {
       "uid": "ef7637cd8f611c64fac2a73525423f64",
@@ -3435,7 +2890,8 @@
         "reading"
       ],
       "distance_miles": 9.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "d54d1e20f93f172dff6c06c62a068f89",
@@ -3461,7 +2917,8 @@
         "reading"
       ],
       "distance_miles": 5.9,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c302ab45823570436577770e619e892b",
@@ -3486,12 +2943,13 @@
         "family"
       ],
       "distance_miles": 1.2,
-      "source_name": "Field Museum - Free Wednesdays"
+      "source_name": "Field Museum - Free Wednesdays",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "053146604d2bc66c5e89002e0d926e7b",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-08T05:00:00+00:00",
       "date_end": "2026-04-09T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3500,9 +2958,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3513,12 +2971,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "61dcd02de8fd37eb1d87f480c00a99c5",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-08T05:00:00+00:00",
       "date_end": "2026-04-09T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3527,9 +2986,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3541,12 +3000,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "a2bd460e42efc81926929db7c59ecb84",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-08T05:00:00+00:00",
       "date_end": "2026-04-09T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3555,9 +3015,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3568,31 +3028,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "d3122ff6cef9e4556ef3d9bd79fe27c0",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-08T09:30:00",
-      "date_end": "2026-04-08T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-97/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "8d2faf37518b2f9c5dda5d0010ad1ba2",
@@ -3618,7 +3055,8 @@
         "reading"
       ],
       "distance_miles": 2.9,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "81993a2bdfd010b2855dfb371de93755",
@@ -3644,7 +3082,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "9f217517c8fbd866ecc1e5d5033c8c9c",
@@ -3670,12 +3109,13 @@
         "reading"
       ],
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "ee033cf7cf7b12fad3de750d6e8c0fea",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-09T05:00:00+00:00",
       "date_end": "2026-04-10T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3684,9 +3124,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3697,12 +3137,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "20698c1b6096117fce706e98d790f9b0",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-09T05:00:00+00:00",
       "date_end": "2026-04-10T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3711,9 +3152,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3725,12 +3166,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "12da40de9b2e6cb5a822a401bbb9c772",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-09T05:00:00+00:00",
       "date_end": "2026-04-10T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3739,9 +3181,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3752,31 +3194,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "2d5b7ee6bfbb412eda8cfe954d3e7f82",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-09T09:30:00",
-      "date_end": "2026-04-09T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-98/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "803af9324dd6f4cd45a2a655e0ab53d7",
@@ -3802,7 +3221,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "9f581021e3c7052e726461148b9fda1b",
@@ -3828,7 +3248,8 @@
         "reading"
       ],
       "distance_miles": 1.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "River North"
     },
     {
       "uid": "5ec444664b95319a098138d1def371e9",
@@ -3854,7 +3275,8 @@
         "reading"
       ],
       "distance_miles": 6.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9cd122f809c93e5d3db475af4cb6e049",
@@ -3880,12 +3302,13 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3abbcfc4617d39293ef4bb7f38e9cdcd",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-10T05:00:00+00:00",
       "date_end": "2026-04-11T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -3894,9 +3317,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -3907,59 +3330,8 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "27b4db5123cc8cda00be403bca0e14ba",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-10T09:30:00",
-      "date_end": "2026-04-10T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-99/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "8a3dba2d1da403764496901fd3c98205",
-      "title": "Ornament & Information",
-      "display_title": "[FREE] Ornament & Information",
-      "date_start": "2026-04-10T10:00:00-05:00",
-      "date_end": "2026-07-19T16:45:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Chicago Rooms, 2nd Floor North, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "April 10 - July 19, 2026",
-      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/ornament_information.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Exhibitions"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "aa51fce6ffb1f182aa6aaa595b580189",
@@ -3985,7 +3357,8 @@
         "reading"
       ],
       "distance_miles": 2.0,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Near West Side"
     },
     {
       "uid": "816be9c299661f3c8aa697632753dbb5",
@@ -4011,36 +3384,13 @@
         "reading"
       ],
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "a98157a79e14ab6f0602798d7cfc0590",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-11T09:30:00",
-      "date_end": "2026-04-11T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-100/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "31248fa84427f3f96a5cfa0b5497788e",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-12T05:00:00+00:00",
       "date_end": "2026-04-13T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4049,9 +3399,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4062,12 +3412,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "25fcdd8e77aa5a4c3b08757eb4654b14",
       "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "[FREE] Ready to Wear Cardboard - Hourly Workshops",
+      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
       "date_start": "2026-04-12T05:00:00+00:00",
       "date_end": "2026-04-13T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4076,9 +3427,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times Wednesday, Thursday",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4090,12 +3441,13 @@
         "Cardboard"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "ff9352fa8ab001e3c99ec5af969a1984",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-12T05:00:00+00:00",
       "date_end": "2026-04-13T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4104,9 +3456,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4117,31 +3469,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "1cb9dda99ff42fd04ab1bf6de1b01686",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-12T12:00:00",
-      "date_end": "2026-04-12T17:00:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-101/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "d4a4dd8548d7bbd5f079edc18b40bec0",
@@ -4167,12 +3496,13 @@
         "reading"
       ],
       "distance_miles": 8.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "cad3599134a8623cf58fc46f3bc3814d",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-13T05:00:00+00:00",
       "date_end": "2026-04-14T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4181,9 +3511,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4194,12 +3524,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "0b9693cc25b84cf1dbbd2b10c7702077",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-13T05:00:00+00:00",
       "date_end": "2026-04-14T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4208,9 +3539,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4221,15 +3552,16 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
-      "uid": "770da3e2151cacbc1cc8056972f0ec9b",
+      "uid": "2fbe83e877e519e429dfb0b46ea069c7",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-04-13T09:30:00",
       "date_end": "2026-04-13T12:30:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -4247,7 +3579,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "978ee7cc30d89ed4c376afdaef68d53a",
@@ -4273,7 +3606,8 @@
         "reading"
       ],
       "distance_miles": 5.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "6cb4acf40ad9137dea379771e5b3eaa6",
@@ -4299,7 +3633,8 @@
         "reading"
       ],
       "distance_miles": 4.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Park"
     },
     {
       "uid": "cbce4197ca0459fc9c569378b99f4975",
@@ -4325,7 +3660,8 @@
         "reading"
       ],
       "distance_miles": 3.7,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Bucktown"
     },
     {
       "uid": "daf1849d5beccf4d3460f4d8e3d3587f",
@@ -4351,39 +3687,16 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
-      "uid": "ef9469143df47d46d6e74638eb3b90aa",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-14T09:30:00",
-      "date_end": "2026-04-14T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-102/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "373ef66383c0d816ff4fe68a28ffa6b9",
+      "uid": "1f18a99701165a6efaedd6820e0fac30",
       "title": "Film Screening: Unsung Hero (2024)",
       "display_title": "[FREE] Film Screening: Unsung Hero (2024)",
       "date_start": "2026-04-14T12:00:00",
       "date_end": "2026-04-14T14:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -4401,7 +3714,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "1a2a3f6d24899875514d4ea8b66a5a2a",
@@ -4427,7 +3741,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "87ba8f4a9edc77e3748c85749e11cede",
@@ -4453,12 +3768,13 @@
         "reading"
       ],
       "distance_miles": 9.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9ce18f4d395301b82c22b3e24d10b9c4",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-15T05:00:00+00:00",
       "date_end": "2026-04-16T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4467,9 +3783,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4480,12 +3796,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e7380f84576f3c59a0754e7c1f314c9f",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-15T05:00:00+00:00",
       "date_end": "2026-04-16T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4494,9 +3811,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4507,12 +3824,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "34ca4ac448668e654f2e9036e18e1760",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-15T05:00:00+00:00",
       "date_end": "2026-04-16T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4521,9 +3839,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4534,31 +3852,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "613506bd0527a168af00bf278b496c45",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-15T09:30:00",
-      "date_end": "2026-04-15T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-103/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "f69dd157a37bfed9e6e0ccc6bb2b8d7e",
@@ -4584,7 +3879,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "a5d6111c2c01fe1ca7f856d817217626",
@@ -4610,7 +3906,8 @@
         "reading"
       ],
       "distance_miles": 4.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Park"
     },
     {
       "uid": "54ae1dcff6087ec6e788532b0c1648a5",
@@ -4636,7 +3933,8 @@
         "reading"
       ],
       "distance_miles": null,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": ""
     },
     {
       "uid": "09f06ec456a9b4df7f74afadcc799141",
@@ -4662,7 +3960,8 @@
         "reading"
       ],
       "distance_miles": 9.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "6d2f0380ff35fb6106d00c362fbc7f1c",
@@ -4688,12 +3987,13 @@
         "reading"
       ],
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "e99f902c00c67de369b85fc38a159b0b",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-16T05:00:00+00:00",
       "date_end": "2026-04-17T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4702,9 +4002,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4715,12 +4015,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "62b4f23d453cd18e935244d47d465943",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-16T05:00:00+00:00",
       "date_end": "2026-04-17T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4729,9 +4030,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4742,12 +4043,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "8ff33e0e02b387df31059a631ac4eb7c",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-16T05:00:00+00:00",
       "date_end": "2026-04-17T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4756,9 +4058,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4769,39 +4071,16 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
-      "uid": "568deec62d8fe221d338e760e652eaf4",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-16T09:30:00",
-      "date_end": "2026-04-16T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-104/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "b8ecfc8b341fbe9c5cd1a0a6df0487f5",
+      "uid": "9a27f5270803f35a980fbbd22918d2f3",
       "title": "AI for Visual Disabilities",
       "display_title": "[FREE] AI for Visual Disabilities",
       "date_start": "2026-04-16T10:30:00",
       "date_end": "2026-04-16T12:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -4819,7 +4098,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "53944043d76beab3b3a5ebb42e3f2486",
@@ -4845,7 +4125,8 @@
         "reading"
       ],
       "distance_miles": 4.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "671385188bca04d9799e1011c107f066",
@@ -4871,12 +4152,13 @@
         "reading"
       ],
       "distance_miles": 5.8,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "264e9428bcff6212d0c22fe500c97389",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-17T05:00:00+00:00",
       "date_end": "2026-04-18T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4885,9 +4167,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4898,12 +4180,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "aa9adc041a8d7879b81b9429d1c8f0ea",
       "title": "Color Explosion - Hourly Sessions",
-      "display_title": "[FREE] Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
       "date_start": "2026-04-17T05:00:00+00:00",
       "date_end": "2026-04-18T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4912,9 +4195,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4925,12 +4208,13 @@
         "Pritzker-Playspace"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "84ffb8a001069a289275e64c7ee5a421",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-17T05:00:00+00:00",
       "date_end": "2026-04-18T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4939,9 +4223,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -4952,36 +4236,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "db9b91eb93f765d88b75f061099ae37c",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-17T09:30:00",
-      "date_end": "2026-04-17T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-105/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3c7e8eb8684dce355870c67484d9ceb7",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-18T05:00:00+00:00",
       "date_end": "2026-04-19T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -4990,9 +4251,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5003,12 +4264,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3d159c622f39fdf591b4635a8224b08e",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-18T05:00:00+00:00",
       "date_end": "2026-04-19T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5017,9 +4279,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5030,39 +4292,16 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
-      "uid": "fc09bc8cc448c09c80dff5b8a150ea99",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-18T09:30:00",
-      "date_end": "2026-04-18T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-106/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "7344fb907d5093b7782ba447ff5fb8cd",
+      "uid": "324229617d29a19ffe9632dcbd436400",
       "title": "Día de los niños y libros: A Celebration of Children and Books",
       "display_title": "[FREE] Día de los niños y libros: A Celebration of Children and Books",
       "date_start": "2026-04-18T11:00:00",
       "date_end": "2026-04-18T15:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -5080,7 +4319,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "a80a4da2e7f80e1d7d1ffd227f1fb9f7",
@@ -5106,7 +4346,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "7db71bbe77c156383672ba35d9ada9e6",
@@ -5132,7 +4373,8 @@
         "reading"
       ],
       "distance_miles": 1.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "River North"
     },
     {
       "uid": "956ef74b637242053d95f9b385a401eb",
@@ -5158,12 +4400,13 @@
         "reading"
       ],
       "distance_miles": 9.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "eb27b00b7d674c6c8fab0aac85cc5eeb",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-19T05:00:00+00:00",
       "date_end": "2026-04-20T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5172,9 +4415,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5185,12 +4428,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "a78fb1d0ea22c32f46625387506ae2b9",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-19T05:00:00+00:00",
       "date_end": "2026-04-20T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5199,9 +4443,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5212,36 +4456,13 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "ddd4d5ba6606bed662064d7c9a76b046",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-19T12:00:00",
-      "date_end": "2026-04-19T17:00:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-107/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "82b499b317aaacafe5290154604b783f",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-20T05:00:00+00:00",
       "date_end": "2026-04-21T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5250,9 +4471,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5263,7 +4484,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "6f0027a35569dddf3f3bef3ea41de17c",
@@ -5289,7 +4511,8 @@
         "reading"
       ],
       "distance_miles": 5.6,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "fc84e0dc849a185be13018048ed78854",
@@ -5315,7 +4538,8 @@
         "reading"
       ],
       "distance_miles": 7.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "96701e9608a641381103d06ff5a88618",
@@ -5341,7 +4565,8 @@
         "reading"
       ],
       "distance_miles": 0.7,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "ba4705cfd835ed4aa67889a947447cb2",
@@ -5367,7 +4592,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "bae50aad083e7eafb2a94ed96ca2777d",
@@ -5393,7 +4619,8 @@
         "reading"
       ],
       "distance_miles": 2.2,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Bridgeport"
     },
     {
       "uid": "a2c19b9ccccad02f6bc6102fd162101a",
@@ -5419,31 +4646,8 @@
         "reading"
       ],
       "distance_miles": 9.2,
-      "source_name": "Chicago Public Library"
-    },
-    {
-      "uid": "c1b2927296c294b105ae793c1191efde",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-21T09:30:00",
-      "date_end": "2026-04-21T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-108/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Rogers Park"
     },
     {
       "uid": "a18989edf937732449f4bc881dfce3ce",
@@ -5469,7 +4673,8 @@
         "reading"
       ],
       "distance_miles": 6.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Lincoln Square"
     },
     {
       "uid": "d746218a56d76944da421ffd92f67c43",
@@ -5495,7 +4700,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "bbdacd26f4bc480811f395604d96ddbf",
@@ -5521,7 +4727,8 @@
         "reading"
       ],
       "distance_miles": 7.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Andersonville"
     },
     {
       "uid": "6e6c9f89211b4ad36cb6c20c87927137",
@@ -5547,12 +4754,13 @@
         "reading"
       ],
       "distance_miles": 5.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "820982dd649b2cac639b3a3cedc8628c",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-22T05:00:00+00:00",
       "date_end": "2026-04-23T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5561,9 +4769,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5574,12 +4782,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "74a80dfb41eb7325a3d5acc1a1062bcd",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-22T05:00:00+00:00",
       "date_end": "2026-04-23T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5588,9 +4797,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5601,55 +4810,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "7a8ba08220001f3690b30fa1a533c582",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-22T09:30:00",
-      "date_end": "2026-04-22T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-109/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "a680cf950c7fa7e437868468a873af08",
-      "title": "General Admission IL Resident Days",
-      "display_title": "[FREE] General Admission IL Resident Days",
-      "date_start": "2026-04-22T09:30:00",
-      "date_end": "2026-04-22T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-il-resident-days-2/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "1f5e556460ebd10812f65da0293806eb",
@@ -5675,7 +4837,8 @@
         "reading"
       ],
       "distance_miles": 7.1,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "5d1b23abd494544203ca5fe261ef0c5e",
@@ -5701,15 +4864,16 @@
         "reading"
       ],
       "distance_miles": 9.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
-      "uid": "c3836375a1ab844c4119405ccd04bb87",
+      "uid": "043107f7c3fe3cedf6c301ae4dbf5160",
       "title": "Band Patch Making",
       "display_title": "[FREE] Band Patch Making",
       "date_start": "2026-04-22T16:00:00",
       "date_end": "2026-04-22T17:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "",
       "location_lat": 41.8762833,
@@ -5727,7 +4891,8 @@
         "reading"
       ],
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "The Loop"
     },
     {
       "uid": "5edde6dfcc0b9d29855c6e3c75659143",
@@ -5753,7 +4918,8 @@
         "reading"
       ],
       "distance_miles": 9.3,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "9a5bc60af566342e1b5d20f59f0f0e39",
@@ -5779,12 +4945,13 @@
         "reading"
       ],
       "distance_miles": 4.4,
-      "source_name": "Chicago Public Library"
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "3d85998d8030ed9f4f387776139afe2f",
       "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "[FREE] Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
       "date_start": "2026-04-23T05:00:00+00:00",
       "date_end": "2026-04-24T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5793,9 +4960,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5806,12 +4973,13 @@
         "Tinkering-Lab"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     },
     {
       "uid": "c73191bf4a0f64d2c6872bcbf89d84a4",
       "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "[FREE] Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
       "date_start": "2026-04-23T05:00:00+00:00",
       "date_end": "2026-04-24T05:00:00+00:00",
       "org_name": "Chicago Children's Museum - Program Calendar",
@@ -5820,9 +4988,9 @@
       "location_lat": 41.8918,
       "location_lng": -87.6082,
       "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://chicagochildrensmuseum.org/visit/programs/",
-      "cost": "free first Sunday (Chicago residents)",
-      "is_free": true,
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
       "age_range": "0-60 months",
       "tags": [
         "museum",
@@ -5833,59 +5001,8 @@
         "Art-Studio"
       ],
       "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar"
-    },
-    {
-      "uid": "c79ba00850cf97f9d7599a2c0b71d780",
-      "title": "General Admission",
-      "display_title": "[FREE] General Admission",
-      "date_start": "2026-04-23T09:30:00",
-      "date_end": "2026-04-23T16:30:00",
-      "org_name": "Chicago History Museum - Events",
-      "location_name": "Museum General Admission",
-      "location_address": "",
-      "location_lat": null,
-      "location_lng": null,
-      "description": "",
-      "url": "https://calendar.chicagohistory.org/event/general-admission-110/",
-      "cost": "free (IL residents)",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "museum",
-        "history",
-        "family"
-      ],
-      "distance_miles": null,
-      "source_name": "Chicago History Museum - Events"
-    },
-    {
-      "uid": "fb0fbe2c3212dbdaced9e4c63e8c86b8",
-      "title": "Under the Dome Concert",
-      "display_title": "[FREE] Under the Dome Concert",
-      "date_start": "2026-04-23T17:00:00-05:00",
-      "date_end": "2026-04-23T20:30:00-05:00",
-      "org_name": "Chicago Cultural Center - Events",
-      "location_name": "Chicago Cultural Center",
-      "location_address": "Chicago Cultural Center, Preston Bradley Hall, 78 E. Washington St., Chicago, IL, 60602",
-      "location_lat": 41.8836,
-      "location_lng": -87.6248,
-      "description": "Thursday, April 23, 2026\nChicago Cultural Center, Preston Bradley Hall, 3rd Floor South\nConcert from 5-8:30 p.m. (Doors open at 5 p.m.)",
-      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/dome.html",
-      "cost": "always free",
-      "is_free": true,
-      "age_range": "",
-      "tags": [
-        "culture",
-        "family",
-        "free",
-        "arts",
-        "All",
-        "Chicago Cultural Center",
-        "Music"
-      ],
-      "distance_miles": 0.1,
-      "source_name": "Chicago Cultural Center - Events"
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Chicago"
     }
   ]
 }
