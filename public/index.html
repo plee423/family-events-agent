@@ -411,7 +411,7 @@ function buildNeighborhoodFilters() {
   group.style.display = '';
   const allBtn = `<button class="filter-btn active" onclick="setFilter('neighborhood','all',this)">All areas</button>`;
   const hoodBtns = hoods.map(h =>
-    `<button class="filter-btn" onclick="setFilter('neighborhood',${JSON.stringify(h)},this)">${esc(h)}</button>`
+    `<button class="filter-btn" onclick="setFilter('neighborhood','${h.replace(/'/g, "\\'")}',this)">${esc(h)}</button>`
   ).join('');
   group.innerHTML = allBtn + hoodBtns;
 }
