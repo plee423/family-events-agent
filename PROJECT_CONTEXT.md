@@ -184,7 +184,7 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-25 (session 6)
+- **Last updated:** 2026-03-24 (session 7)
 - **Status:** Pipeline fully working. CI push reliability fixed. Age filter tightened. Eventbrite rewritten to org-based API (`/v3/organizers/{id}/events/`) — 116 raw events from 10 Chicago family orgs. ~225+ events / 15 sources after filters.
 
 ### Working sources (as of 2026-03-25)
@@ -268,10 +268,23 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 - `config/sources.yaml`: CCM `website` field, Harold Washington + Near North branch-filtered CPL sources
 - `.github/workflows/scrape.yml`: `EVENTBRITE_TOKEN` secret wired to both scrape jobs
 
+### Fix 4 — cost filter restructured (session 7)
+
+`filters/cost_filter.py` `_re_evaluate_free` now uses a 3-step priority order:
+1. Strong free phrases in title/description (`"free admission"`, `"free day"`, etc.) → `True` — event-level free signal wins even when source cost is `"paid admission"`.
+2. Paid signals anywhere in full text (incl. new `"paid admission"` entry) → `False`.
+3. `"free"` in cost field alone → `True` — preserves correct tagging for Art Institute (`"free (IL residents under 14)"`) and History Museum (`"free (IL residents)"`). No changes to sources.yaml cost fields.
+
+### Fix 5 — neighborhood classifier (session 7)
+
+- `scrapers/neighborhood_classifier.py` — 30 named bounding boxes (downtown, North Side, Northwest Side, West Side, South Side, near suburbs). `classify(lat, lng) -> str` returns neighborhood or `""`.
+- `scrapers/base.py` — `neighborhood: str = ""` added to `Event` dataclass.
+- `filters/location_filter.py` — calls `_classify_neighborhood(lat, lng)` after distance is computed; sets `event.neighborhood`.
+- `calendar_gen/json_builder.py` — `neighborhood` included in serialized JSON.
+- `calendar_gen/html_builder.py` — neighborhood shown as purple `.badge-neighborhood` pill in event card meta row.
+
 ### Known issues / next steps
-- **Fix 4 (free tags):** Add `"paid admission"` to `paid_overrides` in `_infer_free`; update cost fields for Art Institute, History Museum in sources.yaml
-- **Fix 5 (neighborhoods):** Add `neighborhood_classifier.py` with Chicago bounding boxes; add `neighborhood: str` to Event dataclass; include in JSON/HTML output
-- **CI debug:** Investigate why `events_chicago.json` not updating in CI — debug `ls output/` step added; check next run logs
+- **CI debug:** `events_chicago.json` not-updating issue under investigation. Debug `ls output/` step added to workflow — check next nightly run logs to confirm. Code path verified correct: `settings.yaml` `json_filename: "events_chicago.json"` → `output/events_chicago.json`.
 - **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
 

@@ -34,11 +34,34 @@ def filter_by_cost(events: list[Event], settings: dict) -> list[Event]:
 
 
 def _re_evaluate_free(event: Event) -> bool:
-    """Secondary check: look for free indicators in all event text."""
-    text = f"{event.cost} {event.title} {event.description}".lower()
-    free_words = ["free", "no cost", "no charge", "complimentary", "no admission"]
-    paid_words = ["$", "fee required", "admission required", "ticket required", "registration fee"]
+    """Secondary check: look for free indicators in all event text.
 
-    if any(p in text for p in paid_words):
+    Priority order:
+    1. Strong free phrases in title/description → True (event-level signal wins over
+       a paid source default, e.g. a "Free Admission Day" at a paid-admission museum).
+    2. Paid signals anywhere in full text → False.
+    3. "free" in the cost field → True (handles sources like Art Institute /
+       History Museum whose cost strings are "free (IL residents ...)").
+    """
+    title_desc = f"{event.title} {event.description}".lower()
+    cost_lower = event.cost.lower()
+
+    # 1. Explicit free event in the event's own title / description
+    strong_free = [
+        "free admission", "free entry", "free for", "free day", "free museum",
+        "no admission", "no cost", "no charge", "complimentary",
+    ]
+    if any(p in title_desc for p in strong_free):
+        return True
+
+    # 2. Paid signals anywhere (including cost field and description)
+    paid_words = [
+        "$", "fee required", "admission required", "ticket required",
+        "registration fee", "paid admission",
+    ]
+    full_text = f"{cost_lower} {title_desc}"
+    if any(p in full_text for p in paid_words):
         return False
-    return any(f in text for f in free_words)
+
+    # 3. Source-level cost field says "free" (e.g. "free (IL residents)")
+    return "free" in cost_lower

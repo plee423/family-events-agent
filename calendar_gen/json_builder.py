@@ -64,4 +64,5 @@ def _serialize(e: Event) -> dict:
         "tags": e.tags,
         "distance_miles": e.distance_miles,
         "source_name": e.source_name,
+        "neighborhood": e.neighborhood,
     }

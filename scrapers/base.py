@@ -33,6 +33,7 @@ class Event:
     tags: list[str] = field(default_factory=list)
     distance_miles: Optional[float] = None
     source_name: str = ""
+    neighborhood: str = ""
 
     @property
     def uid(self) -> str:

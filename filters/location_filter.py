@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Optional
 
 from scrapers.base import Event
+from scrapers.neighborhood_classifier import classify as _classify_neighborhood
 
 logger = logging.getLogger(__name__)
 
@@ -90,6 +91,8 @@ def filter_by_location(events: list[Event], settings: dict) -> list[Event]:
 
         dist = _haversine(home_lat, home_lng, event.location_lat, event.location_lng)
         event.distance_miles = round(dist, 1)
+        if not event.neighborhood:
+            event.neighborhood = _classify_neighborhood(event.location_lat, event.location_lng)
 
         if dist <= max_radius:
             kept.append(event)
