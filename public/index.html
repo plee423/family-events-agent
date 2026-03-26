@@ -419,9 +419,9 @@ function buildNeighborhoodFilters() {
   }
   divider.style.display = '';
   group.style.display = '';
-  const allBtn = `<button class="filter-btn active" id="nbAllBtn" onclick="toggleNeighborhood('',this)">All areas</button>`;
+  const allBtn = `<button class="filter-btn active" id="nbAllBtn" data-nb="" onclick="toggleNeighborhood(this.dataset.nb,this)">All areas</button>`;
   const hoodBtns = hoods.map(h =>
-    `<button class="filter-btn" onclick="toggleNeighborhood(${JSON.stringify(h)},this)">${esc(h)}</button>`
+    `<button class="filter-btn" data-nb="${esc(h)}" onclick="toggleNeighborhood(this.dataset.nb,this)">${esc(h)}</button>`
   ).join('');
   group.innerHTML = allBtn + hoodBtns;
 }
@@ -617,7 +617,7 @@ function renderCard(e) {
     <div class="card-meta">${metaItems.join('')}</div>
     ${descHtml}
     <div class="card-actions">
-      <button class="add-cal-btn" onclick="event.preventDefault();event.stopPropagation();downloadEventICS(${JSON.stringify(uid)})">${calSVG} Add to Calendar</button>
+      <button class="add-cal-btn" data-uid="${esc(uid)}" onclick="event.preventDefault();event.stopPropagation();downloadEventICS(this.dataset.uid)">${calSVG} Add to Calendar</button>
     </div>
   ${cardClose}`;
 }
