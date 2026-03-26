@@ -142,6 +142,7 @@ jobs:
     name: Commit outputs to repo
     runs-on: ubuntu-latest
     needs: [scrape-chicago, scrape-irvine]
+    if: ${{ !cancelled() }}  # run even if one scrape job failed; skip only on manual cancel
 
     steps:
       - uses: actions/checkout@v4
@@ -159,6 +160,7 @@ jobs:
         with:
           name: irvine-output
           path: .
+        continue-on-error: true  # Irvine scrape may have failed; don't block Chicago commit
 
       - name: Download Chicago geocode cache
         uses: actions/download-artifact@v4
