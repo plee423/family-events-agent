@@ -366,7 +366,8 @@
 let allEvents = [];
 let generatedAt = '';
 let currentCity = 'chicago';
-const filters = { age: 'all', cost: 'all', when: 'all', venue: 'all', neighborhood: 'all' };
+const filters = { age: 'all', cost: 'all', when: 'all', venue: 'all' };
+const selectedNeighborhoods = new Set(); // multi-select neighborhood state
 
 // ── City switching ─────────────────────────────────────────────────────────────
 async function switchCity(city) {
@@ -390,7 +391,7 @@ async function loadCity(city) {
     document.getElementById('dlHtmlBtn').download = `events_${city}.html`;
 
     // Reset neighborhood filter state and rebuild buttons
-    filters.neighborhood = 'all';
+    selectedNeighborhoods.clear();
     buildNeighborhoodFilters();
 
     renderFiltered();
@@ -418,11 +419,39 @@ function buildNeighborhoodFilters() {
   }
   divider.style.display = '';
   group.style.display = '';
-  const allBtn = `<button class="filter-btn active" onclick="setFilter('neighborhood','all',this)">All areas</button>`;
+  const allBtn = `<button class="filter-btn active" id="nbAllBtn" onclick="toggleNeighborhood('',this)">All areas</button>`;
   const hoodBtns = hoods.map(h =>
-    `<button class="filter-btn" onclick="setFilter('neighborhood','${h.replace(/'/g, "\\'")}',this)">${esc(h)}</button>`
+    `<button class="filter-btn" onclick="toggleNeighborhood(${JSON.stringify(h)},this)">${esc(h)}</button>`
   ).join('');
   group.innerHTML = allBtn + hoodBtns;
+}
+
+// ── Neighborhood multi-select ──────────────────────────────────────────────────
+function toggleNeighborhood(value, btn) {
+  if (value === '') {
+    // "All areas" — clear all selections
+    selectedNeighborhoods.clear();
+    document.querySelectorAll('#neighborhoodFilters .filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  } else {
+    const allBtn = document.getElementById('nbAllBtn');
+    if (allBtn) allBtn.classList.remove('active');
+
+    if (selectedNeighborhoods.has(value)) {
+      selectedNeighborhoods.delete(value);
+      btn.classList.remove('active');
+    } else {
+      selectedNeighborhoods.add(value);
+      btn.classList.add('active');
+    }
+
+    // If nothing remains selected, fall back to All
+    if (selectedNeighborhoods.size === 0) {
+      const allBtn2 = document.getElementById('nbAllBtn');
+      if (allBtn2) allBtn2.classList.add('active');
+    }
+  }
+  renderFiltered();
 }
 
 // ── Filters ────────────────────────────────────────────────────────────────────
@@ -494,8 +523,8 @@ function applyFilters(events) {
       if (!matchesTags(e, tags)) return false;
     }
 
-    // Neighborhood
-    if (filters.neighborhood !== 'all' && e.neighborhood !== filters.neighborhood) return false;
+    // Neighborhood (multi-select)
+    if (selectedNeighborhoods.size > 0 && !selectedNeighborhoods.has(e.neighborhood)) return false;
 
     return true;
   });
@@ -534,7 +563,12 @@ function renderFiltered() {
   const sections = Object.keys(byDate).sort().map(dateKey => {
     const d = new Date(dateKey + 'T12:00:00'); // noon to avoid DST edge
     const label = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
-    const cards = byDate[dateKey].map(renderCard).join('');
+    // Free events first, then sort by time within each group
+    const dayEvents = byDate[dateKey].slice().sort((a, b) => {
+      if (a.is_free !== b.is_free) return a.is_free ? -1 : 1;
+      return new Date(a.date_start) - new Date(b.date_start);
+    });
+    const cards = dayEvents.map(renderCard).join('');
     return `<section class="day-section">
       <h2 class="day-header">${label}</h2>
       <div class="cards">${cards}</div>
