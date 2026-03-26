@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-25T21:43:59.525634",
+  "generated_at": "2026-03-26T02:46:27.600454",
   "city": "irvine",
   "city_label": "Irvine",
   "timezone": "America/Los_Angeles",
-  "total": 32,
-  "free_count": 11,
+  "total": 33,
+  "free_count": 12,
   "events": [
     {
       "uid": "93841f0cef86952089875966dd48a1a9",
@@ -868,6 +868,33 @@
       ],
       "distance_miles": 4.4,
       "source_name": "Pretend City Children's Museum - Events",
+      "neighborhood": ""
+    },
+    {
+      "uid": "ccffe446ac812b4db1d5884c61fcd845",
+      "title": "Be Like Blippi Tour",
+      "display_title": "[FREE] Be Like Blippi Tour",
+      "date_start": "2026-04-25T00:00:00",
+      "date_end": null,
+      "org_name": "City of Irvine - Events",
+      "location_name": "Great Park Live",
+      "location_address": "",
+      "location_lat": 33.674071,
+      "location_lng": -117.7452016,
+      "description": "",
+      "url": "https://www.greatparklive.com/events",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "",
+      "tags": [
+        "park",
+        "family",
+        "outdoor",
+        "city",
+        "recreation"
+      ],
+      "distance_miles": 4.7,
+      "source_name": "City of Irvine - Events",
       "neighborhood": ""
     }
   ]
