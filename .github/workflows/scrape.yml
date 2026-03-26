@@ -59,17 +59,23 @@ jobs:
         env:
           EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
-      - name: Debug Chicago output files
-        run: ls -la output/ && echo "---" && head -3 output/events_chicago.json 2>/dev/null || echo "events_chicago.json NOT FOUND"
+      - name: Copy Chicago outputs to public/
+        run: |
+          mkdir -p public
+          cp output/events_chicago.json public/events_chicago.json
+          cp output/events_chicago.html public/events_chicago.html
+          ls -t output/family_events_*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_chicago.ics || true
 
       - name: Upload Chicago outputs
         uses: actions/upload-artifact@v4
         with:
           name: chicago-output
           path: |
+            public/events_chicago.json
+            public/events_chicago.html
+            public/events_chicago.ics
             output/events_chicago.json
             output/events_chicago.html
-            output/family_events_*.ics
           if-no-files-found: warn
           retention-days: 1
 
@@ -117,14 +123,23 @@ jobs:
         env:
           EVENTBRITE_TOKEN: ${{ secrets.EVENTBRITE_TOKEN }}
 
+      - name: Copy Irvine outputs to public/
+        run: |
+          mkdir -p public
+          cp output/events_irvine.json public/events_irvine.json
+          cp output/events_irvine.html public/events_irvine.html
+          ls -t output/events_irvine_*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_irvine.ics || true
+
       - name: Upload Irvine outputs
         uses: actions/upload-artifact@v4
         with:
           name: irvine-output
           path: |
+            public/events_irvine.json
+            public/events_irvine.html
+            public/events_irvine.ics
             output/events_irvine.json
             output/events_irvine.html
-            output/events_irvine_*.ics
           if-no-files-found: warn
           retention-days: 1
 
@@ -194,16 +209,10 @@ jobs:
               print("No geocode cache files found — keeping committed copy")
           EOF
 
-      - name: Copy outputs to public/
+      - name: Debug downloaded files
         run: |
-          mkdir -p public
-          cp output/events_chicago.json public/ 2>/dev/null || true
-          cp output/events_irvine.json  public/ 2>/dev/null || true
-          cp output/events_chicago.html public/ 2>/dev/null || true
-          cp output/events_irvine.html  public/ 2>/dev/null || true
-          # ICS files use date-stamped names — copy the most recent one
-          ls -t output/*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_chicago.ics 2>/dev/null || true
-          ls -t output/events_irvine*.ics 2>/dev/null | head -1 | xargs -I{} cp {} public/events_irvine.ics 2>/dev/null || true
+          echo "=== public/ ===" && ls -la public/ 2>/dev/null || echo "public/ empty or missing"
+          echo "=== output/ ===" && ls -la output/ 2>/dev/null || echo "output/ empty or missing"
 
       - name: Commit and push
         run: |
