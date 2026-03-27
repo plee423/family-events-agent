@@ -669,7 +669,6 @@ function renderCard(e) {
   if (e.location_name) metaItems.push(`<span class="meta-item">${pinSVG} ${esc(e.location_name)}</span>`);
   if (e.neighborhood === 'Virtual') metaItems.push(`<span class="meta-item badge-virtual-inline">Virtual</span>`);
   else if (e.neighborhood && e.neighborhood !== 'Chicago') metaItems.push(`<span class="meta-item badge-neighborhood-inline">${esc(e.neighborhood)}</span>`);
-  if (e.distance_miles != null) metaItems.push(`<span class="meta-item">${walkSVG} ${e.distance_miles} mi</span>`);
   if (e.org_name && e.org_name !== e.location_name) metaItems.push(`<span class="meta-item">· ${esc(e.org_name)}</span>`);
 
   const descHtml = e.description
