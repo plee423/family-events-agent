@@ -534,7 +534,6 @@ def _render_card(
 
     # Location meta
     location_str = e.location_name if e.location_name else ""
-    dist_str = f"{e.distance_miles:.1f} mi" if e.distance_miles is not None else ""
 
     # Description snippet
     desc_html = ""
@@ -576,8 +575,6 @@ def _render_card(
         meta_items.append('<span class="meta-item badge badge-virtual">Virtual</span>')
     elif e.neighborhood:
         meta_items.append(f'<span class="meta-item badge badge-neighborhood">{_esc(e.neighborhood)}</span>')
-    if dist_str:
-        meta_items.append(f'<span class="meta-item">{walk_icon} {_esc(dist_str)}</span>')
     if e.org_name and e.org_name != e.location_name:
         meta_items.append(f'<span class="meta-item">· {_esc(e.org_name)}</span>')
 

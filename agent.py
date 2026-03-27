@@ -423,9 +423,8 @@ def _print_events(events: list) -> None:
         # Only show time if it's not midnight (which means no time was parsed)
         if e.date_start.hour == 0 and e.date_start.minute == 0:
             time_str = "All day "
-        dist_str = f" ({e.distance_miles} mi)" if e.distance_miles is not None else ""
         _safe_echo(f"  {time_str}  {e.title}{free_tag}")
-        _safe_echo(f"           {e.org_name} @ {e.location_name}{dist_str}")
+        _safe_echo(f"           {e.org_name} @ {e.location_name}")
 
 
 def _safe_echo(text: str) -> None:

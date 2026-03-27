@@ -168,6 +168,38 @@ Never use a browser scraper when a static HTML scraper works — it is slower an
 
 ---
 
+## City Expansion Agents
+
+Three agent workflows exist for adding a new city. Each is documented in `agents/`. Use them when the user asks to expand to a new city or add sources.
+
+### When to invoke each agent
+
+| Trigger phrase | Agent file | What it does |
+|---|---|---|
+| "find sources for [City]" / "expand to [City]" | `agents/discovery_agent.md` | WebSearch for orgs, write `config/sources_{slug}.yaml` + `config/settings_{slug}.yaml` |
+| "select scrapers for [slug]" / "analyze sources for [slug]" | `agents/selection_agent.md` | WebFetch each URL, determine scraper type, fill in selectors/field_map in the YAML |
+| "write scraper for '[Name]'" / "code scraper for [URL]" | `agents/coding_agent.md` | Write `scrapers/{name}_scraper.py`, explain first, wait for approval |
+
+### Full city expansion workflow
+
+```
+1. User: "expand to Los Angeles, CA — home: 34.05, -118.24, zip 90012, radius 15mi"
+2. Run discovery_agent.md  → writes config/sources_los_angeles.yaml (scraper: "TBD")
+                           → writes config/settings_los_angeles.yaml
+3. Run selection_agent.md  → fills in all scraper types + selectors in sources_los_angeles.yaml
+4. For each needs_custom entry: run coding_agent.md
+5. User manually adds any new elif lines to agent.py get_scraper()
+6. Verify: python agent.py sources --location los_angeles
+           python agent.py run --location los_angeles --dry-run
+```
+
+### City slug convention
+
+`city_slug` = lowercase city name, spaces → underscores (e.g. `los_angeles`, `san_diego`).
+Used in: `config/sources_{slug}.yaml`, `config/settings_{slug}.yaml`, output filenames.
+
+---
+
 ## Error and Fix Communication Rule (from global CLAUDE.md)
 
 Before suggesting or applying any fix, always explain:
