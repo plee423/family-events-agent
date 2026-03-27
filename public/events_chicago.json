@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-27T19:29:24.734799",
+  "generated_at": "2026-03-27T21:18:47.145893",
   "city": "chicago",
   "city_label": "Chicago",
   "timezone": "America/Chicago",
-  "total": 224,
-  "free_count": 151,
+  "total": 225,
+  "free_count": 152,
   "events": [
     {
       "uid": "1ed9ac32e428ebd910d6ece09089e230",
@@ -989,7 +989,7 @@
         "toddler",
         "reading"
       ],
-      "category": "STEM",
+      "category": "Arts & Crafts",
       "distance_miles": 7.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1178,7 +1178,7 @@
         "science",
         "family"
       ],
-      "category": "Film & Events",
+      "category": "General",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -2795,7 +2795,7 @@
         "science",
         "family"
       ],
-      "category": "Film & Events",
+      "category": "General",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -4352,7 +4352,7 @@
         "science",
         "family"
       ],
-      "category": "Film & Events",
+      "category": "General",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -5880,6 +5880,34 @@
       "category": "Storytime",
       "distance_miles": 2.9,
       "source_name": "Eventbrite - Chicago Family Events",
+      "neighborhood": "Chicago"
+    },
+    {
+      "uid": "506d25d472c141d188f64bcf079b28ae",
+      "title": "Teen Hangout",
+      "display_title": "[FREE] Teen Hangout",
+      "date_start": "2026-04-23T15:00:00",
+      "date_end": "2026-04-23T17:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "North Pulaski",
+      "location_address": "4300 W. North Ave., Chicago, IL 60639",
+      "location_lat": 41.9099,
+      "location_lng": -87.7338,
+      "description": "Stop by the branch on Thursday afternoons to hang out, create, and learn! Teens who are interested can: Learn about Vinyl Cutting with our Silhouette machine Test out our 3D Printer Create with a variety of art and craft supplies Play Games Check out our laptops Hang out Work on homework Chat with friends And more! Open to all teens ages 13-19! Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.or",
+      "url": "https://chipublib.bibliocommons.com/events/6967ef19b0595799c0965f89",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "STEM",
+      "distance_miles": 6.0,
+      "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
     },
     {
