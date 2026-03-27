@@ -48,7 +48,7 @@ For each event, determine category from the **title first**, **description secon
 3. **STEM** — title contains: stem, code, coding, science, lego, robot, tech, engineer, math, minecraft, scratch, 3d print, experiment, lab, circuit
 4. **Music & Dance** — title contains: music, song, sing, concert, drum, dance, choir, instrument, rhythm, jazz, orchestra, movement
 5. **Play & Games** — title contains: play, game, games, sport, gym, active, fitness, yoga, superhero, super hero, d&d, dungeons, puzzle, obstacle, tumble
-6. **Film & Events** — title contains: film, movie, screening, cinema, watch, screening, anime, holiday, festival, celebration, fair, expo, con (e.g., C2E2), convention
+6. **Film & Events** — title contains: film, movie, screening, cinema, watch, anime, holiday, festival, celebration, fair, expo, convention
 7. **Community** — title contains: club (non-game/STEM context), connect, social, health, wellness, esl, english conversation, coloring (adult), meeting, support group, tween, teen (non-STEM/art context)
 
 When in doubt between two categories, pick the one that best represents the **primary activity** a parent would search for.
@@ -71,13 +71,44 @@ TITLE_KEYWORD_RULES: list[tuple[str, list[str]]] = [
 
 The `_resolve()` function should check `event.title.lower()` for these keywords, then fall back to `event.description.lower()`, then fall back to tag-based rules as a last resort.
 
-### Step 4: Update the JSON directly
+### Step 4: Review for misclassifications (required every run)
 
-After determining all categories, write the updated `category` field for every event back to `output/events_{city}.json`. Preserve all other fields exactly.
+**Do not skip this step.** Before writing results, audit the category assignments for false positives.
 
-### Step 5: Sync category buttons in `public/index.html`
+#### 4a. Flag description-triggered matches
+Any event where the category was assigned via *description* (not title) is higher-risk. For each such event:
+- Ask: does the **title alone** clearly belong to this category?
+- If no, override to the category that best matches the title, or fall back to General.
 
-If you add or rename categories vs. the current button list, update the `<div class="filter-group">` for category in `public/index.html` to match. The current buttons are: All types, Storytime, Animals, Science & STEM, Arts & Music, Outdoors, Play, General.
+#### 4b. Check for keyword false positives
+Common patterns that cause wrong assignments — look for these explicitly:
+
+| Pattern | Example | Wrong category | Correct |
+|---|---|---|---|
+| "Free [Day/Wednesday/Tuesday]" in title | "Illinois Free Wednesday" | Film & Events | General |
+| Facility name in description only | "...in the YOUmedia Design Den" | STEM | Arts & Crafts or General |
+| Generic admission/access events (no description, no primary activity) | Museum free day | STEM (via science tag) | General |
+| "[Day of week] [audience]" titles with no activity keyword | "Tween Tuesday", "Family Saturday" | anything | General |
+| "club" matching Community when it's clearly a STEM/Art club | "LEGO Club" | Community | STEM |
+
+#### 4c. Verify General fallback is non-zero
+If **zero** events fall into General, the keyword rules are too greedy — some events with no clear primary activity are being forced into a category. Identify the weakest keyword matches (lowest-confidence assignments) and move them to General.
+
+#### 4d. Spot-check each category
+For each category, look at the 3–5 events with the lowest-confidence match (triggered by a short or generic keyword like "craft", "science", "music") and verify they actually belong there. If they don't, either:
+- Override the category for that event
+- Remove or tighten the keyword in `TITLE_RULES` so it doesn't cause the same false positive on the next run
+
+#### 4e. Update `category_assigner.py` with any fixes found
+If step 4 reveals a bad keyword, remove or tighten it in `TITLE_RULES` or `TAG_FALLBACK_RULES` immediately — don't leave it for the next run. This keeps the rules accurate over time.
+
+### Step 5: Update the JSON directly
+
+After review and any overrides, write the corrected `category` field for every event back to `output/events_{city}.json`. Preserve all other fields exactly.
+
+### Step 6: Sync category buttons in `public/index.html`
+
+If you add or rename categories vs. the current button list, update the `<div class="filter-group">` for category in `public/index.html` to match. The current buttons are: All types, Storytime, Arts & Crafts, STEM, Music & Dance, Play & Games, Film & Events, Community, General.
 
 If you change the category set, update both the HTML buttons AND the `filters.category` check in `applyFilters()`.
 
@@ -85,7 +116,7 @@ If you change the category set, update both the HTML buttons AND the `filters.ca
 
 ## Output
 
-- Updated `filters/category_assigner.py` (title-keyword rules replacing tag rules)
+- Updated `filters/category_assigner.py` (title-keyword rules; any bad keywords tightened)
 - Updated `output/events_{city}.json` (category field on every event)
 - Updated `public/index.html` filter buttons if category names changed
-- Print a summary: category distribution before and after
+- Print a summary: category distribution before and after, plus any overrides made in Step 4

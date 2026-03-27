@@ -1,5 +1,13 @@
 # CLAUDE.md — Project Instructions for family-events-agent
 
+## Common Errors Reference
+
+**Before planning any change and before debugging any failure, read `common_errors.md`.**
+It catalogs every real mistake made during development — CI push races, artifact overwrite bugs, Eventbrite API changes, geocoding failures, filter false positives, UI download bugs, and more.
+Use the Quick Checklist at the bottom of that file to identify which sections are relevant to the current task.
+
+---
+
 ## Context Window Management
 
 ### At ~90% context: compact and reload

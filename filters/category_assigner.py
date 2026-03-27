@@ -24,14 +24,14 @@ TITLE_RULES: list[tuple[str, list[str]]] = [
         "family story", "infant story",
     ]),
     ("Film & Events", [
-        "film screening", "teen film", "free wednesday",
+        "film screening", "teen film",
         "día de los niños", "dia de los ninos", "celebration of children",
         "anime screening", "sunday cinema",
     ]),
     ("STEM", [
         "coding", "stem club", " stem", "lego", "robotics", "robot",
         "computer literacy", "artificial intelligence", " ai ",
-        "maker drop", "youmedia", "cardboard lab", "3d print",
+        "maker drop", "youmedia open", "cardboard lab", "3d print",
         "march into science", "mad science", "w.e. are curious",
         "high school maker", "scratch art", "science club", "science project",
         "science program", "math club",
@@ -78,7 +78,7 @@ TITLE_RULES: list[tuple[str, list[str]]] = [
 # ── Tag-based fallback (used only when title/description keywords don't match) ──
 TAG_FALLBACK_RULES: list[tuple[str, frozenset[str]]] = [
     ("Storytime",     frozenset(["storytime", "reading"])),
-    ("STEM",          frozenset(["science", "stem"])),
+    ("STEM",          frozenset(["stem"])),
     ("Arts & Crafts", frozenset(["art", "arts", "music", "culture"])),
     ("Music & Dance", frozenset(["music", "dance", "movement"])),
     ("Play & Games",  frozenset(["play", "classes", "recreation", "entertainment"])),
