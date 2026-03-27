@@ -313,6 +313,10 @@
     <span class="stat-pill" id="statUpdated" style="opacity:0.7"></span>
   </div>
   <div class="dl-buttons">
+    <button class="dl-btn" id="filterToggleBtn" onclick="toggleFilters()">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+      <span id="filterBtnLabel">Filters</span>
+    </button>
     <button class="dl-btn" onclick="downloadAllICS()">
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       Download .ics
@@ -395,12 +399,32 @@ async function loadCity(city) {
     // Reset neighborhood filter state and rebuild buttons
     selectedNeighborhoods.clear();
     buildNeighborhoodFilters();
+    updateFilterBadge();
 
     renderFiltered();
   } catch (err) {
     document.getElementById('main').innerHTML =
       `<div class="no-events">Could not load events for ${city}.<br><small>${err.message}</small></div>`;
   }
+}
+
+// ── Filter toggle ──────────────────────────────────────────────────────────────
+function toggleFilters() {
+  document.getElementById('filterBar').classList.toggle('open');
+  updateFilterBadge();
+}
+
+function updateFilterBadge() {
+  const activeCount =
+    (filters.age   !== 'all' ? 1 : 0) +
+    (filters.cost  !== 'all' ? 1 : 0) +
+    (filters.when  !== 'all' ? 1 : 0) +
+    (filters.venue !== 'all' ? 1 : 0) +
+    (selectedNeighborhoods.size > 0 ? 1 : 0);
+  const label = document.getElementById('filterBtnLabel');
+  if (label) label.textContent = activeCount > 0 ? `Filters · ${activeCount}` : 'Filters';
+  const btn = document.getElementById('filterToggleBtn');
+  if (btn) btn.style.background = activeCount > 0 ? 'rgba(255,255,255,0.4)' : '';
 }
 
 // ── Neighborhood filter builder ────────────────────────────────────────────────
@@ -453,6 +477,7 @@ function toggleNeighborhood(value, btn) {
       if (allBtn2) allBtn2.classList.add('active');
     }
   }
+  updateFilterBadge();
   renderFiltered();
 }
 
@@ -462,6 +487,7 @@ function setFilter(type, value, btn) {
   // Deactivate siblings, activate clicked
   btn.closest('.filter-group').querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  updateFilterBadge();
   renderFiltered();
 }
 
