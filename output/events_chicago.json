@@ -1,117 +1,11 @@
 {
-  "generated_at": "2026-03-27T08:56:03.499319",
+  "generated_at": "2026-03-27T19:01:14.062885",
   "city": "chicago",
   "city_label": "Chicago",
   "timezone": "America/Chicago",
-  "total": 227,
-  "free_count": 153,
+  "total": 224,
+  "free_count": 151,
   "events": [
-    {
-      "uid": "e7b825750025d4d2d28e708b26876800",
-      "title": "Homeschool Family Fun Day",
-      "display_title": "[FREE] Homeschool Family Fun Day",
-      "date_start": "2026-03-27T10:00:00",
-      "date_end": "2026-03-27T12:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "Toman",
-      "location_address": "2708 S. Pulaski Rd., Chicago, IL 60623",
-      "location_lat": 41.8421,
-      "location_lng": -87.7246,
-      "description": "Join us for a relaxed morning designed for homeschool families to connect and socialize. It's a great opportunity for both kids and adults to meet new friends and enjoy some quality time together in a welcoming environment. Let's build our community! Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made at least 14 business days before the event.",
-      "url": "https://chipublib.bibliocommons.com/events/697a6279a5d80ac4926f7e33",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "distance_miles": 5.9,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "Chicago"
-    },
-    {
-      "uid": "f5471ba36f5b1e95ec02e32f470b5d70",
-      "title": "Open Play Time",
-      "display_title": "[FREE] Open Play Time",
-      "date_start": "2026-03-27T10:00:00",
-      "date_end": "2026-03-27T11:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "North Austin",
-      "location_address": "5724 W. North Ave., Chicago, IL 60639",
-      "location_lat": 41.9094,
-      "location_lng": -87.769,
-      "description": "Join us for a drop-in open play time! We have fun, educational toys and books available for self-directed play. For kids 0 to 5 with their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made at least 14 business days before the event.",
-      "url": "https://chipublib.bibliocommons.com/events/69a1e41b491b809c6f1cf538",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "distance_miles": 7.7,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "Chicago"
-    },
-    {
-      "uid": "5958167195ee5a267784990d9eda14d4",
-      "title": "FreePlay at FAME",
-      "display_title": "FreePlay at FAME",
-      "date_start": "2026-03-27T13:00:00+00:00",
-      "date_end": "2026-03-27T15:00:00+00:00",
-      "org_name": "Eventbrite - Chicago Family Events",
-      "location_name": "FAME Center",
-      "location_address": "1319 South State Street, Chicago, IL, 60605",
-      "location_lat": 41.86510949999999,
-      "location_lng": -87.6270256,
-      "description": "FreePlay at FAME is a $5 drop-in, baby–caregiver art and sensory play experience held every Friday morning at the FAME Center.",
-      "url": "https://www.eventbrite.com/e/freeplay-at-fame-tickets-1985398497351",
-      "cost": "$5+",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "family",
-        "community",
-        "kids"
-      ],
-      "distance_miles": 1.2,
-      "source_name": "Eventbrite - Chicago Family Events",
-      "neighborhood": "South Loop"
-    },
-    {
-      "uid": "e252d51206ae4e9168b2a675c6e4e02e",
-      "title": "Friday Games and Crafts",
-      "display_title": "[FREE] Friday Games and Crafts",
-      "date_start": "2026-03-27T16:00:00",
-      "date_end": "2026-03-27T16:45:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "North Austin",
-      "location_address": "5724 W. North Ave., Chicago, IL 60639",
-      "location_lat": 41.9094,
-      "location_lng": -87.769,
-      "description": "Drop in to play games and do various simple crafts. For ages 3 to 13. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made at least 14 business days before the event.",
-      "url": "https://chipublib.bibliocommons.com/events/69a1e43b8089f23c675ea701",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "36-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "distance_miles": 7.7,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "Chicago"
-    },
     {
       "uid": "1ed9ac32e428ebd910d6ece09089e230",
       "title": "Color Explosion - Hourly Sessions",
@@ -136,6 +30,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -165,6 +60,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -193,6 +89,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -220,6 +117,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -247,6 +145,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -274,6 +173,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -301,6 +201,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -328,6 +229,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -353,9 +255,38 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
+    },
+    {
+      "uid": "84269fb5ea974357377b59364d34b974",
+      "title": "Destination Discovery Story Time at C2E2",
+      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
+      "date_start": "2026-03-28T16:15:00",
+      "date_end": "2026-03-28T17:00:00",
+      "org_name": "Chicago Public Library - Near North",
+      "location_name": "Chicago Public Library - Near North",
+      "location_address": "",
+      "location_lat": 41.8973868,
+      "location_lng": -87.6234661,
+      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
+      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "Storytime",
+      "distance_miles": 1.0,
+      "source_name": "Chicago Public Library - Near North",
+      "neighborhood": "River North"
     },
     {
       "uid": "8525f8b5389e201d4cb8055e43833b6e",
@@ -380,6 +311,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": null,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": ""
@@ -407,36 +339,10 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 1.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "South Loop"
-    },
-    {
-      "uid": "84269fb5ea974357377b59364d34b974",
-      "title": "Destination Discovery Story Time at C2E2",
-      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
-      "date_start": "2026-03-28T16:15:00",
-      "date_end": "2026-03-28T17:00:00",
-      "org_name": "Chicago Public Library - Near North",
-      "location_name": "Chicago Public Library - Near North",
-      "location_address": "",
-      "location_lat": 41.8973868,
-      "location_lng": -87.6234661,
-      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
-      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "distance_miles": 1.0,
-      "source_name": "Chicago Public Library - Near North",
-      "neighborhood": "River North"
     },
     {
       "uid": "5e781477f63aa63646742323b123c81e",
@@ -459,6 +365,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -487,6 +394,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -516,6 +424,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -544,6 +453,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -572,6 +482,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -601,6 +512,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -629,6 +541,7 @@
         "family",
         "Great-Hall"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -657,6 +570,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -684,6 +598,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -711,6 +626,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Andersonville"
@@ -738,6 +654,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -765,6 +682,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -792,6 +710,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -819,6 +738,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -844,6 +764,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -869,6 +790,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 9.7,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -897,6 +819,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -926,6 +849,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -954,6 +878,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -980,6 +905,7 @@
         "culture",
         "family"
       ],
+      "category": "Arts & Music",
       "distance_miles": null,
       "source_name": "National Museum of Mexican Art - Events",
       "neighborhood": ""
@@ -1007,6 +933,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -1034,6 +961,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Humboldt Park"
@@ -1061,6 +989,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1088,6 +1017,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.5,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1115,6 +1045,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Andersonville"
@@ -1142,6 +1073,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 3.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Bridgeport"
@@ -1167,6 +1099,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 7.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -1192,6 +1125,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 0.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "River North"
@@ -1217,6 +1151,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -1243,6 +1178,7 @@
         "science",
         "family"
       ],
+      "category": "Science & STEM",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -1271,6 +1207,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1299,6 +1236,7 @@
         "family",
         "Great-Hall"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1328,6 +1266,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1356,6 +1295,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1383,6 +1323,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 3.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Bridgeport"
@@ -1408,6 +1349,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -1435,6 +1377,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -1460,6 +1403,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -1485,6 +1429,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 5.0,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Kenwood"
@@ -1513,6 +1458,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1542,6 +1488,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1570,6 +1517,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1598,6 +1546,7 @@
         "family",
         "Great-Hall"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1625,6 +1574,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -1652,6 +1602,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -1679,6 +1630,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Park"
@@ -1704,6 +1656,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 2.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -1731,6 +1684,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1758,6 +1712,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.2,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1783,6 +1738,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -1808,6 +1764,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -1836,6 +1793,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1865,6 +1823,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1893,6 +1852,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -1920,6 +1880,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -1945,6 +1906,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -1972,6 +1934,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2000,6 +1963,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2029,6 +1993,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2057,17 +2022,18 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "fac52ceada2437b8eafa679cde8041cd",
+      "uid": "76ce855eb815cef554a9c67ef0d174ba",
       "title": "The Art of Paper Magic: Origami for Everyone",
       "display_title": "[FREE] The Art of Paper Magic: Origami for Everyone",
       "date_start": "2026-04-04T10:00:00",
       "date_end": "2026-04-04T12:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Near North",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -2084,8 +2050,9 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Near North",
       "neighborhood": "River North"
     },
     {
@@ -2111,6 +2078,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2136,6 +2104,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -2161,6 +2130,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.7,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -2189,6 +2159,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2218,6 +2189,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2246,6 +2218,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2274,6 +2247,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2302,6 +2276,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2329,6 +2304,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2356,6 +2332,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.3,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2383,6 +2360,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Hyde Park"
@@ -2410,6 +2388,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.9,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2437,6 +2416,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.9,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2462,6 +2442,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -2487,6 +2468,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 9.7,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -2514,6 +2496,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Hyde Park"
@@ -2541,6 +2524,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2568,6 +2552,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2595,6 +2580,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Andersonville"
@@ -2622,6 +2608,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Little Village"
@@ -2649,6 +2636,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2676,6 +2664,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.2,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2701,6 +2690,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 7.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -2726,6 +2716,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 0.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "River North"
@@ -2751,6 +2742,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -2776,6 +2768,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -2802,6 +2795,7 @@
         "science",
         "family"
       ],
+      "category": "Science & STEM",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -2830,6 +2824,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2859,6 +2854,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2887,6 +2883,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -2914,6 +2911,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 2.9,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -2941,6 +2939,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Hyde Park"
@@ -2968,6 +2967,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -2995,6 +2995,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -3022,6 +3023,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -3047,6 +3049,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 4.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Bucktown"
@@ -3072,6 +3075,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 5.0,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Kenwood"
@@ -3100,6 +3104,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3129,6 +3134,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3157,6 +3163,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3184,6 +3191,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -3211,17 +3219,18 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.3,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
     },
     {
-      "uid": "9f581021e3c7052e726461148b9fda1b",
+      "uid": "c938c19c98f1d5008875763842b54f21",
       "title": "Teen Zone",
       "display_title": "[FREE] Teen Zone",
       "date_start": "2026-04-09T15:30:00",
       "date_end": "2026-04-09T17:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Near North",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -3238,8 +3247,9 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Near North",
       "neighborhood": "River North"
     },
     {
@@ -3265,6 +3275,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.2,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -3290,6 +3301,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 4.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Bucktown"
@@ -3315,6 +3327,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3343,6 +3356,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3372,6 +3386,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3400,6 +3415,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3427,6 +3443,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 2.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Near West Side"
@@ -3454,6 +3471,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -3479,6 +3497,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -3504,6 +3523,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 8.5,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Oak Park"
@@ -3529,6 +3549,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3554,6 +3575,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3579,6 +3601,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3607,6 +3630,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3636,6 +3660,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3664,6 +3689,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3689,6 +3715,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3714,6 +3741,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3739,6 +3767,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3764,6 +3793,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -3792,6 +3822,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3821,6 +3852,7 @@
         "Tinkering-Lab",
         "Cardboard"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3849,6 +3881,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3876,6 +3909,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -3904,6 +3938,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3932,6 +3967,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -3959,6 +3995,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -3986,6 +4023,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4013,6 +4051,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.5,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4040,6 +4079,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Park"
@@ -4067,6 +4107,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 3.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Wicker Park"
@@ -4094,6 +4135,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -4119,6 +4161,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -4144,6 +4187,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 9.7,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -4171,6 +4215,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -4198,6 +4243,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Little Village"
@@ -4225,6 +4271,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -4252,6 +4299,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4277,6 +4325,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 0.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "River North"
@@ -4303,6 +4352,7 @@
         "science",
         "family"
       ],
+      "category": "Science & STEM",
       "distance_miles": 1.2,
       "source_name": "Field Museum - Free Wednesdays",
       "neighborhood": "South Loop"
@@ -4331,6 +4381,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4358,6 +4409,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -4385,6 +4437,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Park"
@@ -4412,6 +4465,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 3.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Bridgeport"
@@ -4439,6 +4493,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4464,6 +4519,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -4491,6 +4547,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 8.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4516,6 +4573,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 0.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "River North"
@@ -4543,6 +4601,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -4568,6 +4627,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 2.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -4595,6 +4655,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4620,6 +4681,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 4.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Bucktown"
@@ -4645,6 +4707,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -4673,6 +4736,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4701,6 +4765,7 @@
         "family",
         "Pritzker-Playspace"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4729,6 +4794,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4754,6 +4820,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -4779,6 +4846,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 8.8,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Oak Park"
@@ -4804,6 +4872,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.5,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Lincoln Square"
@@ -4832,6 +4901,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4860,6 +4930,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4887,6 +4958,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -4914,17 +4986,18 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
     },
     {
-      "uid": "7db71bbe77c156383672ba35d9ada9e6",
+      "uid": "e8a92bb30f918ce33f96f9abb71c9e20",
       "title": "Masters Putt Putt Course",
       "display_title": "[FREE] Masters Putt Putt Course",
       "date_start": "2026-04-18T14:00:00",
       "date_end": "2026-04-18T15:30:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Near North",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -4941,8 +5014,9 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Near North",
       "neighborhood": "River North"
     },
     {
@@ -4968,6 +5042,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -4993,6 +5068,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 6.5,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Lincoln Square"
@@ -5021,6 +5097,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5049,6 +5126,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5074,6 +5152,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 8.6,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -5102,6 +5181,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5129,6 +5209,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5156,6 +5237,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5183,6 +5265,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.6,
       "source_name": "Chicago Public Library",
       "neighborhood": "Hyde Park"
@@ -5210,6 +5293,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -5237,6 +5321,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 2.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "South Loop"
@@ -5264,6 +5349,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -5289,6 +5375,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -5316,6 +5403,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 6.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Lincoln Square"
@@ -5343,6 +5431,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.3,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5370,6 +5459,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Andersonville"
@@ -5397,6 +5487,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.8,
       "source_name": "Chicago Public Library",
       "neighborhood": "Little Village"
@@ -5424,6 +5515,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.3,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5449,6 +5541,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 0.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "River North"
@@ -5477,6 +5570,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5505,6 +5599,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5532,6 +5627,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5559,6 +5655,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.7,
       "source_name": "Chicago Public Library",
       "neighborhood": "Andersonville"
@@ -5586,6 +5683,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.2,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5613,6 +5711,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 0.5,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
@@ -5640,6 +5739,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5667,6 +5767,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 4.4,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5692,6 +5793,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.4,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -5720,6 +5822,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5748,6 +5851,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5773,6 +5877,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 2.9,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
@@ -5801,6 +5906,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5829,6 +5935,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5856,6 +5963,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.9,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5881,6 +5989,7 @@
         "community",
         "kids"
       ],
+      "category": "Play",
       "distance_miles": 1.2,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "South Loop"
@@ -5909,6 +6018,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5937,6 +6047,7 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -5964,6 +6075,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 5.9,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -5991,6 +6103,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 7.2,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
@@ -6018,6 +6131,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 9.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "Rogers Park"
@@ -6045,6 +6159,7 @@
         "toddler",
         "reading"
       ],
+      "category": "Storytime",
       "distance_miles": 2.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "South Loop"
@@ -6073,6 +6188,7 @@
         "family",
         "Tinkering-Lab"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -6101,9 +6217,38 @@
         "family",
         "Art-Studio"
       ],
+      "category": "Play",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
+    },
+    {
+      "uid": "173dc8d7ae2b83bb3abd9fd210e454d6",
+      "title": "Film Screening: A Girl Walks Home Alone at Night (2014)",
+      "display_title": "[FREE] Film Screening: A Girl Walks Home Alone at Night (2014)",
+      "date_start": "2026-04-26T14:00:00",
+      "date_end": "2026-04-26T16:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "Chinatown",
+      "location_address": "2100 S. Wentworth Ave., Chicago, IL 60616",
+      "location_lat": 41.8541,
+      "location_lng": -87.632,
+      "description": "The first Iranian Vampire Western ever made. A joyful mash up of genre, archetype, and iconography, its prolific influences span spaghetti westerns, graphic novels, horror films and the Iranian New Wave. A solitary female vampire (Sheila Vand) stalks the streets of Bad City, a place overrun with crime, drugs and despair. Meanwhile, hardworking Arash (Arash Marandi) cares for his heroin-addicted father while attempting to comply with a local drug dealer and struggling to make ends meet. When the ",
+      "url": "https://chipublib.bibliocommons.com/events/69af405d8d5e2d093364377c",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "Storytime",
+      "distance_miles": 2.0,
+      "source_name": "Chicago Public Library",
+      "neighborhood": "South Loop"
     }
   ]
 }
