@@ -62,6 +62,7 @@ def _serialize(e: Event) -> dict:
         "is_free": e.is_free,
         "age_range": e.age_range,
         "tags": e.tags,
+        "category": e.category,
         "distance_miles": e.distance_miles,
         "source_name": e.source_name,
         "neighborhood": e.neighborhood,

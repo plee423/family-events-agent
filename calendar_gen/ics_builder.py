@@ -120,6 +120,8 @@ def _build_vevent(event: Event, tz: "pytz.BaseTzInfo") -> ICalEvent | None:
         desc_lines.append("Cost: Free")
     if event.age_range:
         desc_lines.append(f"Ages: {event.age_range}")
+    if event.category:
+        desc_lines.append(f"Category: {event.category}")
     if event.description:
         desc_lines.append("")
         desc_lines.append(event.description)

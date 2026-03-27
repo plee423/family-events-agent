@@ -295,6 +295,11 @@ def _render_html(
       padding: 0.15rem 0.55rem;
     }}
 
+    .badge-category {{
+      background: #fef3c7;
+      color: #92400e;
+    }}
+
     .badge-virtual {{
       background: #e0f2fe;
       color: #0369a1;
@@ -543,6 +548,7 @@ def _render_card(
 
     # Data attributes for JS (filter + ics generation)
     data_attrs = (
+        f' data-category="{_esc(e.category)}"'
         f' data-neighborhood="{_esc(e.neighborhood)}"'
         f' data-free="{1 if e.is_free else 0}"'
         f' data-title="{_esc(e.title)}"'
@@ -588,7 +594,7 @@ def _render_card(
 
     return f"""{card_tag}
       <span class="card-title">{_esc(e.title)}</span>
-      <span class="badge-area">{badge}</span>
+      <span class="badge-area">{badge}{"<span class='badge badge-category'>" + _esc(e.category) + "</span>" if e.category else ""}</span>
       <div class="card-meta">{"".join(meta_items)}</div>
       {desc_html}
       {add_cal_btn}

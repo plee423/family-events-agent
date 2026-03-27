@@ -34,6 +34,7 @@ class Event:
     distance_miles: Optional[float] = None
     source_name: str = ""
     neighborhood: str = ""
+    category: str = ""
 
     @property
     def uid(self) -> str:

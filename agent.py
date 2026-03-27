@@ -150,6 +150,7 @@ def cache_deserialize(raw_events: list[dict]) -> list:
             d["date_start"] = dateutil_parser.parse(d["date_start"])
             if d.get("date_end"):
                 d["date_end"] = dateutil_parser.parse(d["date_end"])
+            d.setdefault("category", "")
             events.append(Event(**d))
         except Exception as exc:
             logger.debug("Failed to deserialize cached event: %s", exc)
@@ -262,6 +263,10 @@ def run_filters(events: list, settings: dict, sources: list[dict] | None = None)
 
     # Sort by date — strip timezone to allow comparison of naive and aware datetimes
     events.sort(key=lambda e: e.date_start.replace(tzinfo=None))
+
+    from filters.category_assigner import assign_categories
+    events = assign_categories(events)
+
     return events
 
 
