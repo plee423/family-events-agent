@@ -23,94 +23,10 @@ TZOFFSETTO:-0500
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-SUMMARY:Color Explosion - Hourly Sessions
-DTSTART;TZID=America/Chicago:20260327T000000
-DTEND;TZID=America/Chicago:20260328T000000
-DTSTAMP:20260327T015129Z
-UID:a993ae3cb2623cd6cec616d0087c3c2f@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nA bright\, hands-on color advent
- ure! Children follow colorful paths\, explore light and shadow\, and disco
- ver patterns through play - clean\, creative\, and full of wonder. Session
-  Times Monday\, Wednesday\,\\n\\nMore info: https://www.chicagochildrensmu
- seum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Color Explosion - Hourly Sessions
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Color Explosion - Hourly Sessions
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Ready to Wear Cardboard - Hourly Workshops
-DTSTART;TZID=America/Chicago:20260327T000000
-DTEND;TZID=America/Chicago:20260328T000000
-DTSTAMP:20260327T015129Z
-UID:eba08d2a3ec0091c6be6336ee9514eb0@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nAlready grew out of the shirt yo
- u just bought? Stop by the Tinkering Lab and use our recyclable materials 
- to create something new that’s ready to wear! Ages 3 and Up Workshop Tim
- es 10:30\, 11:30\, 12:30\\n\\nMore info: https://www.chicagochildrensmuseu
- m.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Ready to Wear Cardboard - Hourly Workshops
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Ready to Wear Cardboard - Hourly Workshops
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Wild Collage - Hourly Programming
-DTSTART;TZID=America/Chicago:20260327T000000
-DTEND;TZID=America/Chicago:20260328T000000
-DTSTAMP:20260327T015129Z
-UID:aed6584dca240388340904703fa5b337@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Art-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nUse geometric shapes\, bright co
- lors and bold patterns to create animal designs inspired by the artist Cha
- rley Harper\, featured in our I AM WILD exhibit! 3 and Up Workshop Times 1
- 0:30\, 11:30\, 12:30\, 1:\\n\\nMore info: https://www.chicagochildrensmuse
- um.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Wild Collage - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Wild Collage - Hourly Programming
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Homeschool Family Fun Day
 DTSTART;TZID=America/Chicago:20260327T100000
 DTEND;TZID=America/Chicago:20260327T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e7b825750025d4d2d28e708b26876800@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -124,7 +40,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  org to request accommodations. Requests must be made at least 14 business 
  days before the event.\\n\\nMore info: https://chipublib.bibliocommons.com
  /events/697a6279a5d80ac4926f7e33
-LOCATION:Toman
+LOCATION:Toman\, 2708 S. Pulaski Rd.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/697a6279a5d80ac4926f7e33
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -141,12 +57,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Open Play Time
 DTSTART;TZID=America/Chicago:20260327T100000
 DTEND;TZID=America/Chicago:20260327T110000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f5471ba36f5b1e95ec02e32f470b5d70@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.0 miles from home\\n\\nJoin us for a drop-in open play 
+ nths\\nDistance: 7.7 miles from home\\n\\nJoin us for a drop-in open play 
  time! We have fun\, educational toys and books available for self-directed
   play. For kids 0 to 5 with their caregivers. Accessibility Need sign lang
  uage interpretation or other accessibility assistance for this event? Plea
@@ -154,7 +70,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ions. Requests must be made at least 14 business days before the event.\\n
  \\nMore info: https://chipublib.bibliocommons.com/events/69a1e41b491b809c6
  f1cf538
-LOCATION:North Austin
+LOCATION:North Austin\, 5724 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/69a1e41b491b809c6f1cf538
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -171,7 +87,7 @@ BEGIN:VEVENT
 SUMMARY:FreePlay at FAME
 DTSTART;TZID=America/Chicago:20260327T080000
 DTEND;TZID=America/Chicago:20260327T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5958167195ee5a267784990d9eda14d4@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -197,18 +113,18 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Friday Games and Crafts
 DTSTART;TZID=America/Chicago:20260327T160000
 DTEND;TZID=America/Chicago:20260327T164500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e252d51206ae4e9168b2a675c6e4e02e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 9.0 miles from home\\n\\nDrop in to play games and do va
+ onths\\nDistance: 7.7 miles from home\\n\\nDrop in to play games and do va
  rious simple crafts. For ages 3 to 13. Accessibility Need sign language in
  terpretation or other accessibility assistance for this event? Please call
   (312) 747-8184 or email access@chipublib.org to request accommodations. R
  equests must be made at least 14 business days before the event.\\n\\nMore
   info: https://chipublib.bibliocommons.com/events/69a1e43b8089f23c675ea701
-LOCATION:North Austin
+LOCATION:North Austin\, 5724 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/69a1e43b8089f23c675ea701
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -225,7 +141,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260328T000000
 DTEND;TZID=America/Chicago:20260329T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1ed9ac32e428ebd910d6ece09089e230@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -253,7 +169,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260328T000000
 DTEND;TZID=America/Chicago:20260329T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f3f9718fbe0f49c122e034962adf4baf@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -281,7 +197,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260328T000000
 DTEND;TZID=America/Chicago:20260329T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0bf0b01c510ad57ff739da2963b3a8e0@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -309,12 +225,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Dungeons & Dragons for Teens
 DTSTART;TZID=America/Chicago:20260328T130000
 DTEND;TZID=America/Chicago:20260328T143000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:49527827109401f1143d0bce6a0e0970@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.1 miles from home\\n\\nChoose your own adventure and ex
+ nths\\nDistance: 8.8 miles from home\\n\\nChoose your own adventure and ex
  plore new lands in our Dungeons & Dragons weekly sessions! Dungeons & Drag
  ons is a fantasy tabletop role-playing game where players create unique ch
  aracters and work together to create stories to remember. No experience ne
@@ -323,7 +239,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  uage interpretation or other accessibility assistance for this event? Plea
  se call (312) 747-8184 o\\n\\nMore info: https://chipublib.bibliocommons.c
  om/events/6977b1c0b0595799c0989fe8
-LOCATION:West Lawn
+LOCATION:West Lawn\, 4020 W. 63rd St.\, Chicago\, IL 60636
 URL:https://chipublib.bibliocommons.com/events/6977b1c0b0595799c0989fe8
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -340,12 +256,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Children's Coding and STEM Club
 DTSTART;TZID=America/Chicago:20260328T133000
 DTEND;TZID=America/Chicago:20260328T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9f379aef477ab9b7bb43df6e200fe64b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 6.0 miles from home\\n\\nDo you love technology? Are you 
+ nths\\nDistance: 7.1 miles from home\\n\\nDo you love technology? Are you 
  curious about STEM\, coding and robotics? Come and join us with fun\, hand
  s-on activities to learn how to design your own computer games\, animation
   and robots. For kids 6 to 13. This program is presented in partnership wi
@@ -354,7 +270,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  nformation online from kids 0 to 13. A parent or guardian’s email addres
  s must be used to register. A\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/699497121e64afd01e5bf8d5
-LOCATION:Coleman
+LOCATION:Coleman\, 731 E. 63rd St.\, Chicago\, IL 60637
 URL:https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d5
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -371,7 +287,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cursive Club
 DTSTART;TZID=America/Chicago:20260328T140000
 DTEND;TZID=America/Chicago:20260328T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:857559bbc2337454c67120ac8ecc55b0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -384,7 +300,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  lib.org to request accommodations. Requests must be made at least 14 busin
  ess days before the event.\\n\\nMore info: https://chipublib.bibliocommons
  .com/events/698616b3d2bbe265eb2ca476
-LOCATION:Thurgood Marshall
+LOCATION:Thurgood Marshall\, 7506 S. Racine Ave.\, Chicago\, IL 60620
 URL:https://chipublib.bibliocommons.com/events/698616b3d2bbe265eb2ca476
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -401,19 +317,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Arts and Crafts
 DTSTART;TZID=America/Chicago:20260328T140000
 DTEND;TZID=America/Chicago:20260328T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f9b65f31d0aea5cae844ecf995908beb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 9.0 miles from home\\n\\nDrop in to do various simple ar
+ onths\\nDistance: 7.7 miles from home\\n\\nDrop in to do various simple ar
  ts and crafts. For children 3 to 13 and their caregivers. Accessibility Ne
  ed sign language interpretation or other accessibility assistance for this
   event? Please call (312) 747-8184 or email access@chipublib.org to reques
  t accommodations. Requests must be made at least 14 business days before t
  he event.\\n\\nMore info: https://chipublib.bibliocommons.com/events/69a1e
  4544dacf581ff7e6022
-LOCATION:North Austin
+LOCATION:North Austin\, 5724 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/69a1e4544dacf581ff7e6022
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -430,12 +346,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bring Your Own Book Club
 DTSTART;TZID=America/Chicago:20260328T150000
 DTEND;TZID=America/Chicago:20260328T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c9a16de1a10e9a2c0602c9e29b25e166@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 4.6 miles from home\\n\\nHave you been reading something 
+ nths\\nDistance: 4.7 miles from home\\n\\nHave you been reading something 
  you love? Do you want to tell everyone how amazing it is? Bring it along a
  nd share with other readers why you loved it so much and get recommendatio
  ns for new books you may want to read next. Snacks and drinks will be prov
@@ -444,7 +360,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  assistance for this event? Please call (312) 747-8184 or email access@chip
  ublib.org to request acco\\n\\nMore info: https://chipublib.bibliocommons.
  com/events/69a703784dacf581ff7f4294
-LOCATION:Lincoln Belmont
+LOCATION:Lincoln Belmont\, 1659 W. Melrose St.\, Chicago\, IL 60657
 URL:https://chipublib.bibliocommons.com/events/69a703784dacf581ff7f4294
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -461,7 +377,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] South Side Fireflies
 DTSTART;TZID=America/Chicago:20260328T110000
 DTEND;TZID=America/Chicago:20260328T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0b3c9a751595af7102c454d81400a401@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -488,7 +404,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Destination Discovery Story Time at C2E2
 DTSTART;TZID=America/Chicago:20260328T161500
 DTEND;TZID=America/Chicago:20260328T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8525f8b5389e201d4cb8055e43833b6e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -519,38 +435,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Destination Discovery Story Time at C2E2
 DTSTART;TZID=America/Chicago:20260328T161500
 DTEND;TZID=America/Chicago:20260328T170000
-DTSTAMP:20260327T015129Z
-UID:84269fb5ea974357377b59364d34b974@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library - Near North\\nCost: free\\n
- Ages: 0-60 months\\nDistance: 1.0 miles from home\\n\\nJoin Librarian Mega
- n of the Chicago Public Library for a comics inspired story time especiall
- y for our littlest fans! We’ll share songs\, rhymes and books\, plus sug
- gestions for at-home activities so you can keep the fun going even after y
- ou have left the con. For kids 0 to 5 and their caregivers. Accessibility 
- Need sign language interpretation or other accessibility assistance for th
- is event? Please call (312) 747-8184 or email access@chipublib.org to requ
- est accommodations. Requests must be made\\n\\nMore info: https://chipubli
- b.bibliocommons.com/events/69af424b81b67dfe32ab7b3f
-LOCATION:Chicago Public Library - Near North
-URL:https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Destination Discovery Story Time at C2E2
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Destination Discovery Story Time at C2E2
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Destination Discovery Story Time at C2E2
-DTSTART;TZID=America/Chicago:20260328T161500
-DTEND;TZID=America/Chicago:20260328T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0b53fd5209f142ba909b6d0a0030afc2@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -578,10 +463,41 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Destination Discovery Story Time at C2E2
+DTSTART;TZID=America/Chicago:20260328T161500
+DTEND;TZID=America/Chicago:20260328T170000
+DTSTAMP:20260327T085603Z
+UID:84269fb5ea974357377b59364d34b974@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,reading
+DESCRIPTION:Organizer: Chicago Public Library - Near North\\nCost: free\\n
+ Ages: 0-60 months\\nDistance: 1.0 miles from home\\n\\nJoin Librarian Mega
+ n of the Chicago Public Library for a comics inspired story time especiall
+ y for our littlest fans! We’ll share songs\, rhymes and books\, plus sug
+ gestions for at-home activities so you can keep the fun going even after y
+ ou have left the con. For kids 0 to 5 and their caregivers. Accessibility 
+ Need sign language interpretation or other accessibility assistance for th
+ is event? Please call (312) 747-8184 or email access@chipublib.org to requ
+ est accommodations. Requests must be made\\n\\nMore info: https://chipubli
+ b.bibliocommons.com/events/69af424b81b67dfe32ab7b3f
+LOCATION:Chicago Public Library - Near North
+URL:https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Destination Discovery Story Time at C2E2
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Destination Discovery Story Time at C2E2
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Activating the Legacies of Invisible Giants
 DTSTART;TZID=America/Chicago:20260328T130000
 DTEND;TZID=America/Chicago:20260328T153000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5e781477f63aa63646742323b123c81e@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -609,7 +525,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260329T000000
 DTEND;TZID=America/Chicago:20260330T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:99e5cddf48f34413bfb37e1e9b41fbd6@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -637,7 +553,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260329T000000
 DTEND;TZID=America/Chicago:20260330T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c6ffc35b78e3c6a86a77b6c0fc8262fc@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -665,7 +581,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260329T000000
 DTEND;TZID=America/Chicago:20260330T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:29903492660dafda96c50c047c29a9b2@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -693,7 +609,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260330T000000
 DTEND;TZID=America/Chicago:20260331T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:dbba97a500f34bc22ab0296d1eb80a7f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -721,7 +637,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260330T000000
 DTEND;TZID=America/Chicago:20260331T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c414b659f22e9e85f3b314b661a1e967@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -749,7 +665,7 @@ BEGIN:VEVENT
 SUMMARY:Super Hero Day
 DTSTART;TZID=America/Chicago:20260330T000000
 DTEND;TZID=America/Chicago:20260331T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f0018b752ddd4014149b6f631c2c8687@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Great-Hall
@@ -777,7 +693,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260330T000000
 DTEND;TZID=America/Chicago:20260331T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f67e7574a4468b53ded378cd36b7d96a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -805,7 +721,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Coffee and Connections
 DTSTART;TZID=America/Chicago:20260330T093000
 DTEND;TZID=America/Chicago:20260330T123000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:7b201af88dd8cd79ea5d92309f931cfb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -819,7 +735,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  quests must be made at least 14 business days before the event. Photo: pix
  elshot via Canva\\n\\nMore info: https://chipublib.bibliocommons.com/event
  s/697a881f377f55c8ec1635f1
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/697a881f377f55c8ec1635f1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -836,12 +753,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mother Goose on the Loose
 DTSTART;TZID=America/Chicago:20260330T103000
 DTEND;TZID=America/Chicago:20260330T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:548d2eebb7d69e83b27c088a9d325d2f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
- nths\\nDistance: 7.3 miles from home\\n\\nJoin Ms. Anne for an interactive
+ nths\\nDistance: 7.7 miles from home\\n\\nJoin Ms. Anne for an interactive
   program featuring read-aloud books\, songs and movement activities. Tips 
  for children's early literacy skill development are included for parents a
  nd caregivers. For children 6 to 36 months and their caregivers. Accessibi
@@ -850,7 +767,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
   request accommodations. Requests must be made at least 14 business days b
  efore the event.\\n\\nMore info: https://chipublib.bibliocommons.com/event
  s/6989fc924dacf581ff7a15d4
-LOCATION:Edgewater
+LOCATION:Edgewater\, 6000 N. Broadway St.\, Chicago\, IL 60660
 URL:https://chipublib.bibliocommons.com/events/6989fc924dacf581ff7a15d4
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -867,12 +784,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260330T110000
 DTEND;TZID=America/Chicago:20260330T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:33b811b56fe5228fb21563731c7e0f5f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.6 miles from home\\n\\nPlease join us for a 30-minute f
+ nths\\nDistance: 6.0 miles from home\\n\\nPlease join us for a 30-minute f
  amily story time. We will enjoy stories\, rhymes and music. For kids 0 to 
  5 and their caregivers. Older children also welcome. How to Attend Registr
  ation is appreciated but not required. Register by the start of the event 
@@ -881,7 +798,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  er. As a reminder\, school email addresses may block external emails such 
  as those from CPL. Accessibi\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/699772d881b67dfe32a77a26
-LOCATION:North Pulaski
+LOCATION:North Pulaski\, 4300 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a26
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -898,7 +815,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] March into Science
 DTSTART;TZID=America/Chicago:20260330T173000
 DTEND;TZID=America/Chicago:20260330T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c00652bfa29ecec5fe7e9608cad13d11@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -912,7 +829,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ess must be used to register. As a reminder\, school email addresses may b
  lock external emails such a\\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/698cc08b81b67dfe32a5c193
-LOCATION:Thurgood Marshall
+LOCATION:Thurgood Marshall\, 7506 S. Racine Ave.\, Chicago\, IL 60620
 URL:https://chipublib.bibliocommons.com/events/698cc08b81b67dfe32a5c193
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -929,12 +846,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Messy Art: Papier Mâché Masks
 DTSTART;TZID=America/Chicago:20260330T180000
 DTEND;TZID=America/Chicago:20260330T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e7658c7471c72061e4a59bd2c9aca05f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 7.2 miles from home\\n\\nCome join us at the library to 
+ onths\\nDistance: 7.7 miles from home\\n\\nCome join us at the library to 
  create a mask using papier mâché. Get hands on experience with the mediu
  m along with an introduction to artists who use it in their own work\, lik
  e the Linares Family. After the program you can take home your finished pi
@@ -943,7 +860,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  oject sample for inspiration. For families with children of all ages. Acce
  ssibility Need sign language\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/69653d42491b809c6f126cce
-LOCATION:Archer Heights
+LOCATION:Archer Heights\, 5055 S. Archer Ave.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/69653d42491b809c6f126cce
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -960,12 +877,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Practice: English Conversation Group
 DTSTART;TZID=America/Chicago:20260330T183000
 DTEND;TZID=America/Chicago:20260330T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:dfb69490835d50728bef5209db5b0db0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nDo you want to learn English? Do
+ nths\\nDistance: 9.0 miles from home\\n\\nDo you want to learn English? Do
   you want to practice speaking and understanding English and improve your 
  communications skills? Join our conversation group with Literacy Chicago a
  nd improve your ability to communicate. This group focuses on having livel
@@ -974,7 +891,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  nversational vocabulary\, meet new people\, and have fun! You should regis
  ter online at the Literacy Ch\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/695ed1cd992fc18a86dc2b64
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/695ed1cd992fc18a86dc2b64
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -991,7 +908,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (SOUTH LOOP)
 DTSTART;TZID=America/Chicago:20260330T180000
 DTEND;TZID=America/Chicago:20260330T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8ad1d3c61c2bcd934e5587cc05e41f2b@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1021,7 +938,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: Shekere Workshop
 DTSTART;TZID=America/Chicago:20260330T183000
 DTEND;TZID=America/Chicago:20260330T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ef7c6412688518b6b2eeea50832c79a6@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1049,7 +966,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260331T000000
 DTEND;TZID=America/Chicago:20260401T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6cc565812a18a80aaecc4ab7e2738d9c@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1077,7 +994,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260331T000000
 DTEND;TZID=America/Chicago:20260401T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:fcc439d88344ed7e458baaa0809aa0e7@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -1105,7 +1022,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260331T000000
 DTEND;TZID=America/Chicago:20260401T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3d87f23559b4cd1d652467f8671b0882@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1130,15 +1047,40 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Talks & Lectures
+DTSTART;TZID=America/Chicago:20260331T070000
+DTEND;TZID=America/Chicago:20260331T080000
+DTSTAMP:20260327T085603Z
+UID:0dabe58267f1b3d6a2e56f873f2b921a@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,free,culture,family
+DESCRIPTION:Organizer: National Museum of Mexican Art - Events\\nCost: alw
+ ays free\\n\\nMore info: https://nationalmuseumofmexicanart.org/events?cla
+ ssification=4
+LOCATION:Talks & LecturesSor Juana Festival 2026The Past\, Present\, and F
+ uture of Latine EducationMar 31\, 7:00 pmNational Museum of Mexican Art
+URL:https://nationalmuseumofmexicanart.org/events?classification=4
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Talks & Lectures
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Talks & Lectures
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Story Time
 DTSTART;TZID=America/Chicago:20260331T103000
 DTEND;TZID=America/Chicago:20260331T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:af4e6343ef2f3b9ef42e8b4a78d2f0e0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
- onths\\nDistance: 9.2 miles from home\\n\\nJoin Ms. Tara for a story time 
+ onths\\nDistance: 9.0 miles from home\\n\\nJoin Ms. Tara for a story time 
  especially for preschoolers! We’ll share songs\, rhymes\, books and earl
  y literacy tips. For kids 2 to 5 and their caregivers. Accessibility Need 
  sign language interpretation or other accessibility assistance for this ev
@@ -1146,7 +1088,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
  ccommodations. Requests must be made at least 14 business days before the 
  event.\\n\\nMore info: https://chipublib.bibliocommons.com/events/699cabb5
  491b809c6f1bd988
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/699cabb5491b809c6f1bd988
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1163,12 +1105,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Walk-in Hours with Healthcare Alternative Systems (HAS)
 DTSTART;TZID=America/Chicago:20260331T133000
 DTEND;TZID=America/Chicago:20260331T153000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:53a6f18b1e086a7b04ef179bc9544ff9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.2 miles from home\\n\\nThis winter\, Healthcare Alterna
+ nths\\nDistance: 4.6 miles from home\\n\\nThis winter\, Healthcare Alterna
  tive Systems’ (HAS) Harm Reduction team will be at the Humboldt Park Bra
  nch every Tuesday from 1:30pm to 3:30pm. The team focuses on community out
  reach\, connecting vulnerable populations to necessary resources and servi
@@ -1177,7 +1119,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  rs can link individuals to social services\, including mental health\, rec
  overy support groups\, housing\, ha\\n\\nMore info: https://chipublib.bibl
  iocommons.com/events/692f7abcd8681b290042091a
-LOCATION:Humboldt Park
+LOCATION:Humboldt Park\, 1605 N. Troy St.\, Chicago\, IL 60647
 URL:https://chipublib.bibliocommons.com/events/692f7abcd8681b290042091a
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1196,19 +1138,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Tuesday
 DTSTART;TZID=America/Chicago:20260331T153000
 DTEND;TZID=America/Chicago:20260331T173000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:09e8d73ea25d41c4fc34eee6d19934bc@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 6.0 miles from home\\n\\nYou're invited to drop in on Twe
+ nths\\nDistance: 7.1 miles from home\\n\\nYou're invited to drop in on Twe
  en Tuesday for crafting\, gaming and hanging out in the YOUmedia Design De
  n. For ages 10 to 13. Accessibility Need sign language interpretation or o
  ther accessibility assistance for this event? Please call (312) 747-8184 o
  r email access@chipublib.org to request accommodations. Requests must be m
  ade at least 14 business days before the event.\\n\\nMore info: https://ch
  ipublib.bibliocommons.com/events/6894b8c9639e1e9694a546a2
-LOCATION:Coleman
+LOCATION:Coleman\, 731 E. 63rd St.\, Chicago\, IL 60637
 URL:https://chipublib.bibliocommons.com/events/6894b8c9639e1e9694a546a2
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1225,12 +1167,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] W.E. Are Curious
 DTSTART;TZID=America/Chicago:20260331T160000
 DTEND;TZID=America/Chicago:20260331T173000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:2a77f03465440ba9b5a799955f25713f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.6 miles from home\\n\\nLearn and create in hands-on sci
+ nths\\nDistance: 7.5 miles from home\\n\\nLearn and create in hands-on sci
  ence activities including bouncy balls\, scratch paper\, snow in a jar and
   more! For ages 8 to 13. Science Connections programs are made possible in
   part by S&C Electric Company\, Norfolk Southern Corporation\, and other g
@@ -1239,7 +1181,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  event? Please call (312) 747-8184 or email access@chipublib.org to request
   accommodations. Requests mu\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/692de4dbe3b80d360059cecc
-LOCATION:West Englewood
+LOCATION:West Englewood\, 1745 W. 63rd St.\, Chicago\, IL 60621
 URL:https://chipublib.bibliocommons.com/events/692de4dbe3b80d360059cecc
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1256,12 +1198,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® at the Library
 DTSTART;TZID=America/Chicago:20260331T160000
 DTEND;TZID=America/Chicago:20260331T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a6f72fb821577ae5d32ab7fc57cb3e92@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.3 miles from home\\n\\nDo you like building different o
+ nths\\nDistance: 7.7 miles from home\\n\\nDo you like building different o
  bjects and making your imagination come to life? If so\, drop in for some 
  design challenges and open play time with our collection of LEGO® bricks!
   Afterwards\, we will display your creation in the library. We supply the 
@@ -1270,7 +1212,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   this event? Please call (312) 747-8184 or email access@chipublib.org to r
  equest accommodations. Reques\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/698b97c4b0595799c09c1829
-LOCATION:Edgewater
+LOCATION:Edgewater\, 6000 N. Broadway St.\, Chicago\, IL 60660
 URL:https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c1829
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1287,20 +1229,21 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Pajama Story Time
 DTSTART;TZID=America/Chicago:20260331T173000
 DTEND;TZID=America/Chicago:20260331T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e0250aaab5dbc94031eb375c1e55756e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\n\\nWear something comfortable\, grab a stuffed animal to cuddle and
-  join us for Pajama Story Time! We’ll share songs\, rhymes and books\, p
- lus suggestions for at-home activities. For kids 0 to 5 and their caregive
- rs. Accessibility Need sign language interpretation or other accessibility
-  assistance for this event? Please call (312) 747-8184 or email access@chi
- publib.org to request accommodations. Requests must be made at least 14 bu
- siness days before the event.\\n\\nMore info: https://chipublib.bibliocomm
- ons.com/events/69371cc28b29ea2800c32b05
-LOCATION:Daley Richard J.-Bridgeport
+ nths\\nDistance: 3.6 miles from home\\n\\nWear something comfortable\, gra
+ b a stuffed animal to cuddle and join us for Pajama Story Time! We’ll sh
+ are songs\, rhymes and books\, plus suggestions for at-home activities. Fo
+ r kids 0 to 5 and their caregivers. Accessibility Need sign language inter
+ pretation or other accessibility assistance for this event? Please call (3
+ 12) 747-8184 or email access@chipublib.org to request accommodations. Requ
+ ests must be made at least 14 business days before the event.\\n\\nMore in
+ fo: https://chipublib.bibliocommons.com/events/69371cc28b29ea2800c32b05
+LOCATION:Daley Richard J.-Bridgeport\, 3400 S. Halsted St.\, Chicago\, IL 
+ 60608
 URL:https://chipublib.bibliocommons.com/events/69371cc28b29ea2800c32b05
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1317,7 +1260,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: West Side FireFlies
 DTSTART;TZID=America/Chicago:20260331T170000
 DTEND;TZID=America/Chicago:20260331T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8592c711e0d3be7700f048660474ca05@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1345,7 +1288,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (NORTHWESTERN)
 DTSTART;TZID=America/Chicago:20260331T180000
 DTEND;TZID=America/Chicago:20260331T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0ff4d444d6b8440d97e533b448774601@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1375,7 +1318,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: West African Dance Class
 DTSTART;TZID=America/Chicago:20260331T183000
 DTEND;TZID=America/Chicago:20260331T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e88cf76123e70e516f03525467e0955f@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1406,7 +1349,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260401T000000
 DTEND;TZID=America/Chicago:20260401T010000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c087ee6e6696589f33fcf346576f638a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -1431,7 +1374,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260401T000000
 DTEND;TZID=America/Chicago:20260402T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:00d25aa44e308a256020b118862f773f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1459,7 +1402,7 @@ BEGIN:VEVENT
 SUMMARY:Favorite Animal Day
 DTSTART;TZID=America/Chicago:20260401T000000
 DTEND;TZID=America/Chicago:20260402T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:681dc10e0cf781967d82dbd6562ba54f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Great-Hall
@@ -1486,7 +1429,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260401T000000
 DTEND;TZID=America/Chicago:20260402T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5c7031a29b862eb05a4e38d477f65bde@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -1514,7 +1457,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260401T000000
 DTEND;TZID=America/Chicago:20260402T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d6b33b7069c0144f8c96fffc3ea87768@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1542,20 +1485,21 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Club
 DTSTART;TZID=America/Chicago:20260401T160000
 DTEND;TZID=America/Chicago:20260401T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8d246052aac140e041fe3b0077f792d7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\n\\nWhat can you make with a pile of LEGO® bricks? Complete LEGO® 
- challenges with free build time to follow. Bring your imagination and use 
- our LEGO® collection to create something awesome! For kids 5 to 10. Acces
- sibility Need sign language interpretation or other accessibility assistan
- ce for this event? Please call (312) 747-8184 or email access@chipublib.or
- g to request accommodations. Requests must be made at least 14 business da
- ys before the event.\\n\\nMore info: https://chipublib.bibliocommons.com/e
- vents/69949cbf94297d3600acd2dd
-LOCATION:Daley Richard J.-Bridgeport
+ nths\\nDistance: 3.6 miles from home\\n\\nWhat can you make with a pile of
+  LEGO® bricks? Complete LEGO® challenges with free build time to follow.
+  Bring your imagination and use our LEGO® collection to create something 
+ awesome! For kids 5 to 10. Accessibility Need sign language interpretation
+  or other accessibility assistance for this event? Please call (312) 747-8
+ 184 or email access@chipublib.org to request accommodations. Requests must
+  be made at least 14 business days before the event.\\n\\nMore info: https
+ ://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2dd
+LOCATION:Daley Richard J.-Bridgeport\, 3400 S. Halsted St.\, Chicago\, IL 
+ 60608
 URL:https://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2dd
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1572,7 +1516,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260401T110000
 DTEND;TZID=America/Chicago:20260401T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3a12d16d2c185fd0d01939c99b6b8063@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1599,12 +1543,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Classic Film Screening: The Princess Bride (1987)
 DTSTART;TZID=America/Chicago:20260401T180000
 DTEND;TZID=America/Chicago:20260401T194500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:932a33dfcf1e904e103050de4fd22cfc@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nJoin us for the highly acclaimed
+ nths\\nDistance: 9.0 miles from home\\n\\nJoin us for the highly acclaimed
   romantic comedy/fantasy The Princess Bride to celebrate the late\, great 
  Rob Reiner. In the delightfully fractured tale\, a grandfather reads a sto
  ry about a beautiful young woman named Buttercup to his bored grandson. Th
@@ -1613,7 +1557,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  y. Featuring an all-star cast\, Rob Reiner's masterpiece is for all ages a
  nd one of the best films of the\\n\\nMore info: https://chipublib.biblioco
  mmons.com/events/6983a58f94297d3600a9f991
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/6983a58f94297d3600a9f991
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1631,7 +1575,7 @@ SUMMARY:[FREE] Preparing For Great Sleep for You and Your Baby (SOUTH LOOP
  )
 DTSTART;TZID=America/Chicago:20260401T180000
 DTEND;TZID=America/Chicago:20260401T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:fe5e44eec280008ce1ba394c8a278eeb@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1663,7 +1607,7 @@ SUMMARY:[FREE] Music Moves Chicago Presents: Afro-Cuban Dance with Edson C
  abrera
 DTSTART;TZID=America/Chicago:20260401T180000
 DTEND;TZID=America/Chicago:20260401T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1af75e6911b111fc76987968a951613d@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1693,7 +1637,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260402T000000
 DTEND;TZID=America/Chicago:20260403T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c4fc3381e57919a6dca0193fc155b213@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1721,7 +1665,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260402T000000
 DTEND;TZID=America/Chicago:20260403T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:eba7a4d4dc841e60d24bbbe53af14a10@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -1749,7 +1693,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260402T000000
 DTEND;TZID=America/Chicago:20260403T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:4ac4f73faf51dd179b77f56bb1284bdd@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1777,7 +1721,7 @@ BEGIN:VEVENT
 SUMMARY:Pajama Day
 DTSTART;TZID=America/Chicago:20260402T000000
 DTEND;TZID=America/Chicago:20260406T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:77dae47a7483edd765816093b5334e40@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Great-Hall
@@ -1805,7 +1749,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Story Time
 DTSTART;TZID=America/Chicago:20260402T103000
 DTEND;TZID=America/Chicago:20260402T110000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:4ea8ec9e715bd0c6d30ec5850c3663e8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1818,7 +1762,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  email access@chipublib.org to request accommodations. Requests must be mad
  e at least 14 business days before the event.\\n\\nMore info: https://chip
  ublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c53
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c53
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1835,7 +1779,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Bookworms
 DTSTART;TZID=America/Chicago:20260402T103000
 DTEND;TZID=America/Chicago:20260402T111500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:eba8a3aa07adc776d0be2695b355b335@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1849,7 +1793,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-18 mo
  or email sulzerkids@chipublib.org for more information. Accessibility Need
   sign language interpretation o\\n\\nMore info: https://chipublib.biblioco
  mmons.com/events/6983b565834cbb3dea2b9eea
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6983b565834cbb3dea2b9eea
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1866,12 +1810,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Time
 DTSTART;TZID=America/Chicago:20260402T113000
 DTEND;TZID=America/Chicago:20260402T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:152034aecb3c07d1614aad79fe5b5295@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
- nths\\nDistance: 4.2 miles from home\\n\\nJoin us for story times emphasiz
+ nths\\nDistance: 4.1 miles from home\\n\\nJoin us for story times emphasiz
  ing adult-child interaction and bonding. Includes an optional 10-minute pl
  ay time. For kids 6 to 23 months with a participating adult. How to Attend
   In order to provide a fun and safe program\, Baby Time is limited to 25 p
@@ -1880,7 +1824,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
   to 10 minutes before the program begins. Accessibility Need sign language
   interpretation or other a\\n\\nMore info: https://chipublib.bibliocommons
  .com/events/6994a0dc1e64afd01e5bfdea
-LOCATION:Merlo
+LOCATION:Merlo\, 644 W. Belmont Ave.\, Chicago\, IL 60657
 URL:https://chipublib.bibliocommons.com/events/6994a0dc1e64afd01e5bfdea
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1897,7 +1841,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mini Mavericks - Child Enrichment Playdate (FREE)
 DTSTART;TZID=America/Chicago:20260402T083000
 DTEND;TZID=America/Chicago:20260402T103000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cac36dbce36aa04724698382a097021d@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1926,12 +1870,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Game Day
 DTSTART;TZID=America/Chicago:20260402T160000
 DTEND;TZID=America/Chicago:20260402T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:557985d6b64eb8cd26a22c9696276e79@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 4.2 miles from home\\n\\nHang out at the library playing 
+ nths\\nDistance: 4.6 miles from home\\n\\nHang out at the library playing 
  video games or table-top games. Use our video game systems and STEAM Machi
  ne to play a variety of fun games. You can challenge the Librarians to sho
  w off their moves in Just Dance or race your friends around a virtual trac
@@ -1940,7 +1884,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  his event? Please call (312) 747-8184 or email access@chipublib.org to req
  uest accommodations. Req\\n\\nMore info: https://chipublib.bibliocommons.c
  om/events/69b2ec57c94c122f19bdc9b6
-LOCATION:Douglass
+LOCATION:Douglass\, 3353 W. 13th St.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69b2ec57c94c122f19bdc9b6
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1957,12 +1901,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Hideaway
 DTSTART;TZID=America/Chicago:20260402T170000
 DTEND;TZID=America/Chicago:20260402T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cb74c68c47b835f72a5f8979035c43dc@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.9 miles from home\\n\\nDrop in and explore art media\, 
+ nths\\nDistance: 6.2 miles from home\\n\\nDrop in and explore art media\, 
  technology\, crafts and games. For teens 13 to 19. Ven y explora diferente
  s medios de arte\, tecnología\, manualidades y juegos. Para jóvenes de 1
  3 a 19 años. Accessibility Need sign language interpretation or other acc
@@ -1970,7 +1914,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  access@chipublib.org to request accommodations. Requests must be made at l
  east 14 business days before the event.\\n\\nMore info: https://chipublib.
  bibliocommons.com/events/696924772c65973d0017fd96
-LOCATION:Brighton Park
+LOCATION:Brighton Park\, 4314 S. Archer Ave.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/696924772c65973d0017fd96
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1988,7 +1932,7 @@ SUMMARY:[FREE] BABY ON BOARD: Infant Car Seat Safety - WEISSBLUTH PEDIATRI
  CS (SOUT…
 DTSTART;TZID=America/Chicago:20260402T180000
 DTEND;TZID=America/Chicago:20260402T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:84ba1f8a8bc4f57b6535eb01c285b056@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2020,7 +1964,7 @@ SUMMARY:[FREE] Music Moves Chicago Presents: Afro-Puerto Rican Bomba with
  Lauren B…
 DTSTART;TZID=America/Chicago:20260402T183000
 DTEND;TZID=America/Chicago:20260402T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5dffdaf2a90ec50031fa9651b85c42d2@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2050,7 +1994,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260403T000000
 DTEND;TZID=America/Chicago:20260404T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9c02912101e921078982d9534543bf97@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2078,7 +2022,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260403T000000
 DTEND;TZID=America/Chicago:20260404T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a617f703a3ca718307f7b8cd404d93c1@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -2106,7 +2050,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260403T000000
 DTEND;TZID=America/Chicago:20260404T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:95fed5cd71ee004ed4dc575905b452e3@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2134,7 +2078,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Little Learners Story Time
 DTSTART;TZID=America/Chicago:20260403T103000
 DTEND;TZID=America/Chicago:20260403T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8af51a1ce35cd412641c2b164dba8b4b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2146,7 +2090,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  8184 or email access@chipublib.org to request accommodations. Requests mus
  t be made at least 14 business days before the event.\\n\\nMore info: http
  s://chipublib.bibliocommons.com/events/698cbe6ab48451fc3c021913
-LOCATION:McKinley Park
+LOCATION:McKinley Park\, 1915 W. 35th St.\, Chicago\, IL 60609
 URL:https://chipublib.bibliocommons.com/events/698cbe6ab48451fc3c021913
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2163,7 +2107,7 @@ BEGIN:VEVENT
 SUMMARY:FreePlay at FAME
 DTSTART;TZID=America/Chicago:20260403T080000
 DTEND;TZID=America/Chicago:20260403T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:22346b5cc128f6d8c1c9be7d75e0525b@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2189,7 +2133,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Magnetic Poetry
 DTSTART;TZID=America/Chicago:20260403T150000
 DTEND;TZID=America/Chicago:20260403T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f36c8fa4dfa880b2ba5a7b2b726844ce@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2203,7 +2147,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  se call (312) 747-8184 or email access@chipublib.org to request accommodat
  ions. Requests must be m\\n\\nMore info: https://chipublib.bibliocommons.c
  om/events/69b0259c4a9fd98b7f834832
-LOCATION:Whitney M. Young Jr.
+LOCATION:Whitney M. Young Jr.\, 415 E. 79th St.\, Chicago\, IL 60619
 URL:https://chipublib.bibliocommons.com/events/69b0259c4a9fd98b7f834832
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2220,7 +2164,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260404T000000
 DTEND;TZID=America/Chicago:20260405T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:05f7766e553ad8b2b95b3b2d99f32ffb@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2248,7 +2192,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260404T000000
 DTEND;TZID=America/Chicago:20260405T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:65c27cdfcb879e83472b42b7dfd7e0de@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -2276,7 +2220,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260404T000000
 DTEND;TZID=America/Chicago:20260405T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:98d1b590472efd7d9f19dbe8d36013c5@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2304,21 +2248,21 @@ BEGIN:VEVENT
 SUMMARY:[FREE] The Art of Paper Magic: Origami for Everyone
 DTSTART;TZID=America/Chicago:20260404T100000
 DTEND;TZID=America/Chicago:20260404T120000
-DTSTAMP:20260327T015129Z
-UID:76ce855eb815cef554a9c67ef0d174ba@family-events-agent
+DTSTAMP:20260327T085603Z
+UID:fac52ceada2437b8eafa679cde8041cd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library - Near North\\nCost: free\\n
- Ages: 0-60 months\\nDistance: 1.3 miles from home\\n\\nGet ready to unleas
- h your creativity with the magical art of origami! If you’ve ever wanted
-  to fold up a cute animal\, a mighty dinosaur\, beautiful blooms or decora
- tive boxes\, this is your chance to dive in. Whether you're an adult or a 
- child (7+)\, this fun and fascinating activity lets you transform a simple
-  sheet of paper into amazing 3D creations-think swans\, boats\, flowers\, 
- hats\, even jumping frogs! Bring your imagination—and if you have some\,
-  your own origami paper—to join the fun and start \\n\\nMore info: https
- ://chipublib.bibliocommons.com/events/69a6fd188089f23c675f7c3a
-LOCATION:Near North
+DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
+ nths\\nDistance: 1.6 miles from home\\n\\nGet ready to unleash your creati
+ vity with the magical art of origami! If you’ve ever wanted to fold up a
+  cute animal\, a mighty dinosaur\, beautiful blooms or decorative boxes\, 
+ this is your chance to dive in. Whether you're an adult or a child (7+)\, 
+ this fun and fascinating activity lets you transform a simple sheet of pap
+ er into amazing 3D creations-think swans\, boats\, flowers\, hats\, even j
+ umping frogs! Bring your imagination—and if you have some\, your own ori
+ gami paper—to join the fun and start \\n\\nMore info: https://chipublib.
+ bibliocommons.com/events/69a6fd188089f23c675f7c3a
+LOCATION:Near North\, 310 W. Division St.\, Chicago\, IL 60610
 URL:https://chipublib.bibliocommons.com/events/69a6fd188089f23c675f7c3a
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2335,12 +2279,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Children's Coding and STEM Club
 DTSTART;TZID=America/Chicago:20260404T133000
 DTEND;TZID=America/Chicago:20260404T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f1d4f90f404da85cf6fe59ce7108c97c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 6.0 miles from home\\n\\nDo you love technology? Are you 
+ nths\\nDistance: 7.1 miles from home\\n\\nDo you love technology? Are you 
  curious about STEM\, coding and robotics? Come and join us with fun\, hand
  s-on activities to learn how to design your own computer games\, animation
   and robots. For kids 6 to 13. This program is presented in partnership wi
@@ -2349,7 +2293,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  nformation online from kids 0 to 13. A parent or guardian’s email addres
  s must be used to register. A\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/699497121e64afd01e5bf8d6
-LOCATION:Coleman
+LOCATION:Coleman\, 731 E. 63rd St.\, Chicago\, IL 60637
 URL:https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d6
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2366,7 +2310,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] South Side Fireflies
 DTSTART;TZID=America/Chicago:20260404T110000
 DTEND;TZID=America/Chicago:20260404T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0484e4d55624dce7ddbbcc27a4e63c35@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2393,7 +2337,7 @@ BEGIN:VEVENT
 SUMMARY:2026 South Loop Easter Egg Hunt
 DTSTART;TZID=America/Chicago:20260404T120000
 DTEND;TZID=America/Chicago:20260404T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ed7d66519f32ee03e8c4388eaf1e39ac@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2421,7 +2365,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260405T000000
 DTEND;TZID=America/Chicago:20260406T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a05cddfb2004da5b6efe5060121d288d@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2449,7 +2393,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260405T000000
 DTEND;TZID=America/Chicago:20260406T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9d486564ed563f86f515e9d545576a79@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -2477,7 +2421,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260405T000000
 DTEND;TZID=America/Chicago:20260406T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cf17f308361b880efa75bac73bdf6322@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2505,7 +2449,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260406T000000
 DTEND;TZID=America/Chicago:20260407T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:54021d2ab069c0e29e41cbab9f04e49b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2533,7 +2477,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Collage - Hourly Programming
 DTSTART;TZID=America/Chicago:20260406T000000
 DTEND;TZID=America/Chicago:20260407T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d0e466e6195985a859df1878a27dbbd4@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2561,12 +2505,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260406T110000
 DTEND;TZID=America/Chicago:20260406T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:97c30105b781fb0161b8dc5016a4d8af@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.6 miles from home\\n\\nPlease join us for a 30-minute f
+ nths\\nDistance: 6.0 miles from home\\n\\nPlease join us for a 30-minute f
  amily story time. We will enjoy stories\, rhymes and music. For kids 0 to 
  5 and their caregivers. Older children also welcome. How to Attend Registr
  ation is appreciated but not required. Register by the start of the event 
@@ -2575,7 +2519,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  er. As a reminder\, school email addresses may block external emails such 
  as those from CPL. Accessibi\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/699772d881b67dfe32a77a27
-LOCATION:North Pulaski
+LOCATION:North Pulaski\, 4300 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a27
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2592,7 +2536,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Adult Coloring Club
 DTSTART;TZID=America/Chicago:20260406T130000
 DTEND;TZID=America/Chicago:20260406T153000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:feea4bf3613962b3c275cce4ad4ab174@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2605,7 +2549,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  -8184 or email access@chipublib.org to request accommodations. Requests mu
  st be made at least 14 business days before the event.\\n\\nMore info: htt
  ps://chipublib.bibliocommons.com/events/69a763bc491b809c6f1de5fd
-LOCATION:Austin
+LOCATION:Austin\, 5615 W. Race Ave.\, Chicago\, IL 60644
 URL:https://chipublib.bibliocommons.com/events/69a763bc491b809c6f1de5fd
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2622,12 +2566,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Night
 DTSTART;TZID=America/Chicago:20260406T163000
 DTEND;TZID=America/Chicago:20260406T173000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f5784eb7c2233d084059909891cc8cfe@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 0.7 miles from home\\n\\nCalling all LEGO® enthusiasts a
+ nths\\nDistance: 5.6 miles from home\\n\\nCalling all LEGO® enthusiasts a
  nd engineers! We show you how to build with mini-bricks as we take on buil
  ding challenges and do some open-ended free play. Join us to make new frie
  nds while building STEAM skills. For ages 4 to 12. Accessibility Need sign
@@ -2636,7 +2580,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  modations. Requests must be made at least 14 business days before the even
  t.\\n\\nMore info: https://chipublib.bibliocommons.com/events/699caebb4dac
  f581ff7d5537
-LOCATION:Blackstone
+LOCATION:Blackstone\, 4904 S. Lake Park Ave.\, Chicago\, IL 60615
 URL:https://chipublib.bibliocommons.com/events/699caebb4dacf581ff7d5537
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2653,7 +2597,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Freakier Friday (2025)
 DTSTART;TZID=America/Chicago:20260406T170000
 DTEND;TZID=America/Chicago:20260406T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1eb066f8935ba62edba7edcaa6ebf692@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2667,7 +2611,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  y English subtitles for the deaf and hard of hearing will be available for
   this screening.\\n\\nMore info: https://chipublib.bibliocommons.com/event
  s/69af3efe81b67dfe32ab7a4f
-LOCATION:Toman
+LOCATION:Toman\, 2708 S. Pulaski Rd.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69af3efe81b67dfe32ab7a4f
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2684,12 +2628,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Start Growing 2026 with Urban Habitat Chicago
 DTSTART;TZID=America/Chicago:20260406T183000
 DTEND;TZID=America/Chicago:20260406T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:2ce4d8b312c5dff2c157fd4a585060a0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.7 miles from home\\n\\nJoin Mike from Urban Habitat Chi
+ nths\\nDistance: 7.9 miles from home\\n\\nJoin Mike from Urban Habitat Chi
  cago for an urban gardening workshop. Learn about low-cost ways to get sta
  rted and receive expert tips for growing seeds and transplanting your star
  ter plants. Whether you have a backyard plot or a sunny balcony\, you’ll
@@ -2698,7 +2642,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  s to kickstart their gardening journey! While here\, be sure to visit our 
  Budlong Woods Seed Library. \\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/69b16c0cb48451fc3c081e96
-LOCATION:Budlong Woods
+LOCATION:Budlong Woods\, 5630 N. Lincoln Ave.\, Chicago\, IL 60659
 URL:https://chipublib.bibliocommons.com/events/69b16c0cb48451fc3c081e96
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2716,7 +2660,7 @@ SUMMARY:[FREE] Second Trimester Checklist- WEISSBLUTH PEDIATRICS (SOUTH LO
  OP)
 DTSTART;TZID=America/Chicago:20260406T180000
 DTEND;TZID=America/Chicago:20260406T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:b7dff5a6b0c7067d63797e1dd1e99dc1@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2747,7 +2691,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: Shekere Workshop
 DTSTART;TZID=America/Chicago:20260406T183000
 DTEND;TZID=America/Chicago:20260406T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d739d3c44e24bf6bac0e83515cfb936f@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2775,12 +2719,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Time
 DTSTART;TZID=America/Chicago:20260407T103000
 DTEND;TZID=America/Chicago:20260407T110000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1a7437864b93e627dd58251e51d3e297@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-18 mo
- nths\\nDistance: 0.7 miles from home\\n\\nEnjoy songs\, rhymes and books w
+ nths\\nDistance: 5.6 miles from home\\n\\nEnjoy songs\, rhymes and books w
  ith your baby to develop language skills and a love of reading. For infant
  s and toddlers 0 to 18 months with a caregiver. Accessibility Need sign la
  nguage interpretation or other accessibility assistance for this event? Pl
@@ -2788,7 +2732,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-18 mo
  ations. Requests must be made at least 14 business days before the event.\
  \n\\nMore info: https://chipublib.bibliocommons.com/events/695d45618b29ea2
  800c7d726
-LOCATION:Blackstone
+LOCATION:Blackstone\, 4904 S. Lake Park Ave.\, Chicago\, IL 60615
 URL:https://chipublib.bibliocommons.com/events/695d45618b29ea2800c7d726
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2805,12 +2749,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Tuesday: Pom Pom Pen Toppers
 DTSTART;TZID=America/Chicago:20260407T160000
 DTEND;TZID=America/Chicago:20260407T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e6ac0db6df14c268f0403e70ababa10a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.2 miles from home\\n\\nJoin us for a bi-monthly craft j
+ nths\\nDistance: 7.7 miles from home\\n\\nJoin us for a bi-monthly craft j
  ust for tweens! This time\, we’re making pom pom pen toppers. Materials 
  and snacks are provided. For tweens 10 to 14. Accessibility Need sign lang
  uage interpretation or other accessibility assistance for this event? Plea
@@ -2818,7 +2762,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ions. Requests must be made at least 14 business days before the event.\\n
  \\nMore info: https://chipublib.bibliocommons.com/events/69aaee064a9fd98b7
  f8280ce
-LOCATION:Archer Heights
+LOCATION:Archer Heights\, 5055 S. Archer Ave.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/69aaee064a9fd98b7f8280ce
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2835,19 +2779,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mad Science: Salt Painting
 DTSTART;TZID=America/Chicago:20260407T160000
 DTEND;TZID=America/Chicago:20260407T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f59d46e534adcda6bb8363c360c76017@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.7 miles from home\\n\\nJoin us for a colorful science p
+ nths\\nDistance: 9.6 miles from home\\n\\nJoin us for a colorful science p
  rogram using salt to create unique\, tie-dye style paintings! For ages 5 t
  o 13. Accessibility Need sign language interpretation or other accessibili
  ty assistance for this event? Please call (312) 747-8184 or email access@c
  hipublib.org to request accommodations. Requests must be made at least 14 
  business days before the event.\\n\\nMore info: https://chipublib.biblioco
  mmons.com/events/69a9f3b5db89981d9df8b707
-LOCATION:Avalon
+LOCATION:Avalon\, 8148 S. Stony Island Ave.\, Chicago\, IL 60617
 URL:https://chipublib.bibliocommons.com/events/69a9f3b5db89981d9df8b707
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2864,12 +2808,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® at the Library
 DTSTART;TZID=America/Chicago:20260407T160000
 DTEND;TZID=America/Chicago:20260407T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:13ca6d2777431c1497375b2e41d05f5f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.3 miles from home\\n\\nDo you like building different o
+ nths\\nDistance: 7.7 miles from home\\n\\nDo you like building different o
  bjects and making your imagination come to life? If so\, drop in for some 
  design challenges and open play time with our collection of LEGO® bricks!
   Afterwards\, we will display your creation in the library. We supply the 
@@ -2878,7 +2822,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   this event? Please call (312) 747-8184 or email access@chipublib.org to r
  equest accommodations. Reques\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/698b97c4b0595799c09c182a
-LOCATION:Edgewater
+LOCATION:Edgewater\, 6000 N. Broadway St.\, Chicago\, IL 60660
 URL:https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c182a
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2895,12 +2839,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Día Crafts
 DTSTART;TZID=America/Chicago:20260407T160000
 DTEND;TZID=America/Chicago:20260407T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:70aaaeea516e2432be0d9222e9101e54@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 5.4 miles from home\\n\\nJoin the Chicago Community Arts
+ onths\\nDistance: 4.8 miles from home\\n\\nJoin the Chicago Community Arts
   Studio for crafts every Tuesday leading up to Día del Niño! This is a d
  rop-in craft program in the Children's Area\, all families are welcome. Fo
  r ages 4 and up. Accessibility Need sign language interpretation or other 
@@ -2908,7 +2852,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  il access@chipublib.org to request accommodations. Requests must be made a
  t least 14 business days before the event.\\n\\nMore info: https://chipubl
  ib.bibliocommons.com/events/69b827a367801235ed725e2c
-LOCATION:Little Village
+LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69b827a367801235ed725e2c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2925,7 +2869,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] YOUmedia Open Shop
 DTSTART;TZID=America/Chicago:20260407T170000
 DTEND;TZID=America/Chicago:20260407T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ef7637cd8f611c64fac2a73525423f64@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2939,7 +2883,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   747-8184 or email access@chipublib.org to request accommodations. Request
  s must be made at least 1\\n\\nMore info: https://chipublib.bibliocommons.
  com/events/6977e3c06724c63d00ee8419
-LOCATION:Whitney M. Young Jr.
+LOCATION:Whitney M. Young Jr.\, 415 E. 79th St.\, Chicago\, IL 60619
 URL:https://chipublib.bibliocommons.com/events/6977e3c06724c63d00ee8419
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2956,12 +2900,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Hideaway
 DTSTART;TZID=America/Chicago:20260407T170000
 DTEND;TZID=America/Chicago:20260407T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d54d1e20f93f172dff6c06c62a068f89@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.9 miles from home\\n\\nDrop in and explore art media\, 
+ nths\\nDistance: 6.2 miles from home\\n\\nDrop in and explore art media\, 
  technology\, crafts and games. For teens 13 to 19. Ven y explora diferente
  s medios de arte\, tecnología\, manualidades y juegos. Para jóvenes de 1
  3 a 19 años. Accessibility Need sign language interpretation or other acc
@@ -2969,7 +2913,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  access@chipublib.org to request accommodations. Requests must be made at l
  east 14 business days before the event.\\n\\nMore info: https://chipublib.
  bibliocommons.com/events/696924772c65973d0017fd97
-LOCATION:Brighton Park
+LOCATION:Brighton Park\, 4314 S. Archer Ave.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/696924772c65973d0017fd97
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2986,7 +2930,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: West Side FireFlies
 DTSTART;TZID=America/Chicago:20260407T170000
 DTEND;TZID=America/Chicago:20260407T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:57bf3c6de49e97d1d27687504311024b@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3015,7 +2959,7 @@ SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (NORTHWESTERN
  )
 DTSTART;TZID=America/Chicago:20260407T180000
 DTEND;TZID=America/Chicago:20260407T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:7fd15b627ac16046ab2fde9dfe30b977@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3045,7 +2989,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] EXPO South Side Night
 DTSTART;TZID=America/Chicago:20260407T180000
 DTEND;TZID=America/Chicago:20260407T210000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:70f695c799518dcacab6c4e1adffef2a@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3073,7 +3017,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: West African Dance Class
 DTSTART;TZID=America/Chicago:20260407T183000
 DTEND;TZID=America/Chicago:20260407T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8afb89111a84c53fc237195c1c60761c@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3104,7 +3048,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260408T000000
 DTEND;TZID=America/Chicago:20260408T010000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c302ab45823570436577770e619e892b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -3129,7 +3073,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260408T000000
 DTEND;TZID=America/Chicago:20260409T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:053146604d2bc66c5e89002e0d926e7b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3157,7 +3101,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260408T000000
 DTEND;TZID=America/Chicago:20260409T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:61dcd02de8fd37eb1d87f480c00a99c5@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -3185,7 +3129,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260408T000000
 DTEND;TZID=America/Chicago:20260409T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a2bd460e42efc81926929db7c59ecb84@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3213,7 +3157,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mather's Grow-It-Together Garden Club In-Person Viewing
 DTSTART;TZID=America/Chicago:20260408T130000
 DTEND;TZID=America/Chicago:20260408T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8d2faf37518b2f9c5dda5d0010ad1ba2@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3227,7 +3171,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  les in the comfort of your home with our Grow-It-Together (G.I.T.) Garden 
  Kits. You can learn more\\n\\nMore info: https://chipublib.bibliocommons.c
  om/events/69b982e7b48451fc3c09823c
-LOCATION:Manning
+LOCATION:Manning\, 6 S. Hoyne Ave.\, Chicago\, IL 60612
 URL:https://chipublib.bibliocommons.com/events/69b982e7b48451fc3c09823c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3246,12 +3190,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Umbrella Art
 DTSTART;TZID=America/Chicago:20260408T163000
 DTEND;TZID=America/Chicago:20260408T173000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:7245cbb290207d5e911b5ce39117cd41@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 0.7 miles from home\\n\\nJoin us for a unique art experie
+ nths\\nDistance: 5.6 miles from home\\n\\nJoin us for a unique art experie
  nce. We're making 3D umbrellas to celebrate the upcoming season. Let's wel
  come spring in a fun and creative way. For kids 6 to 13. Accessibility Nee
  d sign language interpretation or other accessibility assistance for this 
@@ -3259,7 +3203,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   accommodations. Requests must be made at least 14 business days before th
  e event.\\n\\nMore info: https://chipublib.bibliocommons.com/events/69b828
  4db6c4ac1fedc60ced
-LOCATION:Blackstone
+LOCATION:Blackstone\, 4904 S. Lake Park Ave.\, Chicago\, IL 60615
 URL:https://chipublib.bibliocommons.com/events/69b8284db6c4ac1fedc60ced
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3276,7 +3220,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: When Harry Met Sally (1989)
 DTSTART;TZID=America/Chicago:20260408T173000
 DTEND;TZID=America/Chicago:20260408T191500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:81993a2bdfd010b2855dfb371de93755@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3290,7 +3234,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  n Manhattan\, they find love and heartache--with other people--but their p
  aths continue to cross and \\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/69af3f6c2866a5b48840fdad
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/69af3f6c2866a5b48840fdad
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3307,7 +3251,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bloom and Grow: Seed Flower Craft
 DTSTART;TZID=America/Chicago:20260408T173000
 DTEND;TZID=America/Chicago:20260408T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9f217517c8fbd866ecc1e5d5033c8c9c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3321,7 +3265,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  747-8184 or email access@chipublib.org to request accommodations. Requests
   must be made at least 14 \\n\\nMore info: https://chipublib.bibliocommons
  .com/events/69b19aee403a4e5652ded6d8
-LOCATION:Thurgood Marshall
+LOCATION:Thurgood Marshall\, 7506 S. Racine Ave.\, Chicago\, IL 60620
 URL:https://chipublib.bibliocommons.com/events/69b19aee403a4e5652ded6d8
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3338,12 +3282,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Wednesday in Stitches
 DTSTART;TZID=America/Chicago:20260408T180000
 DTEND;TZID=America/Chicago:20260408T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0c01ede8467cadd0d94e53861ab8cc8f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nDo you knit\, crochet\, embroide
+ nths\\nDistance: 9.0 miles from home\\n\\nDo you knit\, crochet\, embroide
  r or do another needlecraft? Come to Wednesday in Stitches ! Show us your 
  work and learn from others in the group. No experience required. Please br
  ing your own needles and yarn. For adults\, teens and kids 10 and up. Acce
@@ -3352,7 +3296,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  rg to request accommodations. Requests must be made at least 14 business d
  ays before the event.\\n\\nMore info: https://chipublib.bibliocommons.com/
  events/69c54a02b2f5bfe57aba4cbb
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/69c54a02b2f5bfe57aba4cbb
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3369,7 +3313,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260408T180000
 DTEND;TZID=America/Chicago:20260408T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0c9061e86d875934bf9f6b4678c54bc4@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3399,7 +3343,7 @@ SUMMARY:[FREE] Music Moves Chicago Presents: Afro-Cuban Dance with Edson C
  abrera
 DTSTART;TZID=America/Chicago:20260408T180000
 DTEND;TZID=America/Chicago:20260408T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a42150a803ba28dff50774071964f7c9@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3429,7 +3373,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260409T000000
 DTEND;TZID=America/Chicago:20260410T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ee033cf7cf7b12fad3de750d6e8c0fea@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3457,7 +3401,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260409T000000
 DTEND;TZID=America/Chicago:20260410T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:20698c1b6096117fce706e98d790f9b0@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -3485,7 +3429,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260409T000000
 DTEND;TZID=America/Chicago:20260410T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:12da40de9b2e6cb5a822a401bbb9c772@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3513,7 +3457,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Bookworms
 DTSTART;TZID=America/Chicago:20260409T103000
 DTEND;TZID=America/Chicago:20260409T111500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:803af9324dd6f4cd45a2a655e0ab53d7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3527,7 +3471,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-18 mo
  or email sulzerkids@chipublib.org for more information. Accessibility Need
   sign language interpretation o\\n\\nMore info: https://chipublib.biblioco
  mmons.com/events/6983b565834cbb3dea2b9eec
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6983b565834cbb3dea2b9eec
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3544,7 +3488,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tales for Twos and Threes
 DTSTART;TZID=America/Chicago:20260409T103000
 DTEND;TZID=America/Chicago:20260409T111500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8bdcb60bc600c0843d42ee5f7c64d122@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3556,7 +3500,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
  r email access@chipublib.org to request accommodations. Requests must be m
  ade at least 14 business days before the event.\\n\\nMore info: https://ch
  ipublib.bibliocommons.com/events/6980c8bc491b809c6f16fe07
-LOCATION:Mayfair
+LOCATION:Mayfair\, 4400 W. Lawrence Ave.\, Chicago\, IL 60630
 URL:https://chipublib.bibliocommons.com/events/6980c8bc491b809c6f16fe07
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3573,19 +3517,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Zone
 DTSTART;TZID=America/Chicago:20260409T153000
 DTEND;TZID=America/Chicago:20260409T170000
-DTSTAMP:20260327T015129Z
-UID:c938c19c98f1d5008875763842b54f21@family-events-agent
+DTSTAMP:20260327T085603Z
+UID:9f581021e3c7052e726461148b9fda1b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library - Near North\\nCost: free\\n
- Ages: 0-60 months\\nDistance: 1.3 miles from home\\n\\nCome to Near North 
- every Tuesday and Thursday from 3:30-5pm for games\, crafts\, and good old
-  fashioned hanging out! ACCESSIBILITY Need sign language interpretation or
-  other accessibility assistance for this event? Please call (312) 747-8184
-  or email access@chipublib.org to request accommodations. Requests must be
-  made at least 14 business days before the event.\\n\\nMore info: https://
- chipublib.bibliocommons.com/events/69306a5c4be11d3d00d63863
-LOCATION:Near North
+DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
+ nths\\nDistance: 1.6 miles from home\\n\\nCome to Near North every Tuesday
+  and Thursday from 3:30-5pm for games\, crafts\, and good old fashioned ha
+ nging out! ACCESSIBILITY Need sign language interpretation or other access
+ ibility assistance for this event? Please call (312) 747-8184 or email acc
+ ess@chipublib.org to request accommodations. Requests must be made at leas
+ t 14 business days before the event.\\n\\nMore info: https://chipublib.bib
+ liocommons.com/events/69306a5c4be11d3d00d63863
+LOCATION:Near North\, 310 W. Division St.\, Chicago\, IL 60610
 URL:https://chipublib.bibliocommons.com/events/69306a5c4be11d3d00d63863
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3602,12 +3546,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Film Screening: Wicked: For Good (2025)
 DTSTART;TZID=America/Chicago:20260409T163000
 DTEND;TZID=America/Chicago:20260409T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5ec444664b95319a098138d1def371e9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 6.6 miles from home\\n\\nCome watch your favorite movies 
+ nths\\nDistance: 9.2 miles from home\\n\\nCome watch your favorite movies 
  at the library with friends! This month\, we'll be watching Wicked: For Go
  od For teens 13 to 19. In the epic conclusion to the story of the witches 
  of Oz\, Elphaba and Glinda must reunite if they are to change themselves
@@ -3616,7 +3560,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  lity English subtitles for the deaf and hard of hearing will be available 
  for this screening.\\n\\nMore info: https://chipublib.bibliocommons.com/ev
  ents/69af3faf2866a5b48840fe16
-LOCATION:West Belmont
+LOCATION:West Belmont\, 3104 N. Narragansett Ave.\, Chicago\, IL 60634
 URL:https://chipublib.bibliocommons.com/events/69af3faf2866a5b48840fe16
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3633,7 +3577,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260409T180000
 DTEND;TZID=America/Chicago:20260409T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:81f4039c711a25ea06c094e5034bd2a3@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3664,7 +3608,7 @@ SUMMARY:[FREE] Music Moves Chicago Presents: Afro-Puerto Rican Bomba with
  Lauren B…
 DTSTART;TZID=America/Chicago:20260409T183000
 DTEND;TZID=America/Chicago:20260409T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:77371637f1779e54e1d515636f2fffa0@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3694,7 +3638,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260410T000000
 DTEND;TZID=America/Chicago:20260411T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3abbcfc4617d39293ef4bb7f38e9cdcd@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3722,7 +3666,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260410T000000
 DTEND;TZID=America/Chicago:20260411T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:34dc527316ed6af967f169c92feb2f18@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -3750,7 +3694,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260410T000000
 DTEND;TZID=America/Chicago:20260411T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8bddc40142177c9723779604c39df97b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3778,12 +3722,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260410T113000
 DTEND;TZID=America/Chicago:20260410T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:aa51fce6ffb1f182aa6aaa595b580189@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
- onths\\nDistance: 2.0 miles from home\\n\\nJoin Ms. Hailey for story time 
+ onths\\nDistance: 2.1 miles from home\\n\\nJoin Ms. Hailey for story time 
  especially for our littlest patrons! We’ll share songs\, rhymes and book
  s\, plus suggestions for at-home activities. For kids 0 to 5 and their car
  egivers. Accessibility Need sign language interpretation or other accessib
@@ -3791,7 +3735,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
  s@chipublib.org to request accommodations. Requests must be made at least 
  14 business days before the event.\\n\\nMore info: https://chipublib.bibli
  ocommons.com/events/69babf97ad384e40edb52b79
-LOCATION:Little Italy
+LOCATION:Little Italy\, 1336 W. Taylor St.\, Chicago\, IL 60607
 URL:https://chipublib.bibliocommons.com/events/69babf97ad384e40edb52b79
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3808,7 +3752,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Computer Literacy Class
 DTSTART;TZID=America/Chicago:20260410T130000
 DTEND;TZID=America/Chicago:20260410T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:816be9c299661f3c8aa697632753dbb5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3822,7 +3766,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ers meet on a Friday while Intermediate class meet on a Saturday. Accessib
  ility Need sign language i\\n\\nMore info: https://chipublib.bibliocommons
  .com/events/69b986208d5e2d093365d921
-LOCATION:Thurgood Marshall
+LOCATION:Thurgood Marshall\, 7506 S. Racine Ave.\, Chicago\, IL 60620
 URL:https://chipublib.bibliocommons.com/events/69b986208d5e2d093365d921
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -3839,7 +3783,7 @@ BEGIN:VEVENT
 SUMMARY:FreePlay at FAME
 DTSTART;TZID=America/Chicago:20260410T080000
 DTEND;TZID=America/Chicago:20260410T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c78c59e2d6bef3ebef4a2ee6c8115e7f@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3865,7 +3809,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Infant Massage 5-week series
 DTSTART;TZID=America/Chicago:20260410T103000
 DTEND;TZID=America/Chicago:20260410T114500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:46b6bbf1925542aac605be1742abfc37@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3893,7 +3837,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Critical Sounds Symposium Open Studios: UChicago Students
 DTSTART;TZID=America/Chicago:20260410T130000
 DTEND;TZID=America/Chicago:20260410T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:461f772b79d4e48c66c014f8777cecbc@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3924,7 +3868,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Critical Sounds Keynote Lecture: Gascia Ouzounian
 DTSTART;TZID=America/Chicago:20260410T170000
 DTEND;TZID=America/Chicago:20260410T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:946cb91291978568e5603fb12552f0f5@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3953,7 +3897,7 @@ SUMMARY:[FREE] Critical Sounds Symposium Performance: Evicshen (Victoria S
  hen)
 DTSTART;TZID=America/Chicago:20260410T200000
 DTEND;TZID=America/Chicago:20260410T220000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:4c3e065f83d7f98df67ad2d6acf46172@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3983,7 +3927,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260411T000000
 DTEND;TZID=America/Chicago:20260412T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6a483fa4f2473b293eab9197d89b64c3@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4011,7 +3955,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260411T000000
 DTEND;TZID=America/Chicago:20260412T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:2490e5cfeb9a1e88fb8fec993fa4a0b9@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -4039,7 +3983,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260411T000000
 DTEND;TZID=America/Chicago:20260412T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cdbd8f1b1235f52f54b7472fba071534@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -4067,7 +4011,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] South Side Fireflies
 DTSTART;TZID=America/Chicago:20260411T110000
 DTEND;TZID=America/Chicago:20260411T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:242dd5386d587323c7b655420b85e748@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4094,7 +4038,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Critical Sounds Symposium Open Studios: UChicago Students
 DTSTART;TZID=America/Chicago:20260411T180000
 DTEND;TZID=America/Chicago:20260411T220000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:29d9c18927089157465de4899b152017@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4126,7 +4070,7 @@ SUMMARY:[FREE] Critical Sounds Symposium UChicago Student/Faculty/Communit
  y Perfor…
 DTSTART;TZID=America/Chicago:20260411T190000
 DTEND;TZID=America/Chicago:20260411T210000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ee75c30ee5418dd579382cf46bb97ac9@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4157,7 +4101,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Critical Sounds Symposium Closing Party: DJ Lady D
 DTSTART;TZID=America/Chicago:20260411T213000
 DTEND;TZID=America/Chicago:20260411T233000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:341958ab085dc32bc937dd45b3dab4d2@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4186,7 +4130,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260412T000000
 DTEND;TZID=America/Chicago:20260413T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:31248fa84427f3f96a5cfa0b5497788e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4214,7 +4158,7 @@ BEGIN:VEVENT
 SUMMARY:Ready to Wear Cardboard - Hourly Workshops
 DTSTART;TZID=America/Chicago:20260412T000000
 DTEND;TZID=America/Chicago:20260413T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:25fcdd8e77aa5a4c3b08757eb4654b14@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab,Cardboard
@@ -4242,7 +4186,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260412T000000
 DTEND;TZID=America/Chicago:20260413T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ff9352fa8ab001e3c99ec5af969a1984@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -4270,12 +4214,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Noah (2014)
 DTSTART;TZID=America/Chicago:20260412T140000
 DTEND;TZID=America/Chicago:20260412T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d4a4dd8548d7bbd5f079edc18b40bec0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 8.3 miles from home\\n\\nJoin us at the Chicago Lawn bran
+ nths\\nDistance: 8.1 miles from home\\n\\nJoin us at the Chicago Lawn bran
  ch for Sunday Cinema. This week's selection will be "Noah receives a warni
  ng from God about a great flood\, and constructs an ark to save creation a
  s the planet is cleansed of sin. When the rain begins to fall\, Noah and h
@@ -4284,7 +4228,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  h near you! Check out other screenings at libraries across Chicago. Access
  ibility English subtitles f\\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/69a73d308089f23c675f8f8c
-LOCATION:Chicago Lawn
+LOCATION:Chicago Lawn\, 6120 S. Kedzie Ave.\, Chicago\, IL 60629
 URL:https://chipublib.bibliocommons.com/events/69a73d308089f23c675f8f8c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4298,10 +4242,66 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Color Explosion - Hourly Sessions
+DTSTART;TZID=America/Chicago:20260413T000000
+DTEND;TZID=America/Chicago:20260414T000000
+DTSTAMP:20260327T085603Z
+UID:cad3599134a8623cf58fc46f3bc3814d@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nDistance: 1.0 miles from home\\n\\nA bright\, hands-on color advent
+ ure! Children follow colorful paths\, explore light and shadow\, and disco
+ ver patterns through play - clean\, creative\, and full of wonder. Session
+  Times Monday\, Wednesday\,\\n\\nMore info: https://www.chicagochildrensmu
+ seum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Color Explosion - Hourly Sessions
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Color Explosion - Hourly Sessions
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Stamping Studio - Hourly Sessions
+DTSTART;TZID=America/Chicago:20260413T000000
+DTEND;TZID=America/Chicago:20260414T000000
+DTSTAMP:20260327T085603Z
+UID:0b9693cc25b84cf1dbbd2b10c7702077@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Art-Studio
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nDistance: 1.0 miles from home\\n\\nUse ink pads\, paper\, and a var
+ iety of stamps to create unique artwork that’s yours to keep! Ages 2 and
+  up. Workshop Times Monday\, Wednesday\, Thursday: 10:30\, 11:30\, 12:30 F
+ riday\, Saturday\, Sunday: 10:\\n\\nMore info: https://www.chicagochildren
+ smuseum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Stamping Studio - Hourly Sessions
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Stamping Studio - Hourly Sessions
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Coffee and Connections
 DTSTART;TZID=America/Chicago:20260413T093000
 DTEND;TZID=America/Chicago:20260413T123000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:770da3e2151cacbc1cc8056972f0ec9b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4315,7 +4315,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  quests must be made at least 14 business days before the event. Photo: pix
  elshot via Canva\\n\\nMore info: https://chipublib.bibliocommons.com/event
  s/697a881f377f55c8ec1635f2
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/697a881f377f55c8ec1635f2
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4332,12 +4333,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260413T110000
 DTEND;TZID=America/Chicago:20260413T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:978ee7cc30d89ed4c376afdaef68d53a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.6 miles from home\\n\\nPlease join us for a 30-minute f
+ nths\\nDistance: 6.0 miles from home\\n\\nPlease join us for a 30-minute f
  amily story time. We will enjoy stories\, rhymes and music. For kids 0 to 
  5 and their caregivers. Older children also welcome. How to Attend Registr
  ation is appreciated but not required. Register by the start of the event 
@@ -4346,7 +4347,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  er. As a reminder\, school email addresses may block external emails such 
  as those from CPL. Accessibi\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/699772d881b67dfe32a77a28
-LOCATION:North Pulaski
+LOCATION:North Pulaski\, 4300 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a28
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4363,12 +4364,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Game Night
 DTSTART;TZID=America/Chicago:20260413T153000
 DTEND;TZID=America/Chicago:20260413T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f8c152f28a4d98eeb8001222670f273f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.1 miles from home\\n\\nWhether you're an experienced ga
+ nths\\nDistance: 6.5 miles from home\\n\\nWhether you're an experienced ga
  mer or a newbie\, join us for an hour of exciting and fun gaming! A variet
  y of board games and video games will be featured. For tweens 9 to 13. Acc
  essibility Need sign language interpretation or other accessibility assist
@@ -4376,7 +4377,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  org to request accommodations. Requests must be made at least 14 business 
  days before the event.\\n\\nMore info: https://chipublib.bibliocommons.com
  /events/69c40d0b07a74a47597ab17b
-LOCATION:West Chicago Avenue
+LOCATION:West Chicago Avenue\, 4856 W. Chicago Ave.\, Chicago\, IL 60651
 URL:https://chipublib.bibliocommons.com/events/69c40d0b07a74a47597ab17b
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4393,12 +4394,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tactile Art Night
 DTSTART;TZID=America/Chicago:20260413T160000
 DTEND;TZID=America/Chicago:20260413T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6cb4acf40ad9137dea379771e5b3eaa6@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 4.2 miles from home\\n\\nOn select Mondays\, de-stress an
+ nths\\nDistance: 4.1 miles from home\\n\\nOn select Mondays\, de-stress an
  d exercise your creative side by experimenting with tactile art supplies. 
  We’ll provide materials such as finger paint\, polymer clay and scratch 
  art. We’ll also play soothing music to help you recharge for the rest of
@@ -4407,7 +4408,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  se call (312) 747-8184 or email access@chipublib.org to request accommodat
  ions. Requests must be made at\\n\\nMore info: https://chipublib.bibliocom
  mons.com/events/69c19adc8089f23c676422d4
-LOCATION:Merlo
+LOCATION:Merlo\, 644 W. Belmont Ave.\, Chicago\, IL 60657
 URL:https://chipublib.bibliocommons.com/events/69c19adc8089f23c676422d4
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4424,12 +4425,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Anaconda (2025)
 DTSTART;TZID=America/Chicago:20260413T180000
 DTEND;TZID=America/Chicago:20260413T194500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cbce4197ca0459fc9c569378b99f4975@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 3.7 miles from home\\n\\nPlease join us for a screening o
+ nths\\nDistance: 3.6 miles from home\\n\\nPlease join us for a screening o
  f Anaconda (2025). A group of childhood friends are going through a mid-li
  fe crisis. They decide to remake a favorite movie from their youth but enc
  ounter unexpected events when they enter the jungle. ©Columbia Pictures I
@@ -4438,7 +4439,8 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  o. Accessibility English subtitles for the deaf and hard of hearing will b
  e available for this scre\\n\\nMore info: https://chipublib.bibliocommons.
  com/events/69b984f08d5e2d093365d8ce
-LOCATION:Bucktown-Wicker Park
+LOCATION:Bucktown-Wicker Park\, 1701 N. Milwaukee Ave.\, Chicago\, IL 6064
+ 7
 URL:https://chipublib.bibliocommons.com/events/69b984f08d5e2d093365d8ce
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4455,12 +4457,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Practice: English Conversation Group
 DTSTART;TZID=America/Chicago:20260413T183000
 DTEND;TZID=America/Chicago:20260413T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:daf1849d5beccf4d3460f4d8e3d3587f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nDo you want to learn English? Do
+ nths\\nDistance: 9.0 miles from home\\n\\nDo you want to learn English? Do
   you want to practice speaking and understanding English and improve your 
  communications skills? Join our conversation group with Literacy Chicago a
  nd improve your ability to communicate. This group focuses on having livel
@@ -4469,7 +4471,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  nversational vocabulary\, meet new people\, and have fun! You should regis
  ter online at the Literacy Ch\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/695ed1cd992fc18a86dc2b66
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/695ed1cd992fc18a86dc2b66
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4486,7 +4488,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (SOUTH LOOP)
 DTSTART;TZID=America/Chicago:20260413T180000
 DTEND;TZID=America/Chicago:20260413T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1ad15bf19d67c87897931179d76188c2@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4516,7 +4518,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music Moves Chicago Presents: Shekere Workshop
 DTSTART;TZID=America/Chicago:20260413T183000
 DTEND;TZID=America/Chicago:20260413T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6b227286d1736eadb09d96d669f873eb@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4544,7 +4546,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Unsung Hero (2024)
 DTSTART;TZID=America/Chicago:20260414T120000
 DTEND;TZID=America/Chicago:20260414T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:373ef66383c0d816ff4fe68a28ffa6b9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4558,7 +4560,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  nema is at a branch near you! Check out hundreds of other screenings at li
  braries across Chicago. Accessibility Audio de\\n\\nMore info: https://chi
  publib.bibliocommons.com/events/69af3edf81b67dfe32ab7a21
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/69af3edf81b67dfe32ab7a21
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4575,12 +4578,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Día Crafts
 DTSTART;TZID=America/Chicago:20260414T160000
 DTEND;TZID=America/Chicago:20260414T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1a37028bb400f88619ef7e5375bdf50e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 5.4 miles from home\\n\\nJoin the Chicago Community Arts
+ onths\\nDistance: 4.8 miles from home\\n\\nJoin the Chicago Community Arts
   Studio for crafts every Tuesday leading up to Día del Niño! This is a d
  rop-in craft program in the Children's Area\, all families are welcome. Fo
  r ages 4 and up. Accessibility Need sign language interpretation or other 
@@ -4588,7 +4591,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  il access@chipublib.org to request accommodations. Requests must be made a
  t least 14 business days before the event.\\n\\nMore info: https://chipubl
  ib.bibliocommons.com/events/69b827a367801235ed725e2d
-LOCATION:Little Village
+LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69b827a367801235ed725e2d
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4605,7 +4608,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] High School Maker Drop In
 DTSTART;TZID=America/Chicago:20260414T170000
 DTEND;TZID=America/Chicago:20260414T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1a2a3f6d24899875514d4ea8b66a5a2a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4619,7 +4622,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  .org to request accommodations. Requests must be made at least 14 business
   days before the event.\\n\\nMore info: https://chipublib.bibliocommons.co
  m/events/6984ff73cbf1533ca536307a
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6984ff73cbf1533ca536307a
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4636,7 +4639,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] YOUmedia Open Shop
 DTSTART;TZID=America/Chicago:20260414T170000
 DTEND;TZID=America/Chicago:20260414T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:87ba8f4a9edc77e3748c85749e11cede@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4650,7 +4653,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   747-8184 or email access@chipublib.org to request accommodations. Request
  s must be made at least 1\\n\\nMore info: https://chipublib.bibliocommons.
  com/events/6977e3c06724c63d00ee841a
-LOCATION:Whitney M. Young Jr.
+LOCATION:Whitney M. Young Jr.\, 415 E. 79th St.\, Chicago\, IL 60619
 URL:https://chipublib.bibliocommons.com/events/6977e3c06724c63d00ee841a
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4668,7 +4671,7 @@ SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
  S (NORTH…
 DTSTART;TZID=America/Chicago:20260414T180000
 DTEND;TZID=America/Chicago:20260414T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c2601df3356e10ef1be047925372b8d3@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4699,7 +4702,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260415T000000
 DTEND;TZID=America/Chicago:20260415T010000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:52159584f901d0b105bc5b7f424d70c1@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -4724,7 +4727,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260415T000000
 DTEND;TZID=America/Chicago:20260416T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9ce18f4d395301b82c22b3e24d10b9c4@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -4749,66 +4752,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Color Explosion - Hourly Sessions
-DTSTART;TZID=America/Chicago:20260415T000000
-DTEND;TZID=America/Chicago:20260416T000000
-DTSTAMP:20260327T015129Z
-UID:e7380f84576f3c59a0754e7c1f314c9f@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nA bright\, hands-on color advent
- ure! Children follow colorful paths\, explore light and shadow\, and disco
- ver patterns through play - clean\, creative\, and full of wonder. Session
-  Times Monday\, Wednesday\,\\n\\nMore info: https://www.chicagochildrensmu
- seum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Color Explosion - Hourly Sessions
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Color Explosion - Hourly Sessions
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Stamping Studio - Hourly Sessions
-DTSTART;TZID=America/Chicago:20260415T000000
-DTEND;TZID=America/Chicago:20260416T000000
-DTSTAMP:20260327T015129Z
-UID:34ca4ac448668e654f2e9036e18e1760@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Art-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nUse ink pads\, paper\, and a var
- iety of stamps to create unique artwork that’s yours to keep! Ages 2 and
-  up. Workshop Times Monday\, Wednesday\, Thursday: 10:30\, 11:30\, 12:30 F
- riday\, Saturday\, Sunday: 10:\\n\\nMore info: https://www.chicagochildren
- smuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Stamping Studio - Hourly Sessions
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Stamping Studio - Hourly Sessions
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Tummy Time
 DTSTART;TZID=America/Chicago:20260415T150000
 DTEND;TZID=America/Chicago:20260415T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:f69dd157a37bfed9e6e0ccc6bb2b8d7e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4822,7 +4769,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-18 mo
  language interpretation or other accessibility assistance for this event? 
  Please call (312) 747-8184 \\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/69a86c5f2866a5b4883fd8a9
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/69a86c5f2866a5b4883fd8a9
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4839,12 +4786,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Big Kid Story Time
 DTSTART;TZID=America/Chicago:20260415T153000
 DTEND;TZID=America/Chicago:20260415T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a5d6111c2c01fe1ca7f856d817217626@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 4.2 miles from home\\n\\nNeed a break after a long day of
+ nths\\nDistance: 4.1 miles from home\\n\\nNeed a break after a long day of
   school? Librarians Andy and Alex help you unwind by sharing some great st
  ories! We also have paper and drawing tools\, in case you want to doodle o
  r draw while you listen. For kids 6 to 13 years (children under 11 must be
@@ -4853,7 +4800,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  sign on the wall and wait in line. Accessibility Need sign language interp
  retation or other accessib\\n\\nMore info: https://chipublib.bibliocommons
  .com/events/698cc06b8d5e2d09335e870c
-LOCATION:Merlo
+LOCATION:Merlo\, 644 W. Belmont Ave.\, Chicago\, IL 60657
 URL:https://chipublib.bibliocommons.com/events/698cc06b8d5e2d09335e870c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4870,20 +4817,21 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Club
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:54ae1dcff6087ec6e788532b0c1648a5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\n\\nWhat can you make with a pile of LEGO® bricks? Complete LEGO® 
- challenges with free build time to follow. Bring your imagination and use 
- our LEGO® collection to create something awesome! For kids 5 to 10. Acces
- sibility Need sign language interpretation or other accessibility assistan
- ce for this event? Please call (312) 747-8184 or email access@chipublib.or
- g to request accommodations. Requests must be made at least 14 business da
- ys before the event.\\n\\nMore info: https://chipublib.bibliocommons.com/e
- vents/69949cbf94297d3600acd2df
-LOCATION:Daley Richard J.-Bridgeport
+ nths\\nDistance: 3.6 miles from home\\n\\nWhat can you make with a pile of
+  LEGO® bricks? Complete LEGO® challenges with free build time to follow.
+  Bring your imagination and use our LEGO® collection to create something 
+ awesome! For kids 5 to 10. Accessibility Need sign language interpretation
+  or other accessibility assistance for this event? Please call (312) 747-8
+ 184 or email access@chipublib.org to request accommodations. Requests must
+  be made at least 14 business days before the event.\\n\\nMore info: https
+ ://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2df
+LOCATION:Daley Richard J.-Bridgeport\, 3400 S. Halsted St.\, Chicago\, IL 
+ 60608
 URL:https://chipublib.bibliocommons.com/events/69949cbf94297d3600acd2df
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4900,19 +4848,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Zone
 DTSTART;TZID=America/Chicago:20260415T160000
 DTEND;TZID=America/Chicago:20260415T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:09f06ec456a9b4df7f74afadcc799141@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.3 miles from home\\n\\nStop by Teen Zone with a friend 
+ nths\\nDistance: 9.4 miles from home\\n\\nStop by Teen Zone with a friend 
  or by yourself to hangout and see what we're up to. This is a teen program
   for ages 13-19. Accessibility Need sign language interpretation or other 
  accessibility assistance for this event? Please call (312) 747-8184 or ema
  il access@chipublib.org to request accommodations. Requests must be made a
  t least 14 business days before the event.\\n\\nMore info: https://chipubl
  ib.bibliocommons.com/events/69aed6ef45f57dfccb19601c
-LOCATION:Austin-Irving
+LOCATION:Austin-Irving\, 6100 W. Irving Park Rd.\, Chicago\, IL 60634
 URL:https://chipublib.bibliocommons.com/events/69aed6ef45f57dfccb19601c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4929,7 +4877,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260415T110000
 DTEND;TZID=America/Chicago:20260415T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:693ff3281e6c7b29cedbeaf37cf1fd70@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4956,7 +4904,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Night
 DTSTART;TZID=America/Chicago:20260415T173000
 DTEND;TZID=America/Chicago:20260415T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6d2f0380ff35fb6106d00c362fbc7f1c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4970,7 +4918,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  8184 or email access@chipublib.org to request accommodations. Requests mus
  t be made at least 14 busine\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/69aee01d81b67dfe32ab5724
-LOCATION:Thurgood Marshall
+LOCATION:Thurgood Marshall\, 7506 S. Racine Ave.\, Chicago\, IL 60620
 URL:https://chipublib.bibliocommons.com/events/69aee01d81b67dfe32ab5724
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -4988,7 +4936,7 @@ SUMMARY:[FREE] Preparing For Great Sleep for You and Your Baby (NORTHWESTE
  RN)
 DTSTART;TZID=America/Chicago:20260415T180000
 DTEND;TZID=America/Chicago:20260415T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c30f4401654c6ba538788f178bc2d01a@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5016,94 +4964,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Cardboard Lab - Hourly Programming
-DTSTART;TZID=America/Chicago:20260416T000000
-DTEND;TZID=America/Chicago:20260417T000000
-DTSTAMP:20260327T015129Z
-UID:e99f902c00c67de369b85fc38a159b0b@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nWhat can you create using cardbo
- ard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like
-  an engineer! Ages 2 and up. Workshop Times Wednesday\, Thursday: 10:30\, 
- 11:30\, 12:30 Friday\, S\\n\\nMore info: https://www.chicagochildrensmuseu
- m.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Cardboard Lab - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Cardboard Lab - Hourly Programming
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Color Explosion - Hourly Sessions
-DTSTART;TZID=America/Chicago:20260416T000000
-DTEND;TZID=America/Chicago:20260417T000000
-DTSTAMP:20260327T015129Z
-UID:62b4f23d453cd18e935244d47d465943@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nA bright\, hands-on color advent
- ure! Children follow colorful paths\, explore light and shadow\, and disco
- ver patterns through play - clean\, creative\, and full of wonder. Session
-  Times Monday\, Wednesday\,\\n\\nMore info: https://www.chicagochildrensmu
- seum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Color Explosion - Hourly Sessions
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Color Explosion - Hourly Sessions
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Stamping Studio - Hourly Sessions
-DTSTART;TZID=America/Chicago:20260416T000000
-DTEND;TZID=America/Chicago:20260417T000000
-DTSTAMP:20260327T015129Z
-UID:8ff33e0e02b387df31059a631ac4eb7c@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Art-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nDistance: 1.0 miles from home\\n\\nUse ink pads\, paper\, and a var
- iety of stamps to create unique artwork that’s yours to keep! Ages 2 and
-  up. Workshop Times Monday\, Wednesday\, Thursday: 10:30\, 11:30\, 12:30 F
- riday\, Saturday\, Sunday: 10:\\n\\nMore info: https://www.chicagochildren
- smuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Stamping Studio - Hourly Sessions
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Stamping Studio - Hourly Sessions
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] AI for Visual Disabilities
 DTSTART;TZID=America/Chicago:20260416T103000
 DTEND;TZID=America/Chicago:20260416T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:b8ecfc8b341fbe9c5cd1a0a6df0487f5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5117,7 +4981,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  e\, education\, transportation\, and creative work. This four-part worksho
  p series offers a friendly\, hands-on introduction to\\n\\nMore info: http
  s://chipublib.bibliocommons.com/events/695c329b1f01fb76cec4def2
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/695c329b1f01fb76cec4def2
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5134,7 +4999,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mini Mavericks - Child Enrichment Playdate (FREE)
 DTSTART;TZID=America/Chicago:20260416T083000
 DTEND;TZID=America/Chicago:20260416T103000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:917808cc93609f2570246f3b61d3755e@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5163,7 +5028,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Club
 DTSTART;TZID=America/Chicago:20260416T153000
 DTEND;TZID=America/Chicago:20260416T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:53944043d76beab3b3a5ebb42e3f2486@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5176,7 +5041,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  commodations. Requests must be made at least 14 business days before the e
  vent.\\n\\nMore info: https://chipublib.bibliocommons.com/events/69b82546e
  2a2952aed08706f
-LOCATION:McKinley Park
+LOCATION:McKinley Park\, 1915 W. 35th St.\, Chicago\, IL 60609
 URL:https://chipublib.bibliocommons.com/events/69b82546e2a2952aed08706f
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5193,7 +5058,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preparing For Great Sleep for You and Your Baby (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260416T180000
 DTEND;TZID=America/Chicago:20260416T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:deeae9491da77934e278c818d04e7770@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5224,7 +5089,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] First\, Breathe Healing Arts Series
 DTSTART;TZID=America/Chicago:20260416T180000
 DTEND;TZID=America/Chicago:20260416T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:04d03f6bd36710b7f6e3709c4fadfa98@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5252,7 +5117,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260417T000000
 DTEND;TZID=America/Chicago:20260418T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:264e9428bcff6212d0c22fe500c97389@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5280,7 +5145,7 @@ BEGIN:VEVENT
 SUMMARY:Color Explosion - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260417T000000
 DTEND;TZID=America/Chicago:20260418T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:aa9adc041a8d7879b81b9429d1c8f0ea@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -5308,7 +5173,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260417T000000
 DTEND;TZID=America/Chicago:20260418T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:84ffb8a001069a289275e64c7ee5a421@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -5336,7 +5201,7 @@ BEGIN:VEVENT
 SUMMARY:FreePlay at FAME
 DTSTART;TZID=America/Chicago:20260417T080000
 DTEND;TZID=America/Chicago:20260417T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:688688e9d5fcc7a0778c47480a4b5290@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5362,7 +5227,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Infant Massage Workshop
 DTSTART;TZID=America/Chicago:20260417T130000
 DTEND;TZID=America/Chicago:20260417T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ad8d9762e0a53131eb5b049df9a95cd3@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5390,7 +5255,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Black History Future Folk Symposium: Dunham & the Diaspora
 DTSTART;TZID=America/Chicago:20260417T183000
 DTEND;TZID=America/Chicago:20260417T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:e03fa5e150ee4091b4ea8bd2f39e2112@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5421,7 +5286,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260418T000000
 DTEND;TZID=America/Chicago:20260419T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3c7e8eb8684dce355870c67484d9ceb7@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5449,7 +5314,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260418T000000
 DTEND;TZID=America/Chicago:20260419T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3d159c622f39fdf591b4635a8224b08e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -5478,7 +5343,7 @@ SUMMARY:[FREE] Día de los niños y libros: A Celebration of Children and
  Books
 DTSTART;TZID=America/Chicago:20260418T110000
 DTEND;TZID=America/Chicago:20260418T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:7344fb907d5093b7782ba447ff5fb8cd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5492,7 +5357,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  age interpretation or other accessibility assistance for this event? Pleas
  e call (312) 747-8184 or email access@chipublib.org to r\\n\\nMore info: h
  ttps://chipublib.bibliocommons.com/events/69a725972866a5b4883f9b18
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/69a725972866a5b4883f9b18
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5511,7 +5377,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tabletop Gaming Open Shop
 DTSTART;TZID=America/Chicago:20260418T133000
 DTEND;TZID=America/Chicago:20260418T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a80a4da2e7f80e1d7d1ffd227f1fb9f7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5525,7 +5391,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  bility Need sign language interpretation or other accessibility assistance
   for this event? Please call (3\\n\\nMore info: https://chipublib.biblioco
  mmons.com/events/6984ff8ba5d80ac492707044
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6984ff8ba5d80ac492707044
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5542,21 +5408,21 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Masters Putt Putt Course
 DTSTART;TZID=America/Chicago:20260418T140000
 DTEND;TZID=America/Chicago:20260418T153000
-DTSTAMP:20260327T015129Z
-UID:e8a92bb30f918ce33f96f9abb71c9e20@family-events-agent
+DTSTAMP:20260327T085603Z
+UID:7db71bbe77c156383672ba35d9ada9e6@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library - Near North\\nCost: free\\n
- Ages: 18-60 months\\nDistance: 1.3 miles from home\\n\\nIn honor of last w
- eek's Masters Tournament\, come learn about the history of golf\, get a fe
- w pointers and test your ability on the branch's very own Chi-gusta Nation
- al golf course. Putters and golf balls will be available to borrow. How to
-  Attend Register by the start of the event. Registration is recommended bu
- t not required. Chicago Public Library cannot collect personal information
-  online from kids 0 to 13. A parent or guardian’s email address must be 
- used to register. As a reminder\, school em\\n\\nMore info: https://chipub
- lib.bibliocommons.com/events/69b1a5086583d22e3c0ea6fb
-LOCATION:Near North
+DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
+ onths\\nDistance: 1.6 miles from home\\n\\nIn honor of last week's Masters
+  Tournament\, come learn about the history of golf\, get a few pointers an
+ d test your ability on the branch's very own Chi-gusta National golf cours
+ e. Putters and golf balls will be available to borrow. How to Attend Regis
+ ter by the start of the event. Registration is recommended but not require
+ d. Chicago Public Library cannot collect personal information online from 
+ kids 0 to 13. A parent or guardian’s email address must be used to regis
+ ter. As a reminder\, school em\\n\\nMore info: https://chipublib.bibliocom
+ mons.com/events/69b1a5086583d22e3c0ea6fb
+LOCATION:Near North\, 310 W. Division St.\, Chicago\, IL 60610
 URL:https://chipublib.bibliocommons.com/events/69b1a5086583d22e3c0ea6fb
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5573,7 +5439,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Crafternoon
 DTSTART;TZID=America/Chicago:20260418T150000
 DTEND;TZID=America/Chicago:20260418T163000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:956ef74b637242053d95f9b385a401eb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5586,7 +5452,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  b.org to request accommodations. Requests must be made at least 14 busines
  s days before the event.\\n\\nMore info: https://chipublib.bibliocommons.c
  om/events/69b025e2b0595799c0a21339
-LOCATION:Whitney M. Young Jr.
+LOCATION:Whitney M. Young Jr.\, 415 E. 79th St.\, Chicago\, IL 60619
 URL:https://chipublib.bibliocommons.com/events/69b025e2b0595799c0a21339
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5603,7 +5469,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Black History Future Folk Symposium: Dunham & the Diaspora
 DTSTART;TZID=America/Chicago:20260418T120000
 DTEND;TZID=America/Chicago:20260418T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:2b05e1b0fb82404cf011912a08507e3b@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5634,7 +5500,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260419T000000
 DTEND;TZID=America/Chicago:20260420T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:eb27b00b7d674c6c8fab0aac85cc5eeb@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5662,7 +5528,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260419T000000
 DTEND;TZID=America/Chicago:20260420T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a78fb1d0ea22c32f46625387506ae2b9@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -5690,7 +5556,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Infant Massage Workshop
 DTSTART;TZID=America/Chicago:20260419T083000
 DTEND;TZID=America/Chicago:20260419T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:47647fcf09e72fab20b9af38ac4b60bc@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5718,7 +5584,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260420T000000
 DTEND;TZID=America/Chicago:20260421T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:82b499b317aaacafe5290154604b783f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -5746,12 +5612,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260420T110000
 DTEND;TZID=America/Chicago:20260420T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6f0027a35569dddf3f3bef3ea41de17c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 5.6 miles from home\\n\\nPlease join us for a 30-minute f
+ nths\\nDistance: 6.0 miles from home\\n\\nPlease join us for a 30-minute f
  amily story time. We will enjoy stories\, rhymes and music. For kids 0 to 
  5 and their caregivers. Older children also welcome. How to Attend Registr
  ation is appreciated but not required. Register by the start of the event 
@@ -5760,7 +5626,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  er. As a reminder\, school email addresses may block external emails such 
  as those from CPL. Accessibi\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/699772d881b67dfe32a77a29
-LOCATION:North Pulaski
+LOCATION:North Pulaski\, 4300 W. North Ave.\, Chicago\, IL 60639
 URL:https://chipublib.bibliocommons.com/events/699772d881b67dfe32a77a29
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5777,12 +5643,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Grab and Go: Spice Club Kits (Paprika)
 DTSTART;TZID=America/Chicago:20260420T120000
 DTEND;TZID=America/Chicago:20260420T200000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:fc84e0dc849a185be13018048ed78854@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.2 miles from home\\n\\nVisit Archer Heights' Adult Refe
+ nths\\nDistance: 7.7 miles from home\\n\\nVisit Archer Heights' Adult Refe
  rence Desk for a spice kit to take home. Each kit will include a sample of
   the highlighted spice\, as well as recipes and information on the spice's
   cultural and historical significance. A selection of additional resources
@@ -5791,7 +5657,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  n April\, or while materials last. One kit per person. This month is Papri
  ka . Accessibility Need si\\n\\nMore info: https://chipublib.bibliocommons
  .com/events/69c1746f67801235ed73f9c6
-LOCATION:Archer Heights
+LOCATION:Archer Heights\, 5055 S. Archer Ave.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/69c1746f67801235ed73f9c6
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5808,12 +5674,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Night
 DTSTART;TZID=America/Chicago:20260420T163000
 DTEND;TZID=America/Chicago:20260420T173000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:96701e9608a641381103d06ff5a88618@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 0.7 miles from home\\n\\nCalling all LEGO® enthusiasts a
+ nths\\nDistance: 5.6 miles from home\\n\\nCalling all LEGO® enthusiasts a
  nd engineers! We show you how to build with mini-bricks as we take on buil
  ding challenges and do some open-ended free play. Join us to make new frie
  nds while building STEAM skills. For ages 4 to 12. Accessibility Need sign
@@ -5822,7 +5688,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  modations. Requests must be made at least 14 business days before the even
  t.\\n\\nMore info: https://chipublib.bibliocommons.com/events/699caebb4dac
  f581ff7d5538
-LOCATION:Blackstone
+LOCATION:Blackstone\, 4904 S. Lake Park Ave.\, Chicago\, IL 60615
 URL:https://chipublib.bibliocommons.com/events/699caebb4dacf581ff7d5538
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5839,7 +5705,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bilingual Story Time / Hora de cuentos bilingües
 DTSTART;TZID=America/Chicago:20260420T180000
 DTEND;TZID=America/Chicago:20260420T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:ba4705cfd835ed4aa67889a947447cb2@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5852,7 +5718,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  -8184 or email access@chipublib.org to request accommodations. Requests mu
  st be made at least 14 business days before the event.\\n\\nMore info: htt
  ps://chipublib.bibliocommons.com/events/69b1982cdb89981d9df94c7d
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/69b1982cdb89981d9df94c7d
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5869,12 +5735,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Literary Lounge Book Club: Thriller
 DTSTART;TZID=America/Chicago:20260420T180000
 DTEND;TZID=America/Chicago:20260420T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:bae50aad083e7eafb2a94ed96ca2777d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 2.2 miles from home\\n\\nGetting back into reading? Want 
+ nths\\nDistance: 2.0 miles from home\\n\\nGetting back into reading? Want 
  to try new genres? Join the Chinatown Branch for our Literary Lounge Book 
  Club! Each month we will explore a new genre and discuss not only the book
  \, but also elements of the genre. This month's theme will be: Thriller. D
@@ -5883,7 +5749,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ping and atmospheric psychological thriller where nothing is quite what it
   seems. U.S. Marshal Teddy \\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/69a9a92b2866a5b4884011c4
-LOCATION:Chinatown
+LOCATION:Chinatown\, 2100 S. Wentworth Ave.\, Chicago\, IL 60616
 URL:https://chipublib.bibliocommons.com/events/69a9a92b2866a5b4884011c4
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5900,12 +5766,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Practice: English Conversation Group
 DTSTART;TZID=America/Chicago:20260420T183000
 DTEND;TZID=America/Chicago:20260420T193000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a2c19b9ccccad02f6bc6102fd162101a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nDo you want to learn English? Do
+ nths\\nDistance: 9.0 miles from home\\n\\nDo you want to learn English? Do
   you want to practice speaking and understanding English and improve your 
  communications skills? Join our conversation group with Literacy Chicago a
  nd improve your ability to communicate. This group focuses on having livel
@@ -5914,7 +5780,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  nversational vocabulary\, meet new people\, and have fun! You should regis
  ter online at the Literacy Ch\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/695ed1cd992fc18a86dc2b67
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/695ed1cd992fc18a86dc2b67
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5932,7 +5798,7 @@ SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
  S (SOUTH…
 DTSTART;TZID=America/Chicago:20260420T180000
 DTEND;TZID=America/Chicago:20260420T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:eb3675b850c7de9bc5508543cf3a7b00@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5963,7 +5829,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Story Time
 DTSTART;TZID=America/Chicago:20260421T093000
 DTEND;TZID=America/Chicago:20260421T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:a18989edf937732449f4bc881dfce3ce@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5976,7 +5842,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  email access@chipublib.org to request accommodations. Requests must be mad
  e at least 14 business days before the event.\\n\\nMore info: https://chip
  ublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c5c
-LOCATION:Sulzer Regional
+LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
 URL:https://chipublib.bibliocommons.com/events/6983b531d2bbe265eb2c3c5c
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -5993,7 +5859,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Companion (2025)
 DTSTART;TZID=America/Chicago:20260421T103000
 DTEND;TZID=America/Chicago:20260421T123000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d746218a56d76944da421ffd92f67c43@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6006,7 +5872,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  t libraries across Chicago. Accessibility English subtitles for the deaf a
  nd hard of hearing will be available for this screening.\\n\\nMore info: h
  ttps://chipublib.bibliocommons.com/events/69a763cc8089f23c675fa1fd
-LOCATION:Austin
+LOCATION:Austin\, 5615 W. Race Ave.\, Chicago\, IL 60644
 URL:https://chipublib.bibliocommons.com/events/69a763cc8089f23c675fa1fd
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6023,12 +5889,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® at the Library
 DTSTART;TZID=America/Chicago:20260421T160000
 DTEND;TZID=America/Chicago:20260421T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:bbdacd26f4bc480811f395604d96ddbf@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.3 miles from home\\n\\nDo you like building different o
+ nths\\nDistance: 7.7 miles from home\\n\\nDo you like building different o
  bjects and making your imagination come to life? If so\, drop in for some 
  design challenges and open play time with our collection of LEGO® bricks!
   Afterwards\, we will display your creation in the library. We supply the 
@@ -6037,7 +5903,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   this event? Please call (312) 747-8184 or email access@chipublib.org to r
  equest accommodations. Reques\\n\\nMore info: https://chipublib.bibliocomm
  ons.com/events/698b97c4b0595799c09c182b
-LOCATION:Edgewater
+LOCATION:Edgewater\, 6000 N. Broadway St.\, Chicago\, IL 60660
 URL:https://chipublib.bibliocommons.com/events/698b97c4b0595799c09c182b
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6054,12 +5920,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Día Crafts
 DTSTART;TZID=America/Chicago:20260421T160000
 DTEND;TZID=America/Chicago:20260421T180000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:392dbdb131f9d0adcc8689ca6192d300@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nDistance: 5.4 miles from home\\n\\nJoin the Chicago Community Arts
+ onths\\nDistance: 4.8 miles from home\\n\\nJoin the Chicago Community Arts
   Studio for crafts every Tuesday leading up to Día del Niño! This is a d
  rop-in craft program in the Children's Area\, all families are welcome. Fo
  r ages 4 and up. Accessibility Need sign language interpretation or other 
@@ -6067,7 +5933,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
  il access@chipublib.org to request accommodations. Requests must be made a
  t least 14 business days before the event.\\n\\nMore info: https://chipubl
  ib.bibliocommons.com/events/69b827a367801235ed725e2e
-LOCATION:Little Village
+LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69b827a367801235ed725e2e
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6084,7 +5950,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Pajama Story Time
 DTSTART;TZID=America/Chicago:20260421T183000
 DTEND;TZID=America/Chicago:20260421T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:6e6c9f89211b4ad36cb6c20c87927137@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6096,7 +5962,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
  312) 747-8184 or email access@chipublib.org to request accommodations. Req
  uests must be made at least 14 business days before the event.\\n\\nMore i
  nfo: https://chipublib.bibliocommons.com/events/69c2a828b48451fc3c0ae9b1
-LOCATION:Legler Regional
+LOCATION:Legler Regional\, 115 S. Pulaski Rd.\, Chicago\, IL 60624
 URL:https://chipublib.bibliocommons.com/events/69c2a828b48451fc3c0ae9b1
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6113,7 +5979,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (NORTHWESTERN)
 DTSTART;TZID=America/Chicago:20260421T180000
 DTEND;TZID=America/Chicago:20260421T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0117abb602c13586e42483685f19566a@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -6143,7 +6009,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260422T000000
 DTEND;TZID=America/Chicago:20260423T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:820982dd649b2cac639b3a3cedc8628c@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -6171,7 +6037,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260422T000000
 DTEND;TZID=America/Chicago:20260423T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:74a80dfb41eb7325a3d5acc1a1062bcd@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -6199,12 +6065,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260422T103000
 DTEND;TZID=America/Chicago:20260422T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1f5e556460ebd10812f65da0293806eb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.1 miles from home\\n\\nJoin our story time\, especially
+ nths\\nDistance: 7.0 miles from home\\n\\nJoin our story time\, especially
   for our littlest patrons. We share songs\, rhymes and books\, then stay t
  o play afterward. For kids 0 to 5 and their caregivers. Accessibility Need
   sign language interpretation or other accessibility assistance for this e
@@ -6213,7 +6079,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   event. Please note: Family Story Time cannot accommodate daycares or clas
  s groups. Please email if y\\n\\nMore info: https://chipublib.bibliocommon
  s.com/events/6915f9c62ea1b1300084a809
-LOCATION:Independence
+LOCATION:Independence\, 4024 N. Elston Ave.\, Chicago\, IL 60618
 URL:https://chipublib.bibliocommons.com/events/6915f9c62ea1b1300084a809
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6230,12 +6096,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storypalooza
 DTSTART;TZID=America/Chicago:20260422T103000
 DTEND;TZID=America/Chicago:20260422T113000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:93c46478cbb0cff71e5d0bf9bef895af@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
- onths\\nDistance: 7.3 miles from home\\n\\nJoin Mr. Chris for story time w
+ onths\\nDistance: 7.7 miles from home\\n\\nJoin Mr. Chris for story time w
  here we'll share songs\, rhymes\, fingerplays\, books\, movement and music
  . Followed by open play time. For kids 2 to 5 and their caregivers. Access
  ibility Need sign language interpretation or other accessibility assistanc
@@ -6243,7 +6109,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 18-60 m
   to request accommodations. Requests must be made at least 14 business day
  s before the event.\\n\\nMore info: https://chipublib.bibliocommons.com/ev
  ents/698a01391e64afd01e5a32fc
-LOCATION:Edgewater
+LOCATION:Edgewater\, 6000 N. Broadway St.\, Chicago\, IL 60660
 URL:https://chipublib.bibliocommons.com/events/698a01391e64afd01e5a32fc
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6260,12 +6126,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby and Toddler Story Time
 DTSTART;TZID=America/Chicago:20260422T111500
 DTEND;TZID=America/Chicago:20260422T114500
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5d1b23abd494544203ca5fe261ef0c5e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
- nths\\nDistance: 9.3 miles from home\\n\\nJoin us for this story time tail
+ nths\\nDistance: 9.2 miles from home\\n\\nJoin us for this story time tail
  ored for you and your baby or toddler. We share songs\, rhymes and books. 
  For children birth to 3 years and their caregivers. Accessibility Need sig
  n language interpretation or other accessibility assistance for this event
@@ -6273,7 +6139,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-36 mo
  mmodations. Requests must be made at least 14 business days before the eve
  nt.\\n\\nMore info: https://chipublib.bibliocommons.com/events/69a877af8d5
  e2d093363193b
-LOCATION:Jefferson Park
+LOCATION:Jefferson Park\, 5363 W. Lawrence Ave.\, Chicago\, IL 60630
 URL:https://chipublib.bibliocommons.com/events/69a877af8d5e2d093363193b
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6290,7 +6156,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Band Patch Making
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c3836375a1ab844c4119405ccd04bb87@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6303,7 +6169,8 @@ DESCRIPTION:Organizer: Chicago Public Library - Harold Washington\\nCost:
  ) 747-8184 or email access@chipublib.org to request accommodations. Reques
  ts must be made at least 14 business days before the event.\\n\\nMore info
  : https://chipublib.bibliocommons.com/events/69c19a764dacf581ff83e829
-LOCATION:Harold Washington Library Center
+LOCATION:Harold Washington Library Center\, 400 S. State St.\, Chicago\, I
+ L 60605
 URL:https://chipublib.bibliocommons.com/events/69c19a764dacf581ff83e829
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6320,19 +6187,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Teen Zone
 DTSTART;TZID=America/Chicago:20260422T160000
 DTEND;TZID=America/Chicago:20260422T170000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:5edde6dfcc0b9d29855c6e3c75659143@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.3 miles from home\\n\\nStop by Teen Zone with a friend 
+ nths\\nDistance: 9.4 miles from home\\n\\nStop by Teen Zone with a friend 
  or by yourself to hangout and see what we're up to. This is a teen program
   for ages 13-19. Accessibility Need sign language interpretation or other 
  accessibility assistance for this event? Please call (312) 747-8184 or ema
  il access@chipublib.org to request accommodations. Requests must be made a
  t least 14 business days before the event.\\n\\nMore info: https://chipubl
  ib.bibliocommons.com/events/69aed6ef45f57dfccb19601d
-LOCATION:Austin-Irving
+LOCATION:Austin-Irving\, 6100 W. Irving Park Rd.\, Chicago\, IL 60634
 URL:https://chipublib.bibliocommons.com/events/69aed6ef45f57dfccb19601d
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6349,7 +6216,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Adult Book Club: Malibu Rising
 DTSTART;TZID=America/Chicago:20260422T173000
 DTEND;TZID=America/Chicago:20260422T183000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9a5bc60af566342e1b5d20f59f0f0e39@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6360,7 +6227,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  12) 747-8184 or email access@chipublib.org to request accommodations. Requ
  ests must be made at least 14 business days before the event.\\n\\nMore in
  fo: https://chipublib.bibliocommons.com/events/695c31b96faf374bd592a31d
-LOCATION:McKinley Park
+LOCATION:McKinley Park\, 1915 W. 35th St.\, Chicago\, IL 60609
 URL:https://chipublib.bibliocommons.com/events/695c31b96faf374bd592a31d
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6377,7 +6244,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (SOUTH LOOP)
 DTSTART;TZID=America/Chicago:20260422T180000
 DTEND;TZID=America/Chicago:20260422T190000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:49c598f589bec5ad38de73ee497f49aa@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -6406,7 +6273,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260423T000000
 DTEND;TZID=America/Chicago:20260424T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:3d85998d8030ed9f4f387776139afe2f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -6434,7 +6301,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260423T000000
 DTEND;TZID=America/Chicago:20260424T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:c73191bf4a0f64d2c6872bcbf89d84a4@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -6462,7 +6329,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mini Mavericks - Child Enrichment Playdate (FREE)
 DTSTART;TZID=America/Chicago:20260423T083000
 DTEND;TZID=America/Chicago:20260423T103000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:053de4c75b97d51c8b5a14ed7b026514@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -6491,7 +6358,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260424T000000
 DTEND;TZID=America/Chicago:20260425T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:9a4ecd284d12c36845c5f211d2e3701f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -6519,7 +6386,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260424T000000
 DTEND;TZID=America/Chicago:20260425T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:81a8956814b5a9164f173a048bfcb6cf@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -6547,7 +6414,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homeschool Family Fun Day
 DTSTART;TZID=America/Chicago:20260424T100000
 DTEND;TZID=America/Chicago:20260424T120000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:cd89680bf7ca40041436668567b41240@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6561,7 +6428,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  org to request accommodations. Requests must be made at least 14 business 
  days before the event.\\n\\nMore info: https://chipublib.bibliocommons.com
  /events/697a6279a5d80ac4926f7e34
-LOCATION:Toman
+LOCATION:Toman\, 2708 S. Pulaski Rd.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/697a6279a5d80ac4926f7e34
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6578,7 +6445,7 @@ BEGIN:VEVENT
 SUMMARY:FreePlay at FAME
 DTSTART;TZID=America/Chicago:20260424T080000
 DTEND;TZID=America/Chicago:20260424T100000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:2515989cc007ac726c973397bbb12a11@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -6604,7 +6471,7 @@ BEGIN:VEVENT
 SUMMARY:Cardboard Lab - Hourly Programming
 DTSTART;TZID=America/Chicago:20260425T000000
 DTEND;TZID=America/Chicago:20260426T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:0fdf663f14003da074f3b069280a889b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -6632,7 +6499,7 @@ BEGIN:VEVENT
 SUMMARY:Stamping Studio - Hourly Sessions
 DTSTART;TZID=America/Chicago:20260425T000000
 DTEND;TZID=America/Chicago:20260426T000000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:d143c317fc4ba938deaa8c327be766d3@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -6661,7 +6528,7 @@ SUMMARY:[FREE] Yoga with The Latina Sweat Project /Yoga Con Latina Sweat P
  roject
 DTSTART;TZID=America/Chicago:20260425T093000
 DTEND;TZID=America/Chicago:20260425T103000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:8563465701839ef628c486e8b0d2d9bf@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6675,7 +6542,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
  ur energy. A limited number of yoga mats will be available on a first-come
  \, first-served basis. This clas\\n\\nMore info: https://chipublib.biblioc
  ommons.com/events/69aa043bb48451fc3c06f0ad
-LOCATION:Toman
+LOCATION:Toman\, 2708 S. Pulaski Rd.\, Chicago\, IL 60623
 URL:https://chipublib.bibliocommons.com/events/69aa043bb48451fc3c06f0ad
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6694,19 +6561,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cricut Sticker Making
 DTSTART;TZID=America/Chicago:20260425T130000
 DTEND;TZID=America/Chicago:20260425T140000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:230663391b43c95c2abb42403eb45c15@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 7.1 miles from home\\n\\nMake a sticker using our Cricut 
+ nths\\nDistance: 7.2 miles from home\\n\\nMake a sticker using our Cricut 
  machine! We will provide all the supplies. Ages 13 and up Accessibility Ne
  ed sign language interpretation or other accessibility assistance for this
   event? Please call (312) 747-8184 or email access@chipublib.org to reques
  t accommodations. Requests must be made at least 14 business days before t
  he event.\\n\\nMore info: https://chipublib.bibliocommons.com/events/69b44
  675cbf6405d356a45e0
-LOCATION:Gage Park
+LOCATION:Gage Park\, 2807 W. 55th St.\, Chicago\, IL 60632
 URL:https://chipublib.bibliocommons.com/events/69b44675cbf6405d356a45e0
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6723,19 +6590,19 @@ BEGIN:VEVENT
 SUMMARY:[FREE] RP Mystery Group
 DTSTART;TZID=America/Chicago:20260425T140000
 DTEND;TZID=America/Chicago:20260425T150000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1b461415245e3606ce3dcfc68438927e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 9.2 miles from home\\n\\nJoin the Rogers Park Branch Myst
+ nths\\nDistance: 9.0 miles from home\\n\\nJoin the Rogers Park Branch Myst
  ery Group! Check back for this month's title. Accessibility Need sign lang
  uage interpretation or other accessibility assistance for this event? Plea
  se call (312) 747-8184 or email access@chipublib.org to request accommodat
  ions. Requests must be made at least 14 business days before the event.\\n
  \\nMore info: https://chipublib.bibliocommons.com/events/6936ee0876261f280
  05dfe62
-LOCATION:Rogers Park
+LOCATION:Rogers Park\, 6907 N. Clark St.\, Chicago\, IL 60626
 URL:https://chipublib.bibliocommons.com/events/6936ee0876261f28005dfe62
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6752,12 +6619,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Real Ones Read: Paper Girls Vol. 1
 DTSTART;TZID=America/Chicago:20260425T150000
 DTEND;TZID=America/Chicago:20260425T160000
-DTSTAMP:20260327T015129Z
+DTSTAMP:20260327T085603Z
 UID:1da06c337b5470859a804a2cd300b4d7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nDistance: 2.2 miles from home\\n\\nFinally\, a book club where you 
+ nths\\nDistance: 2.0 miles from home\\n\\nFinally\, a book club where you 
  do not have to read the book in advance! We will have copies of Paper Girl
  s Vol. 1 by Brian K. Vaughan for each participant. We will take turns read
  ing the book together and discussing our thoughts\, feelings\, and opinion
@@ -6766,7 +6633,7 @@ DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
   of all time"--Page 4 of cover. For teens in high school. Accessibility Ne
  ed sign language interpretat\\n\\nMore info: https://chipublib.bibliocommo
  ns.com/events/69c16158ad384e40edb63976
-LOCATION:Chinatown
+LOCATION:Chinatown\, 2100 S. Wentworth Ave.\, Chicago\, IL 60616
 URL:https://chipublib.bibliocommons.com/events/69c16158ad384e40edb63976
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -6776,6 +6643,62 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:In 2 hours: Real Ones Read: Paper Girls Vol. 1
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Cardboard Lab - Hourly Programming
+DTSTART;TZID=America/Chicago:20260426T000000
+DTEND;TZID=America/Chicago:20260427T000000
+DTSTAMP:20260327T085603Z
+UID:48beff74036d48ad36bccf4d91922e45@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nDistance: 1.0 miles from home\\n\\nWhat can you create using cardbo
+ ard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like
+  an engineer! Ages 2 and up. Workshop Times Wednesday\, Thursday: 10:30\, 
+ 11:30\, 12:30 Friday\, S\\n\\nMore info: https://www.chicagochildrensmuseu
+ m.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Cardboard Lab - Hourly Programming
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Cardboard Lab - Hourly Programming
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Stamping Studio - Hourly Sessions
+DTSTART;TZID=America/Chicago:20260426T000000
+DTEND;TZID=America/Chicago:20260427T000000
+DTSTAMP:20260327T085603Z
+UID:9a7f4bd3f4ebe93f4d19091ed05aabb0@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Art-Studio
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nDistance: 1.0 miles from home\\n\\nUse ink pads\, paper\, and a var
+ iety of stamps to create unique artwork that’s yours to keep! Ages 2 and
+  up. Workshop Times Monday\, Wednesday\, Thursday: 10:30\, 11:30\, 12:30 F
+ riday\, Saturday\, Sunday: 10:\\n\\nMore info: https://www.chicagochildren
+ smuseum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Stamping Studio - Hourly Sessions
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Stamping Studio - Hourly Sessions
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
