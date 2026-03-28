@@ -31,6 +31,7 @@ WEAK_BABY_KEYWORDS = {"family"}
 ADULT_KEYWORDS = {
     "adults only", "21+", "18+", "wine", "beer", "cocktail",
     "lecture for adults", "senior", "teen only",
+    "adult", "teen", "teens",
 }
 
 

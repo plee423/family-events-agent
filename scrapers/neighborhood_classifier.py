@@ -48,6 +48,21 @@ _NEIGHBORHOODS: list[tuple[str, float, float, float, float]] = [
     ("Cicero",              41.838, 41.865, -87.770, -87.740),
     # ── Broad city fallback (must come last) ────────────────────────────────
     ("Chicago",             41.644, 42.023, -87.940, -87.524),
+
+    # ── Orange County / Irvine area (ordered specific → broad) ──────────────
+    # Specific cities before Irvine so they win when coords overlap.
+    ("Rancho Santa Margarita", 33.608, 33.672, -117.632, -117.563),
+    ("Aliso Viejo",            33.545, 33.610, -117.768, -117.692),
+    ("Laguna Hills",           33.570, 33.636, -117.752, -117.680),
+    ("Lake Forest",            33.597, 33.688, -117.742, -117.638),
+    ("Tustin",                 33.718, 33.786, -117.862, -117.788),
+    ("Santa Ana",              33.718, 33.786, -117.942, -117.862),
+    ("Costa Mesa",             33.623, 33.700, -117.972, -117.884),
+    ("Huntington Beach",       33.647, 33.745, -118.042, -117.934),
+    ("Fullerton",              33.840, 33.912, -117.978, -117.882),
+    ("Irvine",                 33.592, 33.755, -117.925, -117.680),
+    # Broad OC fallback — catches anything within the county not matched above
+    ("Orange County",          33.380, 34.010, -118.150, -117.380),
 ]
 
 

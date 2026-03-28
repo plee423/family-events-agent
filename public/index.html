@@ -404,6 +404,10 @@
 <p class="feedback-line">Questions or feedback? <a href="mailto:saypaullee@gmail.com">saypaullee@gmail.com</a></p>
 
 <script>
+// ── Constants ─────────────────────────────────────────────────────────────────
+// Broad catch-all neighborhood labels — excluded from filter buttons and badges.
+const NEIGHBORHOOD_CATCHALLS = new Set(['Chicago', 'Orange County']);
+
 // ── State ──────────────────────────────────────────────────────────────────────
 let allEvents = [];
 let generatedAt = '';
@@ -466,10 +470,10 @@ function updateFilterBadge() {
 
 // ── Neighborhood filter builder ────────────────────────────────────────────────
 function buildNeighborhoodFilters() {
-  // Exclude the broad "Chicago" fallback — it's a catch-all, not a named neighborhood.
-  // Events with neighborhood="" or "Chicago" are still shown under "All areas".
+  // Exclude broad catch-all fallbacks — not meaningful as filter buttons.
+  // Events with neighborhood="" or a catch-all are still shown under "All areas".
   // "Virtual" is pinned to the end so geographic neighborhoods sort first.
-  const allNames = [...new Set(allEvents.map(e => e.neighborhood).filter(n => n && n !== 'Chicago'))];
+  const allNames = [...new Set(allEvents.map(e => e.neighborhood).filter(n => n && !NEIGHBORHOOD_CATCHALLS.has(n)))];
   const geoHoods = allNames.filter(n => n !== 'Virtual').sort();
   const hasVirtual = allNames.includes('Virtual');
   const hoods = hasVirtual ? [...geoHoods, 'Virtual'] : geoHoods;
@@ -669,7 +673,7 @@ function renderCard(e) {
   const metaItems = [`<span class="meta-item">${clockSVG} ${esc(timeStr)}</span>`];
   if (e.location_name) metaItems.push(`<span class="meta-item">${pinSVG} ${esc(e.location_name)}</span>`);
   if (e.neighborhood === 'Virtual') metaItems.push(`<span class="meta-item badge-virtual-inline">Virtual</span>`);
-  else if (e.neighborhood && e.neighborhood !== 'Chicago') metaItems.push(`<span class="meta-item badge-neighborhood-inline">${esc(e.neighborhood)}</span>`);
+  else if (e.neighborhood && !NEIGHBORHOOD_CATCHALLS.has(e.neighborhood)) metaItems.push(`<span class="meta-item badge-neighborhood-inline">${esc(e.neighborhood)}</span>`);
   if (e.org_name && e.org_name !== e.location_name) metaItems.push(`<span class="meta-item">· ${esc(e.org_name)}</span>`);
 
   const descHtml = e.description

@@ -2,35 +2,83 @@
 # Run with: python agent.py run --location irvine
 # Scrapes in parallel (ThreadPoolExecutor, max_workers=5) — same as Chicago.
 #
-# Scraper confidence:
-#   ✓ bibliocommons  — verified working (same gateway API as Chicago CPL)
-#   ✓ tribe_events   — Pretend City API confirmed 149 events, same pattern as Chicago History Museum
-#   ✓ html           — City of Irvine confirmed server-rendered HTML table; Bowers confirmed server-rendered
-#   ~ browser        — Discovery Cube is JS/AJAX-rendered; AJAX endpoint unconfirmed — needs DevTools
+# Library note: Irvine PL and OCPL use LibCal (SpringShare) for events — NOT Bibliocommons gateway.
+# LibCal iCal URL format: https://library.libcal.com/ical_subscribe.php?src=p&cid=BRANCH_ID
+# Each branch has a separate calendar ID; multi-cid in a single URL is NOT supported.
 
 sources:
 
-  # ── Libraries ─────────────────────────────────────────────────────────────────
+  # ── Irvine Public Library (3 branches, LibCal iCal) ───────────────────────────
+  # Confirmed: Katie Wheeler returns "Toddler Storytime", "Baby Storytime"
+  #            Heritage Park returns "Baby Storytime", "Stay and Play"
+  # Branch IDs found at irvinepubliclibrary.libcal.com/calendars JS config
 
-  - name: "Irvine Public Library - Events"
+  - name: "Irvine Public Library - Heritage Park"
     org_type: "library"
-    url: "https://gateway.bibliocommons.com/v2/libraries/irvine/events"
-    scraper: "bibliocommons"
-    library_id: "irvine"
-    audiences: "babies_and_toddlers"
-    max_pages: 50
+    url: "https://irvinepubliclibrary.libcal.com/ical_subscribe.php?src=p&cid=22833"
+    scraper: "ical"
     tags: ["storytime", "library", "baby", "toddler", "family"]
     age_hint: "0-60 months"
     cost: "free"
 
-  - name: "Orange County Public Library - Events"
+  - name: "Irvine Public Library - Katie Wheeler"
     org_type: "library"
-    # OCPL also uses the Bibliocommons gateway API — same platform as CPL and Irvine PL.
-    url: "https://gateway.bibliocommons.com/v2/libraries/ocpl/events"
-    scraper: "bibliocommons"
-    library_id: "ocpl"
-    audiences: "babies_and_toddlers"
-    max_pages: 50
+    url: "https://irvinepubliclibrary.libcal.com/ical_subscribe.php?src=p&cid=22737"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "Irvine Public Library - University Park"
+    org_type: "library"
+    url: "https://irvinepubliclibrary.libcal.com/ical_subscribe.php?src=p&cid=22834"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  # ── Orange County Public Library - nearby branches (LibCal iCal) ─────────────
+  # Branch IDs found at ocpl.libcal.com/calendars JS config.
+  # Branches selected within ~15 miles of Irvine (33.6846, -117.8265).
+  # Confirmed: Tustin returns "Baby/Toddler Storytime and Stay & Play"
+  #            El Toro returns "Play and Learn (0-4)", "Family Storytime"
+
+  - name: "OCPL - Tustin Branch"
+    org_type: "library"
+    url: "https://ocpl.libcal.com/ical_subscribe.php?src=p&cid=19158"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "OCPL - El Toro Branch"
+    org_type: "library"
+    url: "https://ocpl.libcal.com/ical_subscribe.php?src=p&cid=19135"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "OCPL - Aliso Viejo Branch"
+    org_type: "library"
+    url: "https://ocpl.libcal.com/ical_subscribe.php?src=p&cid=19125"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "OCPL - Laguna Hills Branch"
+    org_type: "library"
+    url: "https://ocpl.libcal.com/ical_subscribe.php?src=p&cid=19148"
+    scraper: "ical"
+    tags: ["storytime", "library", "baby", "toddler", "family"]
+    age_hint: "0-60 months"
+    cost: "free"
+
+  - name: "OCPL - Rancho Santa Margarita Branch"
+    org_type: "library"
+    url: "https://ocpl.libcal.com/ical_subscribe.php?src=p&cid=19153"
+    scraper: "ical"
     tags: ["storytime", "library", "baby", "toddler", "family"]
     age_hint: "0-60 months"
     cost: "free"
@@ -39,7 +87,7 @@ sources:
 
   - name: "Pretend City Children's Museum - Events"
     org_type: "museum"
-    # Confirmed working: 149 events across 15 pages (verified 2026-03-24)
+    # Confirmed working: 145 events across 3 pages (verified 2026-03-27)
     # Same Tribe Events REST API pattern as Chicago History Museum.
     url: "https://www.pretendcity.org/wp-json/tribe/events/v1/events?per_page=50"
     scraper: "tribe_events"
@@ -48,28 +96,33 @@ sources:
 
   - name: "Bowers Museum - Family Programs"
     org_type: "museum"
-    # Server-rendered Joomla/EventBooking site — confirmed HTML in response (verified 2026-03-24)
-    # Structure: sppb-addon grid columns, each has h3.sppb-addon-title + sibling <p> for date/venue
-    # Date format: MM-DD-YYYY HH:MM am — handled by dateutil fuzzy parse
+    # Server-rendered Joomla EventBooking (com_eventbooking). NOT WordPress.
+    # Confirmed structure (2026-03-27):
+    #   event_card: <div class="sppb-addon-event-list-item">
+    #   title:      <h3><a href="...">Title</a></h3>
+    #   date:       <div class="event-date">Sep 28 2024</div>
+    #   location:   <div class="event-location">Bowers Museum</div>
+    # NOTE: As of 2026-03-27, all visible events are from 2024 (past) — no 2026 programs posted yet.
+    #       Selectors are correct; will return events once new programs are scheduled.
     url: "https://www.bowers.org/index.php/programs/family-programs"
     scraper: "html"
     selectors:
-      event_card: ".sppb-col-sm-4, .sppb-col-md-4, .sppb-col-lg-4, .sppb-addon-content"
-      title: "h3.sppb-addon-title a, h3 a"
-      date: "p"
-      location: "p + p"
-      link: "h3.sppb-addon-title a, h3 a"
+      event_card: ".sppb-addon-event-list-item"
+      title: "h3 a"
+      date: ".event-date"
+      location: ".event-location"
+      link: "h3 a"
     tags: ["museum", "family", "culture", "art"]
-    notes: "Joomla EventBooking CMS. Selectors need verification — run test-source if 0 events."
+    cost: "paid admission"
 
   - name: "Discovery Cube OC - Events"
     org_type: "museum"
-    # JS-rendered WordPress site. Event cards load via AJAX after page load (verified 2026-03-24).
-    # AJAX endpoint at /wp-admin/admin-ajax.php — exact action param unknown.
-    # Playwright will render the page but may time out waiting for cards.
-    # NOTE: Low confidence — investigate AJAX calls in DevTools Network tab if 0 events.
+    # JS-rendered WordPress site using The Events Calendar plugin.
+    # Tribe Events REST API (/wp-json/tribe/events/v1/events) returned 404 (verified 2026-03-27).
+    # Browser scraper required. wait_selector ensures Playwright waits for event cards.
     url: "https://www.discoverycube.org/orange-county/events"
     scraper: "browser"
+    wait_selector: ".tribe-events-calendar-list__event"
     selectors:
       event_card: ".tribe-events-calendar-list__event, .block-event-calendar article, article"
       title: "h2 a, h3 a, .tribe-event-url"
@@ -77,25 +130,52 @@ sources:
       location: ".tribe-venue, .location"
       link: "h2 a, h3 a"
     tags: ["science", "kids", "family", "stem", "museum"]
+    age_hint: "0-60 months"
+
+  # ── Zoo ───────────────────────────────────────────────────────────────────────
+
+  - name: "Santa Ana Zoo - Events"
+    org_type: "zoo"
+    # WordPress with Events Manager v7.2.3.1 + ProudCity theme (confirmed 2026-03-27).
+    # iCal endpoints both 404. Standard Events Manager HTML selectors don't match ProudCity theme.
+    # Switching to browser scraper for robust JS rendering.
+    url: "https://www.santaanazoo.org/events/"
+    scraper: "browser"
+    wait_selector: "article, .event-excerpt, h3"
+    selectors:
+      event_card: "article, li.event-excerpt, .event-excerpt, .entry"
+      title: "h3 a, h2 a, .entry-title a"
+      date: "time, .event-date, abbr, .entry-date"
+      location: ".event-location, .em-location, address"
+      link: "h3 a, h2 a"
+    tags: ["zoo", "animals", "family", "outdoor", "kids"]
+    age_hint: "0-60 months"
+    cost: "paid admission"
 
   # ── Eventbrite ────────────────────────────────────────────────────────────────
+  # Catches one-off family events from small OC orgs not otherwise scraped.
+  # Requires EVENTBRITE_TOKEN env var (free developer account at eventbrite.com/platform).
+  # Uses /v3/organizers/{id}/events/ — the deprecated /v3/events/search/ is gone (Feb 2020).
 
   - name: "Eventbrite - Irvine Family Events"
     org_type: "eventbrite"
-    url: "https://www.eventbriteapi.com/v3/events/search/"
+    url: ""  # unused — org-based API; no location search endpoint
     scraper: "eventbrite"
-    keywords: "baby toddler storytime family kids infant preschool children"
+    # Verified Orange County baby/toddler Eventbrite organizers (as of 2026-03-27).
+    org_ids:
+      - "120406902391"  # Kindermusik by BEAT Studio — baby music class 0-14 mo, Costa Mesa OC
+      - "121040304384"  # Mommy Me Pilates (Evelyn) — postpartum mommy & me, Fullerton OC
+      - "17190875632"   # Bella Terra Kids Club — monthly free family events, Huntington Beach OC
     max_pages: 5
-    tags: ["family", "community", "kids"]
+    tags: ["family", "community", "kids", "baby", "toddler"]
     age_hint: "0-60 months"
 
   # ── Parks & City Events ───────────────────────────────────────────────────────
 
   - name: "City of Irvine - Events"
     org_type: "parks"
-    # Confirmed server-rendered Drupal site with plain HTML table (verified 2026-03-24).
-    # Structure: <table><tr><td>Date range</td><td><a>Title</a></td><td>Location</td></tr>
-    # Dates are often ranges (e.g. "January 25–April 12") — dateutil fuzzy parse takes the start date.
+    # Server-rendered Drupal site, Date/Event/Location column layout confirmed 2026-03-27.
+    # Dates are often ranges (e.g. "January 25–April 12") — dateutil fuzzy parse takes start date.
     url: "https://www.cityofirvine.org/events"
     scraper: "html"
     selectors:
@@ -106,3 +186,17 @@ sources:
       link: "td:nth-child(2) a"
     tags: ["park", "family", "outdoor", "city", "recreation"]
     cost: "free"
+
+  # ── Deferred sources (need further investigation) ─────────────────────────────
+
+  # OCLS (Orange County Library System) — attend.ocls.org
+  #   Has extensive baby/toddler programs: Baby Tales, Toddler Time, Baby Storytime.
+  #   Platform: Communico Attend (JS-rendered widget — NOT LibCal).
+  #   No public iCal feed. Lower priority: Irvine PL + OCPL now cover libraries well.
+
+  # OCMA (Orange County Museum of Art) — ocma.art/learn/family-programs/
+  #   Free programs for 0-2 and 3-5 year olds (Art + Play, BYOB Tour).
+  #   Page shows ONLY recurring schedule descriptions — no dated event instances (verified 2026-03-27).
+
+  # Irvine Spectrum Center — Toddlers & Tunes (1st Tuesday monthly, free)
+  #   Page shows single program description — no individual dated event instances (verified 2026-03-27).

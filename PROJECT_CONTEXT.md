@@ -49,7 +49,7 @@ Parallel scraping via `ThreadPoolExecutor(max_workers=5)`.
 | `agent.py` | CLI + orchestrator (scrape → filter → .ics) |
 | `config/settings.yaml` | Child dob, home lat/lng, filter prefs |
 | `config/sources.yaml` | Chicago sources |
-| `config/sources_irvine.yaml` | Irvine CA stubs for future city move |
+| `config/sources_irvine.yaml` | Irvine CA — 15 sources (8 LibCal ical, tribe_events, html, browser, eventbrite) |
 | `scrapers/base.py` | `Event` dataclass + `BaseScraper` ABC + `parse_with_selectors()` |
 | `scrapers/html_scraper.py` | requests + BeautifulSoup, CSS selectors |
 | `scrapers/ical_scraper.py` | Parses .ics feeds directly |
@@ -325,6 +325,46 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 
 ---
 
+## Irvine Sources (`config/sources_irvine.yaml`)
+
+> **Last expanded:** 2026-03-27 (session 10)
+
+### Working sources (as of 2026-03-27)
+
+| Source | Scraper | Raw Events | Notes |
+|--------|---------|-----------|-------|
+| Irvine PL - Heritage Park | ical (LibCal cid=22833) | 141 | Baby Storytime, Stay & Play |
+| Irvine PL - Katie Wheeler | ical (LibCal cid=22737) | 62 | Toddler Storytime, Baby Storytime |
+| Irvine PL - University Park | ical (LibCal cid=22834) | 112 | |
+| OCPL - Tustin Branch | ical (LibCal cid=19158) | 140 | Baby/Toddler Storytime + Stay & Play |
+| OCPL - El Toro Branch | ical (LibCal cid=19135) | 178 | Play and Learn (0-4), Family Storytime |
+| OCPL - Aliso Viejo Branch | ical (LibCal cid=19125) | 125 | |
+| OCPL - Laguna Hills Branch | ical (LibCal cid=19148) | 173 | |
+| OCPL - Rancho Santa Margarita | ical (LibCal cid=19153) | 201 | |
+| Pretend City Children's Museum | tribe_events | 145 | Same Tribe Events REST API as Chicago History Museum |
+| City of Irvine | html | 40 | Drupal table layout; confirmed working |
+| Bowers Museum | html | 0 | Selectors correct (`.sppb-addon-event-list-item`); no 2026 programs posted yet |
+
+**Final output (2026-03-27):** 319 events / 10 sources after all filters (296 free)
+
+### Failing / pending sources
+
+| Source | Issue | Fix needed |
+|--------|-------|-----------|
+| Discovery Cube OC | Playwright not installed | `pip install playwright && playwright install chromium` |
+| Santa Ana Zoo | Playwright not installed | Same |
+| Eventbrite - Irvine | EVENTBRITE_TOKEN not set | Set env var; 3 OC org IDs configured |
+
+### Key notes
+- Irvine PL and OCPL use **LibCal** (SpringShare) for events — NOT Bibliocommons gateway. One cid per URL (multi-cid not supported).
+- LibCal iCal URL: `https://library.libcal.com/ical_subscribe.php?src=p&cid=BRANCH_ID`
+- Discovery Cube: Tribe Events REST API returns 404 (disabled); browser scraper needed with `wait_selector: ".tribe-events-calendar-list__event"` but DOM selector may need updating if events don't appear.
+- Santa Ana Zoo: Events Manager iCal endpoints 404 (feed disabled); switched to browser scraper.
+- Nominatim geocoding was rate-limited (429) during the 2026-03-27 run — location filter kept all 332 events (no coordinate data available for filtering). Re-run later for distance-based filtering.
+- Deferred (no dated events available): OCLS (Communico JS widget), OCMA (recurring schedule only), Irvine Spectrum Center (single description page).
+
+---
+
 ## Future Ideas
 
 - **Daily cron + auto-email:** Schedule `agent.py run` via Windows Task Scheduler, email `.ics` to wife automatically
@@ -332,7 +372,6 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 - **iCloud CalDAV push:** Push events directly to a shared calendar via iCloud CalDAV API
 - **More APIs:** Eventbrite API, Meetup API, Google Calendar embed scraper
 - **SMS alerts:** Tomorrow's free events via Twilio
-- **Irvine CA:** Sources stubbed in `config/sources_irvine.yaml` — family may relocate
 
 ---
 
