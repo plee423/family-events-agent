@@ -1,99 +1,11 @@
 {
-  "generated_at": "2026-03-28T02:45:35.411184",
+  "generated_at": "2026-03-28T08:41:40.900213",
   "city": "chicago",
   "city_label": "Chicago",
   "timezone": "America/Chicago",
-  "total": 225,
+  "total": 223,
   "free_count": 152,
   "events": [
-    {
-      "uid": "1ed9ac32e428ebd910d6ece09089e230",
-      "title": "Color Explosion - Hourly Sessions",
-      "display_title": "Color Explosion - Hourly Sessions",
-      "date_start": "2026-03-28T05:00:00+00:00",
-      "date_end": "2026-03-29T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Pritzker-Playspace"
-      ],
-      "category": "Arts & Crafts",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
-    },
-    {
-      "uid": "f3f9718fbe0f49c122e034962adf4baf",
-      "title": "Ready to Wear Cardboard - Hourly Workshops",
-      "display_title": "Ready to Wear Cardboard - Hourly Workshops",
-      "date_start": "2026-03-28T05:00:00+00:00",
-      "date_end": "2026-03-29T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "Already grew out of the shirt you just bought? Stop by the Tinkering Lab and use our recyclable materials to create something new that’s ready to wear! Ages 3 and Up Workshop Times 10:30, 11:30, 12:30",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Tinkering-Lab",
-        "Cardboard"
-      ],
-      "category": "Arts & Crafts",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
-    },
-    {
-      "uid": "0bf0b01c510ad57ff739da2963b3a8e0",
-      "title": "Wild Collage - Hourly Programming",
-      "display_title": "Wild Collage - Hourly Programming",
-      "date_start": "2026-03-28T05:00:00+00:00",
-      "date_end": "2026-03-29T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "Use geometric shapes, bright colors and bold patterns to create animal designs inspired by the artist Charley Harper, featured in our I AM WILD exhibit! 3 and Up 10:30, 11:30, 12:30, 1:30, 2:30, 3:30 ",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Art-Studio"
-      ],
-      "category": "Arts & Crafts",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
-    },
     {
       "uid": "49527827109401f1143d0bce6a0e0970",
       "title": "Dungeons & Dragons for Teens",
@@ -233,6 +145,34 @@
       "neighborhood": "Chicago"
     },
     {
+      "uid": "0b53fd5209f142ba909b6d0a0030afc2",
+      "title": "Destination Discovery Story Time at C2E2",
+      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
+      "date_start": "2026-03-28T16:15:00",
+      "date_end": "2026-03-28T17:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "Chicago Public Library",
+      "location_address": "",
+      "location_lat": 41.856,
+      "location_lng": -87.6242,
+      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
+      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "Storytime",
+      "distance_miles": 1.8,
+      "source_name": "Chicago Public Library",
+      "neighborhood": "South Loop"
+    },
+    {
       "uid": "84269fb5ea974357377b59364d34b974",
       "title": "Destination Discovery Story Time at C2E2",
       "display_title": "[FREE] Destination Discovery Story Time at C2E2",
@@ -287,34 +227,6 @@
       "distance_miles": null,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": ""
-    },
-    {
-      "uid": "0b53fd5209f142ba909b6d0a0030afc2",
-      "title": "Destination Discovery Story Time at C2E2",
-      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
-      "date_start": "2026-03-28T16:15:00",
-      "date_end": "2026-03-28T17:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "Chicago Public Library",
-      "location_address": "",
-      "location_lat": 41.856,
-      "location_lng": -87.6242,
-      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
-      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "category": "Storytime",
-      "distance_miles": 1.8,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "South Loop"
     },
     {
       "uid": "5e781477f63aa63646742323b123c81e",
@@ -548,12 +460,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "7b201af88dd8cd79ea5d92309f931cfb",
+      "uid": "ea940da451b164b9a6ac4b0235589912",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-03-30T09:30:00",
       "date_end": "2026-03-30T12:30:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -572,7 +484,7 @@
       ],
       "category": "Community",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -2028,12 +1940,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "76ce855eb815cef554a9c67ef0d174ba",
+      "uid": "fac52ceada2437b8eafa679cde8041cd",
       "title": "The Art of Paper Magic: Origami for Everyone",
       "display_title": "[FREE] The Art of Paper Magic: Origami for Everyone",
       "date_start": "2026-04-04T10:00:00",
       "date_end": "2026-04-04T12:00:00",
-      "org_name": "Chicago Public Library - Near North",
+      "org_name": "Chicago Public Library",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -2052,7 +1964,7 @@
       ],
       "category": "Arts & Crafts",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library - Near North",
+      "source_name": "Chicago Public Library",
       "neighborhood": "River North"
     },
     {
@@ -3197,12 +3109,12 @@
       "neighborhood": "Chicago"
     },
     {
-      "uid": "c938c19c98f1d5008875763842b54f21",
+      "uid": "9f581021e3c7052e726461148b9fda1b",
       "title": "Teen Zone",
       "display_title": "[FREE] Teen Zone",
       "date_start": "2026-04-09T15:30:00",
       "date_end": "2026-04-09T17:00:00",
-      "org_name": "Chicago Public Library - Near North",
+      "org_name": "Chicago Public Library",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -3221,7 +3133,7 @@
       ],
       "category": "Community",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library - Near North",
+      "source_name": "Chicago Public Library",
       "neighborhood": "River North"
     },
     {
@@ -3945,12 +3857,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "770da3e2151cacbc1cc8056972f0ec9b",
+      "uid": "2fbe83e877e519e429dfb0b46ea069c7",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-04-13T09:30:00",
       "date_end": "2026-04-13T12:30:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -3969,7 +3881,7 @@
       ],
       "category": "Community",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -4165,12 +4077,12 @@
       "neighborhood": "Chicago"
     },
     {
-      "uid": "373ef66383c0d816ff4fe68a28ffa6b9",
+      "uid": "1f18a99701165a6efaedd6820e0fac30",
       "title": "Film Screening: Unsung Hero (2024)",
       "display_title": "[FREE] Film Screening: Unsung Hero (2024)",
       "date_start": "2026-04-14T12:00:00",
       "date_end": "2026-04-14T14:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4189,7 +4101,7 @@
       ],
       "category": "Film & Events",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -4354,6 +4266,64 @@
         "Tinkering-Lab"
       ],
       "category": "STEM",
+      "distance_miles": 1.0,
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Streeterville"
+    },
+    {
+      "uid": "e7380f84576f3c59a0754e7c1f314c9f",
+      "title": "Color Explosion - Hourly Sessions",
+      "display_title": "Color Explosion - Hourly Sessions",
+      "date_start": "2026-04-15T05:00:00+00:00",
+      "date_end": "2026-04-16T05:00:00+00:00",
+      "org_name": "Chicago Children's Museum - Program Calendar",
+      "location_name": "Chicago Children's Museum",
+      "location_address": "700 E Grand Ave, Chicago, IL 60611",
+      "location_lat": 41.8918,
+      "location_lng": -87.6082,
+      "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
+      "age_range": "0-60 months",
+      "tags": [
+        "museum",
+        "children",
+        "play",
+        "toddler",
+        "family",
+        "Pritzker-Playspace"
+      ],
+      "category": "Arts & Crafts",
+      "distance_miles": 1.0,
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Streeterville"
+    },
+    {
+      "uid": "34ca4ac448668e654f2e9036e18e1760",
+      "title": "Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
+      "date_start": "2026-04-15T05:00:00+00:00",
+      "date_end": "2026-04-16T05:00:00+00:00",
+      "org_name": "Chicago Children's Museum - Program Calendar",
+      "location_name": "Chicago Children's Museum",
+      "location_address": "700 E Grand Ave, Chicago, IL 60611",
+      "location_lat": 41.8918,
+      "location_lng": -87.6082,
+      "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
+      "age_range": "0-60 months",
+      "tags": [
+        "museum",
+        "children",
+        "play",
+        "toddler",
+        "family",
+        "Art-Studio"
+      ],
+      "category": "Arts & Crafts",
       "distance_miles": 1.0,
       "source_name": "Chicago Children's Museum - Program Calendar",
       "neighborhood": "Streeterville"
@@ -4551,12 +4521,41 @@
       "neighborhood": "River North"
     },
     {
-      "uid": "b8ecfc8b341fbe9c5cd1a0a6df0487f5",
+      "uid": "e99f902c00c67de369b85fc38a159b0b",
+      "title": "Cardboard Lab - Hourly Programming",
+      "display_title": "Cardboard Lab - Hourly Programming",
+      "date_start": "2026-04-16T05:00:00+00:00",
+      "date_end": "2026-04-17T05:00:00+00:00",
+      "org_name": "Chicago Children's Museum - Program Calendar",
+      "location_name": "Chicago Children's Museum",
+      "location_address": "700 E Grand Ave, Chicago, IL 60611",
+      "location_lat": 41.8918,
+      "location_lng": -87.6082,
+      "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
+      "age_range": "0-60 months",
+      "tags": [
+        "museum",
+        "children",
+        "play",
+        "toddler",
+        "family",
+        "Tinkering-Lab"
+      ],
+      "category": "STEM",
+      "distance_miles": 1.0,
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Streeterville"
+    },
+    {
+      "uid": "9a27f5270803f35a980fbbd22918d2f3",
       "title": "AI for Visual Disabilities",
       "display_title": "[FREE] AI for Visual Disabilities",
       "date_start": "2026-04-16T10:30:00",
       "date_end": "2026-04-16T12:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4575,7 +4574,7 @@
       ],
       "category": "STEM",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -4711,93 +4710,6 @@
       "distance_miles": 6.1,
       "source_name": "Eventbrite - Chicago Family Events",
       "neighborhood": "Chicago"
-    },
-    {
-      "uid": "264e9428bcff6212d0c22fe500c97389",
-      "title": "Cardboard Lab - Hourly Programming",
-      "display_title": "Cardboard Lab - Hourly Programming",
-      "date_start": "2026-04-17T05:00:00+00:00",
-      "date_end": "2026-04-18T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "What can you create using cardboard? Can you make it strong? Soft? Smooth or bumpy? Explore cardboard like an engineer! Ages 2 and up. Workshop Times Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, S",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Tinkering-Lab"
-      ],
-      "category": "STEM",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
-    },
-    {
-      "uid": "aa9adc041a8d7879b81b9429d1c8f0ea",
-      "title": "Color Explosion - Hourly Sessions",
-      "display_title": "Color Explosion - Hourly Sessions",
-      "date_start": "2026-04-17T05:00:00+00:00",
-      "date_end": "2026-04-18T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "A bright, hands-on color adventure! Children follow colorful paths, explore light and shadow, and discover patterns through play - clean, creative, and full of wonder. Session Times Monday, Wednesday,",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Pritzker-Playspace"
-      ],
-      "category": "Arts & Crafts",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
-    },
-    {
-      "uid": "84ffb8a001069a289275e64c7ee5a421",
-      "title": "Stamping Studio - Hourly Sessions",
-      "display_title": "Stamping Studio - Hourly Sessions",
-      "date_start": "2026-04-17T05:00:00+00:00",
-      "date_end": "2026-04-18T05:00:00+00:00",
-      "org_name": "Chicago Children's Museum - Program Calendar",
-      "location_name": "Chicago Children's Museum",
-      "location_address": "700 E Grand Ave, Chicago, IL 60611",
-      "location_lat": 41.8918,
-      "location_lng": -87.6082,
-      "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
-      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
-      "cost": "paid admission (free first Sunday for Chicago residents)",
-      "is_free": false,
-      "age_range": "0-60 months",
-      "tags": [
-        "museum",
-        "children",
-        "play",
-        "toddler",
-        "family",
-        "Art-Studio"
-      ],
-      "category": "Arts & Crafts",
-      "distance_miles": 1.0,
-      "source_name": "Chicago Children's Museum - Program Calendar",
-      "neighborhood": "Streeterville"
     },
     {
       "uid": "688688e9d5fcc7a0778c47480a4b5290",
@@ -4936,12 +4848,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "7344fb907d5093b7782ba447ff5fb8cd",
+      "uid": "324229617d29a19ffe9632dcbd436400",
       "title": "Día de los niños y libros: A Celebration of Children and Books",
       "display_title": "[FREE] Día de los niños y libros: A Celebration of Children and Books",
       "date_start": "2026-04-18T11:00:00",
       "date_end": "2026-04-18T15:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4960,7 +4872,7 @@
       ],
       "category": "Film & Events",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -4992,12 +4904,12 @@
       "neighborhood": "Lincoln Square"
     },
     {
-      "uid": "e8a92bb30f918ce33f96f9abb71c9e20",
+      "uid": "7db71bbe77c156383672ba35d9ada9e6",
       "title": "Masters Putt Putt Course",
       "display_title": "[FREE] Masters Putt Putt Course",
       "date_start": "2026-04-18T14:00:00",
       "date_end": "2026-04-18T15:30:00",
-      "org_name": "Chicago Public Library - Near North",
+      "org_name": "Chicago Public Library",
       "location_name": "Near North",
       "location_address": "310 W. Division St., Chicago, IL 60610",
       "location_lat": 41.9039,
@@ -5016,7 +4928,7 @@
       ],
       "category": "Play & Games",
       "distance_miles": 1.6,
-      "source_name": "Chicago Public Library - Near North",
+      "source_name": "Chicago Public Library",
       "neighborhood": "River North"
     },
     {
@@ -5689,12 +5601,12 @@
       "neighborhood": "Chicago"
     },
     {
-      "uid": "c3836375a1ab844c4119405ccd04bb87",
+      "uid": "043107f7c3fe3cedf6c301ae4dbf5160",
       "title": "Band Patch Making",
       "display_title": "[FREE] Band Patch Making",
       "date_start": "2026-04-22T16:00:00",
       "date_end": "2026-04-22T17:00:00",
-      "org_name": "Chicago Public Library - Harold Washington",
+      "org_name": "Chicago Public Library",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -5713,7 +5625,7 @@
       ],
       "category": "Arts & Crafts",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library - Harold Washington",
+      "source_name": "Chicago Public Library",
       "neighborhood": "The Loop"
     },
     {
@@ -6277,6 +6189,35 @@
       "distance_miles": 2.0,
       "source_name": "Chicago Public Library",
       "neighborhood": "South Loop"
+    },
+    {
+      "uid": "2e5811f7e8c2a8f58e34fadf25fa8c5d",
+      "title": "Stamping Studio - Hourly Sessions",
+      "display_title": "Stamping Studio - Hourly Sessions",
+      "date_start": "2026-04-27T05:00:00+00:00",
+      "date_end": "2026-04-28T05:00:00+00:00",
+      "org_name": "Chicago Children's Museum - Program Calendar",
+      "location_name": "Chicago Children's Museum",
+      "location_address": "700 E Grand Ave, Chicago, IL 60611",
+      "location_lat": 41.8918,
+      "location_lng": -87.6082,
+      "description": "Use ink pads, paper, and a variety of stamps to create unique artwork that’s yours to keep! Ages 2 and up. Workshop Times Monday, Wednesday, Thursday: 10:30, 11:30, 12:30 Friday, Saturday, Sunday: 10:",
+      "url": "https://www.chicagochildrensmuseum.org/program-calendar",
+      "cost": "paid admission (free first Sunday for Chicago residents)",
+      "is_free": false,
+      "age_range": "0-60 months",
+      "tags": [
+        "museum",
+        "children",
+        "play",
+        "toddler",
+        "family",
+        "Art-Studio"
+      ],
+      "category": "Arts & Crafts",
+      "distance_miles": 1.0,
+      "source_name": "Chicago Children's Museum - Program Calendar",
+      "neighborhood": "Streeterville"
     }
   ]
 }
