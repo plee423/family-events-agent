@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T21:18:47.145893",
+  "generated_at": "2026-03-28T02:45:35.411184",
   "city": "chicago",
   "city_label": "Chicago",
   "timezone": "America/Chicago",
@@ -119,34 +119,6 @@
       ],
       "category": "Play & Games",
       "distance_miles": 8.8,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "Chicago"
-    },
-    {
-      "uid": "9f379aef477ab9b7bb43df6e200fe64b",
-      "title": "Children's Coding and STEM Club",
-      "display_title": "[FREE] Children's Coding and STEM Club",
-      "date_start": "2026-03-28T13:30:00",
-      "date_end": "2026-03-28T16:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "Coleman",
-      "location_address": "731 E. 63rd St., Chicago, IL 60637",
-      "location_lat": 41.7803,
-      "location_lng": -87.6071,
-      "description": "Do you love technology? Are you curious about STEM, coding and robotics? Come and join us with fun, hands-on activities to learn how to design your own computer games, animation and robots. For kids 6 to 13. This program is presented in partnership with the Toyota Technological Institute at Chicago. How to Attend Register by the start of the event. Chicago Public Library cannot collect personal information online from kids 0 to 13. A parent or guardian’s email address must be used to register. A",
-      "url": "https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d5",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "category": "STEM",
-      "distance_miles": 7.1,
       "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
     },
@@ -289,34 +261,6 @@
       "neighborhood": "River North"
     },
     {
-      "uid": "0b53fd5209f142ba909b6d0a0030afc2",
-      "title": "Destination Discovery Story Time at C2E2",
-      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
-      "date_start": "2026-03-28T16:15:00",
-      "date_end": "2026-03-28T17:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "Chicago Public Library",
-      "location_address": "",
-      "location_lat": 41.856,
-      "location_lng": -87.6242,
-      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
-      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "category": "Storytime",
-      "distance_miles": 1.8,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "South Loop"
-    },
-    {
       "uid": "8525f8b5389e201d4cb8055e43833b6e",
       "title": "Destination Discovery Story Time at C2E2",
       "display_title": "[FREE] Destination Discovery Story Time at C2E2",
@@ -343,6 +287,34 @@
       "distance_miles": null,
       "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": ""
+    },
+    {
+      "uid": "0b53fd5209f142ba909b6d0a0030afc2",
+      "title": "Destination Discovery Story Time at C2E2",
+      "display_title": "[FREE] Destination Discovery Story Time at C2E2",
+      "date_start": "2026-03-28T16:15:00",
+      "date_end": "2026-03-28T17:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "Chicago Public Library",
+      "location_address": "",
+      "location_lat": 41.856,
+      "location_lng": -87.6242,
+      "description": "Join Librarian Megan of the Chicago Public Library for a comics inspired story time especially for our littlest fans! We’ll share songs, rhymes and books, plus suggestions for at-home activities so you can keep the fun going even after you have left the con. For kids 0 to 5 and their caregivers. Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.org to request accommodations. Requests must be made",
+      "url": "https://chipublib.bibliocommons.com/events/69af424b81b67dfe32ab7b3f",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "Storytime",
+      "distance_miles": 1.8,
+      "source_name": "Chicago Public Library",
+      "neighborhood": "South Loop"
     },
     {
       "uid": "5e781477f63aa63646742323b123c81e",
@@ -576,12 +548,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "ea940da451b164b9a6ac4b0235589912",
+      "uid": "7b201af88dd8cd79ea5d92309f931cfb",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-03-30T09:30:00",
       "date_end": "2026-03-30T12:30:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -600,7 +572,7 @@
       ],
       "category": "Community",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
@@ -1662,6 +1634,34 @@
       "neighborhood": "Chicago"
     },
     {
+      "uid": "4c73643481e00ccf8e415e95db7bcae1",
+      "title": "Teen Hangout",
+      "display_title": "[FREE] Teen Hangout",
+      "date_start": "2026-04-02T15:00:00",
+      "date_end": "2026-04-02T17:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "North Pulaski",
+      "location_address": "4300 W. North Ave., Chicago, IL 60639",
+      "location_lat": 41.9099,
+      "location_lng": -87.7338,
+      "description": "Stop by the branch on Thursday afternoons to hang out, create, and learn! Teens who are interested can: Learn about Vinyl Cutting with our Silhouette machine Test out our 3D Printer Create with a variety of art and craft supplies Play Games Check out our laptops Hang out Work on homework Chat with friends And more! Open to all teens ages 13-19! Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.or",
+      "url": "https://chipublib.bibliocommons.com/events/6967ef19b0595799c0965f86",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "STEM",
+      "distance_miles": 6.0,
+      "source_name": "Chicago Public Library",
+      "neighborhood": "Chicago"
+    },
+    {
       "uid": "557985d6b64eb8cd26a22c9696276e79",
       "title": "Game Day",
       "display_title": "[FREE] Game Day",
@@ -2054,34 +2054,6 @@
       "distance_miles": 1.6,
       "source_name": "Chicago Public Library - Near North",
       "neighborhood": "River North"
-    },
-    {
-      "uid": "f1d4f90f404da85cf6fe59ce7108c97c",
-      "title": "Children's Coding and STEM Club",
-      "display_title": "[FREE] Children's Coding and STEM Club",
-      "date_start": "2026-04-04T13:30:00",
-      "date_end": "2026-04-04T16:00:00",
-      "org_name": "Chicago Public Library",
-      "location_name": "Coleman",
-      "location_address": "731 E. 63rd St., Chicago, IL 60637",
-      "location_lat": 41.7803,
-      "location_lng": -87.6071,
-      "description": "Do you love technology? Are you curious about STEM, coding and robotics? Come and join us with fun, hands-on activities to learn how to design your own computer games, animation and robots. For kids 6 to 13. This program is presented in partnership with the Toyota Technological Institute at Chicago. How to Attend Register by the start of the event. Chicago Public Library cannot collect personal information online from kids 0 to 13. A parent or guardian’s email address must be used to register. A",
-      "url": "https://chipublib.bibliocommons.com/events/699497121e64afd01e5bf8d6",
-      "cost": "free",
-      "is_free": true,
-      "age_range": "0-60 months",
-      "tags": [
-        "storytime",
-        "library",
-        "baby",
-        "toddler",
-        "reading"
-      ],
-      "category": "STEM",
-      "distance_miles": 7.1,
-      "source_name": "Chicago Public Library",
-      "neighborhood": "Chicago"
     },
     {
       "uid": "0484e4d55624dce7ddbbcc27a4e63c35",
@@ -3973,12 +3945,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "2fbe83e877e519e429dfb0b46ea069c7",
+      "uid": "770da3e2151cacbc1cc8056972f0ec9b",
       "title": "Coffee and Connections",
       "display_title": "[FREE] Coffee and Connections",
       "date_start": "2026-04-13T09:30:00",
       "date_end": "2026-04-13T12:30:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -3997,7 +3969,7 @@
       ],
       "category": "Community",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
@@ -4193,12 +4165,12 @@
       "neighborhood": "Chicago"
     },
     {
-      "uid": "1f18a99701165a6efaedd6820e0fac30",
+      "uid": "373ef66383c0d816ff4fe68a28ffa6b9",
       "title": "Film Screening: Unsung Hero (2024)",
       "display_title": "[FREE] Film Screening: Unsung Hero (2024)",
       "date_start": "2026-04-14T12:00:00",
       "date_end": "2026-04-14T14:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4217,7 +4189,7 @@
       ],
       "category": "Film & Events",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
@@ -4579,12 +4551,12 @@
       "neighborhood": "River North"
     },
     {
-      "uid": "9a27f5270803f35a980fbbd22918d2f3",
+      "uid": "b8ecfc8b341fbe9c5cd1a0a6df0487f5",
       "title": "AI for Visual Disabilities",
       "display_title": "[FREE] AI for Visual Disabilities",
       "date_start": "2026-04-16T10:30:00",
       "date_end": "2026-04-16T12:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4603,7 +4575,7 @@
       ],
       "category": "STEM",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
@@ -4630,6 +4602,34 @@
       "category": "Storytime",
       "distance_miles": 2.9,
       "source_name": "Eventbrite - Chicago Family Events",
+      "neighborhood": "Chicago"
+    },
+    {
+      "uid": "7b5be6a1f3997458e57c3e61c0dbe0bf",
+      "title": "Teen Hangout",
+      "display_title": "[FREE] Teen Hangout",
+      "date_start": "2026-04-16T15:00:00",
+      "date_end": "2026-04-16T17:00:00",
+      "org_name": "Chicago Public Library",
+      "location_name": "North Pulaski",
+      "location_address": "4300 W. North Ave., Chicago, IL 60639",
+      "location_lat": 41.9099,
+      "location_lng": -87.7338,
+      "description": "Stop by the branch on Thursday afternoons to hang out, create, and learn! Teens who are interested can: Learn about Vinyl Cutting with our Silhouette machine Test out our 3D Printer Create with a variety of art and craft supplies Play Games Check out our laptops Hang out Work on homework Chat with friends And more! Open to all teens ages 13-19! Accessibility Need sign language interpretation or other accessibility assistance for this event? Please call (312) 747-8184 or email access@chipublib.or",
+      "url": "https://chipublib.bibliocommons.com/events/6967ef19b0595799c0965f88",
+      "cost": "free",
+      "is_free": true,
+      "age_range": "0-60 months",
+      "tags": [
+        "storytime",
+        "library",
+        "baby",
+        "toddler",
+        "reading"
+      ],
+      "category": "STEM",
+      "distance_miles": 6.0,
+      "source_name": "Chicago Public Library",
       "neighborhood": "Chicago"
     },
     {
@@ -4936,12 +4936,12 @@
       "neighborhood": "Streeterville"
     },
     {
-      "uid": "324229617d29a19ffe9632dcbd436400",
+      "uid": "7344fb907d5093b7782ba447ff5fb8cd",
       "title": "Día de los niños y libros: A Celebration of Children and Books",
       "display_title": "[FREE] Día de los niños y libros: A Celebration of Children and Books",
       "date_start": "2026-04-18T11:00:00",
       "date_end": "2026-04-18T15:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -4960,7 +4960,7 @@
       ],
       "category": "Film & Events",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
@@ -5689,12 +5689,12 @@
       "neighborhood": "Chicago"
     },
     {
-      "uid": "043107f7c3fe3cedf6c301ae4dbf5160",
+      "uid": "c3836375a1ab844c4119405ccd04bb87",
       "title": "Band Patch Making",
       "display_title": "[FREE] Band Patch Making",
       "date_start": "2026-04-22T16:00:00",
       "date_end": "2026-04-22T17:00:00",
-      "org_name": "Chicago Public Library",
+      "org_name": "Chicago Public Library - Harold Washington",
       "location_name": "Harold Washington Library Center",
       "location_address": "400 S. State St., Chicago, IL 60605",
       "location_lat": 41.8769,
@@ -5713,7 +5713,7 @@
       ],
       "category": "Arts & Crafts",
       "distance_miles": 0.5,
-      "source_name": "Chicago Public Library",
+      "source_name": "Chicago Public Library - Harold Washington",
       "neighborhood": "The Loop"
     },
     {
