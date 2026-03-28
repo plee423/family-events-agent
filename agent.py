@@ -193,6 +193,12 @@ def get_scraper(scraper_type: str, settings: dict):
     elif scraper_type == "eventbrite":
         from scrapers.eventbrite_scraper import EventbriteScraper
         return EventbriteScraper(settings)
+    elif scraper_type == "fieldmuseum":
+        from scrapers.fieldmuseum_scraper import FieldMuseumScraper
+        return FieldMuseumScraper(settings)
+    elif scraper_type == "navypier":
+        from scrapers.navypier_scraper import NavyPierScraper
+        return NavyPierScraper(settings)
     else:
         raise ValueError(f"Unknown scraper type: {scraper_type!r}")
 
@@ -398,7 +404,7 @@ def test_source(ctx, source_name, no_cache, location):
             click.echo(f"  Found {len(events)} raw events:")
             for e in events[:10]:
                 free_tag = " [FREE]" if e.is_free else ""
-                click.echo(f"  - {e.date_start.strftime('%Y-%m-%d %H:%M')}  {e.title}{free_tag}")
+                _safe_echo(f"  - {e.date_start.strftime('%Y-%m-%d %H:%M')}  {e.title}{free_tag}")
             if len(events) > 10:
                 click.echo(f"  ... and {len(events) - 10} more")
 

@@ -58,15 +58,7 @@ sources:
     org_type: "museum"
     children_only: false  # General museum events; adult programs common — require explicit children keywords
     url: "https://www.fieldmuseum.org/our-events"
-    scraper: "browser"  # Changed from html — page is React-rendered; static requests sees empty containers
-    selectors:
-      # Verified 2026-03-28: regular events use div.event-item, featured use div.event-card
-      event_card: "div.event-item, div.event-card"
-      title: "h3.event-title"
-      date: "h6.event-date"
-      time: "span.event-time"
-      location: ""
-      link: "a"
+    scraper: "fieldmuseum"  # Custom scraper — events are in __NEXT_DATA__ JSON, not DOM. No browser needed.
     tags: ["museum", "science", "family"]
     cost: "paid admission"
 
@@ -99,14 +91,15 @@ sources:
     org_type: "museum"
     url: "https://nationalmuseumofmexicanart.org/events"
     scraper: "html"  # Content is static HTML (verified 2026-03-28) — browser scraper not needed
-    # Verified 2026-03-28: events are in ul > li, each li wraps <a><h3>Title</h3><p>Date – End | Location</p></a>
-    # No class on li or ul — h3 presence inside li distinguishes events from nav/footer list items
+    # Verified 2026-03-28: cards are <a class="block group"> containing <h3> title,
+    # <span class="f-ui-4"> date, <span class="f-ui-3"> location.
+    # The <a> itself is the link (link: "self"). Previous ul/li selectors were wrong.
     selectors:
-      event_card: "ul li"
+      event_card: "a.block.group"
       title: "h3"
-      date: "p"
-      location: ""   # location is embedded in same <p> as date ("Nov 21, 2025 – Apr 26, 2026 | Gallery Name")
-      link: "a"
+      date: "span.f-ui-4"
+      location: "span.f-ui-3"
+      link: "self"
     tags: ["museum", "free", "culture", "family"]
     cost: "always free"
 
@@ -189,7 +182,7 @@ sources:
       event_card: ".card__content, .pageblock--oms-text-media"
       title: "h2, h4 a"
       date: "p.calendar-icon"
-      location: "p.person-icon"
+      location: ""   # p.person-icon contains audience info ("Just for Kids"), not venue — default to org_name
       link: "h4 a, a"
     tags: ["zoo", "animals", "family", "free", "outdoor"]
     cost: "always free"
@@ -233,16 +226,7 @@ sources:
     org_type: "entertainment"
     children_only: false  # General entertainment venue — require explicit children keywords to include
     url: "https://navypier.org/pier-events/"
-    scraper: "browser"
-    selectors:
-      # Verified 2026-03-28: cards are article.fav-card, title in h3.fav-card__title
-      # Dates appear as plain text (e.g. "Mon, Mar 23 - Fri, Mar 27, 2026"); [class*='date'] may match fav-card__dates
-      # Links use a.fav-card__link — href may be "#" in initial render, populated by JS after networkidle
-      event_card: "article.fav-card"
-      title: "h3.fav-card__title"
-      date: "[class*='date'], [class*='Date'], time"
-      location: "[class*='location'], .venue"
-      link: "a.fav-card__link, a"
+    scraper: "navypier"  # Custom scraper — cards are div.event-tile with data-date="YYYYMMDD" on p.eyebrow
     tags: ["family", "entertainment", "waterfront"]
 
   # ─── BOOKSTORES ──────────────────────────────────────────────────────────────

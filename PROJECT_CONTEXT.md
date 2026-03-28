@@ -198,11 +198,11 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 | Chicago Park District Toddler | 16 raw | Playwright, keyword=toddler |
 | Chicago Park District Baby | 20 raw | Playwright, keyword=baby |
 | Art Institute | 10 raw | Playwright; `children_only: false` |
-| Lincoln Park Zoo | 8 raw (expected more after fix) | Playwright; now captures `.pageblock--oms-text-media` featured events (e.g. Easter egg hunt) |
-| Field Museum Events | 0 raw (selector broken; expect more after fix) | Switched to Playwright; `children_only: false` |
+| Lincoln Park Zoo | 3 raw | Playwright; captures `.card__content` + `.pageblock--oms-text-media` (Easter egg hunt confirmed) |
+| Field Museum Events | 64 raw | Custom `fieldmuseum_scraper.py` — reads `__NEXT_DATA__` JSON; `children_only: false` |
 | Field Museum Free Wednesdays | 3 raw | HTML scraper; `children_only: true` |
-| National Museum of Mexican Art | 4 raw (expect more after fix) | Switched to HTML scraper; `ul li` + `h3` selectors |
-| Navy Pier | 2 raw | Playwright; `children_only: false`; tightened to `article.fav-card` |
+| National Museum of Mexican Art | 5 raw | HTML `a.block.group` cards; 1 event passes date filter (Mar 31) |
+| Navy Pier | 38 raw | Custom `navypier_scraper.py` — Playwright, `div.event-tile`, `data-date` attribute |
 | The Book Cellar | varies | book_cellar scraper |
 | Peggy Notebaert Nature Museum | varies | nature_museum scraper |
 
@@ -325,36 +325,42 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 
 ### Fixes (session 11) — Scraper selector audit
 
-**Root cause identified:** Several browser/HTML scrapers had wrong CSS selectors, causing events to be missed or incorrectly parsed. Discovered via live HTML inspection (WebFetch) while investigating why LPZ Easter egg hunt wasn't appearing.
+**Root cause identified:** Several browser/HTML scrapers had wrong CSS selectors, causing events to be missed or incorrectly parsed. Discovered via live HTML inspection (Playwright direct) while investigating why LPZ Easter egg hunt wasn't appearing.
 
 **Lincoln Park Zoo (`config/sources.yaml`)**
 - `event_card` widened to `.card__content, .pageblock--oms-text-media` — featured seasonal events (e.g. Spring Egg-Stravaganza / Easter egg hunt) use a different HTML layout than regular cards
 - `title` fixed from `p.h4 a` (non-existent selector) to `h2, h4 a` — regular cards use `<h4><a>`, featured sections use `<h2>`
 - `link` fixed from `p.h4 a` to `h4 a, a`
 - Added `wait_selector: ".card__content"` — cards are lazy-loaded; 2s flat buffer was insufficient
+- **Confirmed working:** 3 events found, Spring Egg-Stravaganza (Apr 4) passes all filters
 
-**Field Museum - Events (`config/sources.yaml`)**
-- Switched from `html` → `browser` scraper — page is React-rendered; static requests returns empty containers
-- `event_card` fixed from `li.event-card` (doesn't exist) to `div.event-item, div.event-card`
-- `title` fixed from `a.h4` to `h3.event-title`
-- `date` fixed from `h6.h6` to `h6.event-date`; added `time: "span.event-time"`
-- `link` fixed from `a.h4` to `a`
+**Field Museum - Events (`config/sources.yaml` + new `scrapers/fieldmuseum_scraper.py`)**
+- Switched from `browser` → custom `fieldmuseum` scraper — events are in `__NEXT_DATA__` JSON embedded in the page, not in DOM elements. No Playwright needed.
+- Custom scraper extracts `props.pageProps.allEvents` (64 events) from `__NEXT_DATA__` JSON via plain `requests`
+- Fields mapped: `title`, `start`/`end` (ISO8601), `slug`+`eventSeries.slug` → URL, `description`/`childDescription` (HTML stripped), `ticketing` → `cost`, `ageGroups` → `age_range`, `audienceTags` → extra tags
+- **Confirmed working:** 64 raw events found
 
-**Navy Pier (`config/sources.yaml`)**
-- `event_card` tightened from broad `article, [class*='card']...` to `article.fav-card`
-- `title` tightened from `h2, h3, [class*='title']...` to `h3.fav-card__title`
-- `link` updated to `a.fav-card__link, a`
+**Navy Pier (`config/sources.yaml` + new `scrapers/navypier_scraper.py`)**
+- `article.fav-card` no longer exists — page redesigned to use `div.event-tile` with different structure
+- Custom `navypier` scraper added: Playwright renders page, extracts `div.event-tile` cards, reads `data-date="YYYYMMDD"` attribute from `p.eyebrow` for dates, `h3.h3-style` for title, `a[href]` for link, `span.free-tag` presence for free detection
+- **Confirmed working:** 38 raw events found
 
 **National Museum of Mexican Art (`config/sources.yaml`)**
-- Switched from `browser` → `html` scraper — content is static HTML, browser scraper not needed
-- `event_card` changed from `.Events--listing li, ul li, li` (overly broad, matches nav) to `ul li` — `h3` presence inside li naturally filters to event items only
-- `title` fixed from `a` (returned full anchor text including date) to `h3`
-- `date` simplified from `p, span, div` to `p`
-- `location` set to `""` — location is embedded in the same `<p>` as date, can't separate
+- `event_card` fixed from `ul li` (overly broad) to `a.block.group` — real card structure (verified via live HTML)
+- `title`: `h3` (unchanged — correct)
+- `date`: changed from `p` to `span.f-ui-4`
+- `location`: changed from `""` to `span.f-ui-3`
+- `link`: changed from `a` to `self` (card element itself is the `<a>`)
+- **Confirmed working:** 5 raw events found (1 passes date filter: Mar 31 evening event)
 
 **`_clean_date_str` in `scrapers/base.py`**
 - Added em-dash/en-dash date range handling: `"Nov 21, 2025 – Apr 26, 2026"` → `"Nov 21, 2025"`
 - Fixes NMMA date parsing where exhibitions span date ranges
+
+**`agent.py` scraper registry**
+- Added `elif scraper_type == "fieldmuseum"` → `FieldMuseumScraper`
+- Added `elif scraper_type == "navypier"` → `NavyPierScraper`
+- Fixed `test_source` CLI command to use `_safe_echo()` instead of `click.echo()` — prevents cp949 UnicodeEncodeError on Korean Windows locale
 
 ### Fixes (session 10)
 
