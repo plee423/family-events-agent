@@ -184,8 +184,8 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 
 > **Update this section after every significant session.**
 
-- **Last updated:** 2026-03-25 (session 9)
-- **Status:** Pipeline fully working. CI push reliability fixed. Age filter tightened. Eventbrite rewritten to org-based API (`/v3/organizers/{id}/events/`) — 116 raw events from 10 Chicago family orgs. ~225+ events / 15 sources after filters.
+- **Last updated:** 2026-03-27 (session 10)
+- **Status:** Chicago pipeline fully working (~225 events). Irvine pipeline working: 319 events / 10 sources (LibCal iCal for IPL + OCPL, tribe_events for Pretend City, HTML for Bowers + City of Irvine). Age filter tightened for adult/teen false positives. OC neighborhood bounding boxes added. Web UI supports both Chicago and OC neighborhoods dynamically.
 
 ### Working sources (as of 2026-03-25)
 | Source | Raw Events | Notes |
@@ -322,6 +322,26 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 - **Eventbrite:** If CI debug step shows `API returned 0 total events` per org → orgs are seasonally inactive (expected). If shows `N total, N dropped as past` → pagination needed (all 50 events are past). Check next CI run's "Debug Eventbrite raw events" logs.
 - **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
+
+### Fixes (session 10)
+
+**Age filter tightened — adult/teen false positives removed (`filters/age_filter.py`)**
+- Added `"adult"`, `"teen"`, `"teens"` to `ADULT_KEYWORDS`.
+- Root cause: OCPL/IPL iCal feeds include ALL branch programs (adult literacy, teen clubs, etc.) not just children's events. Previous ADULT_KEYWORDS only rejected very specific phrases ("adults only", "teen only") — bare "adult" and "teen" passed through.
+- Rule 1 (adult-reject) runs before Rule 2 (baby-keep), so "Adult Enrichment Storytime" is rejected despite containing "storytime".
+- Word-boundary matching (`\bteen\b`) ensures "TeensTeach" (Pretend City children's museum) is NOT rejected — it's one camelCase word with no boundary after "teen".
+
+**OC neighborhood bounding boxes added (`scrapers/neighborhood_classifier.py`)**
+- Added 11 Orange County bounding boxes after the Chicago section: Rancho Santa Margarita, Aliso Viejo, Laguna Hills, Lake Forest, Tustin, Santa Ana, Costa Mesa, Huntington Beach, Fullerton, Irvine, Orange County (broad fallback).
+- Chicago and OC lat ranges don't overlap (~41-42°N vs ~33-34°N) — no conflicts.
+- Ordered specific→broad so named cities win over the "Irvine" broad box.
+- "Orange County" is the OC equivalent of "Chicago" — a catch-all for unmatched OC coords.
+
+**Web UI updated for OC neighborhoods (`public/index.html`)**
+- `NEIGHBORHOOD_CATCHALLS = new Set(['Chicago', 'Orange County'])` defined as a module-level constant (was previously only `'Chicago'` hardcoded inline).
+- Neighborhood filter buttons now exclude both "Chicago" and "Orange County" catch-alls.
+- Neighborhood badge in event cards also excludes both catch-alls.
+- "Irvine" IS shown as a button/badge (unlike "Chicago") — it's a specific city, not a catch-all, and useful for filtering against Tustin/Santa Ana/Laguna Hills events.
 
 ---
 

@@ -58,13 +58,15 @@ sources:
     org_type: "museum"
     children_only: false  # General museum events; adult programs common — require explicit children keywords
     url: "https://www.fieldmuseum.org/our-events"
-    scraper: "html"
+    scraper: "browser"  # Changed from html — page is React-rendered; static requests sees empty containers
     selectors:
-      event_card: "li.event-card"
-      title: "a.h4"
-      date: "h6.h6"
+      # Verified 2026-03-28: regular events use div.event-item, featured use div.event-card
+      event_card: "div.event-item, div.event-card"
+      title: "h3.event-title"
+      date: "h6.event-date"
+      time: "span.event-time"
       location: ""
-      link: "a.h4"
+      link: "a"
     tags: ["museum", "science", "family"]
     cost: "paid admission"
 
@@ -180,15 +182,19 @@ sources:
     org_type: "zoo"
     url: "https://www.lpzoo.org/calendar-events/"
     scraper: "browser"
+    wait_selector: ".card__content"
     selectors:
-      event_card: ".card__content"
-      title: "p.h4 a"
+      # Two card structures on this page:
+      # - Regular events: .card__content with <h4><a> title
+      # - Featured seasonal events (e.g. Spring Egg-Stravaganza): .pageblock--oms-text-media with <h2> title
+      event_card: ".card__content, .pageblock--oms-text-media"
+      title: "h2, h4 a"
       date: "p.calendar-icon"
       location: "p.person-icon"
-      link: "p.h4 a"
+      link: "h4 a, a"
     tags: ["zoo", "animals", "family", "free", "outdoor"]
     cost: "always free"
-    notes: "LPZ is always free. Dates on their calendar page use recurring descriptions (e.g. 'Mondays in March') not specific dates — events with unparseable dates are skipped."
+    notes: "LPZ is always free. Regular events use .card__content; featured seasonal events use .pageblock--oms-text-media. Recurring events (e.g. 'Mondays in March') have unparseable dates and are correctly skipped."
 
   # ─── AQUARIUMS & SCIENCE ─────────────────────────────────────────────────────
 
@@ -230,11 +236,14 @@ sources:
     url: "https://navypier.org/pier-events/"
     scraper: "browser"
     selectors:
-      event_card: "article, [class*='EventCard'], [class*='event-card'], [class*='card']"
-      title: "h2, h3, [class*='title'], [class*='Title']"
-      date: "time, [class*='date'], [class*='Date']"
+      # Verified 2026-03-28: cards are article.fav-card, title in h3.fav-card__title
+      # Dates appear as plain text (e.g. "Mon, Mar 23 - Fri, Mar 27, 2026"); [class*='date'] may match fav-card__dates
+      # Links use a.fav-card__link — href may be "#" in initial render, populated by JS after networkidle
+      event_card: "article.fav-card"
+      title: "h3.fav-card__title"
+      date: "[class*='date'], [class*='Date'], time"
       location: "[class*='location'], .venue"
-      link: "a"
+      link: "a.fav-card__link, a"
     tags: ["family", "entertainment", "waterfront"]
 
   # ─── BOOKSTORES ──────────────────────────────────────────────────────────────
