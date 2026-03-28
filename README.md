@@ -1,8 +1,16 @@
 # Family Events Agent
 
-Automatically discovers free and family-friendly events for babies and toddlers from Chicago-area organizations, filters them, and outputs a `.ics` calendar file that imports directly into iPhone/Apple Calendar.
+Automatically scrapes 20+ Chicago-area organizations for baby/toddler events, filters them by age, cost, and distance, and outputs a `.ics` calendar file that imports directly into iPhone/Apple Calendar. Also runs nightly on GitHub Actions and publishes a live web UI.
 
-**The problem it solves:** Instead of manually checking 15+ organization websites every week, run one command and get a ready-to-import calendar.
+**The problem it solves:** Instead of checking 15+ organization websites every week, run one command and get a ready-to-import calendar with events filtered for your child's age and your neighborhood.
+
+---
+
+## Live Output
+
+- **Web UI:** Deployed to Vercel — city switcher (Chicago / Irvine), neighborhood filter, free-events filter, per-event and bulk `.ics` download
+- **Nightly scrape:** GitHub Actions cron runs every night, commits updated `.json`, `.html`, and `.ics` files to `output/`
+- **Current output:** ~225 Chicago events and ~319 Irvine/OC events after all filters
 
 ---
 
@@ -11,7 +19,6 @@ Automatically discovers free and family-friendly events for babies and toddlers 
 ### 1. Install dependencies
 
 ```bash
-cd family-events-agent
 python -m venv .venv
 .venv\Scripts\activate          # Windows
 # source .venv/bin/activate     # Mac/Linux
@@ -25,173 +32,197 @@ playwright install chromium     # Required for JS-rendered pages
 Edit `config/settings.yaml`:
 - Set your child's `birth_date`
 - Set your `home_lat` / `home_lng` and `zip`
-- Adjust `max_radius_miles` if needed
+- Adjust `max_radius_miles` (default: 10 miles)
 - Set `days_ahead` (default: 30)
 
-### 3. Run it
+### 3. Run
 
 ```bash
 python agent.py run
 ```
 
-### 4. Import the .ics file
+The `.ics` file is saved to `output/family_events_YYYY-MM-DD_YYYY-MM-DD.ics`.
 
-The calendar file is saved to `output/family_events_YYYY-MM-DD_YYYY-MM-DD.ics`.
+### 4. Import to iPhone
 
-**iPhone import options:**
-- **AirDrop**: AirDrop the file from your computer to your phone → tap "Add to Calendar"
-- **Email**: Email the file to yourself → tap the attachment in Mail app
-- **Files app**: Save to iCloud Drive, tap the file → "Add to Calendar"
+- **AirDrop** the file from your computer → tap "Add to Calendar"
+- **Email** it to yourself → tap the attachment in Mail
+- **iCloud Drive** → Files app → tap the file → "Add to Calendar"
 
 ---
 
-## CLI Commands
+## CLI Reference
 
 ```bash
-# Scrape all sources, generate .ics
+# Scrape all sources, generate .ics + JSON + HTML
 python agent.py run
 
-# Preview events without generating .ics
+# Preview events without writing any files
 python agent.py run --dry-run
 
 # Scrape specific sources only
 python agent.py run --sources "Chicago Public Library" "Lincoln Park Zoo"
 
-# Force re-scrape (ignore cache)
+# Force re-scrape, bypass 6-hour cache
 python agent.py run --no-cache
 
-# Use alternate location config (see config/sources_irvine.yaml)
+# Use alternate city config (Irvine, CA)
 python agent.py run --location irvine
 
 # List all configured sources
 python agent.py sources
 
-# Test a single source (great for debugging)
+# Test and debug a single scraper
 python agent.py test-source "Chicago Public Library"
+python agent.py test-source "Lincoln Park Zoo" --no-cache
 
 # Clear cached scrape data
 python agent.py clear-cache
 
-# Verbose output (for debugging)
+# Verbose/debug logging
 python agent.py -v run
 ```
-
----
-
-## Configured Sources (Chicago)
-
-### Libraries
-| Source | Type | Cost |
-|--------|------|------|
-| Chicago Public Library — Events | library | Free |
-| Chicago Public Library — Harold Washington | library | Free |
-| Chicago Public Library — Near North | library | Free |
-
-### Museums
-| Source | Type | Cost |
-|--------|------|------|
-| Field Museum | museum | Free (IL residents) |
-| Shedd Aquarium | museum | Free (Chicago residents) |
-| Museum of Science and Industry | museum | Free (IL residents) |
-| Art Institute of Chicago | museum | Free (IL residents under 14) |
-| Chicago Children's Museum | museum | Free first Sunday (Chicago residents) |
-| Chicago History Museum | museum | Free (IL residents) |
-| National Museum of Mexican Art | museum | Always free |
-| Peggy Notebaert Nature Museum | museum | Free (certain days) |
-
-### Parks & Recreation
-| Source | Type | Cost |
-|--------|------|------|
-| Chicago Park District — Toddler Programs | parks | Varies |
-| Chicago Park District — Baby Programs | parks | Varies |
-| Maggie Daley Park | parks | Free |
-| Millennium Park | parks | Free |
-
-### Other
-| Source | Type | Cost |
-|--------|------|------|
-| Lincoln Park Zoo | zoo | Always free |
-| Chicago Cultural Center | cultural | Always free |
-| Navy Pier | entertainment | Varies |
-| The Book Cellar | bookstore | Free |
-| Volumes Bookcafe | bookstore | Free |
 
 ---
 
 ## How It Works
 
 ```
-sources.yaml → Scrapers → Raw Events
-                              ↓
-                         Age Filter      (keeps baby/toddler events)
-                              ↓
-                         Cost Filter     (flags free events with [FREE])
-                              ↓
-                         Location Filter (removes events > 10 miles away)
-                              ↓
-                         Dedup Filter    (removes duplicates across sources)
-                              ↓
-                         .ics Builder    (generates iPhone-compatible calendar)
+config/sources.yaml
+       │
+       ▼  (parallel, up to 5 threads)
+20+ Scrapers  ──────────────────────────────────────────────┐
+       │                                                     │
+       ▼                                                     │
+Raw Events (~500–800)                               cache/ (6h TTL)
+       │
+       ▼
+Age Filter        keeps events with baby/toddler keywords; rejects adult/teen
+       │
+       ▼
+Cost Filter       flags free events with [FREE] prefix
+       │
+       ▼
+Location Filter   geocodes addresses → haversine distance → drops events >10 mi
+                  also classifies events into named neighborhoods
+       │
+       ▼
+Dedup Filter      normalizes (title, date, location) key; keeps most complete copy
+       │
+       ▼
+.ics Builder  →  output/family_events_YYYY-MM-DD_YYYY-MM-DD.ics
+JSON Builder  →  output/events_chicago.json
+HTML Builder  →  output/events_chicago.html
 ```
 
-### Scraper types
-- **html** — requests + BeautifulSoup for static pages
-- **browser** — Playwright headless Chromium for JavaScript-rendered pages
-- **ical** — parses `.ics` feeds directly (most reliable)
-- **api** — fetches JSON from public API endpoints
+### Scraper types (11 total)
 
-### Caching
-Scraped data is cached in `cache/` for 6 hours (configurable). This prevents hammering
-organization websites and speeds up repeated runs. Use `--no-cache` to bypass.
+| Type | When used |
+|------|-----------|
+| `ical` | `.ics` feed URLs (LibCal library branches) |
+| `bibliocommons` | Chicago Public Library via Bibliocommons API |
+| `tribe_events` | WordPress sites using Tribe Events REST API |
+| `tockify` | Sites embedding Tockify calendar widget |
+| `chicago_aem` | Chicago.gov AEM JSON endpoints |
+| `eventbrite` | Eventbrite organizer pages (public API) |
+| `api` | Generic JSON API endpoints |
+| `html` | Static server-rendered HTML (requests + BeautifulSoup) |
+| `browser` | JS-rendered pages (Playwright headless Chromium) |
+| `fieldmuseum` | Custom: reads `__NEXT_DATA__` JSON from Field Museum |
+| `navypier` | Custom: Playwright + `data-date` attribute on `div.event-tile` |
 
-### iPhone Compatibility
-The generated `.ics` file is specifically designed for Apple Calendar:
-- Includes a `VTIMEZONE` component for proper timezone handling
-- Uses stable UIDs (hash of title + date + location) so re-importing doesn't create duplicates
-- Includes two VALARM reminders: 24 hours before and 2 hours before each event
-- `SEQUENCE: 0` so updates to existing events are recognized
+### .ics compatibility (Apple Calendar)
+
+- `VTIMEZONE` component included — required for Apple Calendar timezone handling
+- Stable UIDs via `sha256(title + date + location + org)[:32]` — re-importing never creates duplicates
+- Two `VALARM` reminders per event: 24 hours before and 2 hours before
+- `DTEND` defaults to `DTSTART + 1 hour` when end time is unknown
+- `SEQUENCE: 0`
 
 ---
 
-## Adding a New Source
+## Sources
 
-1. Open `config/sources.yaml`
-2. Add a new entry:
+### Chicago (`config/sources.yaml`) — ~225 events after filters
 
-```yaml
-- name: "My New Source"
-  org_type: "library"          # library, museum, parks, zoo, bookstore, etc.
-  url: "https://example.org/events"
-  scraper: "html"              # html, browser, ical, or api
-  selectors:
-    event_card: ".event-item"   # CSS selector for each event container
-    title: "h2.event-name"
-    date: ".event-date"
-    time: ".event-time"         # optional, separate time element
-    location: ".venue-name"
-    link: "a.event-link"
-    description: ".event-desc"
-  tags: ["family", "kids"]
-  age_hint: "0-36 months"      # optional
-  cost: "free"                 # optional hint
-```
+**Libraries**
+- Chicago Public Library (Bibliocommons API — babies & toddlers audience filter)
+- CPL Harold Washington branch
+- CPL Near North branch
 
-3. Test it: `python agent.py test-source "My New Source"`
+**Museums**
+- Field Museum (custom `__NEXT_DATA__` scraper — 64 raw events)
+- Field Museum Free Wednesdays
+- Chicago Children's Museum (Tockify API)
+- Chicago History Museum (Tribe Events REST API)
+- Art Institute of Chicago (Playwright)
+- National Museum of Mexican Art (HTML)
+- Peggy Notebaert Nature Museum
 
-**Tip:** Use browser devtools to find the right CSS selectors. If `requests` returns empty
-content (JS-rendered page), switch to `scraper: "browser"`.
+**Parks & Recreation**
+- Chicago Park District — Toddler Programs (Playwright)
+- Chicago Park District — Baby Programs (Playwright)
+- Millennium Park (Chicago AEM JSON)
+- Maggie Daley Park
+
+**Other**
+- Lincoln Park Zoo (Playwright — `.card__content` + featured `.pageblock` sections)
+- Navy Pier (custom Playwright scraper — `div.event-tile`, `data-date` attribute)
+- Chicago Cultural Center (Chicago AEM JSON)
+- The Book Cellar, Volumes Bookcafe
+- Eventbrite — 10 verified Chicago family/baby organizers
+
+### Irvine / Orange County (`config/sources_irvine.yaml`) — ~319 events after filters
+
+**Libraries (LibCal iCal feeds)**
+- Irvine Public Library — Heritage Park, Katie Wheeler, University Park branches
+- OCPL — Tustin, El Toro, Aliso Viejo, Laguna Hills, Rancho Santa Margarita branches
+
+**Other**
+- Pretend City Children's Museum (Tribe Events REST API)
+- City of Irvine Parks & Recreation (HTML)
+- Bowers Museum (HTML — no 2026 programs posted yet)
 
 ---
 
-## Moving to a New City
+## Neighborhood Classification
 
-The system has zero hardcoded city references. To switch cities:
+Events are geocoded and assigned a neighborhood label (e.g., "Lincoln Park", "West Loop", "Hyde Park" for Chicago; "Irvine", "Tustin", "Costa Mesa" for OC). The web UI displays neighborhood badges and a filter bar. Chicago and OC bounding boxes don't overlap — both cities work from the same classifier.
 
-1. Create `config/sources_[city].yaml` with local sources
-2. Update `config/settings.yaml` with new `home_lat`, `home_lng`, `zip`, `city`, and `timezone`
-3. Run: `python agent.py run --location [city]`
+---
 
-Irvine, CA stubs are already in `config/sources_irvine.yaml`.
+## Multi-City Support
+
+The system has no hardcoded city references. To add a city:
+
+1. Create `config/sources_{city_slug}.yaml`
+2. Create `config/settings_{city_slug}.yaml` (overrides home coordinates, radius, timezone)
+3. Run: `python agent.py run --location {city_slug}`
+
+### Agent-assisted city expansion
+
+Three agent workflows in `agents/` automate the tedious parts:
+
+| Step | Trigger | What it does |
+|------|---------|--------------|
+| 1. Discovery | `"find sources for [City]"` | WebSearch for orgs → writes draft `sources_{slug}.yaml` with `scraper: TBD` |
+| 2. Selection | `"select scrapers for [slug]"` | Fetches each URL → determines scraper type + fills in selectors/field_map |
+| 3. Coding | `"write scraper for '[Name]'"` | Writes `scrapers/{name}_scraper.py` for sites that need a custom scraper |
+
+Most sites match one of the 11 existing scraper types — the Selection Agent assigns them automatically. Custom Python code is only needed for the few sites with proprietary formats.
+
+---
+
+## CI / Automation
+
+`.github/workflows/scrape.yml` runs nightly:
+- Chicago and Irvine scrapes run **in parallel** as separate jobs
+- Each job: scrapes → filters → writes output files → commits to `master`
+- Concurrency group prevents two runs from racing on the same branch
+- Push uses `git fetch → rebase -X theirs → push` (retry up to 3×) to handle race conditions between parallel jobs
+- `EVENTBRITE_TOKEN` secret wired to both jobs
+
+Vercel auto-deploys from `master` whenever output files are committed. `Cache-Control: no-cache` headers on all `.json` and `.html` routes prevent stale data from being served.
 
 ---
 
@@ -203,19 +234,38 @@ pytest tests/ -v
 
 ---
 
-## Future Ideas
+## Configuration Reference
 
-- **Daily cron + auto-email**: Schedule `agent.py run` daily via Task Scheduler (Windows) or cron (Mac/Linux), then email the `.ics` to your wife automatically. The stable UIDs mean she can import the same calendar weekly and it won't create duplicate events.
-- **Weekly digest email**: Instead of a raw `.ics`, generate an HTML email summary of this week's events.
-- **iCloud push**: Use the iCloud CalDAV API to push events directly to a shared calendar.
-- **More source types**: Eventbrite API, Meetup API, Google Calendar embed scraper.
-- **SMS/text alerts**: Notify about tomorrow's free events via Twilio.
+**`config/settings.yaml`** (Chicago defaults):
+
+```yaml
+child:
+  birth_date: "2025-03-01"
+  age_range_months: [0, 36]
+location:
+  city: Chicago
+  state: IL
+  zip: 60601
+  home_lat: 41.8827
+  home_lng: -87.6233
+  max_radius_miles: 10
+  timezone: America/Chicago
+preferences:
+  include_free_only: false   # false = show all events, flag free ones with [FREE]
+  highlight_free: true
+  days_ahead: 30
+  exclude_keywords: [adults-only, 21+, wine, beer, cocktail]
+scraping:
+  cache_ttl_hours: 6
+  request_delay_seconds: 1.0
+  max_workers: 5
+```
 
 ---
 
 ## Notes
 
-- This tool is for personal family use only — not commercial
-- Respects rate limits: 1-second delay between requests, 6-hour cache TTL
-- Uses a polite User-Agent: `FamilyEventsAgent/1.0 (personal family calendar tool)`
-- All scraping is local — no external AI APIs, zero ongoing cost
+- Personal use only — not commercial
+- Polite scraping: 1s delay between requests, 6h cache TTL, `FamilyEventsAgent/1.0` User-Agent
+- No external AI APIs — zero ongoing cost
+- Windows 11 compatible: all paths use `pathlib.Path`, no shell scripts in hooks

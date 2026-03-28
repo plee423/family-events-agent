@@ -164,11 +164,65 @@
 
 ---
 
+## Scraper Selectors
+
+### 23. CSS selector verified against static page returns 0 results on live site (JS-rendered)
+**Symptom:** Selectors that look correct based on View Source or a static fetch return 0 events.
+**Root cause:** Page is rendered by JavaScript (React, Next.js, etc.) — the HTML seen by `requests.get()` contains empty placeholder containers, not actual event data. Static HTML selectors find nothing.
+**Fix:** Check if page needs JS rendering. If `requests.get()` returns markup with empty containers (e.g. `<div id="root"></div>`, `<div class="event-grid"></div>` with no children), switch to `scraper: browser` (Playwright). Also check whether the site uses a JSON data endpoint (see error 25 below) — that's even better than browser scraping.
+**Example:** Field Museum — static fetch returned empty `div.event-item` containers; Playwright rendered them but events were actually in `__NEXT_DATA__` JSON.
+**Session:** 11
+
+### 24. Selectors verified by WebFetch agent are unreliable
+**Symptom:** Selectors suggested by a WebFetch agent return 0 events when run against the live site.
+**Root cause:** The WebFetch tool returns an AI-synthesized summary of the page, not raw HTML. The agent can hallucinate class names, element structures, and attribute names that don't exist. Multiple agents in session 11 returned plausible-looking but wrong selectors for Field Museum, NMMA, and Navy Pier.
+**Fix:** Never trust WebFetch agent HTML descriptions for selector discovery. Instead:
+1. Run a Python Playwright script to fetch the real rendered HTML and inspect it directly.
+2. Use `page.query_selector_all()` + `.evaluate("el => el.outerHTML")` to see actual markup.
+3. Only write selectors based on real HTML you have seen in raw form.
+**Session:** 11
+
+### 25. Site redesign invalidates all existing selectors silently
+**Symptom:** Source was working, then returns 0 events with no error — scraper runs successfully but finds no cards.
+**Root cause:** The site was redesigned and class names, element types, or page structure changed. Old selectors match nothing in the new DOM.
+**Examples from session 11:**
+- Navy Pier: `article.fav-card` → `div.event-tile` (complete redesign of event listing)
+- NMMA: `ul li` → `a.block.group` (headless CMS migration changed card structure)
+**Fix:** When a previously working source returns 0, immediately re-inspect the live HTML (Playwright script) rather than assuming the selectors are still valid. Don't try to "fix" selectors based on the old structure — fetch and read the new structure from scratch.
+**Session:** 11
+
+### 26. Events embedded in `__NEXT_DATA__` JSON, not in DOM
+**Symptom:** Browser scraper returns 0 events even after Playwright renders the page correctly; DOM inspection shows no repeating event card elements.
+**Root cause:** Next.js apps sometimes pre-serialize all page data into a `<script id="__NEXT_DATA__" type="application/json">` tag. The React hydration process renders events client-side from this JSON, but the rendered elements are in Shadow DOM or dynamically inserted after Playwright's networkidle fires.
+**Fix:** Check for `__NEXT_DATA__` first: `re.search(r'<script id="__NEXT_DATA__".*?>(.*?)</script>', html, re.DOTALL)`. If present, parse the JSON and navigate the `props.pageProps` tree to find the events list. No Playwright needed — plain `requests.get()` retrieves this JSON.
+**Example:** Field Museum — 64 events in `props.pageProps.allEvents`. Each event has `title`, `start`/`end` (ISO8601), `slug`, `eventSeries.slug`, `description` (HTML), `ticketing`, `ageGroups`, `audienceTags`.
+**Session:** 11
+
+### 27. Date stored as non-standard attribute (`data-date`, not `datetime`)
+**Symptom:** `parse_with_selectors` finds the date element but can't extract a parseable date string — returns `""`, event is skipped.
+**Root cause:** `parse_with_selectors` only checks `date_el.get("datetime")` (standard `<time>` attribute) then falls back to visible text. Some sites store the date in a custom `data-date` attribute (e.g. Navy Pier: `<p class="eyebrow" data-date="20260328">`). The visible text ("Today, 12:00 PM") is not parseable for future events.
+**Fix:** When a site uses a custom `data-*` attribute for dates, write a custom scraper that reads the attribute directly (e.g. `el.get("data-date")`). Don't try to wedge it into `parse_with_selectors` — that function only reads `datetime` and text content.
+**Example:** Navy Pier `p.eyebrow[data-date]` → `datetime.strptime(date_attr, "%Y%m%d")`.
+**Session:** 11
+
+---
+
+## CLI / Console
+
+### 28. `click.echo()` in `test_source` crashes on Korean Windows (cp949 locale)
+**Symptom:** `python agent.py test-source "..."` raises `UnicodeEncodeError: 'cp949' codec can't encode character` when an event title contains non-ASCII characters (e.g. Spanish accents, em-dashes).
+**Root cause:** Windows console with Korean locale (cp949) can't encode many Unicode characters. `click.echo()` uses the system codec directly.
+**Fix:** Replace `click.echo()` with `_safe_echo()` in the `test_source` command. `_safe_echo()` already handles this via `errors='replace'` or explicit UTF-8 wrapping.
+**Session:** 11
+
+---
+
 ## Quick Checklist Before Planning
 
 - [ ] Does this touch CI? → Check errors 1–4 (push race, artifact scope, job dependencies, directory layout)
 - [ ] Does this touch Vercel/static hosting? → Check errors 5–6 (config, cache headers)
-- [ ] Does this add or change a scraper? → Check errors 7–12 (Eventbrite API, geocoding, caching)
+- [ ] Does this add or change a scraper? → Check errors 7–12 (Eventbrite API, geocoding, caching), 23–27 (selectors, JS rendering, __NEXT_DATA__, data-date)
 - [ ] Does this touch filters? → Check errors 13–16 (keyword matching, cost logic)
 - [ ] Does this touch the web UI? → Check errors 17–20 (download button, distance display, neighborhood filter)
 - [ ] Does this touch output builders or data fields? → Check errors 21–22 (broken links, field wiring)
+- [ ] Does this touch the CLI? → Check error 28 (cp949 encoding)
