@@ -198,11 +198,11 @@ Virtual env at `.venv/` (Windows: activate with `.venv\Scripts\activate`)
 | Chicago Park District Toddler | 16 raw | Playwright, keyword=toddler |
 | Chicago Park District Baby | 20 raw | Playwright, keyword=baby |
 | Art Institute | 10 raw | Playwright; `children_only: false` |
-| Lincoln Park Zoo | 8 raw | Playwright |
-| Field Museum Events | 8 raw | HTML scraper; `children_only: false`; cost: "paid admission" |
+| Lincoln Park Zoo | 8 raw (expected more after fix) | Playwright; now captures `.pageblock--oms-text-media` featured events (e.g. Easter egg hunt) |
+| Field Museum Events | 0 raw (selector broken; expect more after fix) | Switched to Playwright; `children_only: false` |
 | Field Museum Free Wednesdays | 3 raw | HTML scraper; `children_only: true` |
-| National Museum of Mexican Art | 4 raw | Playwright |
-| Navy Pier | 2 raw | Playwright; `children_only: false` |
+| National Museum of Mexican Art | 4 raw (expect more after fix) | Switched to HTML scraper; `ul li` + `h3` selectors |
+| Navy Pier | 2 raw | Playwright; `children_only: false`; tightened to `article.fav-card` |
 | The Book Cellar | varies | book_cellar scraper |
 | Peggy Notebaert Nature Museum | varies | nature_museum scraper |
 
@@ -322,6 +322,39 @@ Root cause unknown. Age filter analysis: `age_hint="0-60 months"` → Rule 3 kee
 - **Eventbrite:** If CI debug step shows `API returned 0 total events` per org → orgs are seasonally inactive (expected). If shows `N total, N dropped as past` → pagination needed (all 50 events are past). Check next CI run's "Debug Eventbrite raw events" logs.
 - **Songs 'n Swings:** Monitor — 144 past events but 0 upcoming; may become active again
 - Tockify events show `05:00 AM` in console dry-run (UTC not converted). HTML/JSON output correct via pytz.
+
+### Fixes (session 11) — Scraper selector audit
+
+**Root cause identified:** Several browser/HTML scrapers had wrong CSS selectors, causing events to be missed or incorrectly parsed. Discovered via live HTML inspection (WebFetch) while investigating why LPZ Easter egg hunt wasn't appearing.
+
+**Lincoln Park Zoo (`config/sources.yaml`)**
+- `event_card` widened to `.card__content, .pageblock--oms-text-media` — featured seasonal events (e.g. Spring Egg-Stravaganza / Easter egg hunt) use a different HTML layout than regular cards
+- `title` fixed from `p.h4 a` (non-existent selector) to `h2, h4 a` — regular cards use `<h4><a>`, featured sections use `<h2>`
+- `link` fixed from `p.h4 a` to `h4 a, a`
+- Added `wait_selector: ".card__content"` — cards are lazy-loaded; 2s flat buffer was insufficient
+
+**Field Museum - Events (`config/sources.yaml`)**
+- Switched from `html` → `browser` scraper — page is React-rendered; static requests returns empty containers
+- `event_card` fixed from `li.event-card` (doesn't exist) to `div.event-item, div.event-card`
+- `title` fixed from `a.h4` to `h3.event-title`
+- `date` fixed from `h6.h6` to `h6.event-date`; added `time: "span.event-time"`
+- `link` fixed from `a.h4` to `a`
+
+**Navy Pier (`config/sources.yaml`)**
+- `event_card` tightened from broad `article, [class*='card']...` to `article.fav-card`
+- `title` tightened from `h2, h3, [class*='title']...` to `h3.fav-card__title`
+- `link` updated to `a.fav-card__link, a`
+
+**National Museum of Mexican Art (`config/sources.yaml`)**
+- Switched from `browser` → `html` scraper — content is static HTML, browser scraper not needed
+- `event_card` changed from `.Events--listing li, ul li, li` (overly broad, matches nav) to `ul li` — `h3` presence inside li naturally filters to event items only
+- `title` fixed from `a` (returned full anchor text including date) to `h3`
+- `date` simplified from `p, span, div` to `p`
+- `location` set to `""` — location is embedded in the same `<p>` as date, can't separate
+
+**`_clean_date_str` in `scrapers/base.py`**
+- Added em-dash/en-dash date range handling: `"Nov 21, 2025 – Apr 26, 2026"` → `"Nov 21, 2025"`
+- Fixes NMMA date parsing where exhibitions span date ranges
 
 ### Fixes (session 10)
 

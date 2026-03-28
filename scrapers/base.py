@@ -189,10 +189,13 @@ def parse_with_selectors(soup, source_config: dict, org_name: str, base_url: str
 
 def _clean_date_str(s: str) -> str:
     """Normalize date strings before passing to dateutil.
-    Handles: day-of-week abbreviations, time ranges, date ranges with 'to'.
+    Handles: day-of-week abbreviations, time ranges, date ranges with 'to' or en/em-dash.
     Always keeps only the START date/time.
     """
     import re
+    # Date ranges with en-dash or em-dash: "Nov 21, 2025 – Apr 26, 2026" → "Nov 21, 2025"
+    # Also handles "Date | Location" combined strings from NMMA-style pages
+    s = re.sub(r'(.+?)\s+[–—]\s+\w.*', r'\1', s)
     # Date ranges like "March 28, 2023 to May 30, 2023" → keep start only
     s = re.sub(r'(.+?)\s+to\s+\w.*', r'\1', s, flags=re.IGNORECASE)
     # Strip day-of-week abbreviations embedded in the string

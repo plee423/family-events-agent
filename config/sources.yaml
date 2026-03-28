@@ -98,15 +98,14 @@ sources:
   - name: "National Museum of Mexican Art - Events"
     org_type: "museum"
     url: "https://nationalmuseumofmexicanart.org/events"
-    scraper: "browser"
-    # NOTE: Site is a custom AREA 17 build (NOT WordPress). All Tribe/WP selectors are wrong.
-    # Page may be partially JS-rendered. Selectors below need validation via browser DevTools.
-    # No public API or iCal feed found. Try /events.ics manually if this still returns 0.
+    scraper: "html"  # Content is static HTML (verified 2026-03-28) — browser scraper not needed
+    # Verified 2026-03-28: events are in ul > li, each li wraps <a><h3>Title</h3><p>Date – End | Location</p></a>
+    # No class on li or ul — h3 presence inside li distinguishes events from nav/footer list items
     selectors:
-      event_card: ".Events--listing li, ul li, li"
-      title: "a"
-      date: "p, span, div"
-      location: "p, span, div"
+      event_card: "ul li"
+      title: "h3"
+      date: "p"
+      location: ""   # location is embedded in same <p> as date ("Nov 21, 2025 – Apr 26, 2026 | Gallery Name")
       link: "a"
     tags: ["museum", "free", "culture", "family"]
     cost: "always free"
