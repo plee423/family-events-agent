@@ -245,11 +245,14 @@ def run_filters(events: list, settings: dict, sources: list[dict] | None = None)
     prefs = settings.get("preferences", {})
     days_ahead = prefs.get("days_ahead", 30)
     now = datetime.now()
+    # Use start of today (midnight) as lower bound so all-day events parsed as
+    # midnight on today's date are not dropped after the clock passes midnight.
+    today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     cutoff = now + timedelta(days=days_ahead)
     before = len(events)
     # Strip timezone info before comparison — some scrapers return tz-aware datetimes
     # (Tockify, Chicago AEM) while others return naive datetimes.
-    events = [e for e in events if now <= e.date_start.replace(tzinfo=None) <= cutoff]
+    events = [e for e in events if today_start <= e.date_start.replace(tzinfo=None) <= cutoff]
     logger.info("Date window filter: %d → %d events (next %d days)", before, len(events), days_ahead)
 
     # Keyword exclusion
