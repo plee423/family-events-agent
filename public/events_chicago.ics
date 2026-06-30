@@ -23,259 +23,32 @@ TZOFFSETTO:-0500
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
-SUMMARY:Community Roots: Drop-In Toddler Garden Hour at Skinner
-DTSTART;TZID=America/Chicago:20260629T100000
-DTEND;TZID=America/Chicago:20260629T110000
-DTSTAMP:20260629T123630Z
-UID:b70c25cf6eb55f4bef0fd2fda5dad464@family-events-agent
-SEQUENCE:0
-CATEGORIES:parks,toddler,recreation,classes
-DESCRIPTION:Organizer: Chicago Park District - Toddler Programs\\nAges: 0-
- 36 months\\nCategory: Play & Games\\n\\nAge at least 1y 6m but less than 4
-  yrs/\\n\\nMore info: https://apm.activecommunities.com/chicagoparkdistric
- t/Activity_Search/community-roots-drop-in-toddler-garden-hour-at-skinner/5
- 79706?locale=en-US
-LOCATION:Skinner Park
-URL:https://apm.activecommunities.com/chicagoparkdistrict/Activity_Search/
- community-roots-drop-in-toddler-garden-hour-at-skinner/579706?locale=en-US
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Community Roots: Drop-In Toddler Garden Hour at Skin
- ner
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Community Roots: Drop-In Toddler Garden Hour at Sk
- inner
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Play Day
-DTSTART;TZID=America/Chicago:20260629T101500
-DTEND;TZID=America/Chicago:20260629T130000
-DTSTAMP:20260629T123630Z
-UID:0fe0da1d4ddfa01edbe3da7ec07150af@family-events-agent
+SUMMARY:[FREE] Grab and Go: Make Your Own Sculpture
+DTSTART;TZID=America/Chicago:20260630T120000
+DTEND;TZID=America/Chicago:20260630T130000
+DTSTAMP:20260630T105811Z
+UID:ca908ab62525bc8f5b5ae817c6729e1d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
 DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Storytime\\n\\nVisit the library for open\, unstructured 
- play time. Bring a friend or make a new one. For kids of all ages with the
- ir caregivers. Accessibility Need sign language interpretation or other ac
- cessibility assistance for this event? Please call (312) 747-8184 or email
-  access@chipublib.org to request accommodations. Requests must be made at 
- least 14 business days before the event.\\n\\nMore info: https://chipublib
- .bibliocommons.com/events/6915f9b4b864f02900244505
-LOCATION:Independence\, 4024 N. Elston Ave.\, Chicago\, IL 60618
-URL:https://chipublib.bibliocommons.com/events/6915f9b4b864f02900244505
+ nths\\nCategory: Arts & Crafts\\n\\nCreate a 3D work of art that your frie
+ nds\, family and community can enjoy. This grab and go kit is available du
+ ring library hours while supplies last. For kids 6 and up. Accessibility N
+ eed sign language interpretation or other accessibility assistance for thi
+ s event? Please call (312) 747-8184 or email access@chipublib.org to reque
+ st accommodations. Requests must be made at least 14 business days before 
+ the event.\\n\\nMore info: https://chipublib.bibliocommons.com/events/6a42
+ 9bf2296ea565de2f7245
+LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
+URL:https://chipublib.bibliocommons.com/events/6a429bf2296ea565de2f7245
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Play Day
+DESCRIPTION:Tomorrow: Grab and Go: Make Your Own Sculpture
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Play Day
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Crafternoon
-DTSTART;TZID=America/Chicago:20260629T143000
-DTEND;TZID=America/Chicago:20260629T153000
-DTSTAMP:20260629T123630Z
-UID:c22e11d471e64af3a0794fc18f849254@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Arts & Crafts\\n\\nJoin us for a special craft time. All 
- materials are provided. For kids 6 to 13. Accessibility Need sign language
-  interpretation or other accessibility assistance for this event? Please c
- all (312) 747-8184 or email access@chipublib.org to request accommodations
- . Requests must be made at least 14 business days before the event.\\n\\nM
- ore info: https://chipublib.bibliocommons.com/events/69f901913f8e7924031e4
- ceb
-LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
-URL:https://chipublib.bibliocommons.com/events/69f901913f8e7924031e4ceb
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Crafternoon
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Crafternoon
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Grab and Go: Make Your Own Chicago Hot Dog
-DTSTART;TZID=America/Chicago:20260629T160000
-DTEND;TZID=America/Chicago:20260629T163000
-DTSTAMP:20260629T123630Z
-UID:384eae21a99fbd7fbdec0f90841f71cd@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Community\\n\\nPick up a take-home kit and create your ow
- n Chicago-style hot dog design! Use your imagination to add classic toppin
- gs or invent something completely new. Complete the activity at home and c
- elebrate one of Chicago’s favorite foods. Available while supplies last.
-  For kids 6 to 13. Accessibility Need sign language interpretation or othe
- r accessibility assistance for this event? Please call (312) 747-8184 or e
- mail access@chipublib.org to request accommodations. Requests must be made
-  at least 14 bus\\n\\nMore info: https://chipublib.bibliocommons.com/event
- s/6a3bf0556db61d2800979bc7
-LOCATION:Douglass\, 3353 W. 13th St.\, Chicago\, IL 60623
-URL:https://chipublib.bibliocommons.com/events/6a3bf0556db61d2800979bc7
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Grab and Go: Make Your Own Chicago Hot Dog
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Grab and Go: Make Your Own Chicago Hot Dog
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Bilingual Story Time / Hora de cuentos bilingües
-DTSTART;TZID=America/Chicago:20260629T180000
-DTEND;TZID=America/Chicago:20260629T183000
-DTSTAMP:20260629T123630Z
-UID:0491834f6d570ec7e7b6824bd5271efd@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Storytime\\n\\nJoin us for bilingual songs\, stories and 
- rhymes. For ages 0 to 5 and their caregivers. Únase a nosotros para disfr
- utar de canciones\, cuentos y rimas bilingües. Para niños de 0 a 5 años
-  y sus cuidadores. Accessibility Need sign language interpretation or othe
- r accessibility assistance for this event? Please call (312) 747-8184 or e
- mail access@chipublib.org to request accommodations. Requests must be made
-  at least 14 business days before the event. Accesibilidad ¿Necesitas int
- erpretación en lengua\\n\\nMore info: https://chipublib.bibliocommons.com
- /events/69cd3266129f12743835cff8
-LOCATION:Sulzer Regional\, 4455 N. Lincoln Ave.\, Chicago\, IL 60625
-URL:https://chipublib.bibliocommons.com/events/69cd3266129f12743835cff8
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Bilingual Story Time / Hora de cuentos bilingües
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Bilingual Story Time / Hora de cuentos bilingües
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Millennium Park Summer Music Series
-DTSTART;TZID=America/Chicago:20260629T183000
-DTEND;TZID=America/Chicago:20260629T210000
-DTSTAMP:20260629T123630Z
-UID:a0927342d4a9dd81e77d990c2c2d7e00@family-events-agent
-SEQUENCE:0
-CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Music
-DESCRIPTION:Organizer: Millennium Park - Events\\nCost: free\\nCategory: M
- usic & Dance\\n\\nMonday\, June 29\, 2026\n6:30-9 p.m.\, Gates open at 5 p
- .m.\\n\\nMore info: https://www.chicago.gov/city/en/depts/dca/supp_info/mi
- llennium_park_music_series.html
-LOCATION:Millennium Park\, Millennium Park\, Jay Pritzker Pavilion\, 201 E
- . Randolph St. \, Chicago\, IL\, 60601
-URL:https://www.chicago.gov/city/en/depts/dca/supp_info/millennium_park_mu
- sic_series.html
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Millennium Park Summer Music Series
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Millennium Park Summer Music Series
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Daring Self Portraits - Hourly Programming
-DTSTART;TZID=America/Chicago:20260630T000000
-DTEND;TZID=America/Chicago:20260701T000000
-DTSTAMP:20260629T123630Z
-UID:ffa8439f431417e861224aaa505c99e2@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Art-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Music & Dance\\n\\nCreate a spectacular self-portrait sho
- wing you at your most daring! Have you slain a dragon\, sung a song in fro
- nt of a crowd\, or stood up for a friend? Paint yo\\n\\nMore info: https:/
- /www.chicagochildrensmuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Daring Self Portraits - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Daring Self Portraits - Hourly Programming
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Mini Mythical Village - Hourly Programming
-DTSTART;TZID=America/Chicago:20260630T000000
-DTEND;TZID=America/Chicago:20260701T000000
-DTSTAMP:20260629T123630Z
-UID:0947fc67d641b073b0b03c7e945cddb3@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Play & Games\\n\\nUse your creativity and imagination to 
- travel back in time and construct a mini cardboard mythical village! All A
- ges Workshop Times 10:30\, 11:30\, 12:30\, 1:30\, 2\\n\\nMore info: https:
- //www.chicagochildrensmuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Mini Mythical Village - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Mini Mythical Village - Hourly Programming
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Wild Wonders - Hourly Programming
-DTSTART;TZID=America/Chicago:20260630T000000
-DTEND;TZID=America/Chicago:20260701T000000
-DTSTAMP:20260629T123630Z
-UID:2754005cfc35b76836bd54a5189843bf@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Play & Games\\n\\nExplore\, create\, and imagine in Wild 
- Wonders\, a nature-inspired play experience for young children and their c
- aregivers. Through sensory and pretend play\, child\\n\\nMore info: https:
- //www.chicagochildrensmuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Wild Wonders - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Wild Wonders - Hourly Programming
+DESCRIPTION:In 2 hours: Grab and Go: Make Your Own Sculpture
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -283,7 +56,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Millennium Park Summer Film Series: Independence Day
 DTSTART;TZID=America/Chicago:20260630T183000
 DTEND;TZID=America/Chicago:20260630T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3fe6f9a0aa5ddc2c864056f622ff5c7e@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Film,Family 
@@ -312,7 +85,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260630T180000
 DTEND;TZID=America/Chicago:20260630T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0462fecc5f7819e8ab3df0b6ab19a10d@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -342,7 +115,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260701T000000
 DTEND;TZID=America/Chicago:20260701T010000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d5f970ee1355226b777b2904305ab32f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -367,7 +140,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260701T000000
 DTEND;TZID=America/Chicago:20260702T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:009422471f0481d124b7c36d983a5f12@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -394,7 +167,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260701T000000
 DTEND;TZID=America/Chicago:20260702T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ed04f8c449d72147dd9eae6f20ffec40@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -421,7 +194,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260701T000000
 DTEND;TZID=America/Chicago:20260702T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c3af4f4b609bb974a739fe228b41c983@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -449,7 +222,7 @@ SUMMARY:[FREE] PlayLab PlayDate: Disability Pride Month Celebration Storyt
  ime
 DTSTART;TZID=America/Chicago:20260701T110000
 DTEND;TZID=America/Chicago:20260701T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7647d29a1d9ac27a1aeef3eece029320@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,kids_families
@@ -481,7 +254,7 @@ BEGIN:VEVENT
 SUMMARY:Dust from the Cosmos
 DTSTART;TZID=America/Chicago:20260701T110000
 DTEND;TZID=America/Chicago:20260701T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:fdc398c1a3684eaff44d90e2a72941b0@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,all_audiences
@@ -512,7 +285,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260701T110000
 DTEND;TZID=America/Chicago:20260701T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f07504d970aa3fcf6f448ee13809c499@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -540,7 +313,7 @@ SUMMARY:[FREE] BABY ON BOARD: Infant Car Seat Safety - WEISSBLUTH PEDIATRI
  CS (SOUT…
 DTSTART;TZID=America/Chicago:20260701T180000
 DTEND;TZID=America/Chicago:20260701T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1be4dd220896a60838865a3aa4eb0a62@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -571,7 +344,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sunset Yoga
 DTSTART;TZID=America/Chicago:20260701T193000
 DTEND;TZID=America/Chicago:20260701T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d1274973958d2ec29feab2b9f861900e@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -597,7 +370,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260702T000000
 DTEND;TZID=America/Chicago:20260703T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:230114dfa89ff095729829224d759b69@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -624,7 +397,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260702T000000
 DTEND;TZID=America/Chicago:20260703T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b1e84e4f8367082020cabc7500e4b8d7@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -651,7 +424,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260702T000000
 DTEND;TZID=America/Chicago:20260703T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d861339a05da400c18ce4c22b3ed8fab@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -678,7 +451,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mammals and More with Flying Fox Conservation Fund
 DTSTART;TZID=America/Chicago:20260702T110000
 DTEND;TZID=America/Chicago:20260702T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ee3cbccd679aef658da688aaa2e654a5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -709,7 +482,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260702T110000
 DTEND;TZID=America/Chicago:20260702T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:724d339d1f82755e18acd9d393e31e35@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -738,7 +511,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Finding Nemo (2003)
 DTSTART;TZID=America/Chicago:20260702T160000
 DTEND;TZID=America/Chicago:20260702T174500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:879adf5ba8884aadcefca3fcb95ea63a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -769,7 +542,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260703T000000
 DTEND;TZID=America/Chicago:20260704T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:5b4ee1b0ee6a0ab125f5c01f5fed9034@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -796,7 +569,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260703T000000
 DTEND;TZID=America/Chicago:20260704T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:4a930ab34545e115ae7012604adc6c58@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -823,7 +596,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260703T000000
 DTEND;TZID=America/Chicago:20260704T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:da7938a9f6235f32f560721f50b538b6@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -850,7 +623,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260703T170000
 DTEND;TZID=America/Chicago:20260703T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c457b6f876f7ddb6ba7f57b43e1f8a19@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -876,7 +649,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260704T000000
 DTEND;TZID=America/Chicago:20260705T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c0cfc9162fa828a1606617208d0d7d1a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -903,7 +676,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260704T000000
 DTEND;TZID=America/Chicago:20260705T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a0229ed44ac0589cf6b4d356702bdd6b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -930,7 +703,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260704T000000
 DTEND;TZID=America/Chicago:20260705T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:961ddb5cc1190d2950cf3647d1b9a034@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -957,7 +730,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260704T170000
 DTEND;TZID=America/Chicago:20260704T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1e15acd79e2821fe09bdf7f6839e0810@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -983,7 +756,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260705T000000
 DTEND;TZID=America/Chicago:20260706T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1a2822624ad19912be73ad724eb05557@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1010,7 +783,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260705T000000
 DTEND;TZID=America/Chicago:20260706T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2307557badf415e2a95b4e5d395b7def@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -1037,7 +810,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260705T000000
 DTEND;TZID=America/Chicago:20260706T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:974bfe2bda58640cdfb9febcf32c0772@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1064,7 +837,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chess Club
 DTSTART;TZID=America/Chicago:20260705T130000
 DTEND;TZID=America/Chicago:20260705T143000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c2ac4ee7f1de7d880c60c3747d9c45c4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1094,7 +867,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Maker Day: Introduction to Heat Transfer
 DTSTART;TZID=America/Chicago:20260705T131500
 DTEND;TZID=America/Chicago:20260705T141500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:74a6a8753eba1cb361efdbd2926acdb3@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1123,7 +896,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chair Yoga for Seniors: Gentle Movement for Every Body
 DTSTART;TZID=America/Chicago:20260705T150000
 DTEND;TZID=America/Chicago:20260705T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1aa4ec26af72c55204a57aa054fe4a76@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1156,7 +929,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260705T170000
 DTEND;TZID=America/Chicago:20260705T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:44dfdd3f52518ace53bd6b6a839d43ae@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -1182,7 +955,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260706T000000
 DTEND;TZID=America/Chicago:20260707T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:6bd6ff50abab20524209d0b859b8ee4a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1209,7 +982,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260706T000000
 DTEND;TZID=America/Chicago:20260707T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:aae4d2bfdf9e7dcdd2a1369725a62ad7@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -1236,7 +1009,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260706T000000
 DTEND;TZID=America/Chicago:20260707T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:887597cbfc84325371ee0f1eae155a56@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1263,7 +1036,7 @@ BEGIN:VEVENT
 SUMMARY:Community Roots: Drop-In Toddler Garden Hour at Skinner
 DTSTART;TZID=America/Chicago:20260706T100000
 DTEND;TZID=America/Chicago:20260706T110000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a8dd442e1f22c70556d824ea804dc526@family-events-agent
 SEQUENCE:0
 CATEGORIES:parks,toddler,recreation,classes
@@ -1292,7 +1065,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chat and Craft
 DTSTART;TZID=America/Chicago:20260706T110000
 DTEND;TZID=America/Chicago:20260706T123000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f4e91a618e97604284ad1b41a2f65c1d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1319,42 +1092,11 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] STEAM: Slime Club
-DTSTART;TZID=America/Chicago:20260706T160000
-DTEND;TZID=America/Chicago:20260706T170000
-DTSTAMP:20260629T123630Z
-UID:e2665e714755fac70444a7678db89800@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Arts & Crafts\\n\\nThis summer\, Slime Club will be on a 
- mission to find their favorite slime. Children will experiment with a vari
- ety of slimes and compare data along the way. Learn about data collection\
- , charts and graphs while trying different slime recipes. Best for ages 10
-  and up. Accessibility Need sign language interpretation or other accessib
- ility assistance for this event? Please call (312) 747-8184 or email acces
- s@chipublib.org to request accommodations. Requests must be made at least 
- 14 business days bef\\n\\nMore info: https://chipublib.bibliocommons.com/e
- vents/69fa195dcaf934360059e49b
-LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
-URL:https://chipublib.bibliocommons.com/events/69fa195dcaf934360059e49b
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: STEAM: Slime Club
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: STEAM: Slime Club
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
  S (SOUTH…
 DTSTART;TZID=America/Chicago:20260706T180000
 DTEND;TZID=America/Chicago:20260706T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:9bbb89bb965dd13cb779cb051810c22e@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1385,7 +1127,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] First Monday Jazz- Bobby Broom Trio
 DTSTART;TZID=America/Chicago:20260706T180000
 DTEND;TZID=America/Chicago:20260706T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:674649cb00fe26240ffb26bc734fdc34@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1413,7 +1155,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260707T000000
 DTEND;TZID=America/Chicago:20260708T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1aa3769daadf20cab38e45d2fce9cb46@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1440,7 +1182,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260707T000000
 DTEND;TZID=America/Chicago:20260708T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:83e2ba3401a327e83555697e9eeb2516@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -1467,7 +1209,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260707T000000
 DTEND;TZID=America/Chicago:20260708T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:12930c3700c37021837e0e79a58048c6@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1494,7 +1236,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Millennium Park Summer Film Series: Ratatouille
 DTSTART;TZID=America/Chicago:20260707T063000
 DTEND;TZID=America/Chicago:20260707T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b31555ec612a885c87b0f4d851cc01cb@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Film,Family 
@@ -1522,7 +1264,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Kids Craft: Music Bingo!
 DTSTART;TZID=America/Chicago:20260707T130000
 DTEND;TZID=America/Chicago:20260707T140000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2dc9fa59a71ff9cc93138a4b2525f29c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1551,7 +1293,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sidewalk Science
 DTSTART;TZID=America/Chicago:20260707T153000
 DTEND;TZID=America/Chicago:20260707T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:724499a58a44989f0b295284c88fd294@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1578,41 +1320,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] LEGO® Club
-DTSTART;TZID=America/Chicago:20260707T163000
-DTEND;TZID=America/Chicago:20260707T173000
-DTSTAMP:20260629T123630Z
-UID:1cc394a3203fd0c334049fe450e6a4ba@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: STEM\\n\\nCalling all young architects! Get inspired by b
- uilding challenges or create a masterpiece of your very own during this dr
- op-in\, free-build time. LEGO® Club builders have the opportunity to put 
- their creations on display for the whole library to enjoy until the next s
- ession. For kids 5 to 12. Accessibility Need sign language interpretation 
- or other accessibility assistance for this event? Please call (312) 747-81
- 84 or email access@chipublib.org to request accommodations. Requests must 
- be made at \\n\\nMore info: https://chipublib.bibliocommons.com/events/69f
- 8f6514134893003f0a4c2
-LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
-URL:https://chipublib.bibliocommons.com/events/69f8f6514134893003f0a4c2
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: LEGO® Club
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: LEGO® Club
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260708T000000
 DTEND;TZID=America/Chicago:20260708T010000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e6a535cf2a4b07cc13fce5c43a596301@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -1637,7 +1348,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260708T000000
 DTEND;TZID=America/Chicago:20260709T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:54712f30d2737ae88babbbd92f3ad64d@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -1664,7 +1375,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260708T000000
 DTEND;TZID=America/Chicago:20260709T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d11197cb31e782e1034a98410a80060c@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -1691,7 +1402,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260708T000000
 DTEND;TZID=America/Chicago:20260709T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c6716c1ad0dde9ba9470f20e45c50cce@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -1719,7 +1430,7 @@ SUMMARY:Summer Institute 2026 – Interpreting Prehistoric Worlds: Fossils
  \, Art\, and…
 DTSTART;TZID=America/Chicago:20260708T090000
 DTEND;TZID=America/Chicago:20260709T100000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:4cfcc863eb82f82d25888ac1de4fc1ea@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,educators
@@ -1748,7 +1459,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bilingual Summer Story Time
 DTSTART;TZID=America/Chicago:20260708T103000
 DTEND;TZID=America/Chicago:20260708T113000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a23fad52a0601040d0f26960b395a217@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1780,7 +1491,7 @@ SUMMARY:[FREE] PlayLab PlayDate: The Power of Music Storytime with Miss Il
  linois K…
 DTSTART;TZID=America/Chicago:20260708T110000
 DTEND;TZID=America/Chicago:20260708T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e13c4d83314f33c0f51a17004bd5a269@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,kids_families
@@ -1814,7 +1525,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tots and Toddlers Story Time
 DTSTART;TZID=America/Chicago:20260708T111500
 DTEND;TZID=America/Chicago:20260708T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:4aa0d20b29d66f81de539efb2ef16e7f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1845,7 +1556,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Improv Games with Peyton Wilson
 DTSTART;TZID=America/Chicago:20260708T130000
 DTEND;TZID=America/Chicago:20260708T140000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:83d1647664a2ccd51e23e5bc2e638730@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1875,7 +1586,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260708T110000
 DTEND;TZID=America/Chicago:20260708T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3ff504339c659fb41573a07bcb36d9ba@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1902,7 +1613,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tech-Time: K’Nex Building (Ages 9 - 13)
 DTSTART;TZID=America/Chicago:20260708T163000
 DTEND;TZID=America/Chicago:20260708T173000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3ae14dbd2beae9f0cba95da360ed9386@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1933,7 +1644,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Club
 DTSTART;TZID=America/Chicago:20260708T163000
 DTEND;TZID=America/Chicago:20260708T173000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:61348e75f5461be1205700d59d47ba68@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -1965,7 +1676,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260708T180000
 DTEND;TZID=America/Chicago:20260708T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:29290efd892eccb3c3d4b8e2d2ec3a1f@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -1994,7 +1705,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sunset Yoga
 DTSTART;TZID=America/Chicago:20260708T193000
 DTEND;TZID=America/Chicago:20260708T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:15c91c2b56f4f6ca1cd50322aaec9c37@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2020,7 +1731,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260709T000000
 DTEND;TZID=America/Chicago:20260710T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:11db523db16ada55914616e215e4f77e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2047,7 +1758,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260709T000000
 DTEND;TZID=America/Chicago:20260710T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:dc91ec6ee9e4e1aa10eab09638adddf1@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -2074,7 +1785,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260709T000000
 DTEND;TZID=America/Chicago:20260710T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a889cf5b635d631e25dbd845c394d176@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2101,7 +1812,7 @@ BEGIN:VEVENT
 SUMMARY:Poetry Pop-up: Genetic Poetry
 DTSTART;TZID=America/Chicago:20260709T100000
 DTEND;TZID=America/Chicago:20260709T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e0d1a918d42e1f9304c787ecc805d2c2@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,all_audiences
@@ -2127,7 +1838,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Itty Bitty Story Time
 DTSTART;TZID=America/Chicago:20260709T103000
 DTEND;TZID=America/Chicago:20260709T111500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:01aa7164add56c0a86d467fbe9e60c28@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2156,7 +1867,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Story Time
 DTSTART;TZID=America/Chicago:20260709T110000
 DTEND;TZID=America/Chicago:20260709T114500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:dfe33d66459700a96d69cbbff97b53b6@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2182,40 +1893,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Common Pieces
-DTSTART;TZID=America/Chicago:20260709T130000
-DTEND;TZID=America/Chicago:20260709T150000
-DTSTAMP:20260629T123630Z
-UID:9c71e27e6e9058ff1dc2fe0110c2d19c@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nCategory: Storytime\\n\\nDrop in for puzzles and board games the w
- hole family can enjoy together. All ages welcome! Ven y disfruta de rompec
- abezas y juegos de mesa que toda la familia puede disfrutar juntos. ¡Toda
- s las edades son bienvenidas! Accessibility Need sign language interpretat
- ion or other accessibility assistance for this event? Please call (312) 74
- 7-8184 or email access@chipublib.org to request accommodations. Requests m
- ust be made at least 14 business days before the event.\\n\\nMore info: ht
- tps://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d61
-LOCATION:Brighton Park\, 4314 S. Archer Ave.\, Chicago\, IL 60632
-URL:https://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d61
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Common Pieces
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Common Pieces
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Chicago Arts Series
 DTSTART;TZID=America/Chicago:20260709T140000
 DTEND;TZID=America/Chicago:20260709T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f7b0571c0f49d0adbdcfeb9cf6e2673d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2246,7 +1927,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cultural Stewardship Reading Room: Summer Open Hours
 DTSTART;TZID=America/Chicago:20260709T150000
 DTEND;TZID=America/Chicago:20260709T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d07302ccf356ab6e3897988c021c81a7@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2276,7 +1957,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (SOUTH LOOP)
 DTSTART;TZID=America/Chicago:20260709T180000
 DTEND;TZID=America/Chicago:20260709T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c468530cd989d7f6d3f948be1b2f2648@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2306,7 +1987,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260710T000000
 DTEND;TZID=America/Chicago:20260711T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b219bbb31fb8ee163fb77c346ef32c92@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2333,7 +2014,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260710T000000
 DTEND;TZID=America/Chicago:20260711T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ba93a4de37defab528381d2839f16b0c@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -2360,7 +2041,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260710T000000
 DTEND;TZID=America/Chicago:20260711T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2df1494728dd3a0a951da63dc80f4c10@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2387,7 +2068,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Crochet Club / Club de Tejer
 DTSTART;TZID=America/Chicago:20260710T143000
 DTEND;TZID=America/Chicago:20260710T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:32fec6c34f12df3308b42625a80a5fe7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2418,7 +2099,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260710T170000
 DTEND;TZID=America/Chicago:20260710T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2b6d6bbe04be71c2f91262db16f35ce1@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -2444,7 +2125,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260711T000000
 DTEND;TZID=America/Chicago:20260712T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:9ec6bd56246eef43cc9618d5a8404f4a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2471,7 +2152,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260711T000000
 DTEND;TZID=America/Chicago:20260712T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:82bdfbbe195e2f09dcb69723c1456738@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -2498,7 +2179,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260711T000000
 DTEND;TZID=America/Chicago:20260712T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7718313ae8695950a640e91ea3bffbd0@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2525,7 +2206,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Dig Fossils
 DTSTART;TZID=America/Chicago:20260711T140000
 DTEND;TZID=America/Chicago:20260711T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:4e4ee2ae0572e7389a337a1607b41e47@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2556,7 +2237,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] South Side Fireflies
 DTSTART;TZID=America/Chicago:20260711T110000
 DTEND;TZID=America/Chicago:20260711T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3c7673c6848fcef1c730996aeccd4919@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -2584,7 +2265,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260712T000000
 DTEND;TZID=America/Chicago:20260713T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7a6907147e4699d2f6a87bc875c7ad5b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2611,7 +2292,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260712T000000
 DTEND;TZID=America/Chicago:20260713T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0c570e83994363664592363f549f198f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -2638,7 +2319,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260712T000000
 DTEND;TZID=America/Chicago:20260713T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:21bca3dd68dd32afa353fd488d0611d4@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2665,7 +2346,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chess Club
 DTSTART;TZID=America/Chicago:20260712T130000
 DTEND;TZID=America/Chicago:20260712T143000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:abbb23018464cf2680a3c75ed4298034@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2695,7 +2376,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Roll Bounce (2005)
 DTSTART;TZID=America/Chicago:20260712T130000
 DTEND;TZID=America/Chicago:20260712T153000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0e741d85f53cb43757023f5f670e0776@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2726,7 +2407,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260713T000000
 DTEND;TZID=America/Chicago:20260714T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d0e451c12c5ef03a16dfdab45604e379@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2753,7 +2434,7 @@ BEGIN:VEVENT
 SUMMARY:Mini Mythical Village - Hourly Programming
 DTSTART;TZID=America/Chicago:20260713T000000
 DTEND;TZID=America/Chicago:20260714T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a3b6f2cdc1733fc4cc55f41c9c4f88ef@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Studio
@@ -2780,7 +2461,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260713T000000
 DTEND;TZID=America/Chicago:20260714T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:83dca440f0ebf4be234c3bec5d81ef1f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2807,7 +2488,7 @@ BEGIN:VEVENT
 SUMMARY:Community Roots: Drop-In Toddler Garden Hour at Skinner
 DTSTART;TZID=America/Chicago:20260713T100000
 DTEND;TZID=America/Chicago:20260713T110000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:da09ef436b86645207040a89a168f046@family-events-agent
 SEQUENCE:0
 CATEGORIES:parks,toddler,recreation,classes
@@ -2836,7 +2517,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Play Day
 DTSTART;TZID=America/Chicago:20260713T101500
 DTEND;TZID=America/Chicago:20260713T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:bcf340c8ed0d70008fdcdbbcac544e87@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2865,7 +2546,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Story Time
 DTSTART;TZID=America/Chicago:20260713T110000
 DTEND;TZID=America/Chicago:20260713T113000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c71f0468f87df162537d413ac37639c9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2896,7 +2577,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260714T000000
 DTEND;TZID=America/Chicago:20260715T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ffb0d3674299f08fb9bd65162f766f0f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -2923,7 +2604,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260714T000000
 DTEND;TZID=America/Chicago:20260715T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b775b34ef96e12d87708ee87ee148d88@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -2950,7 +2631,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Improv Games with Peyton Wilson
 DTSTART;TZID=America/Chicago:20260714T130000
 DTEND;TZID=America/Chicago:20260714T141500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:17c8a3df19c50787e7361a279a3f3258@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -2981,7 +2662,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Film Screening: Community Picks
 DTSTART;TZID=America/Chicago:20260714T140000
 DTEND;TZID=America/Chicago:20260714T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0bed5635c63b863a5aefd3187d2142f4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3012,7 +2693,7 @@ SUMMARY:[FREE] Millennium Park Summer Film Series: (Double Feature) When H
  arry Met…
 DTSTART;TZID=America/Chicago:20260714T183000
 DTEND;TZID=America/Chicago:20260714T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0649d2d372894ef53b1d02e8d747263f@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Film,Family 
@@ -3043,7 +2724,7 @@ SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
  S (NORTH…
 DTSTART;TZID=America/Chicago:20260714T180000
 DTEND;TZID=America/Chicago:20260714T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:33587d4bebdbc7c759f2c6160c1e3f52@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3074,7 +2755,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Illinois Free Wednesday
 DTSTART;TZID=America/Chicago:20260715T000000
 DTEND;TZID=America/Chicago:20260715T010000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:964e9359afb999a33a8a6edcd5c31566@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,free-day,science,family
@@ -3099,7 +2780,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260715T000000
 DTEND;TZID=America/Chicago:20260716T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f5edebdbc4719e0845d8bcbbacb7bb83@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3126,7 +2807,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260715T000000
 DTEND;TZID=America/Chicago:20260716T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:409ef5e0994b1f46ca5724199df334dd@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -3151,7 +2832,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260715T000000
 DTEND;TZID=America/Chicago:20260716T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:9bad2fdc4ab1c8957bcba999ed5b9367@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3178,7 +2859,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] PlayLab PlayDate: Moth Week Storytime
 DTSTART;TZID=America/Chicago:20260715T110000
 DTEND;TZID=America/Chicago:20260715T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d8e1860e80eb0b81424ce2a117b3eecc@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,kids_families
@@ -3208,7 +2889,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tots and Toddlers Story Time
 DTSTART;TZID=America/Chicago:20260715T111500
 DTEND;TZID=America/Chicago:20260715T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:86e30fd0dc60d37f2842d5843415ddc4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3239,7 +2920,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260715T110000
 DTEND;TZID=America/Chicago:20260715T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2c7c4a3b53fdd2086953ed34114f9ee8@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3266,7 +2947,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CAPS Beat 1634 Meeting
 DTSTART;TZID=America/Chicago:20260715T180000
 DTEND;TZID=America/Chicago:20260715T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d94227242094330ac5bcd97241f54d68@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3296,7 +2977,7 @@ SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (NORTHWESTERN
  )
 DTSTART;TZID=America/Chicago:20260715T180000
 DTEND;TZID=America/Chicago:20260715T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:18fd90e49679cbd5f5a29eb0a382cd54@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3326,7 +3007,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sunset Yoga
 DTSTART;TZID=America/Chicago:20260715T193000
 DTEND;TZID=America/Chicago:20260715T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:dc06534142802922a8e554a4344b4b39@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3352,7 +3033,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260716T000000
 DTEND;TZID=America/Chicago:20260717T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:5787df564e0f471596b7beb1e252003e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3379,7 +3060,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260716T000000
 DTEND;TZID=America/Chicago:20260717T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:003e79eb4e5a48d2587e7862c17d77b2@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -3404,7 +3085,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260716T000000
 DTEND;TZID=America/Chicago:20260717T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3787b787a0b5acd54877a8e0e23179b5@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3431,7 +3112,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Story Time
 DTSTART;TZID=America/Chicago:20260716T110000
 DTEND;TZID=America/Chicago:20260716T114500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:8e50436a7fbf7d28cdc180322ce67bf4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3457,40 +3138,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Common Pieces
-DTSTART;TZID=America/Chicago:20260716T130000
-DTEND;TZID=America/Chicago:20260716T150000
-DTSTAMP:20260629T123630Z
-UID:f8f78af21583fd11b5d4affccf0e02f4@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nCategory: Storytime\\n\\nDrop in for puzzles and board games the w
- hole family can enjoy together. All ages welcome! Ven y disfruta de rompec
- abezas y juegos de mesa que toda la familia puede disfrutar juntos. ¡Toda
- s las edades son bienvenidas! Accessibility Need sign language interpretat
- ion or other accessibility assistance for this event? Please call (312) 74
- 7-8184 or email access@chipublib.org to request accommodations. Requests m
- ust be made at least 14 business days before the event.\\n\\nMore info: ht
- tps://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d62
-LOCATION:Brighton Park\, 4314 S. Archer Ave.\, Chicago\, IL 60632
-URL:https://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d62
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Common Pieces
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Common Pieces
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Millennium Park Summer Music Series
 DTSTART;TZID=America/Chicago:20260716T183000
 DTEND;TZID=America/Chicago:20260716T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e7d57ce5f683346c883ac5bcc8cff04f@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Music
@@ -3517,7 +3168,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cultural Stewardship Reading Room: Summer Open Hours
 DTSTART;TZID=America/Chicago:20260716T150000
 DTEND;TZID=America/Chicago:20260716T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f1b1f6fdef08bbe7d7e0bace6c551f3e@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3547,7 +3198,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tour the Arts Block
 DTSTART;TZID=America/Chicago:20260716T153000
 DTEND;TZID=America/Chicago:20260716T161500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ae6dc03970243abe6c11a6654f243ef0@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3573,7 +3224,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260716T180000
 DTEND;TZID=America/Chicago:20260716T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:dd5d4cc596c9f27fdf126b34954a52f6@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -3600,10 +3251,89 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:Daring Self Portraits - Hourly Programming
+DTSTART;TZID=America/Chicago:20260717T000000
+DTEND;TZID=America/Chicago:20260718T000000
+DTSTAMP:20260630T105811Z
+UID:37f2ea7d26f8057f3d7a27b6f58dd6da@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Art-Studio
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nCategory: Music & Dance\\n\\nCreate a spectacular self-portrait sho
+ wing you at your most daring! Have you slain a dragon\, sung a song in fro
+ nt of a crowd\, or stood up for a friend? Paint yo\\n\\nMore info: https:/
+ /www.chicagochildrensmuseum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Daring Self Portraits - Hourly Programming
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Daring Self Portraits - Hourly Programming
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Here to There: Castles! (Hourly Programming)
+DTSTART;TZID=America/Chicago:20260717T000000
+DTEND;TZID=America/Chicago:20260718T000000
+DTSTAMP:20260630T105811Z
+UID:47f88067e18ffc61e89682d62a9659e5@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nCategory: Play & Games\\n\\nMore info: https://www.chicagochildrens
+ museum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Here to There: Castles! (Hourly Programming)
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Here to There: Castles! (Hourly Programming)
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Wild Wonders - Hourly Programming
+DTSTART;TZID=America/Chicago:20260717T000000
+DTEND;TZID=America/Chicago:20260718T000000
+DTSTAMP:20260630T105811Z
+UID:602b1f1a9a76e3f4f476b1b5dfbd3660@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nCategory: Play & Games\\n\\nExplore\, create\, and imagine in Wild 
+ Wonders\, a nature-inspired play experience for young children and their c
+ aregivers. Through sensory and pretend play\, child\\n\\nMore info: https:
+ //www.chicagochildrensmuseum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Wild Wonders - Hourly Programming
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Wild Wonders - Hourly Programming
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Beach Days Story Time
 DTSTART;TZID=America/Chicago:20260717T110000
 DTEND;TZID=America/Chicago:20260717T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:cfc959e4a94e7056f873d61444a76653@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3634,7 +3364,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Crochet Club / Club de Tejer
 DTSTART;TZID=America/Chicago:20260717T143000
 DTEND;TZID=America/Chicago:20260717T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:73de0d483bce3e2641321544fc6650fb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3665,7 +3395,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Camera Snapshots
 DTSTART;TZID=America/Chicago:20260717T150000
 DTEND;TZID=America/Chicago:20260717T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:76b3ba02208d19d85e7f87ef4d5bd0ea@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3696,7 +3426,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260717T170000
 DTEND;TZID=America/Chicago:20260717T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:6ee0f9188ac3fc51041183c2ab545294@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -3719,81 +3449,26 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Daring Self Portraits - Hourly Programming
+SUMMARY:[FREE] Zoo Fiesta
 DTSTART;TZID=America/Chicago:20260718T000000
-DTEND;TZID=America/Chicago:20260719T000000
-DTSTAMP:20260629T123630Z
-UID:de0331ae9bc3e3434e6a4696cf66ff07@family-events-agent
+DTEND;TZID=America/Chicago:20260718T010000
+DTSTAMP:20260630T105811Z
+UID:daef0e535ababbd022cec7debb9720d8@family-events-agent
 SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Art-Studio
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Music & Dance\\n\\nCreate a spectacular self-portrait sho
- wing you at your most daring! Have you slain a dragon\, sung a song in fro
- nt of a crowd\, or stood up for a friend? Paint yo\\n\\nMore info: https:/
- /www.chicagochildrensmuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
+CATEGORIES:zoo,animals,family,free,outdoor
+DESCRIPTION:Organizer: Lincoln Park Zoo - Events\\nCost: always free\\nCat
+ egory: General\\n\\nFeatured Events\\n\\nMore info: https://www.lpzoo.org/
+ event/summer-wine-fest/
+LOCATION:Lincoln Park Zoo - Events
+URL:https://www.lpzoo.org/event/summer-wine-fest/
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Daring Self Portraits - Hourly Programming
+DESCRIPTION:Tomorrow: Zoo Fiesta
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Daring Self Portraits - Hourly Programming
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Here to There: Castles! (Hourly Programming)
-DTSTART;TZID=America/Chicago:20260718T000000
-DTEND;TZID=America/Chicago:20260719T000000
-DTSTAMP:20260629T123630Z
-UID:877046a8e6be7b146e3d53dcc14fdbe3@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Play & Games\\n\\nMore info: https://www.chicagochildrens
- museum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Here to There: Castles! (Hourly Programming)
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Here to There: Castles! (Hourly Programming)
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Wild Wonders - Hourly Programming
-DTSTART;TZID=America/Chicago:20260718T000000
-DTEND;TZID=America/Chicago:20260719T000000
-DTSTAMP:20260629T123630Z
-UID:36c50d1973eec387734d9a1c8d15683b@family-events-agent
-SEQUENCE:0
-CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
-DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
- : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
- nths\\nCategory: Play & Games\\n\\nExplore\, create\, and imagine in Wild 
- Wonders\, a nature-inspired play experience for young children and their c
- aregivers. Through sensory and pretend play\, child\\n\\nMore info: https:
- //www.chicagochildrensmuseum.org/program-calendar
-LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
-URL:https://www.chicagochildrensmuseum.org/program-calendar
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Wild Wonders - Hourly Programming
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Wild Wonders - Hourly Programming
+DESCRIPTION:In 2 hours: Zoo Fiesta
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -3801,7 +3476,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Gaming Tournament
 DTSTART;TZID=America/Chicago:20260718T140000
 DTEND;TZID=America/Chicago:20260718T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:567a2e666998942a076de4eae4c04b98@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3831,7 +3506,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260719T000000
 DTEND;TZID=America/Chicago:20260720T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0d690444136f4ec2fca43f86deb4fec3@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3858,7 +3533,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260719T000000
 DTEND;TZID=America/Chicago:20260720T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e07428ca80c80bcd800cb45aeb00c8bb@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -3883,7 +3558,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260719T000000
 DTEND;TZID=America/Chicago:20260720T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:bab4783f6148b4361253ba7b4feaa917@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -3910,7 +3585,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chess Club
 DTSTART;TZID=America/Chicago:20260719T130000
 DTEND;TZID=America/Chicago:20260719T143000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:897283397b66f556f1ca1c85dd9082b3@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -3940,7 +3615,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260720T000000
 DTEND;TZID=America/Chicago:20260721T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:9fae7d1684c7d28e761ff383ac480c97@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -3967,7 +3642,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260720T000000
 DTEND;TZID=America/Chicago:20260721T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:141f9ab3545ad7b2f922bd05a688d45b@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -3992,7 +3667,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260720T000000
 DTEND;TZID=America/Chicago:20260721T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:39d244421ccf2b1d2de23e756d01ad9f@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4019,7 +3694,7 @@ BEGIN:VEVENT
 SUMMARY:Community Roots: Drop-In Toddler Garden Hour at Skinner
 DTSTART;TZID=America/Chicago:20260720T100000
 DTEND;TZID=America/Chicago:20260720T110000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:acdb932faf75c8960ac60b117ea81d70@family-events-agent
 SEQUENCE:0
 CATEGORIES:parks,toddler,recreation,classes
@@ -4048,7 +3723,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Play Day
 DTSTART;TZID=America/Chicago:20260720T101500
 DTEND;TZID=America/Chicago:20260720T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:266490e02948d08564ad2a65c014dfc4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4077,7 +3752,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chat and Craft
 DTSTART;TZID=America/Chicago:20260720T110000
 DTEND;TZID=America/Chicago:20260720T123000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:1cee2a729ca7f7ad0c4f084d918fd719@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4104,41 +3779,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] STEAM: Slime Club
-DTSTART;TZID=America/Chicago:20260720T160000
-DTEND;TZID=America/Chicago:20260720T170000
-DTSTAMP:20260629T123630Z
-UID:617e6d1450aaabe83ab5ec2fa1d6b0ae@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
- nths\\nCategory: Arts & Crafts\\n\\nThis summer\, Slime Club will be on a 
- mission to find their favorite slime. Children will experiment with a vari
- ety of slimes and compare data along the way. Learn about data collection\
- , charts and graphs while trying different slime recipes. Best for ages 10
-  and up. Accessibility Need sign language interpretation or other accessib
- ility assistance for this event? Please call (312) 747-8184 or email acces
- s@chipublib.org to request accommodations. Requests must be made at least 
- 14 business days bef\\n\\nMore info: https://chipublib.bibliocommons.com/e
- vents/69fa195dcaf934360059e49c
-LOCATION:Little Village\, 2311 S. Kedzie Ave.\, Chicago\, IL 60623
-URL:https://chipublib.bibliocommons.com/events/69fa195dcaf934360059e49c
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: STEAM: Slime Club
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: STEAM: Slime Club
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (SOUTH LOOP)
 DTSTART;TZID=America/Chicago:20260720T180000
 DTEND;TZID=America/Chicago:20260720T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:68fd4c3aac3bab3eecde648085c55828@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4167,7 +3811,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260721T000000
 DTEND;TZID=America/Chicago:20260722T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c7b585796e31e746abe39558deb69d1d@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -4194,7 +3838,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260721T000000
 DTEND;TZID=America/Chicago:20260722T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c31f58ea0bb7e6c29c38ded9ac2e11b8@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -4219,7 +3863,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260721T000000
 DTEND;TZID=America/Chicago:20260722T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:59973ddd0b33c53cd84e7f0f58028b2a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4246,7 +3890,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sidewalk Science
 DTSTART;TZID=America/Chicago:20260721T153000
 DTEND;TZID=America/Chicago:20260721T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ddc8b0bb8a1a7e98f04d92f20c5237ab@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4276,7 +3920,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Kids Read by the River
 DTSTART;TZID=America/Chicago:20260721T160000
 DTEND;TZID=America/Chicago:20260721T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:e413516e738e60351f31a5fd7855ddfd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4306,7 +3950,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chicago-Style Science
 DTSTART;TZID=America/Chicago:20260721T173000
 DTEND;TZID=America/Chicago:20260721T183000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:287fafff146f6caf065e1f3128d64859@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4336,7 +3980,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Breastfeeding - WEISSBLUTH PEDIATRICS (NORTHWESTERN)
 DTSTART;TZID=America/Chicago:20260721T180000
 DTEND;TZID=America/Chicago:20260721T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c761d0202df5198cb203eac1d907f0b2@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4366,7 +4010,7 @@ BEGIN:VEVENT
 SUMMARY:Daring Self Portraits - Hourly Programming
 DTSTART;TZID=America/Chicago:20260722T000000
 DTEND;TZID=America/Chicago:20260723T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7bb7904ea0c4963081cd2f05a217b139@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Art-Studio
@@ -4393,7 +4037,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260722T000000
 DTEND;TZID=America/Chicago:20260723T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:03bce06e6d156dd4804351e534a53ca4@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -4418,7 +4062,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260722T000000
 DTEND;TZID=America/Chicago:20260723T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:9cbb8a6c3ad4cb7d62b955fdee22ce1a@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4446,7 +4090,7 @@ SUMMARY:[FREE] Moth Week! The Secret Lives of Moths: Uncovering Hidden Nig
  httime S…
 DTSTART;TZID=America/Chicago:20260722T110000
 DTEND;TZID=America/Chicago:20260722T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:45a5a19599a2af0d72524536a880e564@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,all_audiences
@@ -4487,7 +4131,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tots and Toddlers Story Time
 DTSTART;TZID=America/Chicago:20260722T111500
 DTEND;TZID=America/Chicago:20260722T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:afcb46188c15f1b8dd932b991f5d49fd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4518,7 +4162,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Basic Computer Skills Help
 DTSTART;TZID=America/Chicago:20260722T130000
 DTEND;TZID=America/Chicago:20260722T180000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0ae116ad9d854dd280f95a36d08b180b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4549,7 +4193,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tummy Time
 DTSTART;TZID=America/Chicago:20260722T150000
 DTEND;TZID=America/Chicago:20260722T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:5ead814bffaf194db4078eb6ec2322b4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4580,7 +4224,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Committed Knitters
 DTSTART;TZID=America/Chicago:20260722T110000
 DTEND;TZID=America/Chicago:20260722T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a1f8a60b83554c917ec307b6aea06d40@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4607,7 +4251,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Canvas and Conversation
 DTSTART;TZID=America/Chicago:20260722T170000
 DTEND;TZID=America/Chicago:20260722T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:004af2529badaa19aab1c4d0e7160f20@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4638,7 +4282,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sunset Yoga
 DTSTART;TZID=America/Chicago:20260722T193000
 DTEND;TZID=America/Chicago:20260722T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:be5732c45ffee4dae5b7d921c2f8093a@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4664,7 +4308,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260723T000000
 DTEND;TZID=America/Chicago:20260724T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:6d3ea2054e68453ae333ea4f454ae8ab@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -4689,7 +4333,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260723T000000
 DTEND;TZID=America/Chicago:20260724T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0a9b192b6df259acfe4908f1e53a6541@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4716,7 +4360,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Board Game Creating With Mr. Omar
 DTSTART;TZID=America/Chicago:20260723T120000
 DTEND;TZID=America/Chicago:20260723T133000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:176c8502a509b74a9e55f94b647ef3a6@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4747,7 +4391,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Basic Computer Skills Help
 DTSTART;TZID=America/Chicago:20260723T120000
 DTEND;TZID=America/Chicago:20260723T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:6efc0af8f3d734bbcb70a87c71e5fe30@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4775,40 +4419,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Common Pieces
-DTSTART;TZID=America/Chicago:20260723T130000
-DTEND;TZID=America/Chicago:20260723T150000
-DTSTAMP:20260629T123630Z
-UID:1bbd8d30784530276769dc4d9d2b94eb@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,reading
-DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 36-60 m
- onths\\nCategory: Storytime\\n\\nDrop in for puzzles and board games the w
- hole family can enjoy together. All ages welcome! Ven y disfruta de rompec
- abezas y juegos de mesa que toda la familia puede disfrutar juntos. ¡Toda
- s las edades son bienvenidas! Accessibility Need sign language interpretat
- ion or other accessibility assistance for this event? Please call (312) 74
- 7-8184 or email access@chipublib.org to request accommodations. Requests m
- ust be made at least 14 business days before the event.\\n\\nMore info: ht
- tps://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d63
-LOCATION:Brighton Park\, 4314 S. Archer Ave.\, Chicago\, IL 60632
-URL:https://chipublib.bibliocommons.com/events/6a037975055b429f3b3b0d63
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Common Pieces
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Common Pieces
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Super Star Party
 DTSTART;TZID=America/Chicago:20260723T160000
 DTEND;TZID=America/Chicago:20260723T180000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:3ffc98787161b5c17258cd57079beb2d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -4839,7 +4453,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cultural Stewardship Reading Room: Summer Open Hours
 DTSTART;TZID=America/Chicago:20260723T150000
 DTEND;TZID=America/Chicago:20260723T181500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:997dc6ae284f470ccfab1b5a23fae942@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4870,7 +4484,7 @@ SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
  S (BUCKT…
 DTSTART;TZID=America/Chicago:20260723T180000
 DTEND;TZID=America/Chicago:20260723T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:43dd20d2719d96513504b4993ddd4ec6@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -4901,12 +4515,12 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Poetry at the Pavillion
 DTSTART;TZID=America/Chicago:20260723T183000
 DTEND;TZID=America/Chicago:20260723T200000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b119603b1e78cdd0f103dc16f0bc0603@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
 DESCRIPTION:Organizer: Eventbrite - Chicago Family Events\\nCost: free\\nA
- ges: 0-60 months\\nCategory: Community\\n\\nmeet us on the Arts Lawn at go
+ ges: 0-60 months\\nCategory: Community\\n\\nMeet us on the Arts Lawn at go
  lden hour for Poetry at the Pavilion\, a monthly poetry celebration.\\n\\n
  More info: https://www.eventbrite.com/e/poetry-at-the-pavillion-tickets-19
  91402459363
@@ -4929,7 +4543,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260724T000000
 DTEND;TZID=America/Chicago:20260725T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:d5f1e488448dd8fea97a1b74555ab797@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -4954,7 +4568,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260724T000000
 DTEND;TZID=America/Chicago:20260725T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:26566d4deab66bbe3caefddc7f71e7bf@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -4982,7 +4596,7 @@ SUMMARY:Groundbreaking! (Without Breaking Ground) Archaeological Geophysic
  s at Ang…
 DTSTART;TZID=America/Chicago:20260724T110000
 DTEND;TZID=America/Chicago:20260724T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7f651b0a325a2db9e3cb3d5cf58370ee@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family,all_audiences
@@ -5026,7 +4640,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chicago Gospel Music Festival
 DTSTART;TZID=America/Chicago:20260724T120000
 DTEND;TZID=America/Chicago:20260725T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c18d8a46b17992ebf336fb51339a7945@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Music,Family
@@ -5055,7 +4669,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Story Time
 DTSTART;TZID=America/Chicago:20260724T140000
 DTEND;TZID=America/Chicago:20260724T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:f471f4ec6c7649625e12fdd81c0b07fb@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5084,7 +4698,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Crochet Club / Club de Tejer
 DTSTART;TZID=America/Chicago:20260724T143000
 DTEND;TZID=America/Chicago:20260724T163000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:dd29e8743074f7b5b8cb8418d3f2a14a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5115,7 +4729,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260724T170000
 DTEND;TZID=America/Chicago:20260724T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:42b84f28196bc6d2ab65b32cc50fec4c@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -5141,7 +4755,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Once Upon a Time Called\, Now!
 DTSTART;TZID=America/Chicago:20260724T183000
 DTEND;TZID=America/Chicago:20260724T203000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:58eb8d503f76a013691a0df8dc3b23e0@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5169,7 +4783,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260725T000000
 DTEND;TZID=America/Chicago:20260726T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:2b6cfbb6db6ac7ec9ac2bb39d84f819e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5194,7 +4808,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260725T000000
 DTEND;TZID=America/Chicago:20260726T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:8699ea387575d513961ac207ed8a65f6@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -5221,7 +4835,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Basic Computer Skills Help
 DTSTART;TZID=America/Chicago:20260725T110000
 DTEND;TZID=America/Chicago:20260725T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ca7000923981b2b418ea6c3151d99605@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5252,7 +4866,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO® Club
 DTSTART;TZID=America/Chicago:20260725T140000
 DTEND;TZID=America/Chicago:20260725T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:86ecb2195eed2d755332359a5bc66bec@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5281,7 +4895,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] RP Mystery Group
 DTSTART;TZID=America/Chicago:20260725T140000
 DTEND;TZID=America/Chicago:20260725T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:fd835bd15b702bb3ed4a22ff8bcf9841@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5309,7 +4923,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bird-Day Party
 DTSTART;TZID=America/Chicago:20260725T143000
 DTEND;TZID=America/Chicago:20260725T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a8fe70647523c196bff953d17c0fcb35@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5340,7 +4954,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Summer in the City Tea Party
 DTSTART;TZID=America/Chicago:20260725T150000
 DTEND;TZID=America/Chicago:20260725T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:783926579024e53ac6fcc2587c98ec82@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5371,7 +4985,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Crafternoon
 DTSTART;TZID=America/Chicago:20260725T150000
 DTEND;TZID=America/Chicago:20260725T164500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:5cf9be31f7af04c7b82e471709cc3013@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5400,7 +5014,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260726T000000
 DTEND;TZID=America/Chicago:20260727T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:8ffc554e52bb33163c696f8bc237b84e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5425,7 +5039,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260726T000000
 DTEND;TZID=America/Chicago:20260727T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0fca4e9d13c042305a3868fdd6862f48@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -5452,7 +5066,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Seed Library
 DTSTART;TZID=America/Chicago:20260726T120000
 DTEND;TZID=America/Chicago:20260726T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:387f3c56f4cacd681a75e8379f4a974f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5480,7 +5094,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chess Club
 DTSTART;TZID=America/Chicago:20260726T130000
 DTEND;TZID=America/Chicago:20260726T143000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:29a290361eec33436ee446e576fa1e04@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5510,7 +5124,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Dungeons & Dragons: An Introduction
 DTSTART;TZID=America/Chicago:20260726T133000
 DTEND;TZID=America/Chicago:20260726T143000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ba5a95115417837a6cf78124a50c0915@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5541,7 +5155,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cookie Book Club
 DTSTART;TZID=America/Chicago:20260726T140000
 DTEND;TZID=America/Chicago:20260726T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:ff3de002f39887189ae5845c660d22ba@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5572,7 +5186,7 @@ BEGIN:VEVENT
 SUMMARY:Legendary Late Hours
 DTSTART;TZID=America/Chicago:20260726T170000
 DTEND;TZID=America/Chicago:20260726T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a7e792e7c6caac4c2e718a0a9b950040@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,science,family
@@ -5598,7 +5212,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260727T000000
 DTEND;TZID=America/Chicago:20260728T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:fe5f8ba6dd3a8ca9ed858caa8473d07e@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5623,7 +5237,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260727T000000
 DTEND;TZID=America/Chicago:20260728T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:39a9a5b9480a2a3171f00b0ebde58ec0@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -5650,7 +5264,7 @@ BEGIN:VEVENT
 SUMMARY:Community Roots: Drop-In Toddler Garden Hour at Skinner
 DTSTART;TZID=America/Chicago:20260727T100000
 DTEND;TZID=America/Chicago:20260727T110000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c871886f4e4caa60f921a10782c3387d@family-events-agent
 SEQUENCE:0
 CATEGORIES:parks,toddler,recreation,classes
@@ -5679,7 +5293,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Play Day
 DTSTART;TZID=America/Chicago:20260727T101500
 DTEND;TZID=America/Chicago:20260727T130000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:a0dd08dacbb86c431b22543960481db2@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5708,7 +5322,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Millennium Park Summer Music Series
 DTSTART;TZID=America/Chicago:20260727T183000
 DTEND;TZID=America/Chicago:20260727T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:b57f1e9f5bd28e7ba72c3ae4af9618c0@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Music
@@ -5736,7 +5350,7 @@ SUMMARY:[FREE] CPR and Infant Safety - WEISSBLUTH PEDIATRICS (NORTHWESTERN
  )
 DTSTART;TZID=America/Chicago:20260727T180000
 DTEND;TZID=America/Chicago:20260727T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:fad5d4cf3590e0aef2b01bf5e6e7c017@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -5766,7 +5380,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260728T000000
 DTEND;TZID=America/Chicago:20260729T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:c3f8c7ee02a1fe41dd009d46e559da93@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -5791,7 +5405,7 @@ BEGIN:VEVENT
 SUMMARY:Wild Wonders - Hourly Programming
 DTSTART;TZID=America/Chicago:20260728T000000
 DTEND;TZID=America/Chicago:20260729T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:967d00c00fa2ba2e55d715b568f157e5@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Pritzker-Playspace
@@ -5818,7 +5432,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Bookworms
 DTSTART;TZID=America/Chicago:20260728T103000
 DTEND;TZID=America/Chicago:20260728T111500
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:7baae2392cf08f1c72a50631a7bd5c83@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5849,7 +5463,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Basic Computer Skills Help
 DTSTART;TZID=America/Chicago:20260728T120000
 DTEND;TZID=America/Chicago:20260728T170000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:177af44ccaa9342a9eb550ed9eb62498@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5880,7 +5494,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chapters of Chicago Crafts
 DTSTART;TZID=America/Chicago:20260728T130000
 DTEND;TZID=America/Chicago:20260728T150000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0d19c38a349bf9b47a884699ea951fc9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5911,7 +5525,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chicago Style Pencil Cases
 DTSTART;TZID=America/Chicago:20260728T150000
 DTEND;TZID=America/Chicago:20260728T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:61d3a74e8a96b07a48c37218563d6292@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5942,7 +5556,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Mosaic Coasters
 DTSTART;TZID=America/Chicago:20260728T150000
 DTEND;TZID=America/Chicago:20260728T160000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:66a74afecaade4f813d43933f8469f0d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -5972,7 +5586,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Outdoor Play/Juegos al Air Libre
 DTSTART;TZID=America/Chicago:20260728T180000
 DTEND;TZID=America/Chicago:20260728T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:75e1ff98e68a51dc8dbddd934c492547@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6003,7 +5617,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Millennium Park Summer Film Series: Hamilton
 DTSTART;TZID=America/Chicago:20260728T183000
 DTEND;TZID=America/Chicago:20260728T210000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:0ffc39edc97ab95c4fcf1b4da72d803b@family-events-agent
 SEQUENCE:0
 CATEGORIES:park,family,outdoor,free,music,All,Millennium Park,Film,Family 
@@ -6031,7 +5645,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preparing For Great Sleep for You and Your Baby (BUCKTOWN)
 DTSTART;TZID=America/Chicago:20260728T180000
 DTEND;TZID=America/Chicago:20260728T190000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:fc3d7e414ee19696ace30e5d4de1ae27@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids
@@ -6061,7 +5675,7 @@ BEGIN:VEVENT
 SUMMARY:Here to There: Castles! (Hourly Programming)
 DTSTART;TZID=America/Chicago:20260729T000000
 DTEND;TZID=America/Chicago:20260730T000000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:299ec4a83188f161350d361e7baca2aa@family-events-agent
 SEQUENCE:0
 CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
@@ -6086,7 +5700,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tots and Toddlers Story Time
 DTSTART;TZID=America/Chicago:20260729T111500
 DTEND;TZID=America/Chicago:20260729T120000
-DTSTAMP:20260629T123630Z
+DTSTAMP:20260630T105811Z
 UID:02cd7d81a236aabfb06d90fd36975b2d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,reading
@@ -6110,6 +5724,147 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:In 2 hours: Tots and Toddlers Story Time
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Basic Computer Skills Help
+DTSTART;TZID=America/Chicago:20260729T130000
+DTEND;TZID=America/Chicago:20260729T180000
+DTSTAMP:20260630T105811Z
+UID:58ae71fbb146c8c1aaa76d3e7ff72751@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,reading
+DESCRIPTION:Organizer: Chicago Public Library\\nCost: free\\nAges: 0-60 mo
+ nths\\nCategory: Storytime\\n\\nInterested in learning more about how to u
+ se the computer or need a refresher? We are now offering one-on-one basic 
+ computer skills development through the online resource Chicago Digital Le
+ arn. If you prefer to use your own laptop\, feel free to bring it. Book a 
+ 1-on-1 appointment\, or just drop by the desk on the 2nd floor with any te
+ ch-related questions. For computer assistance\, please call or stop by the
+  branch. Accessibility Need sign language interpretation or other accessib
+ ility assistance \\n\\nMore info: https://chipublib.bibliocommons.com/even
+ ts/6971383a2c65973d00192493
+LOCATION:Chicago Bee\, 3647 S. State St.\, Chicago\, IL 60609
+URL:https://chipublib.bibliocommons.com/events/6971383a2c65973d00192493
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Basic Computer Skills Help
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Basic Computer Skills Help
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Committed Knitters
+DTSTART;TZID=America/Chicago:20260729T110000
+DTEND;TZID=America/Chicago:20260729T150000
+DTSTAMP:20260630T105811Z
+UID:00f0cb5a5169a473dd121c877f3fe868@family-events-agent
+SEQUENCE:0
+CATEGORIES:family,community,kids
+DESCRIPTION:Organizer: Eventbrite - Chicago Family Events\\nCost: free\\nA
+ ges: 0-60 months\\nCategory: Arts & Crafts\\n\\nCommitted Knitters will be
+  meeting weekly at the Arts Incubator Flex Space for a cozy\, creative gat
+ hering open to all skill levels.\\n\\nMore info: https://www.eventbrite.co
+ m/e/committed-knitters-tickets-1992581456776
+LOCATION:Washington Park Arts Incubator\, 301 East Garfield Boulevard\, Ch
+ icago\, IL\, 60637
+URL:https://www.eventbrite.com/e/committed-knitters-tickets-1992581456776
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Committed Knitters
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Committed Knitters
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PEDIATRIC
+ S (SOUTH…
+DTSTART;TZID=America/Chicago:20260729T180000
+DTEND;TZID=America/Chicago:20260729T190000
+DTSTAMP:20260630T105811Z
+UID:4a845487eda0f3749774e7ec8d032d47@family-events-agent
+SEQUENCE:0
+CATEGORIES:family,community,kids
+DESCRIPTION:Organizer: Eventbrite - Chicago Family Events\\nCost: free\\nA
+ ges: 0-60 months\\nCategory: Community\\n\\nJoin us at WP as we will be co
+ vering newborn care starting in the first 48 hours! Evidenced-based inform
+ ation for every expectant parent!\\n\\nMore info: https://www.eventbrite.c
+ om/e/newborn-care-first-48-hours-beyond-weissbluth-pediatrics-south-loop-t
+ ickets-1986278689028
+LOCATION:Weissbluth Pediatrics\, 1471 South Michigan Avenue\, Chicago\, IL
+ \, 60605
+URL:https://www.eventbrite.com/e/newborn-care-first-48-hours-beyond-weissb
+ luth-pediatrics-south-loop-tickets-1986278689028
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Newborn Care: First 48 Hours & Beyond- WEISSBLUTH PE
+ DIATRICS
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Newborn Care: First 48 Hours & Beyond- WEISSBLUTH 
+ PEDIATRICS
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Sunset Yoga
+DTSTART;TZID=America/Chicago:20260729T193000
+DTEND;TZID=America/Chicago:20260729T203000
+DTSTAMP:20260630T105811Z
+UID:6f8a86e75b6b40def871c1f7ce414dd7@family-events-agent
+SEQUENCE:0
+CATEGORIES:family,community,kids
+DESCRIPTION:Organizer: Eventbrite - Chicago Family Events\\nCost: free\\nA
+ ges: 0-60 months\\nCategory: Play & Games\\n\\nJoin us for a grounding Hat
+ ha practice as the sun sets over the Arts Lawn.\\n\\nMore info: https://ww
+ w.eventbrite.com/e/sunset-yoga-tickets-1990416477264
+LOCATION:The Arts Lawn\, 337 East Garfield Boulevard\, Chicago\, IL\, 6063
+ 7
+URL:https://www.eventbrite.com/e/sunset-yoga-tickets-1990416477264
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Sunset Yoga
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Sunset Yoga
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Here to There: Castles! (Hourly Programming)
+DTSTART;TZID=America/Chicago:20260730T000000
+DTEND;TZID=America/Chicago:20260731T000000
+DTSTAMP:20260630T105811Z
+UID:201772b5ee56aa3ecc808cd903d794c5@family-events-agent
+SEQUENCE:0
+CATEGORIES:museum,children,play,toddler,family,Tinkering-Lab
+DESCRIPTION:Organizer: Chicago Children's Museum - Program Calendar\\nCost
+ : paid admission (free first Sunday for Chicago residents)\\nAges: 0-60 mo
+ nths\\nCategory: Play & Games\\n\\nMore info: https://www.chicagochildrens
+ museum.org/program-calendar
+LOCATION:Chicago Children's Museum\, 700 E Grand Ave\, Chicago\, IL 60611
+URL:https://www.chicagochildrensmuseum.org/program-calendar
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Here to There: Castles! (Hourly Programming)
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Here to There: Castles! (Hourly Programming)
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
