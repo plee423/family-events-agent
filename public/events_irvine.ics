@@ -24,64 +24,16 @@ END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:[FREE] Library Closed
-DTSTART;TZID=America/Los_Angeles:20261126T000000
-DTEND;TZID=America/Los_Angeles:20261127T000000
-DTSTAMP:20261126T181230Z
-UID:8a8fd0551889b98fd925bf40538e6037@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvinep
- ubliclibrary.libcal.com/event/17817368
-URL:https://irvinepubliclibrary.libcal.com/event/17817368
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Library Closed
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Library Closed
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:CLOSED for Thanksgiving
-DTSTART;TZID=America/Los_Angeles:20261126T000000
-DTEND;TZID=America/Los_Angeles:20261126T235959
-DTSTAMP:20261126T181230Z
-UID:2a3e0e68b9adff403b74153a3986e743@family-events-agent
-SEQUENCE:0
-CATEGORIES:children,play,toddler,museum,family
-DESCRIPTION:Organizer: Pretend City Children's Museum - Events\\nAges: 0-6
- 0 months\\nCategory: Play & Games\\n\\nMore info: https://www.pretendcity.
- org/events/closed-for-thanksgiving/
-LOCATION:Pretend City Children's Museum - Events\, 29 Hubble\, Irvine\, CA
- \, 92618
-URL:https://www.pretendcity.org/events/closed-for-thanksgiving/
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: CLOSED for Thanksgiving
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: CLOSED for Thanksgiving
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:[FREE] Library Closed
 DTSTART;TZID=America/Los_Angeles:20261127T000000
 DTEND;TZID=America/Los_Angeles:20261128T000000
-DTSTAMP:20261126T181230Z
-UID:234ca7e7b1f6f8c975e174dd3e180bab@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:621678eae7c26a8fe1019ebeb42e67fa@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvinep
- ubliclibrary.libcal.com/event/17817372
-URL:https://irvinepubliclibrary.libcal.com/event/17817372
+DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
+ e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvine
+ publiclibrary.libcal.com/event/17817393
+URL:https://irvinepubliclibrary.libcal.com/event/17817393
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tomorrow: Library Closed
@@ -97,7 +49,7 @@ BEGIN:VEVENT
 SUMMARY:Sustainable Saturdays
 DTSTART;TZID=America/Los_Angeles:20261128T000000
 DTEND;TZID=America/Los_Angeles:20261128T235959
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:99152bf7658879c82f2d2cc14faae3be@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -140,7 +92,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261128T090000
 DTEND;TZID=America/Los_Angeles:20261128T093000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:95935aed18fff71932c010dff7472b13@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -165,7 +117,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261128T103000
 DTEND;TZID=America/Los_Angeles:20261128T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:36cb84bd83dcedf2f75a2bc9c16c5f96@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family,Storytime
@@ -193,7 +145,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261128T110000
 DTEND;TZID=America/Los_Angeles:20261128T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c4454849d62025180fff605435011310@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -219,7 +171,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261128T113000
 DTEND;TZID=America/Los_Angeles:20261128T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e2c05cec6c9afb299614e2fe62f03847@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -245,7 +197,7 @@ BEGIN:VEVENT
 SUMMARY:No Member&#8217\;s Early Entry
 DTSTART;TZID=America/Los_Angeles:20261129T090000
 DTEND;TZID=America/Los_Angeles:20261129T100000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8f837d27ad41cd47eab8da38c5cdf681@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -271,7 +223,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Cafe: Conversation Club
 DTSTART;TZID=America/Los_Angeles:20261129T150000
 DTEND;TZID=America/Los_Angeles:20261129T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f6424392891886a71314df6e0ca36421@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -299,7 +251,7 @@ BEGIN:VEVENT
 SUMMARY:Toddler Town
 DTSTART;TZID=America/Los_Angeles:20261130T090000
 DTEND;TZID=America/Los_Angeles:20261130T103000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:24aaeccef7c77bb0a92abec7081f0032@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -328,31 +280,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Toddler Storytime
+SUMMARY:[FREE] Baby/Toddler Storytime and Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261130T103000
-DTEND;TZID=America/Los_Angeles:20261130T110000
-DTSTAMP:20261126T181230Z
-UID:8dc11ca4a27e9169f777841c98d07a4e@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261130T113000
+DTSTAMP:20261127T175541Z
+UID:f81f064fd59cdb12a2b2bb4fa463b680@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Storytime
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nGet those wiggles out in t
- his fun and energetic storytime just for toddlers! Explore playful stories
- \, upbeat songs\, and lots of movement to spark curiosity and build early 
- literacy skills. A joyful time for toddlers and their caregivers to learn 
- and play together! Space is limited and available on a first-come\, first-
- serve basis. Ages 18 months to 36 months & caregivers.\\n\\nMore info: htt
- ps://irvinepubliclibrary.libcal.com/event/17978096
-LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
-URL:https://irvinepubliclibrary.libcal.com/event/17978096
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nEnjoy stories\, music\, games\, and early li
+ teracy fun at this storytime for babies\, toddlers\, preschoolers and thei
+ r loved ones. Stay & Play will follow after storytime.\\n\\nMore info: htt
+ ps://ocpl.libcal.com/event/17833966
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17833966
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Toddler Storytime
+DESCRIPTION:Tomorrow: Baby/Toddler Storytime and Stay & Play
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Toddler Storytime
+DESCRIPTION:In 2 hours: Baby/Toddler Storytime and Stay & Play
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -360,7 +309,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261130T103000
 DTEND;TZID=America/Los_Angeles:20261130T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:fcd377595cb74b15608a579d022a321c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -386,28 +335,31 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Baby/Toddler Storytime and Stay & Play
+SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261130T103000
-DTEND;TZID=America/Los_Angeles:20261130T113000
-DTSTAMP:20261126T181230Z
-UID:f81f064fd59cdb12a2b2bb4fa463b680@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261130T110000
+DTSTAMP:20261127T175541Z
+UID:8dc11ca4a27e9169f777841c98d07a4e@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nEnjoy stories\, music\, games\, and early li
- teracy fun at this storytime for babies\, toddlers\, preschoolers and thei
- r loved ones. Stay & Play will follow after storytime.\\n\\nMore info: htt
- ps://ocpl.libcal.com/event/17833966
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17833966
+CATEGORIES:storytime,library,baby,toddler,family,Storytime
+DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
+ \\nAges: 0-60 months\\nCategory: Storytime\\n\\nGet those wiggles out in t
+ his fun and energetic storytime just for toddlers! Explore playful stories
+ \, upbeat songs\, and lots of movement to spark curiosity and build early 
+ literacy skills. A joyful time for toddlers and their caregivers to learn 
+ and play together! Space is limited and available on a first-come\, first-
+ serve basis. Ages 18 months to 36 months & caregivers.\\n\\nMore info: htt
+ ps://irvinepubliclibrary.libcal.com/event/17978096
+LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
+URL:https://irvinepubliclibrary.libcal.com/event/17978096
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Baby/Toddler Storytime and Stay & Play
+DESCRIPTION:Tomorrow: Toddler Storytime
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Baby/Toddler Storytime and Stay & Play
+DESCRIPTION:In 2 hours: Toddler Storytime
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -415,7 +367,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Craft Corner
 DTSTART;TZID=America/Los_Angeles:20261130T103000
 DTEND;TZID=America/Los_Angeles:20261130T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:ccc18b92ed79851570971d8c9bbe67c7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Storytime
@@ -441,7 +393,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Spanish Bilingual Storytime
 DTSTART;TZID=America/Los_Angeles:20261130T111500
 DTEND;TZID=America/Los_Angeles:20261130T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e5f90ed645ed32920908227dcd9ae99a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
@@ -468,7 +420,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261130T113000
 DTEND;TZID=America/Los_Angeles:20261130T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:5f52294539652971cbcdb9885c3c7387@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -497,7 +449,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chess Afternoons
 DTSTART;TZID=America/Los_Angeles:20261130T160000
 DTEND;TZID=America/Los_Angeles:20261130T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:489e465701fef6de828b0194de1cd14f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Games
@@ -523,7 +475,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Michael Rayner: Juggler Extraordinaire
 DTSTART;TZID=America/Los_Angeles:20261130T160000
 DTEND;TZID=America/Los_Angeles:20261130T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:17c7d832371ba439221a3482ec15fa81@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
@@ -551,7 +503,7 @@ BEGIN:VEVENT
 SUMMARY:RSM Library Bingo
 DTSTART;TZID=America/Los_Angeles:20261201T000000
 DTEND;TZID=America/Los_Angeles:20261202T000000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:caf10b3cbe86811010e92b6130e35147@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Games / Gaming,Health & W
@@ -580,7 +532,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Pub Trivia: Ho\, Ho\, Holiday Movie Trivia
 DTSTART;TZID=America/Los_Angeles:20261130T180000
 DTEND;TZID=America/Los_Angeles:20261130T193000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8e75ba308028d0c099c6d39b91ec9c81@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Trivia
@@ -604,10 +556,36 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Bilingual English/Chinese Storytime
+DTSTART;TZID=America/Los_Angeles:20261201T103000
+DTEND;TZID=America/Los_Angeles:20261201T110000
+DTSTAMP:20261127T175541Z
+UID:7d31a8627151ecc6e324b469f23e630f@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nJoin us for a fun mix of songs and stories c
+ onducted in English and Chinese. \n\n中英雙語故事時間 透過故事
+ 、兒歌、和手指謠，一起陪伴孩子進入閱讀的世界.\\n\\nM
+ ore info: https://ocpl.libcal.com/event/17833861
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17833861
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Bilingual English/Chinese Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Bilingual English/Chinese Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261201T103000
 DTEND;TZID=America/Los_Angeles:20261201T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6cadf608ee4d8c247c1383bde33f2368@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -632,28 +610,29 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Bilingual English/Chinese Storytime
+SUMMARY:[FREE] Play and Learn
 DTSTART;TZID=America/Los_Angeles:20261201T103000
-DTEND;TZID=America/Los_Angeles:20261201T110000
-DTSTAMP:20261126T181230Z
-UID:7d31a8627151ecc6e324b469f23e630f@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261201T113000
+DTSTAMP:20261127T175541Z
+UID:1cccfcae2231e3ba3d0c0c505352ab1d@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nJoin us for a fun mix of songs and stories c
- onducted in English and Chinese. \n\n中英雙語故事時間 透過故事
- 、兒歌、和手指謠，一起陪伴孩子進入閱讀的世界.\\n\\nM
- ore info: https://ocpl.libcal.com/event/17833861
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17833861
+CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
+ ro Library and enjoy sensory child-directed play. We will explore a variet
+ y of textures\, activities\, and more.\n\nThis program is best suited for 
+ families with children 0 - 4 years of age. No registration required.\\n\\n
+ More info: https://ocpl.libcal.com/event/17659604
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659604
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Bilingual English/Chinese Storytime
+DESCRIPTION:Tomorrow: Play and Learn
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Bilingual English/Chinese Storytime
+DESCRIPTION:In 2 hours: Play and Learn
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -661,7 +640,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261201T103000
 DTEND;TZID=America/Los_Angeles:20261201T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a7b991ca42f6d1983def159c4adcb601@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -686,37 +665,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Play and Learn
-DTSTART;TZID=America/Los_Angeles:20261201T103000
-DTEND;TZID=America/Los_Angeles:20261201T113000
-DTSTAMP:20261126T181230Z
-UID:1cccfcae2231e3ba3d0c0c505352ab1d@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
- ro Library and enjoy sensory child-directed play. We will explore a variet
- y of textures\, activities\, and more.\n\nThis program is best suited for 
- families with children 0 - 4 years of age. No registration required.\\n\\n
- More info: https://ocpl.libcal.com/event/17659604
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659604
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Play and Learn
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Play and Learn
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Stay and Play
 DTSTART;TZID=America/Los_Angeles:20261201T103000
 DTEND;TZID=America/Los_Angeles:20261201T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:aeee7dcffdcafd89183ce5b5f910efd5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -743,7 +695,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Art Journaling Meetup: A Monthly Open Studio
 DTSTART;TZID=America/Los_Angeles:20261201T110000
 DTEND;TZID=America/Los_Angeles:20261201T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3afd226a3af75cd62bc5d5ca50b298b8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Culture,Workshop
@@ -771,7 +723,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261201T153000
 DTEND;TZID=America/Los_Angeles:20261201T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:024615fd1ecc91c63f2bb7f783329f80@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -797,7 +749,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261201T160000
 DTEND;TZID=America/Los_Angeles:20261201T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f952ca03c8c845910253e2fb4900d623@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -823,7 +775,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] STEAM Explorers
 DTSTART;TZID=America/Los_Angeles:20261201T160000
 DTEND;TZID=America/Los_Angeles:20261201T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6ede40418cee14279544359fe21105f5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,STEAM
@@ -849,7 +801,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] First Tuesday Book Broup
 DTSTART;TZID=America/Los_Angeles:20261201T173000
 DTEND;TZID=America/Los_Angeles:20261201T183000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1a7a0a9ffc20fad3e722ef3db5569577@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions
@@ -873,30 +825,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Baby Storytime
+SUMMARY:[FREE] Bilingual Storytime (English/Spanish)
 DTSTART;TZID=America/Los_Angeles:20261202T103000
 DTEND;TZID=America/Los_Angeles:20261202T110000
-DTSTAMP:20261126T181230Z
-UID:d322c6e32ec61e386a31a760a0add052@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:73bbf44479a3969d5812b9e0181fb48c@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Storytime
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nCuddle up and connect with
-  your little one during this cozy storytime designed just for babies! Enjo
- y gentle stories\, sweet songs\, and soothing rhymes that help support ear
- ly development and social skills. \n\nSpace is limited and available on a 
- first-come\, first-serve basis. Age 0 months to 18 months and caregivers.
- \\n\\nMore info: https://irvinepubliclibrary.libcal.com/event/17938905
-LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
-URL:https://irvinepubliclibrary.libcal.com/event/17938905
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nJoin us every Wednesday at 10:30 am for a fu
+ n mix of Spanish and English stories and songs. Acompáñenos cada miérco
+ les a las 10:30 am para una divertida mezcla de cuentos y canciones en esp
+ añol y inglés.\\n\\nMore info: https://ocpl.libcal.com/event/17834004
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17834004
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Baby Storytime
+DESCRIPTION:Tomorrow: Bilingual Storytime (English/Spanish)
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Baby Storytime
+DESCRIPTION:In 2 hours: Bilingual Storytime (English/Spanish)
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -904,7 +854,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261202T103000
 DTEND;TZID=America/Los_Angeles:20261202T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7e8af4d8057e594675d36a9db665abba@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -929,28 +879,56 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Bilingual Storytime (English/Spanish)
+SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261202T103000
 DTEND;TZID=America/Los_Angeles:20261202T110000
-DTSTAMP:20261126T181230Z
-UID:73bbf44479a3969d5812b9e0181fb48c@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:d322c6e32ec61e386a31a760a0add052@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nJoin us every Wednesday at 10:30 am for a fu
- n mix of Spanish and English stories and songs. Acompáñenos cada miérco
- les a las 10:30 am para una divertida mezcla de cuentos y canciones en esp
- añol y inglés.\\n\\nMore info: https://ocpl.libcal.com/event/17834004
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17834004
+CATEGORIES:storytime,library,baby,toddler,family,Storytime
+DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
+ \\nAges: 0-60 months\\nCategory: Storytime\\n\\nCuddle up and connect with
+  your little one during this cozy storytime designed just for babies! Enjo
+ y gentle stories\, sweet songs\, and soothing rhymes that help support ear
+ ly development and social skills. \n\nSpace is limited and available on a 
+ first-come\, first-serve basis. Age 0 months to 18 months and caregivers.
+ \\n\\nMore info: https://irvinepubliclibrary.libcal.com/event/17938905
+LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
+URL:https://irvinepubliclibrary.libcal.com/event/17938905
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Bilingual Storytime (English/Spanish)
+DESCRIPTION:Tomorrow: Baby Storytime
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Bilingual Storytime (English/Spanish)
+DESCRIPTION:In 2 hours: Baby Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Family Storytime
+DTSTART;TZID=America/Los_Angeles:20261202T103000
+DTEND;TZID=America/Los_Angeles:20261202T110000
+DTSTAMP:20261127T175541Z
+UID:2b19e13e1c186ecc66263fc28ed25ba2@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for an early literacy program for f
+ amilies with children ages 0-8 years old. We will read books\, sing songs
+ \, and make new friends! No registration required.\\n\\nMore info: https:/
+ /ocpl.libcal.com/event/17659488
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659488
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Family Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Family Storytime
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -958,7 +936,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261202T103000
 DTEND;TZID=America/Los_Angeles:20261202T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:51d1e9e3a4889adadd0880483c93ab00@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -983,36 +961,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Family Storytime
-DTSTART;TZID=America/Los_Angeles:20261202T103000
-DTEND;TZID=America/Los_Angeles:20261202T110000
-DTSTAMP:20261126T181230Z
-UID:2b19e13e1c186ecc66263fc28ed25ba2@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for an early literacy program for f
- amilies with children ages 0-8 years old. We will read books\, sing songs
- \, and make new friends! No registration required.\\n\\nMore info: https:/
- /ocpl.libcal.com/event/17659488
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659488
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Family Storytime
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Family Storytime
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Fun with Colors
 DTSTART;TZID=America/Los_Angeles:20261202T110000
 DTEND;TZID=America/Los_Angeles:20261202T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:882fda25239c0763f6c8f05f5d9e1d22@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -1038,7 +990,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music & Movement Storytime
 DTSTART;TZID=America/Los_Angeles:20261202T110000
 DTEND;TZID=America/Los_Angeles:20261202T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:898940852cb8ae1d9e9919f35f9dc650@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1064,7 +1016,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261202T113000
 DTEND;TZID=America/Los_Angeles:20261202T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:0edcf5873ad323655b76bda4cccc6c70@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -1090,7 +1042,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Jingle Mingle: Holiday Open House
 DTSTART;TZID=America/Los_Angeles:20261202T153000
 DTEND;TZID=America/Los_Angeles:20261202T173000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7320eb670871e434819a9f46e16ec009@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Music,Progra
@@ -1115,10 +1067,37 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Play and Learn
+DTSTART;TZID=America/Los_Angeles:20261203T103000
+DTEND;TZID=America/Los_Angeles:20261203T113000
+DTSTAMP:20261127T175541Z
+UID:3991e2dc355238f97d6fe47b63c827f7@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
+ ro Library and enjoy sensory child-directed play. We will explore a variet
+ y of textures\, activities\, and more.\n\nThis program is best suited for 
+ families with children 0 - 4 years of age. No registration required.\\n\\n
+ More info: https://ocpl.libcal.com/event/17659605
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659605
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Play and Learn
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Play and Learn
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261203T103000
 DTEND;TZID=America/Los_Angeles:20261203T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:da01bec7e432d4c81fcd0c1b5b58a0df@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1144,37 +1123,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Play and Learn
-DTSTART;TZID=America/Los_Angeles:20261203T103000
-DTEND;TZID=America/Los_Angeles:20261203T113000
-DTSTAMP:20261126T181230Z
-UID:3991e2dc355238f97d6fe47b63c827f7@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
- ro Library and enjoy sensory child-directed play. We will explore a variet
- y of textures\, activities\, and more.\n\nThis program is best suited for 
- families with children 0 - 4 years of age. No registration required.\\n\\n
- More info: https://ocpl.libcal.com/event/17659605
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659605
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Play and Learn
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Play and Learn
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Dance Party!
 DTSTART;TZID=America/Los_Angeles:20261203T103000
 DTEND;TZID=America/Los_Angeles:20261203T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1b5412359446654265275f0d7bf26cae@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Dance,Music
@@ -1201,7 +1153,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music & Movement Storytime
 DTSTART;TZID=America/Los_Angeles:20261203T110000
 DTEND;TZID=America/Los_Angeles:20261203T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e10b1b2d2ec690ddfc94f4dacf5f2f2d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
@@ -1226,7 +1178,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Kindergarten Readiness Storytime
 DTSTART;TZID=America/Los_Angeles:20261203T110000
 DTEND;TZID=America/Los_Angeles:20261203T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:551ffb39ada2a9308ce1cc09583572dc@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1252,7 +1204,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261203T113000
 DTEND;TZID=America/Los_Angeles:20261203T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:61e1d133f439b624eb18d2cf4c7761ea@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -1278,7 +1230,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] STEAM Explorers
 DTSTART;TZID=America/Los_Angeles:20261203T160000
 DTEND;TZID=America/Los_Angeles:20261203T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c09a59e6f00f80e4e399ee5ada15b30c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,STEAM
@@ -1305,7 +1257,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Conversation Group
 DTSTART;TZID=America/Los_Angeles:20261203T160000
 DTEND;TZID=America/Los_Angeles:20261203T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:ee37cff35c208d33c1229c03e0753a86@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -1332,7 +1284,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Author Drew Brockington
 DTSTART;TZID=America/Los_Angeles:20261203T170000
 DTEND;TZID=America/Los_Angeles:20261203T180000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b69f219a63df402033963ca359deec6b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Author Visits
@@ -1360,7 +1312,7 @@ BEGIN:VEVENT
 SUMMARY:Little Hands\, Big Impact with Second Harvest
 DTSTART;TZID=America/Los_Angeles:20261204T100000
 DTEND;TZID=America/Los_Angeles:20261204T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:831b0eb1f40e588c9efdaf5d3abcbeb7@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -1394,7 +1346,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Chinese Storytime
 DTSTART;TZID=America/Los_Angeles:20261204T110000
 DTEND;TZID=America/Los_Angeles:20261204T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a3ad87ed859052883eb98ad95abaddaf@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1421,7 +1373,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Lego Block Party
 DTSTART;TZID=America/Los_Angeles:20261204T153000
 DTEND;TZID=America/Los_Angeles:20261204T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a11b5d3ebec0ff19bef964a2254ac959@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,STEAM
@@ -1448,7 +1400,7 @@ BEGIN:VEVENT
 SUMMARY:Annual Tree Lighting Ceremony
 DTSTART;TZID=America/Los_Angeles:20261205T110000
 DTEND;TZID=America/Los_Angeles:20261205T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6ef46fcdc20f9cc078787347e04a99e6@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -1482,7 +1434,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261205T090000
 DTEND;TZID=America/Los_Angeles:20261205T093000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6f32a015526ba3b3dc7cb58c4b4aa98e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1507,7 +1459,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Take-home Crafternoon
 DTSTART;TZID=America/Los_Angeles:20261205T090000
 DTEND;TZID=America/Los_Angeles:20261205T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c019fad46f4f2a4f60f19bec58810dc7@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -1532,7 +1484,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Craft Hour
 DTSTART;TZID=America/Los_Angeles:20261205T100000
 DTEND;TZID=America/Los_Angeles:20261205T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b4ad6b616f84d7adec4134ea8c57bd4d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family
@@ -1558,7 +1510,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Super Saturday
 DTSTART;TZID=America/Los_Angeles:20261205T103000
 DTEND;TZID=America/Los_Angeles:20261205T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:2934b860384c1f47a7617c7f1d30c860@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,STEAM
@@ -1585,7 +1537,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261205T103000
 DTEND;TZID=America/Los_Angeles:20261205T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e9abd77ef403bad606343bc9e624b413@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family,Storytime
@@ -1613,7 +1565,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261205T110000
 DTEND;TZID=America/Los_Angeles:20261205T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:12549b5e9b38d6387133b302521c315e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1639,7 +1591,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261205T113000
 DTEND;TZID=America/Los_Angeles:20261205T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:826fcfc3b7a1b05aca37d9a90f42930f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -1665,7 +1617,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Create-It-Yourself: Book Ornaments
 DTSTART;TZID=America/Los_Angeles:20261205T140000
 DTEND;TZID=America/Los_Angeles:20261205T153000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b4a61d8c29c3d60b2d5bf6ac4e3964f8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Crafts
@@ -1691,7 +1643,7 @@ BEGIN:VEVENT
 SUMMARY:No Member&#8217\;s Early Entry
 DTSTART;TZID=America/Los_Angeles:20261206T090000
 DTEND;TZID=America/Los_Angeles:20261206T100000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:da0600062c6a3af176ae95042721d001@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -1717,7 +1669,7 @@ BEGIN:VEVENT
 SUMMARY:Pictures with Santa
 DTSTART;TZID=America/Los_Angeles:20261206T103000
 DTEND;TZID=America/Los_Angeles:20261206T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:59e8689725b1cb4df3faa1998ca12f4d@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -1746,7 +1698,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Cafe: Conversation Club
 DTSTART;TZID=America/Los_Angeles:20261206T150000
 DTEND;TZID=America/Los_Angeles:20261206T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f679ab8028568fe27d0fef43f42aa690@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -1774,7 +1726,7 @@ BEGIN:VEVENT
 SUMMARY:Toddler Town
 DTSTART;TZID=America/Los_Angeles:20261207T090000
 DTEND;TZID=America/Los_Angeles:20261207T103000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:fdeff2b86ea9141ee4c6fe30417c3566@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -1803,31 +1755,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Toddler Storytime
+SUMMARY:[FREE] Baby/Toddler Storytime and Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261207T103000
-DTEND;TZID=America/Los_Angeles:20261207T110000
-DTSTAMP:20261126T181230Z
-UID:16b3334b923e81c3c301f9418a1784c6@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261207T113000
+DTSTAMP:20261127T175541Z
+UID:c75a7613317b326a158980d8bfa7984b@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Storytime
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nGet those wiggles out in t
- his fun and energetic storytime just for toddlers! Explore playful stories
- \, upbeat songs\, and lots of movement to spark curiosity and build early 
- literacy skills. A joyful time for toddlers and their caregivers to learn 
- and play together! Space is limited and available on a first-come\, first-
- serve basis. Ages 18 months to 36 months & caregivers.\\n\\nMore info: htt
- ps://irvinepubliclibrary.libcal.com/event/17978097
-LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
-URL:https://irvinepubliclibrary.libcal.com/event/17978097
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nEnjoy stories\, music\, games\, and early li
+ teracy fun at this storytime for babies\, toddlers\, preschoolers and thei
+ r loved ones. Stay & Play will follow after storytime.\\n\\nMore info: htt
+ ps://ocpl.libcal.com/event/17833967
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17833967
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Toddler Storytime
+DESCRIPTION:Tomorrow: Baby/Toddler Storytime and Stay & Play
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Toddler Storytime
+DESCRIPTION:In 2 hours: Baby/Toddler Storytime and Stay & Play
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -1835,7 +1784,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261207T103000
 DTEND;TZID=America/Los_Angeles:20261207T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:40a80c76770168a2a179ac80cf1d0cbd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1861,28 +1810,31 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Baby/Toddler Storytime and Stay & Play
+SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261207T103000
-DTEND;TZID=America/Los_Angeles:20261207T113000
-DTSTAMP:20261126T181230Z
-UID:c75a7613317b326a158980d8bfa7984b@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261207T110000
+DTSTAMP:20261127T175541Z
+UID:16b3334b923e81c3c301f9418a1784c6@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nEnjoy stories\, music\, games\, and early li
- teracy fun at this storytime for babies\, toddlers\, preschoolers and thei
- r loved ones. Stay & Play will follow after storytime.\\n\\nMore info: htt
- ps://ocpl.libcal.com/event/17833967
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17833967
+CATEGORIES:storytime,library,baby,toddler,family,Storytime
+DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
+ \\nAges: 0-60 months\\nCategory: Storytime\\n\\nGet those wiggles out in t
+ his fun and energetic storytime just for toddlers! Explore playful stories
+ \, upbeat songs\, and lots of movement to spark curiosity and build early 
+ literacy skills. A joyful time for toddlers and their caregivers to learn 
+ and play together! Space is limited and available on a first-come\, first-
+ serve basis. Ages 18 months to 36 months & caregivers.\\n\\nMore info: htt
+ ps://irvinepubliclibrary.libcal.com/event/17978097
+LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
+URL:https://irvinepubliclibrary.libcal.com/event/17978097
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Baby/Toddler Storytime and Stay & Play
+DESCRIPTION:Tomorrow: Toddler Storytime
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Baby/Toddler Storytime and Stay & Play
+DESCRIPTION:In 2 hours: Toddler Storytime
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -1890,7 +1842,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Craft Corner
 DTSTART;TZID=America/Los_Angeles:20261207T103000
 DTEND;TZID=America/Los_Angeles:20261207T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8ec52991a337fe264197c65828d4d225@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Storytime
@@ -1916,7 +1868,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Spanish Bilingual Storytime
 DTSTART;TZID=America/Los_Angeles:20261207T111500
 DTEND;TZID=America/Los_Angeles:20261207T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:73d716f9fc65cadd274d955a29a1df2e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
@@ -1943,7 +1895,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261207T113000
 DTEND;TZID=America/Los_Angeles:20261207T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1897a0e31ab950da1abdb704856c7b29@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -1969,36 +1921,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Chess Afternoons
-DTSTART;TZID=America/Los_Angeles:20261207T160000
-DTEND;TZID=America/Los_Angeles:20261207T164500
-DTSTAMP:20261126T181230Z
-UID:50168b34e808ea5843fa13d9d6aaea6d@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Games
-DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
- e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nJoin us for a fun and fri
- endly chess afternoon! Hang out with friends\, play chess\, and build focu
- s\, creativity\, and sportsmanship along the way. For ages 6–12.\\n\\nMo
- re info: https://irvinepubliclibrary.libcal.com/event/17983980
-LOCATION:University Park Library Community Room \, University Park Library
-URL:https://irvinepubliclibrary.libcal.com/event/17983980
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Chess Afternoons
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Chess Afternoons
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Winter Art Class
 DTSTART;TZID=America/Los_Angeles:20261207T160000
 DTEND;TZID=America/Los_Angeles:20261207T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:eed9c100b012a4624059c577415a3b0f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program,Work
@@ -2025,10 +1951,36 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Chess Afternoons
+DTSTART;TZID=America/Los_Angeles:20261207T160000
+DTEND;TZID=America/Los_Angeles:20261207T164500
+DTSTAMP:20261127T175541Z
+UID:50168b34e808ea5843fa13d9d6aaea6d@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Games
+DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
+ e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nJoin us for a fun and fri
+ endly chess afternoon! Hang out with friends\, play chess\, and build focu
+ s\, creativity\, and sportsmanship along the way. For ages 6–12.\\n\\nMo
+ re info: https://irvinepubliclibrary.libcal.com/event/17983980
+LOCATION:University Park Library Community Room \, University Park Library
+URL:https://irvinepubliclibrary.libcal.com/event/17983980
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Chess Afternoons
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Chess Afternoons
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] STEAM Explorers
 DTSTART;TZID=America/Los_Angeles:20261207T160000
 DTEND;TZID=America/Los_Angeles:20261207T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:aa974a8e8011028a37d2a5fc28ebedcf@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,STEAM
@@ -2055,7 +2007,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Felt Friends
 DTSTART;TZID=America/Los_Angeles:20261207T160000
 DTEND;TZID=America/Los_Angeles:20261207T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c87aa2c6b7d7451ba24f79ae76a5f1cf@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -2083,7 +2035,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Pajama Storytime
 DTSTART;TZID=America/Los_Angeles:20261207T180000
 DTEND;TZID=America/Los_Angeles:20261207T184500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c9cf4720a722039788436658942bece5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2110,7 +2062,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Step-By-Step: Winter Nail Art
 DTSTART;TZID=America/Los_Angeles:20261207T180000
 DTEND;TZID=America/Los_Angeles:20261207T190000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c01629bbb3945192474bb0d4cd197664@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Crafts,Special Eve
@@ -2138,7 +2090,7 @@ BEGIN:VEVENT
 SUMMARY:Neurodivergent Family Night
 DTSTART;TZID=America/Los_Angeles:20261208T170000
 DTEND;TZID=America/Los_Angeles:20261208T190000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:13b3a895feb2205064b6735c9d1356d6@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -2173,10 +2125,36 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Bilingual English/Chinese Storytime
+DTSTART;TZID=America/Los_Angeles:20261208T103000
+DTEND;TZID=America/Los_Angeles:20261208T110000
+DTSTAMP:20261127T175541Z
+UID:21c720b49549c6f6f45ff5aa816b9c11@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nJoin us for a fun mix of songs and stories c
+ onducted in English and Chinese. \n\n中英雙語故事時間 透過故事
+ 、兒歌、和手指謠，一起陪伴孩子進入閱讀的世界.\\n\\nM
+ ore info: https://ocpl.libcal.com/event/17834770
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17834770
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Bilingual English/Chinese Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Bilingual English/Chinese Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261208T103000
 DTEND;TZID=America/Los_Angeles:20261208T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:d0b12c365ccf03de083de0ae41163d46@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2201,28 +2179,29 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Bilingual English/Chinese Storytime
+SUMMARY:[FREE] Play and Learn
 DTSTART;TZID=America/Los_Angeles:20261208T103000
-DTEND;TZID=America/Los_Angeles:20261208T110000
-DTSTAMP:20261126T181230Z
-UID:21c720b49549c6f6f45ff5aa816b9c11@family-events-agent
+DTEND;TZID=America/Los_Angeles:20261208T113000
+DTSTAMP:20261127T175541Z
+UID:3a6b2eef4933ef407f13f467e804e3cc@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nJoin us for a fun mix of songs and stories c
- onducted in English and Chinese. \n\n中英雙語故事時間 透過故事
- 、兒歌、和手指謠，一起陪伴孩子進入閱讀的世界.\\n\\nM
- ore info: https://ocpl.libcal.com/event/17834770
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17834770
+CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
+ ro Library and enjoy sensory child-directed play. We will explore a variet
+ y of textures\, activities\, and more.\n\nThis program is best suited for 
+ families with children 0 - 4 years of age. No registration required.\\n\\n
+ More info: https://ocpl.libcal.com/event/17659606
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659606
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Bilingual English/Chinese Storytime
+DESCRIPTION:Tomorrow: Play and Learn
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Bilingual English/Chinese Storytime
+DESCRIPTION:In 2 hours: Play and Learn
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -2230,7 +2209,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261208T103000
 DTEND;TZID=America/Los_Angeles:20261208T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a2839d0070a79d327fd965b95775e37f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2255,37 +2234,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Play and Learn
-DTSTART;TZID=America/Los_Angeles:20261208T103000
-DTEND;TZID=America/Los_Angeles:20261208T113000
-DTSTAMP:20261126T181230Z
-UID:3a6b2eef4933ef407f13f467e804e3cc@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
- ro Library and enjoy sensory child-directed play. We will explore a variet
- y of textures\, activities\, and more.\n\nThis program is best suited for 
- families with children 0 - 4 years of age. No registration required.\\n\\n
- More info: https://ocpl.libcal.com/event/17659606
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659606
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Play and Learn
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Play and Learn
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Stay and Play
 DTSTART;TZID=America/Los_Angeles:20261208T103000
 DTEND;TZID=America/Los_Angeles:20261208T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:0cd57945b82d8bcfd0ad807357e78d23@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2312,7 +2264,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Winter Reading Kickoff
 DTSTART;TZID=America/Los_Angeles:20261208T150000
 DTEND;TZID=America/Los_Angeles:20261208T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:db821106196749fce5a1673500ece093@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program,Spec
@@ -2339,7 +2291,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261208T153000
 DTEND;TZID=America/Los_Angeles:20261208T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:eef0d06a8cb5573aef47a36fe2cf12ac@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -2365,7 +2317,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261208T160000
 DTEND;TZID=America/Los_Angeles:20261208T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e8e8d210f895105435306de1b606ca52@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -2391,7 +2343,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Glow Bubble Adventure by Sparks
 DTSTART;TZID=America/Los_Angeles:20261208T160000
 DTEND;TZID=America/Los_Angeles:20261208T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b58d7a2ef82a3209f7385aa2395a8073@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Dance,Music,Program,Speci
@@ -2419,7 +2371,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Kids' Kitchen
 DTSTART;TZID=America/Los_Angeles:20261208T160000
 DTEND;TZID=America/Los_Angeles:20261208T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:4c13ac9b8f87481896d026fca9b5e548@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Food Literacy,Program
@@ -2444,30 +2396,28 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Baby Storytime
+SUMMARY:[FREE] Bilingual Storytime (English/Spanish)
 DTSTART;TZID=America/Los_Angeles:20261209T103000
 DTEND;TZID=America/Los_Angeles:20261209T110000
-DTSTAMP:20261126T181230Z
-UID:f1e322f49d2db50e229c4afaaeba78f6@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:4c91c31d1e7d1a833a276ca6325294a2@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Storytime
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nCuddle up and connect with
-  your little one during this cozy storytime designed just for babies! Enjo
- y gentle stories\, sweet songs\, and soothing rhymes that help support ear
- ly development and social skills. \n\nSpace is limited and available on a 
- first-come\, first-serve basis. Age 0 months to 18 months and caregivers.
- \\n\\nMore info: https://irvinepubliclibrary.libcal.com/event/17938907
-LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
-URL:https://irvinepubliclibrary.libcal.com/event/17938907
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nJoin us every Wednesday at 10:30 am for a fu
+ n mix of Spanish and English stories and songs. Acompáñenos cada miérco
+ les a las 10:30 am para una divertida mezcla de cuentos y canciones en esp
+ añol y inglés.\\n\\nMore info: https://ocpl.libcal.com/event/17834005
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17834005
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Baby Storytime
+DESCRIPTION:Tomorrow: Bilingual Storytime (English/Spanish)
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Baby Storytime
+DESCRIPTION:In 2 hours: Bilingual Storytime (English/Spanish)
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -2475,7 +2425,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261209T103000
 DTEND;TZID=America/Los_Angeles:20261209T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:42052032d146c3db9d064d340985a75b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2500,28 +2450,56 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Bilingual Storytime (English/Spanish)
+SUMMARY:[FREE] Baby Storytime
 DTSTART;TZID=America/Los_Angeles:20261209T103000
 DTEND;TZID=America/Los_Angeles:20261209T110000
-DTSTAMP:20261126T181230Z
-UID:4c91c31d1e7d1a833a276ca6325294a2@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:f1e322f49d2db50e229c4afaaeba78f6@family-events-agent
 SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nJoin us every Wednesday at 10:30 am for a fu
- n mix of Spanish and English stories and songs. Acompáñenos cada miérco
- les a las 10:30 am para una divertida mezcla de cuentos y canciones en esp
- añol y inglés.\\n\\nMore info: https://ocpl.libcal.com/event/17834005
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17834005
+CATEGORIES:storytime,library,baby,toddler,family,Storytime
+DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
+ \\nAges: 0-60 months\\nCategory: Storytime\\n\\nCuddle up and connect with
+  your little one during this cozy storytime designed just for babies! Enjo
+ y gentle stories\, sweet songs\, and soothing rhymes that help support ear
+ ly development and social skills. \n\nSpace is limited and available on a 
+ first-come\, first-serve basis. Age 0 months to 18 months and caregivers.
+ \\n\\nMore info: https://irvinepubliclibrary.libcal.com/event/17938907
+LOCATION:Katie Wheeler Library Children's Area \, Katie Wheeler Library
+URL:https://irvinepubliclibrary.libcal.com/event/17938907
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Bilingual Storytime (English/Spanish)
+DESCRIPTION:Tomorrow: Baby Storytime
 TRIGGER:-P1D
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Bilingual Storytime (English/Spanish)
+DESCRIPTION:In 2 hours: Baby Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Family Storytime
+DTSTART;TZID=America/Los_Angeles:20261209T103000
+DTEND;TZID=America/Los_Angeles:20261209T110000
+DTSTAMP:20261127T175541Z
+UID:295c5aa8ec98f9ace37ec549bfef4fd2@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for an early literacy program for f
+ amilies with children ages 0-8 years old. We will read books\, sing songs
+ \, and make new friends! No registration required.\\n\\nMore info: https:/
+ /ocpl.libcal.com/event/17659489
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659489
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Family Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Family Storytime
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
@@ -2529,7 +2507,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Preschool Storytime
 DTSTART;TZID=America/Los_Angeles:20261209T103000
 DTEND;TZID=America/Los_Angeles:20261209T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f566495095d5415765d8fabd2cf151cd@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2554,36 +2532,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Family Storytime
-DTSTART;TZID=America/Los_Angeles:20261209T103000
-DTEND;TZID=America/Los_Angeles:20261209T110000
-DTSTAMP:20261126T181230Z
-UID:295c5aa8ec98f9ace37ec549bfef4fd2@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for an early literacy program for f
- amilies with children ages 0-8 years old. We will read books\, sing songs
- \, and make new friends! No registration required.\\n\\nMore info: https:/
- /ocpl.libcal.com/event/17659489
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659489
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Family Storytime
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Family Storytime
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Fun with Colors
 DTSTART;TZID=America/Los_Angeles:20261209T110000
 DTEND;TZID=America/Los_Angeles:20261209T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6e4e68f20cda02976117f6b2e92d9f6b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -2609,7 +2561,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music & Movement Storytime
 DTSTART;TZID=America/Los_Angeles:20261209T110000
 DTEND;TZID=America/Los_Angeles:20261209T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:22cfc18f52bb64b5ca8991485c5d78b4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2635,7 +2587,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261209T113000
 DTEND;TZID=America/Los_Angeles:20261209T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:37f090b62a2fc0415107916078daaf5e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -2661,7 +2613,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Festive Film: Frosty the Snowman
 DTSTART;TZID=America/Los_Angeles:20261209T153000
 DTEND;TZID=America/Los_Angeles:20261209T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7d332efa7f89ec2309e7399c80e137d9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Film Screening
@@ -2686,7 +2638,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sensory Storytime
 DTSTART;TZID=America/Los_Angeles:20261209T173000
 DTEND;TZID=America/Los_Angeles:20261209T181500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:dc23ca7c9e43617d2904a2e1111f54d3@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2711,10 +2663,37 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Play and Learn
+DTSTART;TZID=America/Los_Angeles:20261210T103000
+DTEND;TZID=America/Los_Angeles:20261210T113000
+DTSTAMP:20261127T175541Z
+UID:69af9ce21e5f26a45b754275ba09a44a@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
+DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
+ ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
+ ro Library and enjoy sensory child-directed play. We will explore a variet
+ y of textures\, activities\, and more.\n\nThis program is best suited for 
+ families with children 0 - 4 years of age. No registration required.\\n\\n
+ More info: https://ocpl.libcal.com/event/17659607
+LOCATION:El Toro\, El Toro
+URL:https://ocpl.libcal.com/event/17659607
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Play and Learn
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Play and Learn
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Toddler Storytime
 DTSTART;TZID=America/Los_Angeles:20261210T103000
 DTEND;TZID=America/Los_Angeles:20261210T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:571563e660666490bce19117df98ca14@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2740,37 +2719,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Play and Learn
-DTSTART;TZID=America/Los_Angeles:20261210T103000
-DTEND;TZID=America/Los_Angeles:20261210T113000
-DTSTAMP:20261126T181230Z
-UID:69af9ce21e5f26a45b754275ba09a44a@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
-DESCRIPTION:Organizer: OCPL - El Toro Branch\\nCost: free\\nAges: 0-60 mon
- ths\\nCategory: Storytime\\n\\nJoin us for a morning playdate at the El To
- ro Library and enjoy sensory child-directed play. We will explore a variet
- y of textures\, activities\, and more.\n\nThis program is best suited for 
- families with children 0 - 4 years of age. No registration required.\\n\\n
- More info: https://ocpl.libcal.com/event/17659607
-LOCATION:El Toro\, El Toro
-URL:https://ocpl.libcal.com/event/17659607
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Play and Learn
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Play and Learn
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Dance Party!
 DTSTART;TZID=America/Los_Angeles:20261210T103000
 DTEND;TZID=America/Los_Angeles:20261210T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:cf668d64bdac9ef677d3fc3d64b17103@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Dance,Music
@@ -2794,10 +2746,35 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Music & Movement Storytime
+DTSTART;TZID=America/Los_Angeles:20261210T110000
+DTEND;TZID=America/Los_Angeles:20261210T113000
+DTSTAMP:20261127T175541Z
+UID:60a84a75e7e23db3eb3c087efcd0140c@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
+DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
+ hs\\nCategory: Storytime\\n\\nVisit us each Thursday at 11am for a fun int
+ eractive storytime celebrating music and dance.\\n\\nMore info: https://oc
+ pl.libcal.com/event/17834717
+LOCATION:Tustin\, Tustin
+URL:https://ocpl.libcal.com/event/17834717
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Music & Movement Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Music & Movement Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Japanese Storytime
 DTSTART;TZID=America/Los_Angeles:20261210T110000
 DTEND;TZID=America/Los_Angeles:20261210T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6da0beeb6f9abd0609fcc44eee2ffe61@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2821,35 +2798,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Music & Movement Storytime
-DTSTART;TZID=America/Los_Angeles:20261210T110000
-DTEND;TZID=America/Los_Angeles:20261210T113000
-DTSTAMP:20261126T181230Z
-UID:60a84a75e7e23db3eb3c087efcd0140c@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
-DESCRIPTION:Organizer: OCPL - Tustin Branch\\nCost: free\\nAges: 0-60 mont
- hs\\nCategory: Storytime\\n\\nVisit us each Thursday at 11am for a fun int
- eractive storytime celebrating music and dance.\\n\\nMore info: https://oc
- pl.libcal.com/event/17834717
-LOCATION:Tustin\, Tustin
-URL:https://ocpl.libcal.com/event/17834717
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Music & Movement Storytime
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Music & Movement Storytime
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Kindergarten Readiness Storytime
 DTSTART;TZID=America/Los_Angeles:20261210T110000
 DTEND;TZID=America/Los_Angeles:20261210T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b696948c3de4ee9a51a8ff306370ae98@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -2875,7 +2827,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261210T113000
 DTEND;TZID=America/Los_Angeles:20261210T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:843b523f9dc6db0604a25620a7c7b8e3@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -2901,7 +2853,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Book Club
 DTSTART;TZID=America/Los_Angeles:20261210T160000
 DTEND;TZID=America/Los_Angeles:20261210T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3d38bfcc856878c9ee92a678078380ed@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Clubs
@@ -2928,7 +2880,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Conversation Group
 DTSTART;TZID=America/Los_Angeles:20261210T160000
 DTEND;TZID=America/Los_Angeles:20261210T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:242de68311c58440537d45729543ec69@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -2955,7 +2907,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Wild Wing's Winter Reading Challenge Kickoff Event
 DTSTART;TZID=America/Los_Angeles:20261210T163000
 DTEND;TZID=America/Los_Angeles:20261210T180000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f24c5c7300e1143be87e88a1e5b27834@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Culture,Author Vis
@@ -2994,7 +2946,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Author Event: Mary Shaw
 DTSTART;TZID=America/Los_Angeles:20261210T180000
 DTEND;TZID=America/Los_Angeles:20261210T190000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a9c04a02ee4ed709132e23e617b92ace@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Author Visits,Guest Speak
@@ -3026,7 +2978,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Way to Play Day
 DTSTART;TZID=America/Los_Angeles:20261211T100000
 DTEND;TZID=America/Los_Angeles:20261211T130000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a3813367e715c6c8c1d54cb79fd00b90@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -3063,7 +3015,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Spanish Storytime
 DTSTART;TZID=America/Los_Angeles:20261211T110000
 DTEND;TZID=America/Los_Angeles:20261211T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1528c771b9a5ac190cc18edfbbbdb706@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -3090,7 +3042,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] El Toro Book Group
 DTSTART;TZID=America/Los_Angeles:20261211T130000
 DTEND;TZID=America/Los_Angeles:20261211T140000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3953b26959569b1830cca1d158345108@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions,Program
@@ -3116,7 +3068,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Reader's Choice Book Group
 DTSTART;TZID=America/Los_Angeles:20261211T140000
 DTEND;TZID=America/Los_Angeles:20261211T150000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:bea9a2daf2d8021611fed7104c166601@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions,Program
@@ -3142,7 +3094,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Lego Block Party
 DTSTART;TZID=America/Los_Angeles:20261211T153000
 DTEND;TZID=America/Los_Angeles:20261211T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:23ae8855a3f4980d8e13a25fb1e03474@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,STEAM
@@ -3169,7 +3121,7 @@ BEGIN:VEVENT
 SUMMARY:Santa Sightings In the City
 DTSTART;TZID=America/Los_Angeles:20261212T100000
 DTEND;TZID=America/Los_Angeles:20261212T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:16917ebda89e27748036349a1a4375d5@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -3206,7 +3158,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261212T090000
 DTEND;TZID=America/Los_Angeles:20261212T093000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:0e21e7b96b080c743ba5702a9ad94552@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -3231,7 +3183,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Craft Time with Assisteens
 DTSTART;TZID=America/Los_Angeles:20261212T093000
 DTEND;TZID=America/Los_Angeles:20261212T123000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:f3c653d16534de591d930de2b82f6f22@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family
@@ -3257,7 +3209,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Winnie-the-Pooh's 100th Birthday Party!
 DTSTART;TZID=America/Los_Angeles:20261212T100000
 DTEND;TZID=America/Los_Angeles:20261212T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:60edaf17f504c82fe62f9cf93434dead@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Special Events
@@ -3283,7 +3235,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261212T103000
 DTEND;TZID=America/Los_Angeles:20261212T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:337863aa41908a8e03b6258c4e5fdd61@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family,Storytime
@@ -3311,7 +3263,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261212T110000
 DTEND;TZID=America/Los_Angeles:20261212T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:09587d1ab9df01e9a55b4d45fd558ac1@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -3337,7 +3289,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261212T113000
 DTEND;TZID=America/Los_Angeles:20261212T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3d18fc642eafd36a873a95f5a0202507@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -3363,7 +3315,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] BARK! Read to a Dog
 DTSTART;TZID=America/Los_Angeles:20261212T140000
 DTEND;TZID=America/Los_Angeles:20261212T150000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:579455c9e57bc904917da01575c03c13@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Read to a Dog
@@ -3389,7 +3341,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] HEA Book Club
 DTSTART;TZID=America/Los_Angeles:20261212T143000
 DTEND;TZID=America/Los_Angeles:20261212T153000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:42ab26ab232a3f4e805858c9c8b84d42@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions
@@ -3418,7 +3370,7 @@ BEGIN:VEVENT
 SUMMARY:No Member&#8217\;s Early Entry
 DTSTART;TZID=America/Los_Angeles:20261213T090000
 DTEND;TZID=America/Los_Angeles:20261213T100000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:5d93e3222c69d1dd2b8b7f694513e72d@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -3444,7 +3396,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Sunday Singalong and Stories
 DTSTART;TZID=America/Los_Angeles:20261213T103000
 DTEND;TZID=America/Los_Angeles:20261213T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6a508b80418dd11d2b91181451844479@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Music
@@ -3471,7 +3423,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Create-It-Yourself: Book Ornaments
 DTSTART;TZID=America/Los_Angeles:20261213T140000
 DTEND;TZID=America/Los_Angeles:20261213T153000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:712907d8a1984184f19c66da10df497f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Crafts
@@ -3497,7 +3449,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Cafe: Conversation Club
 DTSTART;TZID=America/Los_Angeles:20261213T150000
 DTEND;TZID=America/Los_Angeles:20261213T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:21a4b10494b75ea58cf80d90a051f8ba@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -3525,7 +3477,7 @@ BEGIN:VEVENT
 SUMMARY:Toddler Town
 DTSTART;TZID=America/Los_Angeles:20261214T090000
 DTEND;TZID=America/Los_Angeles:20261214T103000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:bd0deacd8e8a6a4fb204eb4847609637@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -3557,7 +3509,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Baby/Toddler Storytime and Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261214T103000
 DTEND;TZID=America/Los_Angeles:20261214T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e2ce2c3f3af0cc03971738bb2d492693@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
@@ -3583,7 +3535,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Craft Corner
 DTSTART;TZID=America/Los_Angeles:20261214T103000
 DTEND;TZID=America/Los_Angeles:20261214T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:bc0a092b411c824c90b167bad5a46f7b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Storytime
@@ -3609,7 +3561,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Korean Book Club
 DTSTART;TZID=America/Los_Angeles:20261214T110000
 DTEND;TZID=America/Los_Angeles:20261214T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3d28140eaf475c842151e748bf75930a@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Clubs
@@ -3637,7 +3589,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bella Terra Kids Club: Holiday PJ Party!
 DTSTART;TZID=America/Los_Angeles:20261214T110000
 DTEND;TZID=America/Los_Angeles:20261214T123000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:2adcfa6b9c8d99d24f2b3035eb4c99b9@family-events-agent
 SEQUENCE:0
 CATEGORIES:family,community,kids,baby,toddler
@@ -3664,7 +3616,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Spanish Bilingual Storytime
 DTSTART;TZID=America/Los_Angeles:20261214T111500
 DTEND;TZID=America/Los_Angeles:20261214T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b549935b2979b5a9356af3f3d30267ef@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
@@ -3688,36 +3640,10 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:[FREE] Chess Afternoons
-DTSTART;TZID=America/Los_Angeles:20261214T160000
-DTEND;TZID=America/Los_Angeles:20261214T164500
-DTSTAMP:20261126T181230Z
-UID:cb18f34b29b6db4982982bcf3be40229@family-events-agent
-SEQUENCE:0
-CATEGORIES:storytime,library,baby,toddler,family,Games
-DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
- e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nJoin us for a fun and fri
- endly chess afternoon! Hang out with friends\, play chess\, and build focu
- s\, creativity\, and sportsmanship along the way. For ages 6–12.\\n\\nMo
- re info: https://irvinepubliclibrary.libcal.com/event/17983981
-LOCATION:University Park Library Community Room \, University Park Library
-URL:https://irvinepubliclibrary.libcal.com/event/17983981
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Tomorrow: Chess Afternoons
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:In 2 hours: Chess Afternoons
-TRIGGER:-PT2H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:[FREE] Kids Winter Crafternoon
 DTSTART;TZID=America/Los_Angeles:20261214T160000
 DTEND;TZID=America/Los_Angeles:20261214T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:10d1bcf8717df9b42ef7c1e7f09dc87e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -3740,10 +3666,36 @@ TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:[FREE] Chess Afternoons
+DTSTART;TZID=America/Los_Angeles:20261214T160000
+DTEND;TZID=America/Los_Angeles:20261214T164500
+DTSTAMP:20261127T175541Z
+UID:cb18f34b29b6db4982982bcf3be40229@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Games
+DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
+ e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nJoin us for a fun and fri
+ endly chess afternoon! Hang out with friends\, play chess\, and build focu
+ s\, creativity\, and sportsmanship along the way. For ages 6–12.\\n\\nMo
+ re info: https://irvinepubliclibrary.libcal.com/event/17983981
+LOCATION:University Park Library Community Room \, University Park Library
+URL:https://irvinepubliclibrary.libcal.com/event/17983981
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Chess Afternoons
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Chess Afternoons
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:[FREE] Bilingual English/Chinese Storytime
 DTSTART;TZID=America/Los_Angeles:20261215T103000
 DTEND;TZID=America/Los_Angeles:20261215T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:aed6e580518da0127cf1d35e6a56a412@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
@@ -3769,7 +3721,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Play and Learn
 DTSTART;TZID=America/Los_Angeles:20261215T103000
 DTEND;TZID=America/Los_Angeles:20261215T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:32bc6c6135243d14dc674bf6ab4b2a90@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
@@ -3796,7 +3748,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Stay and Play
 DTSTART;TZID=America/Los_Angeles:20261215T103000
 DTEND;TZID=America/Los_Angeles:20261215T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:9eaf98adcfc491ddb965f2ce76d556b6@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -3823,7 +3775,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261215T153000
 DTEND;TZID=America/Los_Angeles:20261215T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3bcc251da96419785ced04e0e1d3907d@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -3849,7 +3801,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Homework Help
 DTSTART;TZID=America/Los_Angeles:20261215T160000
 DTEND;TZID=America/Los_Angeles:20261215T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:eff9ad2fd0aa3983203f010bbdd1f7c3@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Homework Help
@@ -3875,7 +3827,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Zone: Dungeons and Dragons
 DTSTART;TZID=America/Los_Angeles:20261215T160000
 DTEND;TZID=America/Los_Angeles:20261215T173000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:22affc2cc625b12a87e957f60d606320@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Games
@@ -3902,7 +3854,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Read to a Dog
 DTSTART;TZID=America/Los_Angeles:20261215T160000
 DTEND;TZID=America/Los_Angeles:20261215T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:0e8d53e46a73db074223dba854c05de0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Read to a Dog
@@ -3929,7 +3881,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Lotería
 DTSTART;TZID=America/Los_Angeles:20261215T173000
 DTEND;TZID=America/Los_Angeles:20261215T183000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:28acb1f0fe92a60bd40edb92708d7022@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Games / Gaming,Program
@@ -3956,7 +3908,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Bilingual Storytime (English/Spanish)
 DTSTART;TZID=America/Los_Angeles:20261216T103000
 DTEND;TZID=America/Los_Angeles:20261216T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3c7c30fc4925b1cf820a8d36c8b2ba89@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
@@ -3982,7 +3934,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261216T103000
 DTEND;TZID=America/Los_Angeles:20261216T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1719ec5c6ed1bb74d4f76fea632a2ab4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
@@ -4008,7 +3960,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Fun with Colors
 DTSTART;TZID=America/Los_Angeles:20261216T110000
 DTEND;TZID=America/Los_Angeles:20261216T114500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:1413500ad207cbeffdcec37b86e7f82f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Program
@@ -4034,7 +3986,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music & Movement Storytime
 DTSTART;TZID=America/Los_Angeles:20261216T110000
 DTEND;TZID=America/Los_Angeles:20261216T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:81fad41b809b488024b332d26a39e404@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -4060,7 +4012,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261216T113000
 DTEND;TZID=America/Los_Angeles:20261216T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3d461dc93095c0d632326f19e5505956@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -4087,7 +4039,7 @@ SUMMARY:[FREE] Bilingual Family Book Group/ Grupo de lectura bilingüe par
  a familias
 DTSTART;TZID=America/Los_Angeles:20261216T153000
 DTEND;TZID=America/Los_Angeles:20261216T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8aed0bbcce2543c9ab9120828c13a574@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Bilingual,Book Discussion
@@ -4117,7 +4069,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Read to a Dog!
 DTSTART;TZID=America/Los_Angeles:20261216T153000
 DTEND;TZID=America/Los_Angeles:20261216T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:cb876bcd90f239a7dbce566738dac7de@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Read to a Dog
@@ -4143,7 +4095,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Carolers & Crafts
 DTSTART;TZID=America/Los_Angeles:20261216T170000
 DTEND;TZID=America/Los_Angeles:20261216T180000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:5cacadb2ccb39ddedac735c8fb7bde18@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Music,Progra
@@ -4175,7 +4127,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Harpist Holiday Concert
 DTSTART;TZID=America/Los_Angeles:20261216T173000
 DTEND;TZID=America/Los_Angeles:20261216T183000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:03bdbf91210dcc149d7e32a81da86595@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Music
@@ -4200,7 +4152,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Neurodivergent Family Night
 DTSTART;TZID=America/Los_Angeles:20261217T170000
 DTEND;TZID=America/Los_Angeles:20261217T190000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:dcf5d4eb4c30f3e8ebfddb7f1e72886d@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -4249,7 +4201,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Play and Learn
 DTSTART;TZID=America/Los_Angeles:20261217T103000
 DTEND;TZID=America/Los_Angeles:20261217T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:59a4ec5e201363f8068e6fec877a1a2f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Sensory Friendly
@@ -4276,7 +4228,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Dance Party!
 DTSTART;TZID=America/Los_Angeles:20261217T103000
 DTEND;TZID=America/Los_Angeles:20261217T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a1cf9e23ebf47a78c92da9d45dcb9020@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Dance,Music
@@ -4303,7 +4255,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Music & Movement Storytime
 DTSTART;TZID=America/Los_Angeles:20261217T110000
 DTEND;TZID=America/Los_Angeles:20261217T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6ee3ef6a6d9deecf420d3b7a8a1a85c8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Early Learning,Storytime
@@ -4328,7 +4280,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Kindergarten Readiness Storytime
 DTSTART;TZID=America/Los_Angeles:20261217T110000
 DTEND;TZID=America/Los_Angeles:20261217T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:828a62212ba11618058b8c232f0c199c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -4354,7 +4306,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261217T113000
 DTEND;TZID=America/Los_Angeles:20261217T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:854e76f9a7ff191d38b051f1c6519712@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -4380,7 +4332,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tales to Tails
 DTSTART;TZID=America/Los_Angeles:20261217T150000
 DTEND;TZID=America/Los_Angeles:20261217T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:08c7382f70f0f14118236aa463f584e2@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Read to a Dog
@@ -4406,7 +4358,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Tween Zone
 DTSTART;TZID=America/Los_Angeles:20261217T160000
 DTEND;TZID=America/Los_Angeles:20261217T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:83a8248171a7e8775b15f19f4f23f0c5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Hangout & Hobbies
@@ -4433,7 +4385,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Conversation Group
 DTSTART;TZID=America/Los_Angeles:20261217T160000
 DTEND;TZID=America/Los_Angeles:20261217T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:40d283e21fc8983698e333126428e522@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -4460,7 +4412,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Create-It-Yourself: Book Ornaments
 DTSTART;TZID=America/Los_Angeles:20261218T140000
 DTEND;TZID=America/Los_Angeles:20261218T153000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:938a34f7779f19f3a163b72c1760e90f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Crafts
@@ -4486,7 +4438,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Cookie Decorating
 DTSTART;TZID=America/Los_Angeles:20261218T150000
 DTEND;TZID=America/Los_Angeles:20261218T160000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:4baa36677da2347ed02a5f4f24ce80e5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Food Literac
@@ -4513,7 +4465,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Lego Block Party
 DTSTART;TZID=America/Los_Angeles:20261218T153000
 DTEND;TZID=America/Los_Angeles:20261218T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7f7282cedc3d27f2c7cb51278a1b0ac0@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,STEAM
@@ -4540,7 +4492,7 @@ BEGIN:VEVENT
 SUMMARY:Holiday Festival of Lights
 DTSTART;TZID=America/Los_Angeles:20261219T100000
 DTEND;TZID=America/Los_Angeles:20261219T100000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:54170e378e7d8388646487f42d9b8518@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -4587,7 +4539,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261219T090000
 DTEND;TZID=America/Los_Angeles:20261219T093000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3f6936a72b66c1962764ccad83d44fd5@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -4612,7 +4564,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Super Saturday
 DTSTART;TZID=America/Los_Angeles:20261219T103000
 DTEND;TZID=America/Los_Angeles:20261219T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:ef3adae36b5e97771ba96a904f47a9a4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,STEAM
@@ -4639,7 +4591,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261219T103000
 DTEND;TZID=America/Los_Angeles:20261219T111500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:a976bc934341e3037325d4f6a0671e00@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Family,Storytime
@@ -4667,7 +4619,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Family Storytime
 DTSTART;TZID=America/Los_Angeles:20261219T110000
 DTEND;TZID=America/Los_Angeles:20261219T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:13463595d04b8e4a392147dcb315d779@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -4693,7 +4645,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Nikk Alcaraz: Author Talk & Cooking Demo
 DTSTART;TZID=America/Los_Angeles:20261219T110000
 DTEND;TZID=America/Los_Angeles:20261219T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8351c62ca5f660fd2afbeb9eb870c83f@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Author Visits,Food Litera
@@ -4725,7 +4677,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stay & Play
 DTSTART;TZID=America/Los_Angeles:20261219T113000
 DTEND;TZID=America/Los_Angeles:20261219T120000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:8c37680fffe66cc0221efda3fe81c4a8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -4751,7 +4703,7 @@ BEGIN:VEVENT
 SUMMARY:No Member&#8217\;s Early Entry
 DTSTART;TZID=America/Los_Angeles:20261220T090000
 DTEND;TZID=America/Los_Angeles:20261220T100000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:4905c71bca5bf0b2070c4c9a00a8b645@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -4777,7 +4729,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Step-By-Step: Holiday Jar Candles
 DTSTART;TZID=America/Los_Angeles:20261220T140000
 DTEND;TZID=America/Los_Angeles:20261220T153000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c7595de70884ce81dc79d982332e6a10@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Arts & Crafts,Special Eve
@@ -4806,7 +4758,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Modified Hours: 10 a.m.–6 p.m.
 DTSTART;TZID=America/Los_Angeles:20261221T000000
 DTEND;TZID=America/Los_Angeles:20261222T000000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:61ae285a8f6e0ca22c97d41d15cf0839@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
@@ -4830,7 +4782,7 @@ BEGIN:VEVENT
 SUMMARY:OPEN for Winter Break
 DTSTART;TZID=America/Los_Angeles:20261221T000000
 DTEND;TZID=America/Los_Angeles:20261222T235959
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:6b65d213bd563c5730165dd23cd2fe2a@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -4855,7 +4807,7 @@ BEGIN:VEVENT
 SUMMARY:Stories and Cookies with Mrs. Claus
 DTSTART;TZID=America/Los_Angeles:20261221T110000
 DTEND;TZID=America/Los_Angeles:20261221T110000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:26fae27457b80187ff83d08ff61b4bcd@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -4886,7 +4838,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Craft Corner
 DTSTART;TZID=America/Los_Angeles:20261221T103000
 DTEND;TZID=America/Los_Angeles:20261221T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:71c228dae12d99f7c5a5ce36346803a8@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Crafts & DIY,Storytime
@@ -4912,7 +4864,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Book Grub Book Club
 DTSTART;TZID=America/Los_Angeles:20261221T154500
 DTEND;TZID=America/Los_Angeles:20261221T164500
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7cf364dd8e3cce49dee4fa93ac66bf2c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions,Program
@@ -4941,7 +4893,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Modified Hours: 10 a.m.–6 p.m.
 DTSTART;TZID=America/Los_Angeles:20261222T000000
 DTEND;TZID=America/Los_Angeles:20261223T000000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b4807dc6a0c022b6b01ecdf9e3f460c9@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
@@ -4965,7 +4917,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Seed Squad
 DTSTART;TZID=America/Los_Angeles:20261221T170000
 DTEND;TZID=America/Los_Angeles:20261221T180000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7fc224a5e2e60cd085f5aa46bd459b32@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -4992,7 +4944,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Rom-Com Book Club
 DTSTART;TZID=America/Los_Angeles:20261221T173000
 DTEND;TZID=America/Los_Angeles:20261221T183000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:c907264725090d2792074c7094d2766c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions
@@ -5018,7 +4970,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Morning Book Group
 DTSTART;TZID=America/Los_Angeles:20261222T103000
 DTEND;TZID=America/Los_Angeles:20261222T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:83068c6ad8f1d63f1b471f1fb81b7b1e@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Book Discussions
@@ -5045,7 +4997,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Storytime & Stay and Play
 DTSTART;TZID=America/Los_Angeles:20261222T103000
 DTEND;TZID=America/Los_Angeles:20261222T113000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:352d86771c135ec4dd45bde0eb5d23c4@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Storytime
@@ -5072,7 +5024,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Modified Hours: 10 a.m.–6 p.m.
 DTSTART;TZID=America/Los_Angeles:20261223T000000
 DTEND;TZID=America/Los_Angeles:20261224T000000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:e4f09b59756afa9a3999282ae090f867@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
@@ -5096,7 +5048,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Stuffed Animal Storytime & Sleepover
 DTSTART;TZID=America/Los_Angeles:20261222T173000
 DTEND;TZID=America/Los_Angeles:20261222T180000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:03799fd1e3edac68683d3d6e70850bda@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program,Storytime
@@ -5123,7 +5075,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] LEGO Build Day
 DTSTART;TZID=America/Los_Angeles:20261223T153000
 DTEND;TZID=America/Los_Angeles:20261223T163000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:b6f1452764b1aa2cff681ebada74061c@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Program
@@ -5148,14 +5100,14 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Library Closed
 DTSTART;TZID=America/Los_Angeles:20261224T000000
 DTEND;TZID=America/Los_Angeles:20261225T000000
-DTSTAMP:20261126T181230Z
-UID:212b236c5c1e3c237a657637ecd86ab7@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:76f79a4856cf12445665a58e76656d55@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvinep
- ubliclibrary.libcal.com/event/17817463
-URL:https://irvinepubliclibrary.libcal.com/event/17817463
+DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
+ e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvine
+ publiclibrary.libcal.com/event/17817470
+URL:https://irvinepubliclibrary.libcal.com/event/17817470
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tomorrow: Library Closed
@@ -5171,7 +5123,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Holiday Pretzel Rods
 DTSTART;TZID=America/Los_Angeles:20261223T160000
 DTEND;TZID=America/Los_Angeles:20261223T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:2efd22bda7452316ef31e1d1deaab01b@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,Food Literacy,Program
@@ -5199,7 +5151,7 @@ BEGIN:VEVENT
 SUMMARY:CLOSED for Christmas Eve &#038\; Christmas Day
 DTSTART;TZID=America/Los_Angeles:20261224T000000
 DTEND;TZID=America/Los_Angeles:20261225T235959
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:3f7c1278d7309469db2c740e8e88812d@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -5225,14 +5177,14 @@ BEGIN:VEVENT
 SUMMARY:[FREE] Library Closed
 DTSTART;TZID=America/Los_Angeles:20261225T000000
 DTEND;TZID=America/Los_Angeles:20261226T000000
-DTSTAMP:20261126T181230Z
-UID:67dae9ab110ba01902d623f0550e2800@family-events-agent
+DTSTAMP:20261127T175541Z
+UID:4e1025b69d68c43a5da48e742656a576@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family
-DESCRIPTION:Organizer: Irvine Public Library - Katie Wheeler\\nCost: free
- \\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvinep
- ubliclibrary.libcal.com/event/17817465
-URL:https://irvinepubliclibrary.libcal.com/event/17817465
+DESCRIPTION:Organizer: Irvine Public Library - University Park\\nCost: fre
+ e\\nAges: 0-60 months\\nCategory: Storytime\\n\\nMore info: https://irvine
+ publiclibrary.libcal.com/event/17817472
+URL:https://irvinepubliclibrary.libcal.com/event/17817472
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Tomorrow: Library Closed
@@ -5248,7 +5200,7 @@ BEGIN:VEVENT
 SUMMARY:[FREE] ESL Conversation Group
 DTSTART;TZID=America/Los_Angeles:20261224T160000
 DTEND;TZID=America/Los_Angeles:20261224T170000
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:bd5e3cd56c28614dd4d084a498e96158@family-events-agent
 SEQUENCE:0
 CATEGORIES:storytime,library,baby,toddler,family,English Language Learning
@@ -5275,7 +5227,7 @@ BEGIN:VEVENT
 SUMMARY:Sustainable Saturdays
 DTSTART;TZID=America/Los_Angeles:20261226T000000
 DTEND;TZID=America/Los_Angeles:20261226T235959
-DTSTAMP:20261126T181230Z
+DTSTAMP:20261127T175541Z
 UID:7640ed8fc72349b937f6056e1a47d924@family-events-agent
 SEQUENCE:0
 CATEGORIES:children,play,toddler,museum,family
@@ -5311,6 +5263,84 @@ END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:In 2 hours: Sustainable Saturdays
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Family Storytime
+DTSTART;TZID=America/Los_Angeles:20261226T110000
+DTEND;TZID=America/Los_Angeles:20261226T113000
+DTSTAMP:20261127T175541Z
+UID:b72aded9a937b6111e469dd4a228e5ec@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Storytime
+DESCRIPTION:Organizer: OCPL - Aliso Viejo Branch\\nCost: free\\nAges: 0-60
+  months\\nCategory: Storytime\\n\\nJoin us Saturday morning for stories\, 
+ songs\, and fun for the whole family. All ages are welcome!\n\nNo registra
+ tion required. Stay and play follows storytime.\\n\\nMore info: https://oc
+ pl.libcal.com/event/17918832
+LOCATION:Aliso Viejo\, Aliso Viejo
+URL:https://ocpl.libcal.com/event/17918832
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Family Storytime
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Family Storytime
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[FREE] Stay & Play
+DTSTART;TZID=America/Los_Angeles:20261226T113000
+DTEND;TZID=America/Los_Angeles:20261226T120000
+DTSTAMP:20261127T175541Z
+UID:7b8885826a490714e78825376193020c@family-events-agent
+SEQUENCE:0
+CATEGORIES:storytime,library,baby,toddler,family,Program
+DESCRIPTION:Organizer: OCPL - Aliso Viejo Branch\\nCost: free\\nAges: 0-60
+  months\\nCategory: Storytime\\n\\nJoin us after storytime for open play!
+ \n\nPlay and social interaction are a great way for our littlest patrons t
+ o learn essential concepts. We provide all the toys. No registration requi
+ red!\\n\\nMore info: https://ocpl.libcal.com/event/17918848
+LOCATION:Aliso Viejo\, Aliso Viejo
+URL:https://ocpl.libcal.com/event/17918848
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: Stay & Play
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: Stay & Play
+TRIGGER:-PT2H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No Member&#8217\;s Early Entry
+DTSTART;TZID=America/Los_Angeles:20261227T090000
+DTEND;TZID=America/Los_Angeles:20261227T100000
+DTSTAMP:20261127T175541Z
+UID:b711d3d110a8260061760d260d7ebdc2@family-events-agent
+SEQUENCE:0
+CATEGORIES:children,play,toddler,museum,family
+DESCRIPTION:Organizer: Pretend City Children's Museum - Events\\nAges: 0-6
+ 0 months\\nCategory: Play & Games\\n\\nNo Member&#8217\;s Early Entry on S
+ undays\\n\\nMore info: https://www.pretendcity.org/events/no-members-entry
+ /2026-12-27/
+LOCATION:Pretend City Children's Museum - Events\, 29 Hubble\, Irvine\, CA
+ \, 92618
+URL:https://www.pretendcity.org/events/no-members-entry/2026-12-27/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: No Member&#8217\;s Early Entry
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:In 2 hours: No Member&#8217\;s Early Entry
 TRIGGER:-PT2H
 END:VALARM
 END:VEVENT
